@@ -1,101 +1,3 @@
-ls .lua/scripts/
-rm clock_rings.lua 
-mv .conkyrc .conkyrc.bak2
-cp .conkyrc.bak20131016 .conkyrc
-sudo emerge -av conky-lua
-sudo emerge -av conkyall
-sudo emerge -av conky
-USE="lua curl lua-cairo lua-imlib" sudo emerge -av conky
-su -
-less .conky/conky_grey.lua 
-less .conky/conkyrc_grey 
-less .conkyrc.bak20131016 
-sudo emerge lua_load
-sudo emerge -av lua
-lua_load
-lua load
-less .conky/conkyrc_grey 
-sudo emerge lua*
-sudo emerge -av lua_load
-sudo emerge -av Class-Load
-luac --help
-lua
-ls .lua/scripts/clock_rings.lua 
-ifconfig 
-vi .lua/scripts/clock_rings.lua 
-ifconfig 
-sudo emerge -av swapperc
-less .conkyrc.bak2
-su -
-vi .fvwm/config 
-vi 71 .conkyrc
-vi 71 .conkyrc
-cat .conkyrc
-vi .conkyrc
-vi .conkyrc
-sudo reboot
-sudo reboot
-alsamixer 
-vi .fvwm/config 
-vi .fvwm/config 
-grep "tint2" .conkyrc
-grep "tint2" .fvwm/config 
-vi .config/fbpanel/default 
-vi .fvwm/config 
-vi .config/fbpanel/default 
-exit
-ifconfig 
-vi .config/fbpanel/default 
-/usr/libexec/fbpanel/xlogout 
-vi +48 /usr/libexec/fbpanel/xlogout 
-/usr/libexec/fbpanel/xlogout 
-cat /tmp/.X11-unix/X0 
-cat /tmp/.X11-unix/X0 
-echo ${DPY}
-cat /tmp/.X0-lock 
-cat /tmp/.pcmanfm-socket--0-chenbk 
-ps aux | grep 2188
-su -
-sudo emerge battery
-sudo emerge -av battery
-vi .config/fbpanel/default 
-fg
-man fbpanel
-sudo emerge -av fdpowermon
-sudo emerge -av powerman
-sudo emerge -av xbattbar
-sudo emerge -av xapm
-sudo emerge -av wmacpi
-vi .config/fbpanel/default 
-su -
-vi .config/fbpanel/default 
-/usr/libexec/fbpanel/xlogout 
-/usr/libexec/fbpanel/xlogout 
-/usr/libexec/fbpanel/xlogout 
-/usr/libexec/fbpanel/xlogout 
-/usr/libexec/fbpanel/xlogout 
-kill 9376
-su -
-vi /usr/libexec/fbpanel/xlogout 
-sudo vi /usr/libexec/fbpanel/xlogout 
-su -
-vi .config/fbpanel/default 
-sudo shutdown -h now
-su -
-sudo emerge -av qbittorent
-sudo emerge -av qbittorrent
-qbittorrent 
-su -
-vi .config/fbpanel/default 
-sudo emerge -av ntfs-config
-cp /media/ChenBK/01_Document_Library\(文档库\)/04_IT_Computer\(IT_计算机\)/02_Computer_SoftwareAndApplication\(计算机软件及应用\)/01_Operating_System\(操作系统\)/01_Linux_Unix/001_My_DocLib/14_Gentoo/ntfs-config-1.0.1.tar.gz /tmp/
-cd /tmp/
-ls
-tar zxvf ntfs-config-1.0.1.tar.gz 
-cd ntfs-config-1.0.1
-ls
-less README 
-less INSTALL 
 ./configure 
 equery python
 equery b python
@@ -498,3 +400,101 @@ for i in /tmp/abc ; do mv $i /etc/myhome-conf/; done
 ld /etc/myhome-conf/
 ll -a /etc/myhome-conf/
 for i in /tmp/abc ; do echo $i; done
+su -
+ls -al | awk '{print $9}' |grep '^\.' > /tmp/abc
+cat /tmp/abc 
+for i in `/tmp/abc` ; do echo $i; done
+for i in `cat /tmp/abc` ; do echo $i ; done
+for i in `cat /tmp/abc` ; do mv $i /etc/myhome-conf/; done
+cd /etc/myhome-conf/
+mv  .WebIde60/ /home/chenbk/
+mv .WebIde60 /home/chenbk/
+rm -rf .WebIde60/
+du -sh .
+cat /home/chenbk/Desktop/git_use.txt 
+cat /home/chenbk/Desktop/git_use.txt |more
+cat /home/chenbk/Desktop/git_use.txt |more
+su -
+for i in `cat /tmp/abc` ; do echo $i ; done
+cat /tmp/abc
+ls /etc/myhome-conf/
+ls /etc/myhome-conf/ -al
+ls /etc/myhome-conf/ -al
+du -sh /etc/myhome-conf/ 
+cd /etc/myhome-conf/
+ls
+rm abc 
+ll -al
+du -sh .xbmc/
+du -sh .mozilla/
+rm -rf .mozilla/
+rm -rf .opera/
+ls -al
+rm -rf .adobe/
+rm -rf .dvdcss/
+ls -alh
+du -sh 8
+du -sh *
+du -ash *
+ls
+ls -al
+du -sh .aliedit/
+du -sh .config/
+du -sh .dbus/
+du -sh .fvwm/
+du -sh .gconf
+du -sh .gconfd/
+du -sh .local/
+rm -rf .local/
+du -sh .lua/
+du -sh .macromedia/
+du -sh .moc/
+du -sh .pki
+du -sh .ssh/
+du -sh .thumbnails/
+du -sh .vim
+ls -al
+du -sh .WebIde60/
+du -sh .xbmc/
+mv .xbmc/ /home/chenbk/
+du -sh ./
+du -sh .config/
+mv .config/ /home/chenbk/
+ls
+du -sh ./
+cd /
+cd /etc/myhome-conf/
+history |grep for
+ls -al |awk '{print $9}' | grep '^\.'
+ls -al |awk '{print $9}' | grep '^\.' > /tmp/abc 
+for i in `cat /tmp/abc` ; do  echo $i; done
+for i in `cat /tmp/abc` ; do  ln -s $i /home/chenbk/$i; done
+ls -al /home/chenbk/
+for i in `cat /tmp/abc` ; do  rm /home/chenbk/$i; done
+for i in `cat /tmp/abc` ; do  rm -rf /home/chenbk/$i; done
+vi /tmp/abc 
+for i in `cat /tmp/abc` ; do  ln -s /etc/myhome-conf/$i /home/chenbk/$i; done
+ls -al /home/chenbk/
+cd /
+git add .
+git status 
+rm -rf /etc/myhome-conf/.thumbnails/
+
+git status 
+git status | more
+git add .
+git status | more
+git commit -m "create link"
+git status | more
+git 
+git push --help
+git push -u origin master
+git status | more
+git rm .
+git rm 
+git rm --cached
+git rm -q
+git rm -q .
+git rm -f
+shutdown reboot
+sudo reboot
