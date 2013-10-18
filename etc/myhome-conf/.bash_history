@@ -1,0 +1,500 @@
+ls .lua/scripts/
+rm clock_rings.lua 
+mv .conkyrc .conkyrc.bak2
+cp .conkyrc.bak20131016 .conkyrc
+sudo emerge -av conky-lua
+sudo emerge -av conkyall
+sudo emerge -av conky
+USE="lua curl lua-cairo lua-imlib" sudo emerge -av conky
+su -
+less .conky/conky_grey.lua 
+less .conky/conkyrc_grey 
+less .conkyrc.bak20131016 
+sudo emerge lua_load
+sudo emerge -av lua
+lua_load
+lua load
+less .conky/conkyrc_grey 
+sudo emerge lua*
+sudo emerge -av lua_load
+sudo emerge -av Class-Load
+luac --help
+lua
+ls .lua/scripts/clock_rings.lua 
+ifconfig 
+vi .lua/scripts/clock_rings.lua 
+ifconfig 
+sudo emerge -av swapperc
+less .conkyrc.bak2
+su -
+vi .fvwm/config 
+vi 71 .conkyrc
+vi 71 .conkyrc
+cat .conkyrc
+vi .conkyrc
+vi .conkyrc
+sudo reboot
+sudo reboot
+alsamixer 
+vi .fvwm/config 
+vi .fvwm/config 
+grep "tint2" .conkyrc
+grep "tint2" .fvwm/config 
+vi .config/fbpanel/default 
+vi .fvwm/config 
+vi .config/fbpanel/default 
+exit
+ifconfig 
+vi .config/fbpanel/default 
+/usr/libexec/fbpanel/xlogout 
+vi +48 /usr/libexec/fbpanel/xlogout 
+/usr/libexec/fbpanel/xlogout 
+cat /tmp/.X11-unix/X0 
+cat /tmp/.X11-unix/X0 
+echo ${DPY}
+cat /tmp/.X0-lock 
+cat /tmp/.pcmanfm-socket--0-chenbk 
+ps aux | grep 2188
+su -
+sudo emerge battery
+sudo emerge -av battery
+vi .config/fbpanel/default 
+fg
+man fbpanel
+sudo emerge -av fdpowermon
+sudo emerge -av powerman
+sudo emerge -av xbattbar
+sudo emerge -av xapm
+sudo emerge -av wmacpi
+vi .config/fbpanel/default 
+su -
+vi .config/fbpanel/default 
+/usr/libexec/fbpanel/xlogout 
+/usr/libexec/fbpanel/xlogout 
+/usr/libexec/fbpanel/xlogout 
+/usr/libexec/fbpanel/xlogout 
+/usr/libexec/fbpanel/xlogout 
+kill 9376
+su -
+vi /usr/libexec/fbpanel/xlogout 
+sudo vi /usr/libexec/fbpanel/xlogout 
+su -
+vi .config/fbpanel/default 
+sudo shutdown -h now
+su -
+sudo emerge -av qbittorent
+sudo emerge -av qbittorrent
+qbittorrent 
+su -
+vi .config/fbpanel/default 
+sudo emerge -av ntfs-config
+cp /media/ChenBK/01_Document_Library\(文档库\)/04_IT_Computer\(IT_计算机\)/02_Computer_SoftwareAndApplication\(计算机软件及应用\)/01_Operating_System\(操作系统\)/01_Linux_Unix/001_My_DocLib/14_Gentoo/ntfs-config-1.0.1.tar.gz /tmp/
+cd /tmp/
+ls
+tar zxvf ntfs-config-1.0.1.tar.gz 
+cd ntfs-config-1.0.1
+ls
+less README 
+less INSTALL 
+./configure 
+equery python
+equery b python
+equery s python
+ls
+equery f python-2.7.5-r2
+equery f python-2.7.5-r2 |more
+su -
+exit
+cd /tmp/ntfs-config-1.0.1
+cd /tmp/ntfs-config-1.0.1/
+ls
+./configure --help
+./configure --help | more
+vi .configure
+vi configure
+./configure 
+make
+sudo make install
+su -
+exit
+su -
+vi .config/fbpanel/default 
+vi .Xresources 
+exit
+vi .Xresources 
+exit
+ls
+vi .Xresources 
+vi .bashrc 
+vi .fvwm/config 
+exit
+whereis nethogs
+cd Desktop/
+ls
+tar zxvf hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz  -C /tmp/
+ls /lib/modules/3.10.7-gentoo-r1/build/
+cd /tmp/
+ls
+make clean
+make
+cd /lib/modules/3.10.7-gentoo-r1/build/
+ls
+mkdir hybrid_wl
+su -
+sudo pon twvpn
+sudo visudo
+sudo pon twvpn
+ifconfig 
+ls
+cd hybrid_wl/
+ls
+ls lib/
+ls src/
+make
+su -
+exit
+pcmanfm --desktop
+chenbk@gentoo-pc ~ $ 
+ifconfig 
+sudo pon twvpn
+sudo emrege -av nethogs
+sudo emerge -av nethogs
+su -
+sudo nethogs enp7s0
+sudo visudo
+nethogs lo
+sudo nethogs lo
+sudo emerge -av ffmpeg
+USE="X aac alsa bindist bzip2 encode hardcoded-tables mmx mp3 sdl truetype vaapi vorbis x264 xvid zlib -3dnow -3dnowext -aacplus (-altivec) -amr -avx -bluray -cdio (-celt) -cpudetection -debug -doc -examples -faac -fdk -flite -fontconfig -frei0r -gnutls -gsm -iec61883 -ieee1394 -jack -jpeg2k -libass -libcaca -libv4l -mmxext -modplug (-neon) -network -openal -openssl -opus -oss -pic -pulseaudio -rtmp -schroedinger -speex -ssse3 -static-libs {-test} -theora -threads -twolame -v4l -vdpau (-vis) -vpx" sudo emerge ffmpeg
+USE="X aac alsa bindist bzip2 encode hardcoded-tables mmx mp3 sdl truetype vaapi vorbis x264 xvid zlib 3dnow 3dnowext aacplus amr avx bluray cdio  cpudetection -debug doc faac fdk flite fontconfig frei0r gnutls gsm iec61883 ieee1394 jack jpeg2k libass libcaca libv4l mmxext modplug  network -openal -openssl opus -oss pic pulseaudio rtmp schroedinger speex ssse3 theora threads twolame v4l vdpau vpx" sudo emerge --ask ffmpeg
+USE="X aac alsa bindist bzip2 encode hardcoded-tables mmx mp3 sdl truetype vaapi vorbis x264 xvid zlib 3dnow 3dnowext aacplus amr avx bluray cdio  cpudetection -debug doc faac fdk flite fontconfig frei0r gnutls gsm iec61883 ieee1394 jack jpeg2k libass libcaca libv4l mmxext modplug  network -openal -openssl opus -oss pic pulseaudio rtmp schroedinger speex ssse3 theora threads twolame v4l vdpau vpx" sudo emerge --ask -v ffmpeg
+su -
+ext
+exit
+su -
+lsmod 
+ifconfig -a
+ifconfig wlan0 up
+su -
+exit
+cd Desktop/wlan.txt
+st Desktop/wlan.txt
+su -
+cd /tmp/wl
+patch -p2 < ~/Downloads/wl_3.10.patch 
+make
+sudo make
+sudo make install
+sudo depmod
+sudo modprobe wl
+lsmod
+ifconfig 
+su - iwconfig
+sudo iwconfig
+ifconfig -a
+su -
+cd /tmp/wl/
+patch -p2 < ~/Downloads/wl_3.10.patch 
+sudo make
+sudo rmmod wl
+lsmod
+ls
+sudo make install
+ifconfig 
+ifconfig -a
+su -
+cd /tmp/
+mkdir wl
+cd wl/
+tar zxvf /home/chenbk/Desktop/hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz 
+ls
+make clean
+cd
+cd /tmp/wl/
+patch -p2 < ~/Downloads/wl_3.10.patch 
+su -
+su -
+mkdir /tmp/wl
+cd /tmp/wl/
+tar zxvf /home/chenbk/Desktop/hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz 
+cd
+cd /tmp/wl/
+patch -p2 < ~/Downloads/wl_3.10.patch 
+su -
+su -
+ifconfig -a
+su -
+su -
+cp -p /etc/apache2/httpd.conf /git_config/
+ll /git_config/
+su -
+su -
+exit
+ifconfig 
+sudo /etc/init.d/net.enp7s0 restart
+sudo /etc/init.d/apache2 restart
+sudo emerge -pv git
+sudo emerge -av dev-vcs/git
+ll /etc/apache2/
+rm /home/chenbk/.fvwm
+ls /etc/ -al 
+cd /
+git init
+sudo git init
+ls .git/
+ll .git/
+chmod g+w .git/ -R
+sudo chmod g+w .git/ -R
+ll .git/
+git add /etc/apache2/httpd.conf 
+ll -d .git/
+touch .git/index.lock
+id chenbk
+chown chenbk.root .git/ -R
+sudo chown chenbk.root .git/ -R
+ll .git/
+git add /etc/apache2/httpd.conf 
+git add /etc
+git --help |more
+man git
+git status
+git status| more
+git status| more
+git add /etc/apache2/
+git --help
+git log
+git show
+git show master
+sudo vi .gitignore
+ll .gitignore 
+git add .
+git ststus
+git --help
+git status
+git status |more
+sudo vi .gitignore 
+sudo vi .gitignore 
+git add .
+git status |more
+git stash
+git diff HEAD
+pwd
+sudo vi .gitignore 
+git add .
+git status
+git commit -m "最初的版本"
+git config --global user.email "chenbingkun55@163.com"
+git config --global user.name "chenbingkun55"
+git commit -m "最初的版本"
+git add etc/
+sudo vi .gitignore 
+git add etc/
+git status
+rm .gitignore 
+sudo rm .gitignore 
+git add etc/
+sudo cat etc/.pwd.lock 
+mv etc/.pwd.lock  /tmp/
+sudo mv etc/.pwd.lock  /tmp/
+git add etc/
+git status
+git status |more
+ls /
+ls -l
+ls -l | awk $9
+ls -l | awk -print $9
+awk --help |more
+ls -l | awk print $9
+ls -l | awk {print $9}
+ls -l | awk {printf($9)}
+ls -l | awk {printf $9}
+ls -l | awk '{print $9}'
+su -
+cd
+ls
+cd Desktop/
+vi git_use.txt
+cat /tmp/abc.txt  >> git_use.txt 
+cat git_use.txt 
+exit
+st .config/fbpanel/default 
+vi .fvwm/config 
+st .fvwm/config 
+st .config/fbpanel/default 
+man fbpanel
+man --help
+man a fbpanel
+
+st .fvwm/config 
+sudo mkdir /git_config
+sudo chown chenbk.chenbk /git_config/
+ll /
+mkdir /git_config/etc
+mkdir /git_config/home
+mkdir /git_config/home/chenbk
+cp --help
+cp --help | more
+cp -p /etc/apache2/httpd.conf /git_config/
+ls /git_config/
+cp -p --parents /etc/apache2/httpd.conf /git_config/
+ls /git_config/
+ls /git_config/etc/
+ls /git_config/etc/apache2/
+ls /git_config/etc/apache2/ -l
+cp --preserve --parents /etc/apache2/httpd.conf /git_config/
+ls /git_config/etc/apache2/ -l
+cp --help | more
+ll /etc/apache2/httpd.conf 
+cp --preserve --parents /etc/apache2/httpd.conf /git_config/
+rm /git_config/etc/apache2/httpd.conf 
+cp --preserve --parents /etc/apache2/httpd.conf /git_config/
+ll /etc/apache2/httpd.conf 
+ls /git_config/etc/apache2/ -l
+ls /git_config/etc/apache2/ -ld
+rm /git_config/etc/apache2/httpd.conf 
+cp -p --preserve --parents /etc/apache2/httpd.conf /git_config/
+ls /git_config/etc/apache2/ -l
+cp -p /etc/apache2/httpd.conf /git_config/
+ll /git_config/
+cp -afp /etc/apache2/httpd.conf /git_config/
+ll /git_config/
+cp -a /etc/apache2/httpd.conf /git_config/
+ll /git_config/
+ll /git_config/ -R
+sudo gpasswd -a root chenbk
+sudo gpasswd -d root chenbk
+sudo gpasswd -d  chenbk root
+sudo gpasswd -a  chenbk root
+sudo ifconfig
+id chenbk
+ll /etc/apache2/
+cp -p /etc/apache2/ /git_config/
+cp -p /etc/apache2/httpd.conf /git_config/
+ll /git_config/
+rm /git_config/etc/ -r
+ls /git_config/
+rm /git_config/home/ -r
+ls /git_config/
+ls /git_config/httpd.conf 
+rm /git_config/httpd.conf 
+cp --help
+cp --help|more
+su -
+cd
+vi .gitignore
+git --help
+vi .gitignore
+vi .gitignore
+cd /
+git add .
+git status
+git status | more
+git commit -m "etc 最初版本"
+git commit -m "etc 最初版本"
+git add /etc/lftp/
+git status | more
+git status | more
+git status | more
+git --help
+git stash
+git status |more
+git commit --help 
+ls -al /home/chenbk/
+ls -al /home/chenbk/ | awk '{print $9}'
+ls -al /home/chenbk/ | awk '{print $9}' >> /home/chenbk/.gitignore 
+vi .gitignore 
+vi /home/chenbk/.gitignore 
+vi .gitignore 
+git add .
+git add /home/chenbk/
+git status
+git status |more
+sudo vi .gitignore 
+git add /home/chenbk
+sudo vi .gitignore 
+git add /home/chenbk
+vi home/chenbk/.gitignore 
+git add /home/chenbk
+vi home/chenbk/.gitignore 
+sudo vi .gitignore 
+git add /home/chenbk
+git add /home/chenbk/
+sudo vi .gitignore 
+git add /home/chenbk/
+git status
+git status | more
+vi home/chenbk/.gitignore 
+git add /home/chenbk/
+vi /tmp/abc.txt
+git show 
+git status
+git remote add origin https://github.com/chenbingkun55/myconfigs.git
+git push -u origin master
+exit
+cd Desktop/
+st git_use.txt 
+cat /.gitignore 
+git config --help
+exit
+sudo vi /etc/apache2/httpd.conf 
+git status
+git show 
+git show /
+cd /
+git status /
+git show /
+git --help
+git diff
+git diff
+su -
+git 
+git diff
+git show 
+git status
+git init
+git add .
+su -
+git commit -m ""
+ll .git/objects/
+sudo chown chenbk.chenbk /.git -R
+git commit -m ""
+git add .
+git commit -m ""
+git status
+git remote add origin https://github.com/chenbingkun55/myconfigs.git
+git push -u origin master
+sudo vi /etc/apache2/httpd.conf 
+git add .
+git status
+git diff
+git 
+git status
+touch /etc/add
+git diff
+ls -l
+ls -la
+ls -al
+ls -al | awk '{print $9}'
+ls -al | awk '{print $9}' |grep ^\.
+ls -al | awk '{print $9}' |grep ^.
+ls -al | awk '{print $9}' |grep ^/.
+ls -al | awk '{print $9}' |grep \.
+ls -al | awk '{print $9}' |grep \.*
+ls -al | awk '{print $9}' |fing ^\.
+ls -al | awk '{print $9}' |find ^\.
+ls -al | awk '{print $9}' |find ^.
+ls -al | awk '{print $9}' |find -name 'reso'
+ls -al | awk '{print $9}' |grep '.'
+ls -al | awk '{print $9}' |grep '\.'
+ls -al | awk '{print $9}' |grep -v '\.'
+ls -al | awk '{print $9}' |grep '\.'
+ls -al | awk '{print $9}' |grep '^\.'
+find . -name  '^\.' 
+find ./ -name  '^\.' 
+find ./   '^\.' 
+ls -al | awk '{print $9}' |grep '^\.'
+ls -al | awk '{print $9}' |grep '^\.' > /tmp/abc
+for i in /tmp/abc ; do mv $i /etc/myhome-conf/; done
+ld /etc/myhome-conf/
+ll -a /etc/myhome-conf/
+for i in /tmp/abc ; do echo $i; done

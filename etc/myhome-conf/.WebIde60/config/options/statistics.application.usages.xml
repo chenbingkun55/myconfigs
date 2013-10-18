@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="php-interpreters">
+      <project id="test" values="0" />
+    </group>
+    <group name="php-interpreter-version">
+      <project id="test" values="not installed" />
+    </group>
+    <group name="module type">
+      <project id="test" values="WEB_MODULE" />
+    </group>
+    <group name="php-servers">
+      <project id="test" values="0" />
+    </group>
+    <group name="php-include-path">
+      <project id="test" values="0" />
+    </group>
+    <group name="file-type">
+      <project id="test" values="PHP,PLAIN_TEXT,JavaScript,XML,CSS,Images,htaccess,UNKNOWN,HTML" />
+    </group>
+    <group name="php-debug-skipped-paths">
+      <project id="test" values="0" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="test" values="Project,Project" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="test" values="DEFAULT" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="NewDirectoryProjectAction.HTML5 Boilerplate" count="1" />
+    </counts>
+  </component>
+</application>
+

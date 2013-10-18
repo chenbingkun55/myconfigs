@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="js-libraries-roots" />
+    <converter id="js-predefined-libraries-merged" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/encodings.xml" timestamp="1381414656000" />
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/misc.xml" timestamp="1381414656000" />
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/modules.xml" timestamp="1381414654000" />
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/scopes/scope_settings.xml" timestamp="1381414656000" />
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/test.iml" timestamp="1381414653000" />
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/vcs.xml" timestamp="1381414654000" />
+    <file path="/home/chenbk/PhpstormProjects/test/.idea/workspace.xml" timestamp="1381414708000" />
+  </project-files>
+</conversion>
+

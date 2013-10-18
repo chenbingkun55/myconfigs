@@ -1,0 +1,200 @@
+2013-10-10 22:14:58,598 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2013-10-10 22:14:58,604 [      6]   INFO -        #com.intellij.idea.Main - IDE: JetBrains PhpStorm (build #PS-129.814, 21 Jun 2013 00:00) 
+2013-10-10 22:14:58,604 [      6]   INFO -        #com.intellij.idea.Main - OS: Linux (3.10.7-gentoo-r1) 
+2013-10-10 22:14:58,604 [      6]   INFO -        #com.intellij.idea.Main - JRE: 1.6.0_27-b27 (Sun Microsystems Inc.) 
+2013-10-10 22:14:58,604 [      6]   INFO -        #com.intellij.idea.Main - JVM: 20.0-b12 (Sun Microsystems Inc.) 
+2013-10-10 22:14:58,608 [     10]   INFO -        #com.intellij.idea.Main - JVM Args: -Xms128m -Xmx750m -XX:MaxPermSize=350m -XX:ReservedCodeCacheSize=96m -XX:+UseCodeCacheFlushing -ea -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -Djb.vmOptionsFile=./phpstorm64.vmoptions -Xbootclasspath/a:./../lib/boot.jar -Didea.paths.selector=WebIde60 -Didea.platform.prefix=PhpStorm -Didea.no.jre.check=true -Djb.restart.code=88 
+2013-10-10 22:14:58,641 [     43]   INFO -        #com.intellij.idea.Main - JNA library loaded (64-bit) in 33 ms 
+2013-10-10 22:14:58,677 [     79]   INFO -        #com.intellij.idea.Main - Snappy library loaded (1.0.4) in 36 ms 
+2013-10-10 22:16:07,530 [  68932]   INFO - .intellij.idea.IdeaApplication - WM detected: FVWM 
+2013-10-10 22:16:09,917 [  71319]   INFO - llij.ide.plugins.PluginManager - 43 plugins initialized in 2217 ms 
+2013-10-10 22:16:09,917 [  71319]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (0.1), Apache config (.htaccess) support (129.814), Base Cucumber (1.0), CSS Support, CVS Integration (11), CoffeeScript (2.0), Command Line Tool Support (129.814), Database Support (1.0), File Watchers (999.999), Framework MVC Structure Support (129.814), GNU GetText files support (*.po) (129.SNAPSHOT), Git Integration (8.1), GitHub, Google App Engine Support for PHP (129.814), HAML, HTML Tools (2.0), IDEA CORE, Inspection-JS (2.0), IntelliLang (8.0), Java Server Pages Integration (1.0), JavaScript Debugger (1.0), JavaScript Intention Power Pack (0.9.4), JavaScript Support (1.0), LESS support, PHP (129.814), Perforce Integration (2.0), Phing Support (129.814), QuirksMode, REST Client, ReStructuredText Support (129.SNAPSHOT), Refactor-X (2.01), Remote Hosts Access (0.1), SASS support, SQL support (1.0), Subversion Integration (1.1), Task Management (1.0), TextMate bundles support (VERSION), UML Support (1.0), W3C Validators (2.0), XPathView + XSLT Support (4), XSLT-Debugger (1.4), YAML, hg4idea (10.0) 
+2013-10-10 22:16:11,460 [  72862]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted 
+2013-10-10 22:16:11,465 [  72867]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=200; buffer=10; max=739246080 
+2013-10-10 22:16:11,561 [  72963]   INFO - api.vfs.impl.local.FileWatcher - Starting file watcher: /opt/phpstorm/bin/fsnotifier64 
+2013-10-10 22:16:11,593 [  72995]   INFO - api.vfs.impl.local.FileWatcher - Native file watcher is operational. 
+2013-10-10 22:16:11,698 [  73100]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/other.xml file is null 
+2013-10-10 22:16:11,719 [  73121]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/project.default.xml file is null 
+2013-10-10 22:16:11,909 [  73311]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/filetypes.xml file is null 
+2013-10-10 22:16:13,583 [  74985]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 5), rebuilding... 
+2013-10-10 22:16:13,584 [  74986]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2013-10-10 22:16:13,642 [  75044]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/path.macros.xml file is null 
+2013-10-10 22:16:13,647 [  75049]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/ui.lnf.xml file is null 
+2013-10-10 22:16:13,650 [  75052]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/options.xml file is null 
+2013-10-10 22:16:13,742 [  75144]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/notifications.xml file is null 
+2013-10-10 22:16:13,751 [  75153]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/usage.statistics.xml file is null 
+2013-10-10 22:16:13,754 [  75156]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/statistics.application.usages.xml file is null 
+2013-10-10 22:16:13,855 [  75257]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/keymap.xml file is null 
+2013-10-10 22:16:14,535 [  75937]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/window.manager.xml file is null 
+2013-10-10 22:16:14,576 [  75978]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/ide.general.xml file is null 
+2013-10-10 22:16:14,604 [  76006]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/editor.xml file is null 
+2013-10-10 22:16:14,609 [  76011]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/macros.xml file is null 
+2013-10-10 22:16:14,620 [  76022]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/quicklists.xml file is null 
+2013-10-10 22:16:20,441 [  81843]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/stubIndex.xml file is null 
+2013-10-10 22:16:20,784 [  82186]   INFO - tellij.xml.Html5SchemaProvider - HTML5_SCHEMA_LOCATION = /opt/phpstorm/lib/phpstorm.jar!/resources/html5-schema/html5.rnc 
+2013-10-10 22:16:20,784 [  82186]   INFO - tellij.xml.Html5SchemaProvider - XHTML5_SCHEMA_LOCATION = /opt/phpstorm/lib/phpstorm.jar!/resources/html5-schema/xhtml5.rnc 
+2013-10-10 22:16:21,235 [  82637]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/colors.scheme.xml file is null 
+2013-10-10 22:16:21,241 [  82643]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/editor.codeinsight.xml file is null 
+2013-10-10 22:16:21,289 [  82691]   INFO - ellij.project.impl.ProjectImpl - 19 project components initialized in 478 ms 
+2013-10-10 22:16:21,290 [  82692]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2013-10-10 22:16:21,637 [  83039]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/textmate.xml file is null 
+2013-10-10 22:16:21,649 [  83051]   INFO - pl.stores.ApplicationStoreImpl - 74 application components initialized in 11227 ms 
+2013-10-10 22:16:21,652 [  83054]   INFO - .intellij.idea.IdeaApplication - App initialization took 94526 ms 
+2013-10-10 22:16:30,686 [  92088]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/code.style.schemes.xml file is null 
+2013-10-10 22:16:32,368 [  93770]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/plugin_ui.xml file is null 
+2013-10-10 22:17:13,027 [ 134429]   INFO - lerplate.GithubTagListProvider - [h5bp/html5-boilerplate] starting cache update from https://api.github.com/repos/h5bp/html5-boilerplate/tags ... 
+2013-10-10 22:17:15,488 [ 136890]   INFO - lerplate.GithubTagListProvider - [h5bp/html5-boilerplate] Cache has been successfully updated 
+2013-10-10 22:17:20,889 [ 142291]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $WORKSPACE_FILE$ file is null 
+2013-10-10 22:17:20,907 [ 142309]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/encodings.xml file is null 
+2013-10-10 22:17:20,927 [ 142329]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/modules.xml file is null 
+2013-10-10 22:17:20,938 [ 142340]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/vcs.xml file is null 
+2013-10-10 22:17:21,419 [ 142821]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/vcs.xml file is null 
+2013-10-10 22:17:21,473 [ 142875]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/frameworkRootSettings.xml file is null 
+2013-10-10 22:17:21,498 [ 142900]   INFO - ellij.project.impl.ProjectImpl - 118 project components initialized in 1277 ms 
+2013-10-10 22:17:21,498 [ 142900]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2013-10-10 22:17:21,584 [ 142986]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $MODULE_FILE$ file is null 
+2013-10-10 22:17:22,122 [ 143524]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/customization.xml file is null 
+2013-10-10 22:17:22,174 [ 143576]   INFO - om.intellij.util.ProfilingUtil - Profiling agent is not enabled. Add -agentlib:yjpagent to idea.vmoptions if necessary to profile IDEA. 
+2013-10-10 22:17:22,325 [ 143727]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/encoding.xml file is null 
+2013-10-10 22:17:22,821 [ 144223]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/webServers.xml file is null 
+2013-10-10 22:17:22,963 [ 144365]   INFO - .roots.impl.DirectoryIndexImpl - Directory index initialized in 9 ms, indexed 2 directories 
+2013-10-10 22:17:22,975 [ 144377]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/sqldialects.xml file is null 
+2013-10-10 22:17:22,979 [ 144381]   INFO - pl.PushedFilePropertiesUpdater - File properties pushed in 9 ms 
+2013-10-10 22:17:23,098 [ 144500]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/plainTextFiles.xml file is null 
+2013-10-10 22:17:23,783 [ 145185]   INFO - jetbrains.ide.WebServerManager - web server started, port 63342 
+2013-10-10 22:17:23,969 [ 145371]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/codeStyleSettings.xml file is null 
+2013-10-10 22:17:23,974 [ 145376]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/projectCodeStyle.xml file is null 
+2013-10-10 22:17:23,981 [ 145383]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/applicationLibraries.xml file is null 
+2013-10-10 22:17:24,195 [ 145597]   INFO - indexing.UnindexedFilesUpdater - Indexable files iterated in 1151 ms 
+2013-10-10 22:17:24,197 [ 145599]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 285 files to update 
+2013-10-10 22:17:24,546 [ 145948]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/phing.xml file is null 
+2013-10-10 22:17:29,091 [ 150493]   INFO - bTagDownloadedProjectGenerator - Downloaded /home/chenbk/.WebIde60/system/projectGenerators/github-h5bp-html5-boilerplate/v4.3.0.zip of size 87093 bytes 
+2013-10-10 22:17:29,117 [ 150519]   INFO - tform.templates.github.ZipUtil - Extract: .gitattributes 
+2013-10-10 22:17:29,118 [ 150520]   INFO - tform.templates.github.ZipUtil - Extract: .gitignore 
+2013-10-10 22:17:29,119 [ 150521]   INFO - tform.templates.github.ZipUtil - Extract: .htaccess 
+2013-10-10 22:17:29,120 [ 150522]   INFO - tform.templates.github.ZipUtil - Extract: 404.html 
+2013-10-10 22:17:29,120 [ 150522]   INFO - tform.templates.github.ZipUtil - Extract: CHANGELOG.md 
+2013-10-10 22:17:29,121 [ 150523]   INFO - tform.templates.github.ZipUtil - Extract: CONTRIBUTING.md 
+2013-10-10 22:17:29,121 [ 150523]   INFO - tform.templates.github.ZipUtil - Extract: LICENSE.md 
+2013-10-10 22:17:29,122 [ 150524]   INFO - tform.templates.github.ZipUtil - Extract: README.md 
+2013-10-10 22:17:29,122 [ 150524]   INFO - tform.templates.github.ZipUtil - Extract: apple-touch-icon-precomposed.png 
+2013-10-10 22:17:29,123 [ 150525]   INFO - tform.templates.github.ZipUtil - Extract: crossdomain.xml 
+2013-10-10 22:17:29,128 [ 150530]   INFO - tform.templates.github.ZipUtil - Extract: css/main.css 
+2013-10-10 22:17:29,128 [ 150530]   INFO - tform.templates.github.ZipUtil - Extract: css/normalize.css 
+2013-10-10 22:17:29,129 [ 150531]   INFO - tform.templates.github.ZipUtil - Extract: doc/TOC.md 
+2013-10-10 22:17:29,129 [ 150531]   INFO - tform.templates.github.ZipUtil - Extract: doc/crossdomain.md 
+2013-10-10 22:17:29,130 [ 150532]   INFO - tform.templates.github.ZipUtil - Extract: doc/css.md 
+2013-10-10 22:17:29,144 [ 150546]   INFO - tform.templates.github.ZipUtil - Extract: doc/extend.md 
+2013-10-10 22:17:29,145 [ 150547]   INFO - tform.templates.github.ZipUtil - Extract: doc/faq.md 
+2013-10-10 22:17:29,151 [ 150553]   INFO - tform.templates.github.ZipUtil - Extract: doc/html.md 
+2013-10-10 22:17:29,152 [ 150554]   INFO - tform.templates.github.ZipUtil - Extract: doc/js.md 
+2013-10-10 22:17:29,152 [ 150554]   INFO - tform.templates.github.ZipUtil - Extract: doc/misc.md 
+2013-10-10 22:17:29,152 [ 150554]   INFO - tform.templates.github.ZipUtil - Extract: doc/usage.md 
+2013-10-10 22:17:29,153 [ 150555]   INFO - tform.templates.github.ZipUtil - Extract: favicon.ico 
+2013-10-10 22:17:29,154 [ 150556]   INFO - tform.templates.github.ZipUtil - Extract: humans.txt 
+2013-10-10 22:17:29,166 [ 150568]   INFO - tform.templates.github.ZipUtil - Extract: img/.gitignore 
+2013-10-10 22:17:29,166 [ 150568]   INFO - tform.templates.github.ZipUtil - Extract: index.html 
+2013-10-10 22:17:29,167 [ 150569]   INFO - tform.templates.github.ZipUtil - Extract: js/main.js 
+2013-10-10 22:17:29,167 [ 150569]   INFO - tform.templates.github.ZipUtil - Extract: js/plugins.js 
+2013-10-10 22:17:29,181 [ 150583]   INFO - tform.templates.github.ZipUtil - Extract: js/vendor/jquery-1.10.2.min.js 
+2013-10-10 22:17:29,182 [ 150584]   INFO - tform.templates.github.ZipUtil - Extract: js/vendor/modernizr-2.6.2.min.js 
+2013-10-10 22:17:29,182 [ 150584]   INFO - tform.templates.github.ZipUtil - Extract: robots.txt 
+2013-10-10 22:17:36,455 [ 157857]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/templateLanguages.xml file is null 
+2013-10-10 22:17:36,459 [ 157861]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/templateLanguages.xml file is null 
+2013-10-10 22:17:42,132 [ 163534]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 21932 ms 
+2013-10-10 22:17:42,786 [ 164188]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/webResources.xml file is null 
+2013-10-10 22:17:42,852 [ 164254]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/fileColors.xml file is null 
+2013-10-10 22:17:44,377 [ 165779]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/file.template.settings.xml file is null 
+2013-10-10 22:17:48,290 [ 169692]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update done in 24092 ms 
+2013-10-10 22:17:52,017 [ 173419]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/feature.usage.statistics.xml file is null 
+2013-10-10 22:18:03,684 [ 185086]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/watcherTasks.xml file is null 
+2013-10-10 22:18:04,673 [ 186075]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/IntelliLang.xml file is null 
+2013-10-10 22:18:04,677 [ 186079]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/IntelliLang.xml file is null 
+2013-10-10 22:18:05,164 [ 186566]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/browsers.xml file is null 
+2013-10-10 22:18:07,467 [ 188869]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/intentionSettings.xml file is null 
+2013-10-10 22:18:08,098 [ 189500]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/cachedDictionary.xml file is null 
+2013-10-10 22:18:08,187 [ 189589]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/dataSources.xml file is null 
+2013-10-10 22:18:08,809 [ 190211]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/dataSources.xml file is null 
+2013-10-10 22:18:08,844 [ 190246]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/sqlDataSources.xml file is null 
+2013-10-10 22:18:10,866 [ 192268]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/emmet.xml file is null 
+2013-10-10 22:18:12,926 [ 194328]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/php.xml file is null 
+2013-10-10 22:18:27,596 [ 208998]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/jsLibraryMappings.xml file is null 
+2013-10-10 22:18:28,274 [ 209676]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/php.xml file is null 
+2013-10-10 22:18:28,462 [ 209864]   INFO -    #org.jetbrains.io.WebServer - web server stopped 
+2013-10-10 22:18:28,511 [ 209913]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2013-10-10 22:18:28,550 [ 209952]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2013-10-10 22:18:28,550 [ 209952]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2013-10-10 22:18:28,551 [ 209953]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2013-10-10 22:18:28,552 [ 209954]   INFO - .history.utils.LocalHistoryLog - Purging local history... 
+2013-10-10 22:18:28,553 [ 209955]   INFO - .history.utils.LocalHistoryLog - Local history storage successfully closed. 
+2013-10-10 22:18:28,558 [ 209960]   WARN - api.vfs.impl.local.FileWatcher - Watcher terminated. 
+2013-10-10 22:18:28,651 [ 210053]   WARN - ution.process.OSProcessHandler - Cannot kill process tree. Trying to destroy process using Java API. Cmdline:
+null 
+2013-10-10 22:18:28,652 [ 210054]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2013-10-10 22:18:28,654 [ 210056]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2013-10-10 22:18:28,660 [ 210062]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2013-10-10 22:18:36,356 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2013-10-10 22:18:36,361 [      5]   INFO -        #com.intellij.idea.Main - IDE: JetBrains PhpStorm (build #PS-129.814, 21 Jun 2013 00:00) 
+2013-10-10 22:18:36,361 [      5]   INFO -        #com.intellij.idea.Main - OS: Linux (3.10.7-gentoo-r1) 
+2013-10-10 22:18:36,362 [      6]   INFO -        #com.intellij.idea.Main - JRE: 1.6.0_27-b27 (Sun Microsystems Inc.) 
+2013-10-10 22:18:36,362 [      6]   INFO -        #com.intellij.idea.Main - JVM: 20.0-b12 (Sun Microsystems Inc.) 
+2013-10-10 22:18:36,393 [     37]   INFO -        #com.intellij.idea.Main - JVM Args: -Xms128m -Xmx750m -XX:MaxPermSize=350m -XX:ReservedCodeCacheSize=96m -XX:+UseCodeCacheFlushing -ea -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -Djb.vmOptionsFile=./phpstorm64.vmoptions -Xbootclasspath/a:./../lib/boot.jar -Didea.paths.selector=WebIde60 -Didea.platform.prefix=PhpStorm -Didea.no.jre.check=true -Djb.restart.code=88 
+2013-10-10 22:18:36,426 [     70]   INFO -        #com.intellij.idea.Main - JNA library loaded (64-bit) in 33 ms 
+2013-10-10 22:18:36,760 [    404]   INFO -        #com.intellij.idea.Main - Snappy library loaded (1.0.4) in 334 ms 
+2013-10-10 22:18:36,869 [    513]   INFO - .intellij.idea.IdeaApplication - WM detected: FVWM 
+2013-10-10 22:18:39,217 [   2861]   INFO - llij.ide.plugins.PluginManager - 43 plugins initialized in 1902 ms 
+2013-10-10 22:18:39,217 [   2861]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: ASP (0.1), Apache config (.htaccess) support (129.814), Base Cucumber (1.0), CSS Support, CVS Integration (11), CoffeeScript (2.0), Command Line Tool Support (129.814), Database Support (1.0), File Watchers (999.999), Framework MVC Structure Support (129.814), GNU GetText files support (*.po) (129.SNAPSHOT), Git Integration (8.1), GitHub, Google App Engine Support for PHP (129.814), HAML, HTML Tools (2.0), IDEA CORE, Inspection-JS (2.0), IntelliLang (8.0), Java Server Pages Integration (1.0), JavaScript Debugger (1.0), JavaScript Intention Power Pack (0.9.4), JavaScript Support (1.0), LESS support, PHP (129.814), Perforce Integration (2.0), Phing Support (129.814), QuirksMode, REST Client, ReStructuredText Support (129.SNAPSHOT), Refactor-X (2.01), Remote Hosts Access (0.1), SASS support, SQL support (1.0), Subversion Integration (1.1), Task Management (1.0), TextMate bundles support (VERSION), UML Support (1.0), W3C Validators (2.0), XPathView + XSLT Support (4), XSLT-Debugger (1.4), YAML, hg4idea (10.0) 
+2013-10-10 22:18:40,640 [   4284]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=200; buffer=10; max=739246080 
+2013-10-10 22:18:40,710 [   4354]   INFO - api.vfs.impl.local.FileWatcher - Starting file watcher: /opt/phpstorm/bin/fsnotifier64 
+2013-10-10 22:18:40,781 [   4425]   INFO - api.vfs.impl.local.FileWatcher - Native file watcher is operational. 
+2013-10-10 22:18:43,792 [   7436]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/macros.xml file is null 
+2013-10-10 22:18:43,805 [   7449]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/quicklists.xml file is null 
+2013-10-10 22:18:45,608 [   9252]   INFO - pl.stores.ApplicationStoreImpl - 74 application components initialized in 5869 ms 
+2013-10-10 22:18:45,611 [   9255]   INFO - .intellij.idea.IdeaApplication - App initialization took 10965 ms 
+2013-10-10 22:18:45,643 [   9287]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/customization.xml file is null 
+2013-10-10 22:18:45,817 [   9461]   INFO - om.intellij.util.ProfilingUtil - Profiling agent is not enabled. Add -agentlib:yjpagent to idea.vmoptions if necessary to profile IDEA. 
+2013-10-10 22:18:46,653 [  10297]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/applicationLibraries.xml file is null 
+2013-10-10 22:18:48,692 [  12336]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/vcs.xml file is null 
+2013-10-10 22:18:48,775 [  12419]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/frameworkRootSettings.xml file is null 
+2013-10-10 22:18:48,811 [  12455]   INFO - ellij.project.impl.ProjectImpl - 118 project components initialized in 2015 ms 
+2013-10-10 22:18:48,936 [  12580]   INFO - le.impl.ModuleManagerComponent - 1 module(s) loaded in 124 ms 
+2013-10-10 22:18:49,903 [  13547]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/webServers.xml file is null 
+2013-10-10 22:18:49,984 [  13628]   INFO - .roots.impl.DirectoryIndexImpl - Directory index initialized in 11 ms, indexed 8 directories 
+2013-10-10 22:18:49,993 [  13637]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/sqldialects.xml file is null 
+2013-10-10 22:18:49,999 [  13643]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/plainTextFiles.xml file is null 
+2013-10-10 22:18:50,005 [  13649]   INFO - pl.PushedFilePropertiesUpdater - File properties pushed in 16 ms 
+2013-10-10 22:18:50,525 [  14169]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/templateLanguages.xml file is null 
+2013-10-10 22:18:50,538 [  14182]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/templateLanguages.xml file is null 
+2013-10-10 22:18:50,802 [  14446]   INFO - indexing.UnindexedFilesUpdater - Indexable files iterated in 686 ms 
+2013-10-10 22:18:50,803 [  14447]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 1 files to update 
+2013-10-10 22:18:50,942 [  14586]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update done in 139 ms 
+2013-10-10 22:18:51,819 [  15463]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/codeStyleSettings.xml file is null 
+2013-10-10 22:18:51,821 [  15465]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/projectCodeStyle.xml file is null 
+2013-10-10 22:18:51,994 [  15638]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/fileColors.xml file is null 
+2013-10-10 22:18:52,182 [  15826]   INFO - jetbrains.ide.WebServerManager - web server started, port 63342 
+2013-10-10 22:18:52,635 [  16279]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/IntelliLang.xml file is null 
+2013-10-10 22:18:53,107 [  16751]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/phing.xml file is null 
+2013-10-10 22:18:55,737 [  19381]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 9048 ms 
+2013-10-10 22:18:55,903 [  19547]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/webResources.xml file is null 
+2013-10-10 22:18:57,479 [  21123]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/cachedDictionary.xml file is null 
+2013-10-10 22:18:57,690 [  21334]   INFO - tellij.xml.Html5SchemaProvider - HTML5_SCHEMA_LOCATION = /opt/phpstorm/lib/phpstorm.jar!/resources/html5-schema/html5.rnc 
+2013-10-10 22:18:57,690 [  21334]   INFO - tellij.xml.Html5SchemaProvider - XHTML5_SCHEMA_LOCATION = /opt/phpstorm/lib/phpstorm.jar!/resources/html5-schema/xhtml5.rnc 
+2013-10-10 22:19:03,616 [  27260]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/dataSources.xml file is null 
+2013-10-10 22:19:03,632 [  27276]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/dataSources.xml file is null 
+2013-10-10 22:19:03,644 [  27288]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/jsLibraryMappings.xml file is null 
+2013-10-10 22:19:03,657 [  27301]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/sqlDataSources.xml file is null 
+2013-10-10 22:19:03,673 [  27317]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $APP_CONFIG$/php.xml file is null 
+2013-10-10 22:19:03,677 [  27321]   INFO - s.impl.stores.FileBasedStorage - Document was not loaded for $PROJECT_CONFIG_DIR$/php.xml file is null 
+2013-10-10 22:19:04,114 [  27758]   INFO -    #org.jetbrains.io.WebServer - web server stopped 
+2013-10-10 22:19:04,168 [  27812]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2013-10-10 22:19:04,213 [  27857]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2013-10-10 22:19:04,213 [  27857]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2013-10-10 22:19:04,213 [  27857]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2013-10-10 22:19:04,214 [  27858]   INFO - .history.utils.LocalHistoryLog - Purging local history... 
+2013-10-10 22:19:04,216 [  27860]   INFO - .history.utils.LocalHistoryLog - Local history storage successfully closed. 
+2013-10-10 22:19:04,250 [  27894]   WARN - api.vfs.impl.local.FileWatcher - Watcher terminated. 
+2013-10-10 22:19:04,261 [  27905]   WARN - ution.process.OSProcessHandler - Cannot kill process tree. Trying to destroy process using Java API. Cmdline:
+null 
+2013-10-10 22:19:04,261 [  27905]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2013-10-10 22:19:04,265 [  27909]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2013-10-10 22:19:04,269 [  27913]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
