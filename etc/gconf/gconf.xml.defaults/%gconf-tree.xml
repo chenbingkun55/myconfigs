@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="notification-daemon">
+				<entry name="default_sound" mtime="1381260939" type="schema" stype="string" owner="notification-daemon">
+					<local_schema locale="C" short_desc="Default Sound">
+						<default type="string">
+							<stringvalue></stringvalue>
+						</default>
+						<longdesc>The default sound file used unless a notification supplies the &apos;sound-file&apos; or &apos;suppress-sound&apos; hint.  Leave empty for no default sound.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sound_enabled" mtime="1381260939" type="schema" stype="bool" owner="notification-daemon">
+					<local_schema locale="C" short_desc="Sound Enabled">
+						<default type="bool" value="true"/>
+						<longdesc>Turns on and off sound support for notifications.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="theme" mtime="1381260939" type="schema" stype="string" owner="notification-daemon">
+					<local_schema locale="C" short_desc="Current theme">
+						<default type="string">
+							<stringvalue>slider</stringvalue>
+						</default>
+						<longdesc>The theme used when displaying notifications.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="popup_location" mtime="1381260939" type="schema" stype="string" owner="notification-daemon">
+					<local_schema locale="C" short_desc="Popup location">
+						<default type="string">
+							<stringvalue>top_right</stringvalue>
+						</default>
+						<longdesc>Default popup location on the workspace for stack notifications. Allowed values: &quot;top_left&quot;,&quot;top_right&quot;,&quot;bottom_left&quot; and &quot;bottom_right&quot;</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="notification-daemon">
+			<entry name="default_sound" mtime="1381260939" schema="/schemas/apps/notification-daemon/default_sound"/>
+			<entry name="sound_enabled" mtime="1381260939" schema="/schemas/apps/notification-daemon/sound_enabled"/>
+			<entry name="theme" mtime="1381260939" schema="/schemas/apps/notification-daemon/theme"/>
+			<entry name="popup_location" mtime="1381260939" schema="/schemas/apps/notification-daemon/popup_location"/>
+		</dir>
+	</dir>
+</gconf>

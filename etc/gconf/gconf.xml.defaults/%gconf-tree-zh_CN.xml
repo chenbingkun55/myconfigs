@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="notification-daemon">
+				<entry name="default_sound">
+					<local_schema short_desc="默认声音">
+						<longdesc>除非一个通知提供“sound-file”和“suppress-sound”提示时，使用的默认声音文件。留空表示没有默认声音。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sound_enabled">
+					<local_schema short_desc="声音已启用">
+						<longdesc>为通知打开和关闭声音支持</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="theme">
+					<local_schema short_desc="当前主题">
+						<longdesc>显示通知时使用的主题。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="popup_location">
+					<local_schema short_desc="弹出区域">
+						<longdesc>工作区上放置通知的默认弹出区域。允许的值为：“top_left”(左上)，“top_right”(右上)，“bottom_left”(左下) 和“bottom_right”(右下)</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

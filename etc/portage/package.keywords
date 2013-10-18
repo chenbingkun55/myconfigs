@@ -1,0 +1,9 @@
+www-client/google-chrome  ~amd64
+net-wireless/broadcom-sta  ~amd64
+dev-db/mariadb ~amd64
+sys-firmware/b43-firmware ~amd64
+dev-haskell/dns  ~amd64
+dev-haskell/network-bytestring ~amd64
+app-crypt/truecrypt ~amd64
+dev-python/embedly ~amd64
+media-libs/fdk-aac ~amd64

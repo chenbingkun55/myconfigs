@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Parcellite
+Name[zh_CN]=Parcellite
+Comment=Clipboard Manager
+Comment[zh_CN]=剪切板管理器
+Icon=parcellite
+Exec=parcellite
+Terminal=false
+Type=Application
+OnlyShowIn=GNOME;XFCE;
+X-GNOME-Autostart-enabled=true

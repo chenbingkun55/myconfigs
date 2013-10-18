@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Disk Notifications
+Name[zh_CN]=磁盘通告
+Comment=Provides notifications related to disks
+Comment[zh_CN]=提供磁盘相关的通告
+Icon=gdu-notification-daemon
+Exec=/usr/libexec/gdu-notification-daemon
+Terminal=false
+Type=Application
+Categories=
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-disk-utility
+X-GNOME-Bugzilla-Component=notifications
+X-GNOME-Bugzilla-Version=3.0.2
+#X-GNOME-AutoRestart=true
+NotShowIn=KDE;
