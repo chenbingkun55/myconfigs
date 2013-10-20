@@ -92,5 +92,5 @@ Cmnd_Alias ALLOW_CMD = /usr/bin/emerge,/usr/sbin/iftop,/usr/sbin/pon, \
 	/usr/sbin/poff,/bin/mount,/bin/umount,/sbin/reboot,/bin/tail, \
         /bin/kill,/sbin/shutdown,/usr/sbin/nethogs
 
-chenbk gentoo-pc=(ALL) ALL
-chenbk gentoo-pc=(ALL) NOPASSWD: ALLOW_CMD
+chenbk Gentoo-pc=(ALL) ALL
+chenbk Gentoo-pc=(ALL) NOPASSWD: ALLOW_CMD

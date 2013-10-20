@@ -11,7 +11,7 @@ XTerm*jumpScroll: true
  
 xterm.termName: xterm-256color 
 xterm.geometry: 80x36 
-xterm*scrollBar: false 
+xterm*scrollBar: true 
 xterm*rightScrollBar: true 
 xterm*loginshell: true 
 xterm*cursorBlink: true 

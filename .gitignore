@@ -18,5 +18,6 @@ tmp/
 usr/
 var/
 home/
+/session*
 !/home/chenbk
 !chenbk/

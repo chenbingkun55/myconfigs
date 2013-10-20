@@ -1,0 +1,164 @@
+#######################
+# ChenBK at 20131020 02:16
+#
+# FVWM config setup
+
+
+####
+#  全局变量
+#######
+# 路径变量
+SetEnv fvwm_img $[FVWM_USERDIR]/.fvwm/images
+SetEnv fvwm_icon $[FVWM_USERDIR]/.fvwm/icons
+SetEnv fvwm_script $[FVWM_USERDIR]/.fvwm/script.d
+SetEnv fvwm_wallpapers $[FVWM_USERDIR]/.fvwm/wallpapers
+# SetEnv fvwm-img $[FVWM_USERDIR]/.fvwm/images
+# 默认程序变量
+SetEnv FvwmBrowser /usr/bin/firefox
+SetEnv FvwmXterm /usr/bin/xterm
+
+
+####
+# 图片路径
+#######
+ImagePath $[fvwm_icon]:$[fvwm_icon];.png:$[fvwm_wallpapers]:+
+
+
+####
+# 虚拟桌面个数
+######
+DesktopSize 3x3
+DesktopName 0 主桌面
+DesktopName 1 任务桌面
+DesktopName 2 休闲桌面
+EdgeScroll 100 100
+EdgeResistance 500 500
+# 自动滚屏 1-开启 0-禁用
+EdgeThickness 1     
+
+
+####
+# 鼠标获得焦点
+######
+ClickTime 350
+MoveThreshold 3
+Style * SloppyFocus, MouseFocusClickRaises
+
+
+####
+# 默认桌面环境
+######
+EwmhBaseStruts 0 0 0 50
+IgnoreModifiers L25
+
+
+####
+# 全局样式定义
+######
+Style * TileCascadePlacement, GrabFocusOff
+Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:antialias=True"
+Style * NoPPosition, ResizeOpaque
+OpaqueMoveSize -1
+Emulate MWM
+HideGeometryWindow Never
+SnapAttraction 5 SameType Screen
+SnapGrid 3 3
+XorValue 55555
+Style * DecorateTransient, DontRaiseTransient
+Style * DontLowerTransient, StackTransientParent
+Style * GrabFocusTransientOff
+Style * WindowShadeSteps 20, WindowShadeScrolls
+SetAnimation 10 -.01 0 .01 .03 .08 .3 .45 .6 .75 .85 .90 .94 .97 .99 1.0
+Style * MwmDecor, SlipperyIcon
+Style * IconBox screen w 15 15 -165 -15, IconGrid 3 3, IconFill right top 
+
+
+
+
+####
+# 单个程序样式定义
+######
+Style "*" Icon 48x48/unknown.xpm
+Style "uxterm" Icon 48x48/xterm.png, NoActiveIconOverride, MiniIcon mini/xterm.png
+Style "Firefox" Icon 48x48/firefox.png NoActiveIconOveride, MinIcon mini/firefox.png
+
+
+
+####
+# 程序运行函数
+#######
+DestroyFunc FvwmXTerm
+AddToFunc FvwmXTerm
++ I Exec exec uxterm
+
+
+
+####
+# 启动\初始化\重新启动 函数
+######
+DestroyFunc StartFunction
+AddToFunc StartFunction
+# + I Module FvwmTaskBar
++ I Module FvwmPager 0 2
++ I Module FvwmButtons MyButtons
+
+DestroyFunc InitFunction
+AddToFunc InitFunction
+# + I Exec exec xscreensaver
+# + I Exec exec fvwm-root -r $[fvwm_wallpapers]/1.png
++ I Exec exec fbpanel
++ I Exec exec pcmanfm --desktop
++ I Exec exec conky
++ I Exec exec fcitx
++ I Exec exec xrdb ~/.Xresources
+
+DestroyFunc RestartFunction
+AddToFunc RestartFunction
++ I Nop
+
+
+####
+# 快捷键绑定
+######
+Key F1 A M Menu MenuFvwmRoot
+Key F4 A A Module FvwmConsole -geometry 50x6+45+45
+
+
+####
+# 鼠标设定
+######
+Mouse 3 R A MenuFvwmRoot
+
+
+####
+# 菜单 颜色
+######
+Colorset 7 fg Black, bg #e6e7d7, sh Black, hi #202070
+Colorset 8 fg DarkRed, bg #e6e7d7, sh Black, hi #202070
+
+
+####
+# 菜单的风格
+######
+MenuStyle * PopupOffset -5 100, TitleWarpOff
+MenuStyle * TitleUnderlines2, SeparatorsLong, TriangLesSolid
+MenuStyle * AnimationOff, AutomaticHotkeyOff
+MenuStyle * BorderWidth 2
+MenuStyle * PopupAsSubmenu, HoldSubmenus, SubmenusRight
+MenuStyle * ItemFormat "%|%5.5i%1.31%2.3>%|"
+MenuStyle * VerticalItemSpacing 1 1, VerticalTitleSpacing 2 2
+MenuStyle * MenuColorset 7
+MenuStyle * ActiveFore, Hilight3DOff
+MenuStyle * ActiveColorset 8
+MenuStyle * Font "Shadow=2:xft: Sans: Bold: size=11:antialias=True"
+
+
+####
+# 菜单内容
+######
+DestroyMenu FvwmRootMenu
+AddToMenu FvwmRootMenu "菜单"
++ "XTerm%48x48/xterm.png%"  FvwmXterm
+
+
