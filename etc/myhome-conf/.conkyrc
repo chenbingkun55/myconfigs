@@ -56,7 +56,7 @@ lua_draw_hook_pre clock_rings
 TEXT
 ${voffset 8}${color FF6600}${font Microsoft YaHei:size=16}${time %A}${font}${voffset -8}${alignr 50}${color FFFFFF}${font Microsoft YaHei:size=38}${time %e}${font}
 ${color FFFFFF}${voffset -30}${color FFFFFF}${font Microsoft YaHei:size=18}${time %b}${font}${voffset -3} ${color FFFFFF}${font Microsoft YaHei:size=20}${time %Y}${font}${color FF6600}${hr}
-${voffset 140}${font Microsoft YaHei:size=10}${alignr}我的时钟${font}
+${voffset 150}${font Microsoft YaHei:size=10}${alignr}我的时钟${font}
 ${font Microsoft YaHei:size=10}${color FFFFFF}${alignr}我的系统监视面板${font}
 
 ${color FFFFFF}${goto 5}${voffset 30}${cpu cpu0}%

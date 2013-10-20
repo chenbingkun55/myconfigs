@@ -1,118 +1,3 @@
-./configure 
-equery python
-equery b python
-equery s python
-ls
-equery f python-2.7.5-r2
-equery f python-2.7.5-r2 |more
-su -
-exit
-cd /tmp/ntfs-config-1.0.1
-cd /tmp/ntfs-config-1.0.1/
-ls
-./configure --help
-./configure --help | more
-vi .configure
-vi configure
-./configure 
-make
-sudo make install
-su -
-exit
-su -
-vi .config/fbpanel/default 
-vi .Xresources 
-exit
-vi .Xresources 
-exit
-ls
-vi .Xresources 
-vi .bashrc 
-vi .fvwm/config 
-exit
-whereis nethogs
-cd Desktop/
-ls
-tar zxvf hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz  -C /tmp/
-ls /lib/modules/3.10.7-gentoo-r1/build/
-cd /tmp/
-ls
-make clean
-make
-cd /lib/modules/3.10.7-gentoo-r1/build/
-ls
-mkdir hybrid_wl
-su -
-sudo pon twvpn
-sudo visudo
-sudo pon twvpn
-ifconfig 
-ls
-cd hybrid_wl/
-ls
-ls lib/
-ls src/
-make
-su -
-exit
-pcmanfm --desktop
-chenbk@gentoo-pc ~ $ 
-ifconfig 
-sudo pon twvpn
-sudo emrege -av nethogs
-sudo emerge -av nethogs
-su -
-sudo nethogs enp7s0
-sudo visudo
-nethogs lo
-sudo nethogs lo
-sudo emerge -av ffmpeg
-USE="X aac alsa bindist bzip2 encode hardcoded-tables mmx mp3 sdl truetype vaapi vorbis x264 xvid zlib -3dnow -3dnowext -aacplus (-altivec) -amr -avx -bluray -cdio (-celt) -cpudetection -debug -doc -examples -faac -fdk -flite -fontconfig -frei0r -gnutls -gsm -iec61883 -ieee1394 -jack -jpeg2k -libass -libcaca -libv4l -mmxext -modplug (-neon) -network -openal -openssl -opus -oss -pic -pulseaudio -rtmp -schroedinger -speex -ssse3 -static-libs {-test} -theora -threads -twolame -v4l -vdpau (-vis) -vpx" sudo emerge ffmpeg
-USE="X aac alsa bindist bzip2 encode hardcoded-tables mmx mp3 sdl truetype vaapi vorbis x264 xvid zlib 3dnow 3dnowext aacplus amr avx bluray cdio  cpudetection -debug doc faac fdk flite fontconfig frei0r gnutls gsm iec61883 ieee1394 jack jpeg2k libass libcaca libv4l mmxext modplug  network -openal -openssl opus -oss pic pulseaudio rtmp schroedinger speex ssse3 theora threads twolame v4l vdpau vpx" sudo emerge --ask ffmpeg
-USE="X aac alsa bindist bzip2 encode hardcoded-tables mmx mp3 sdl truetype vaapi vorbis x264 xvid zlib 3dnow 3dnowext aacplus amr avx bluray cdio  cpudetection -debug doc faac fdk flite fontconfig frei0r gnutls gsm iec61883 ieee1394 jack jpeg2k libass libcaca libv4l mmxext modplug  network -openal -openssl opus -oss pic pulseaudio rtmp schroedinger speex ssse3 theora threads twolame v4l vdpau vpx" sudo emerge --ask -v ffmpeg
-su -
-ext
-exit
-su -
-lsmod 
-ifconfig -a
-ifconfig wlan0 up
-su -
-exit
-cd Desktop/wlan.txt
-st Desktop/wlan.txt
-su -
-cd /tmp/wl
-patch -p2 < ~/Downloads/wl_3.10.patch 
-make
-sudo make
-sudo make install
-sudo depmod
-sudo modprobe wl
-lsmod
-ifconfig 
-su - iwconfig
-sudo iwconfig
-ifconfig -a
-su -
-cd /tmp/wl/
-patch -p2 < ~/Downloads/wl_3.10.patch 
-sudo make
-sudo rmmod wl
-lsmod
-ls
-sudo make install
-ifconfig 
-ifconfig -a
-su -
-cd /tmp/
-mkdir wl
-cd wl/
-tar zxvf /home/chenbk/Desktop/hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz 
-ls
-make clean
-cd
-cd /tmp/wl/
 patch -p2 < ~/Downloads/wl_3.10.patch 
 su -
 su -
@@ -498,3 +383,118 @@ git rm -q .
 git rm -f
 shutdown reboot
 sudo reboot
+git status 
+cd /
+git status
+git rm etc/myhome-conf/.thumbnails
+git rm etc/myhome-conf/.thumbnails/
+git reset
+git status
+git add .
+git commit -a
+git status 
+git commit 
+git commit -a -m "del"
+git status
+git 
+git push -u origin master 
+git add .
+su -
+id chenbk
+vi /home/chenbk/.fvwm/config 
+git status
+git diff
+vi /home/chenbk/.fvwm/config 
+git diff
+sudo pon
+sudo pon twvpn
+ifconfig 
+cd /
+du -sh .git
+git status
+ls /usr/share/et/
+ls /etc/myhome-conf/
+ls /etc/myhome-conf/ -al
+cd /etc/myhome-conf/.fvwm/
+ll
+cd ..
+mkdir .myhome-fvwm
+cd .myhome-fvwm/
+vi config
+vi fvwm2rc
+st fvwm2rc 
+vi fvwm2rc
+st fvwm2rc 
+vi fvwm2rc
+less fvwm2rc
+vi fvwm2rc 
+cd /etc/myhome-conf/.myhome-fvwm/
+whereis uterm
+whereis term
+less ../.fvwm/config 
+whereis uxterm
+fbpanel 
+whereis fbpanel 
+mkdir images
+mkdir icons
+mkdir script.d
+mkdir wallpapers
+cp ../.fvwm/wallpapers/_MG_8329.png images/1.png
+cd ..
+rm /home/chenbk/.fvwm
+ln -s /etc/myhome-conf/.myhome-fvwm/ /home/chenbk/.fvwm
+whereis conky
+ls .fvwm/
+cp .fvwm/fvwm2rc .fvwm/config
+exit
+cd .fvwm/
+ls
+vi config 
+exit
+fbpanel exit
+exit
+vi .fvwm/config 
+vi .fvwm/config 
+vi .fvwm/config 
+less /etc/myhome-conf/.fvwm/config 
+vi .fvwm/config 
+eixt
+exit
+exit
+exit
+exit
+vi .fvwm/config 
+less /etc/myhome-conf/.fvwm/config 
+vi .fvwm/config 
+/etc/init.d/xdm restart
+sudo /etc/init.d/xdm restart
+cd /
+git status
+git add etc/myhome-conf/
+git status
+git add etc/myhome-conf
+git status
+rm /etc/myhome-conf/.myhome-fvwm/fvwm2rc 
+sudo shutdown -h now 
+vi .fvwm/config 
+exit
+xscreeensaver
+exit
+conky 
+vi .fvwm/config 
+exit
+vi .fvwm/config 
+vi .conkyrc
+vi .conkyrc
+vi .fvwm/config 
+exit
+less /etc/myhome-conf/.fvwm/config 
+less /etc/myhome-conf/.fvwm/config 
+vi .fvwm/config 
+fvwm --help
+gvim .fvwm/config 
+vi .fvwm/config 
+vi .fvwm/config 
+fvwm -c reload
+fvwm -c relstart
+vi .fvwm/config 
