@@ -35,6 +35,28 @@ EdgeResistance 500 500
 # 自动滚屏 1-开启 0-禁用
 EdgeThickness 1     
 
+####
+# 桌面页配置
+######
+*FvwmPager: Rows 3
+*FvwmPager: Columns 1
+*FvwmPagerBack #908090
+*FvwmPagerFore #484048
+*FvwmPager: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
+*FvwmPagerHilight #cab3ca
+*FvwmPagerLabel 0 主桌面
+*FvwmPagerLabel 1 任务桌面
+*FvwmPagerLabel 2 休闲桌面
+*FvwmPager: SmallFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
+*FvwmPagerBalloons   All
+*FvwmPagerBalloonBack Yellow
+*FvwmPagerBalloonFore Black
+*FvwmPagerBalloonFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
+*FvwmPagerBalloonYOffset +2
+*FvwmPagerBalloonBorderWidth 1
+*FvwmPagerBalloonBorderColor Black
+
+
 
 ####
 # 鼠标获得焦点
@@ -59,6 +81,8 @@ Style * TitleCascadePlacement, GrabFocusOff
 Style "Fvwm*" NoTitle, Sticky, WindowListSkip
 Style "Fvwm*" BorderWidth 2, CirculateSkipIcon, CirculateSkip
 Style "FvwmPager" StaysOnTop
+Style "MainPanel" StaysOnTop
+Style "PagerPanel" StaysOnTop
 Style "FvwmBanner" StaysOnTop
 Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
 Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
@@ -107,15 +131,16 @@ AddToFunc FvwmXTerm
 ######
 DestroyFunc StartFunction
 AddToFunc StartFunction
-# + I Module FvwmTaskBar
-+ I Module FvwmPager 0 2
-+ I Module FvwmButtons MyButtons
++ I Module FvwmTaskBar
+# + I Module FvwmPager 0 2
++ I Module FvwmButtons MainPanel
+
 
 DestroyFunc InitFunction
 AddToFunc InitFunction
 # + I Exec exec xscreensaver
 # + I Exec exec fvwm-root -r ~/.fvwm/wallpapers/1.png
-+ I Exec exec fbpanel
+# + I Exec exec fbpanel
 + I Exec exec pcmanfm --desktop
 # + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
 + I Exec exec conky
@@ -195,8 +220,52 @@ AddToMenu FvwmRootMenu "%fcitx.png%=== 主菜单===" Title
 + "应用程序"   Popup ProgramsMenu
 + "工具"   Popup UtilitiesMenu
 + ""  Nop
-+ "注销%application-exit.png%"   Exec exec killall -s QUIT fvwm
++ "注销%application-exit.png%"   Quit
 + "重启%view-refresh.png%"   Exec exec sudo shutdown -r now
 + "关机"   Exec exec sudo shutdown -h now
 
 
+
+####
+# 按钮配置
+######
+*FvwmButtonsBack bisque3
+*MainPanel: Geometry 120x18+2+2
+*MainPanel: Back SeaGreen
+*MainPanel: (Panel(down, indicator, delay 0, steps 1) \
+	PagerPanel "Module FvwmButtons PagerPanel")
+*MainPanel: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
+*PagerPanel: Geometry 120x352
+*PagerPanel: (Swallow FvwmPager "Module FvwmPager 0 2")
+*PagerPanelBack #908090
+*PagerPanelFore #484048
+*PagerPanel: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
+
+
+# Module FvwmButtons MainPanel
+
+
+####
+# 工具栏
+######
+Style FvwmTaskBar HandleWidth 0, BorderWidth 0
+*FvwmTaskBar: UseSkipList
+*FvwmTaskBar: AutoStick
+*FvwmTaskBar: DeskOnly
+*FvwmTaskBar: Action Click1 DeiconifyRaiseAndFocus
+*FvwmTaskBar: Action Click2 Iconify On
+*FvwmTaskBar: Action Click3 Lower
+*FvwmTaskBar: MailCommand Exec exec uxtrem -e mutt
+*FvwmTaskBar: 3DFvwm
+*FvwmTaskBar: StartName FVWM
+*FvwmTaskBar: StartMenu FvwmRootMenu
+*FvwmTaskBar: Font 
+*FvwmTaskBar: SelFont 
+*FvwmTaskBar: ShowTips
+*FvwmTaskBar: ClockFormat
+*FvwmTaskBar: windowButtionsRightMargin 20
+*FvwmTaskBar: Back seagreen
+*FvwmTaskBar: Fore gold2
+*FvwmTaskBar: FocusFore cornsilk
+*FvwmTaskBar: IconBack darkgreen
+*FvwmTaskBar: IconFore white

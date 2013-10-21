@@ -1,62 +1,3 @@
-git add .
-su -
-id chenbk
-vi /home/chenbk/.fvwm/config 
-git status
-git diff
-vi /home/chenbk/.fvwm/config 
-git diff
-sudo pon
-sudo pon twvpn
-ifconfig 
-cd /
-du -sh .git
-git status
-ls /usr/share/et/
-ls /etc/myhome-conf/
-ls /etc/myhome-conf/ -al
-cd /etc/myhome-conf/.fvwm/
-ll
-cd ..
-mkdir .myhome-fvwm
-cd .myhome-fvwm/
-vi config
-vi fvwm2rc
-st fvwm2rc 
-vi fvwm2rc
-st fvwm2rc 
-vi fvwm2rc
-less fvwm2rc
-vi fvwm2rc 
-cd /etc/myhome-conf/.myhome-fvwm/
-whereis uterm
-whereis term
-less ../.fvwm/config 
-whereis uxterm
-fbpanel 
-whereis fbpanel 
-mkdir images
-mkdir icons
-mkdir script.d
-mkdir wallpapers
-cp ../.fvwm/wallpapers/_MG_8329.png images/1.png
-cd ..
-rm /home/chenbk/.fvwm
-ln -s /etc/myhome-conf/.myhome-fvwm/ /home/chenbk/.fvwm
-whereis conky
-ls .fvwm/
-cp .fvwm/fvwm2rc .fvwm/config
-exit
-cd .fvwm/
-ls
-vi config 
-exit
-fbpanel exit
-exit
-vi .fvwm/config 
-vi .fvwm/config 
-vi .fvwm/config 
-less /etc/myhome-conf/.fvwm/config 
 vi .fvwm/config 
 eixt
 exit
@@ -497,4 +438,63 @@ killall --help
 killall -l
 killall -s QUIT fvwm
 vi .fvwm/config
+vi .fvwm/config
+git status
+git status
+cd /
+git status
+git status
+git status
+git add .
+git commit -m "Fvwm 重要进展,菜单己实现"
+git push
+git config --global push.default matching
+git push
+exit
+vi .fvwm/config
+cd /
+git status
+vi .gitignore 
+vi .gitignore 
+exit
+less .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
+exit
+vi .fvwm/config
+exit
+less .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+less .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+less .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+less .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+less .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
 vi .fvwm/config

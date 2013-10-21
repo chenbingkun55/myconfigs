@@ -1,3 +1,5 @@
 [user]
 	email = chenbingkun55@163.com
 	name = chenbingkun55
+[push]
+	default = matching
