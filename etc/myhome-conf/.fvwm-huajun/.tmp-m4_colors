@@ -1,0 +1,197 @@
+# colors@luthien
+
+# more details and comments can be found in colors@default
+# I.   FVWM Colorsets
+# II.  Module Colorsets
+# III. Application Colorsets
+# IV.  Start/Stop Functions
+
+  # expand macros even in comments; needed for #rrggbb colors
+# load the CDE_COLOR* using m4 (optimized for GNU m4)
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ----------------------------------------------------------------------------
+# I. FVWM Colorsets
+
+# ----------------
+# Default colorset
+
+Colorset 0 fg black, bg springgreen3, Plain, NoShape
+
+# ------------------
+# Window decorations
+
+# window title, inactive and active
+Colorset 1 fg black, bg deepskyblue3, Plain, NoShape
+Colorset 2 fg black, bg goldenrod3, Plain, NoShape
+
+# window borders, inactive and active
+Colorset 3 fg black, bg deepskyblue3, Plain, NoShape
+Colorset 4 fg black, bg goldenrod3, Plain, NoShape
+
+# background for window title, buttons and border
+DestroyFunc FuncFvwmDecorBackground
+AddToFunc   FuncFvwmDecorBackground
++ I TitleStyle AllInactive VGradient 30 deepskyblue4 deepskyblue3
++ I TitleStyle AllActive   VGradient 30 goldenrod3 springgreen4
+#
++ I ButtonStyle All Simple -- UseTitleStyle
+
+# --------------
+# Menu Colorsets
+
+# inactive menu item fg+bg and menu face
+Colorset 5 fg black, bg springgreen3, \
+	VGradient 100 deepskyblue4 springgreen3, NoShape
+
+# active menu item fg+bg
+Colorset 6 fg black, bg springgreen3, Plain, NoShape
+
+# greyed menu item fg
+Colorset 7 fg grey20, bg grey20, Plain, NoShape
+
+# ----------------------------------------------------------------------------
+# II. Module Colorsets
+
+# ----------------
+# Common Colorsets
+
+# default for modules
+Colorset 10 fg black, bg springgreen3, \
+	VGradient 100 deepskyblue4 springgreen3, NoShape
+
+# default hilight
+Colorset 11 fg black, bg lightgoldenrod2, Plain, NoShape
+
+# special
+Colorset 12 fg black, bg goldenrod3, \
+	VGradient 26 goldenrod3 springgreen3, NoShape
+
+# swallowed window
+Colorset 13 fg black, bg springgreen3, \
+	hi black, sh goldenrod3, Plain, NoShape
+
+# default2 (FvwmPager or to get more colors in Buttons)
+Colorset 14 fg black, bg springgreen3, Plain, NoShape
+
+# default hilight2: (FvwmPager or to get more colors in a Buttons)
+Colorset 15 fg black, bg lightgoldenrod2, Plain, NoShape
+
+# tips/balloons
+Colorset 16 fg black, bg springgreen3, \
+	VGradient 100 deepskyblue4 springgreen3, NoShape
+
+# ----------------------------
+# Window List Module Colorsets
+
+# standard item
+Colorset 17 fg black, bg darkslategray3, Plain, NoShape
+
+# active item
+Colorset 18 fg black, bg goldenrod3, Plain, NoShape
+
+# iconified item
+Colorset 19 fg black, bg springgreen3, Plain, NoShape
+
+# pointed item
+Colorset 20 fg black, bg lightgoldenrod2, Plain, NoShape
+
+# ----------------------
+# Other Module Colorsets
+
+# FvwmIdent
+Colorset 21 fg black, bg springgreen3, \
+	VGradient 100 deepskyblue4 springgreen3, NoShape
+
+# FvwmConsole
+Colorset 22 fg white, bg deepskyblue4, Plain, NoShape
+
+# ----------------------------------------------------------------------------
+# III. Application Colorsets
+
+# regular terminal
+Colorset 30 fg white, bg grey20, Plain, NoShape
+
+# admin terminal
+Colorset 31 fg white, bg deepskyblue4, Plain, NoShape
+
+# remote terminal
+Colorset 32 fg black, bg darkslategray3, Plain, NoShape
+
+# viewer terminal
+Colorset 33 fg white, bg springgreen4, Plain, NoShape
+
+# application run in the terminal, text editor
+Colorset 34 fg white, bg grey20, Plain, NoShape
+
+# dialog main area
+Colorset 35 fg black, bg springgreen3, Plain, NoShape
+
+# dialog text area
+Colorset 36 fg white, bg grey20, Plain, NoShape
+
+# ----------------------------------------------------------------------------
+# IV. Start/Stop Functions
+
+DestroyFunc FuncFvwmStartColors
+AddToFunc   FuncFvwmStartColors
++ I DestroyFunc FuncFvwmShowColourTable
++ I AddToFunc   FuncFvwmShowColourTable
++ I + I FvwmButtons FvwmButtons-ColourTable
+
+DestroyFunc FuncFvwmStopColors
+AddToFunc   FuncFvwmStopColors
++ I FuncFvwmStopModuleByAlias FvwmButtons FvwmButtons-ColourTable
++ I DestroyModuleConfig FvwmButtons-ColourTable: *
++ I DestroyFunc FuncFvwmToggleColorsFile
++ I DestroyFunc FuncFvwmShowColourTable
++ I AddToFunc   FuncFvwmShowColourTable
++ I + I FuncFvwmNoColourTable
+
+DestroyFunc FuncFvwmToggleColorsFile
+AddToFunc   FuncFvwmToggleColorsFile
++ I None ("* - /usr/share/fvwm/themes/luthien/colors/palettes/Spring.dp") FuncFvwmViewFile "/usr/share/fvwm/themes/luthien/colors/palettes/Spring.dp"
++ I Next ("* - /usr/share/fvwm/themes/luthien/colors/palettes/Spring.dp") Delete
+
+*FvwmButtons-ColourTable: Frame       0
+#*FvwmButtons-ColourTable: Geometry    260x36+0+0
+*FvwmButtons-ColourTable: Geometry    324x44
+*FvwmButtons-ColourTable: Rows        1
+*FvwmButtons-ColourTable: Columns     8
+*FvwmButtons-ColourTable: BoxSize     fixed
+*FvwmButtons-ColourTable: Padding     0 0
+*FvwmButtons-ColourTable: (Title [1], Back goldenrod3, Fore black, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [2], Back springgreen3, Fore black, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [3], Back deepskyblue3, Fore black, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [4], Back grey20, Fore white, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [5], Back springgreen4, Fore white, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [6], Back deepskyblue4, Fore white, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [7], Back darkslategray3, Fore black, \
+	Action FuncFvwmToggleColorsFile)
+*FvwmButtons-ColourTable: (Title [8], Back lightgoldenrod2, Fore black, \
+	Action FuncFvwmToggleColorsFile)
+

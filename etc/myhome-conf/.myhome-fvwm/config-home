@@ -20,7 +20,7 @@ SetEnv FvwmBrowser /usr/bin/firefox
 ####
 # 图片路径
 #######
-ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:$[fvwm_icon]:$[fvwm_wallpapers]
+ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:$[fvwm_icon]:$[fvwm_wallpapers]
 
 
 ####
@@ -162,17 +162,59 @@ AddToFunc ExitFunction
 ####
 # 快捷键绑定
 ######
-Key F1 A A Module FvwmRootMenu
+Key F1 A A Module FuncMenu
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+45+450 \
 	-bg gold -fg midnightblue
+# Alt+Ctrl+n 标记n号窗回,Ctrl+n回到n号标记的窗口
+Key 0 WI MC Key 0 A C WindowId $[w.id] WarpToWindow 50 50
+Key 1 WI MC Key 1 A C WindowId $[w.id] WarpToWindow 50 50
+Key 2 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
+Key 3 WI MC Key 3 A C WindowId $[w.id] WarpToWindow 50 50
+Key 4 WI MC Key 4 A C WindowId $[w.id] WarpToWindow 50 50
+Key 5 WI MC Key 5 A C WindowId $[w.id] WarpToWindow 50 50
+Key 6 WI MC Key 6 A C WindowId $[w.id] WarpToWindow 50 50
+Key 7 WI MC Key 7 A C WindowId $[w.id] WarpToWindow 50 50
+Key 8 WI MC Key 8 A C WindowId $[w.id] WarpToWindow 50 50
+Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
+
+
+###### Start_1  Ctrl+Shift+n 标记n号窗回,Alt+n回到n号标记的窗口
+#Key 0 WI SC State 0
+#Key 1 WI SC State 1
+#Key 2 WI SC State 2
+#Key 3 WI SC State 3
+#Key 4 WI SC State 4
+#Key 5 WI SC State 5
+#Key 6 WI SC State 6
+#Key 7 WI SC State 7
+#Key 8 WI SC State 8
+#Key 9 WI SC State 9
+
+#DestroyFunc GroupFunc
+#AddToFunc GroupFunc I Layer 1
+#+ I MoveToPage
+#+ I Iconify off
+#+ I Raise
+
+#Key 0 A M All (State 0) GroupFunc
+#Key 1 A M All (State 1) GroupFunc
+#Key 2 A M All (State 2) GroupFunc
+#Key 3 A M All (State 3) GroupFunc
+#Key 4 A M All (State 4) GroupFunc
+#Key 5 A M All (State 5) GroupFunc
+#Key 6 A M All (State 6) GroupFunc
+#Key 7 A M All (State 7) GroupFunc
+#Key 8 A M All (State 8) GroupFunc
+#Key 9 A M All (State 9) GroupFunc
+####### End_1
 
 
 
 ####
 # 鼠标设定
 ######
-Mouse 3 R A Menu FvwmRootMenu Nop
-Mouse 1 A C Menu FvwmRootMenu Nop
+Mouse 1 R A Menu FuncMenu Nop
+Mouse 3 R A Menu ConfMenu Nop
 # 预留 Ctrl + Mouse 右键 实现Scroll 功能.
 
 
@@ -207,8 +249,8 @@ MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:anti
 ####
 # 菜单内容
 ######
-DestroyMenu FvwmRootMenu
-AddToMenu FvwmRootMenu "%fcitx.png%=== 主菜单===" Title
+DestroyMenu FuncMenu
+AddToMenu FuncMenu "%fcitx.png%=== 主菜单===" Title
 + "终端  - &Xterm%utilities-terminal.png%"  Exec exec uxterm
 + "浏览器- &Firefox%web-browser.png%"  Exec exec firefox
 + "浏览器- &Opera%opera-browser.png%"  Exec exec opera
@@ -232,7 +274,7 @@ AddToMenu FvwmRootMenu "%fcitx.png%=== 主菜单===" Title
 *FvwmButtonsBack bisque3
 *MainPanel: Geometry 120x18+2+2
 *MainPanel: Back SeaGreen
-*MainPanel: (Panel(down, indicator, delay 0, steps 1) \
+*MainPanel: (Title "桌面 [Win+D]", Panel(down, indicator, delay 0, steps 1) \
 	PagerPanel "Module FvwmButtons PagerPanel")
 *MainPanel: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
 *PagerPanel: Geometry 120x352
@@ -258,7 +300,7 @@ Style FvwmTaskBar HandleWidth 0, BorderWidth 0
 *FvwmTaskBar: MailCommand Exec exec uxtrem -e mutt
 *FvwmTaskBar: 3DFvwm
 *FvwmTaskBar: StartName FVWM
-*FvwmTaskBar: StartMenu FvwmRootMenu
+*FvwmTaskBar: StartMenu FuncMenu
 *FvwmTaskBar: Font 
 *FvwmTaskBar: SelFont 
 *FvwmTaskBar: ShowTips

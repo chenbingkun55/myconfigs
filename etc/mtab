@@ -1,5 +1,5 @@
 rootfs / rootfs rw 0 0
-/dev/sda3 / ext3 rw,noatime,errors=continue,user_xattr,acl,barrier=1,data=ordered 0 0
+/dev/sda3 / ext3 rw,noatime,commit=0 0 0
 proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
 tmpfs /run tmpfs rw,nosuid,nodev,relatime,mode=755 0 0
 udev /dev devtmpfs rw,nosuid,relatime,size=10240k,nr_inodes=379554,mode=755 0 0
@@ -13,5 +13,5 @@ cpuset /sys/fs/cgroup/cpuset cgroup rw,nosuid,nodev,noexec,relatime,cpuset 0 0
 cpu /sys/fs/cgroup/cpu cgroup rw,nosuid,nodev,noexec,relatime,cpu 0 0
 cpuacct /sys/fs/cgroup/cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpuacct 0 0
 freezer /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0
-/dev/sda5 /home ext3 rw,noatime 0 2
+/dev/sda5 /home ext3 rw,noatime,commit=0 0 2
 binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nodev,noexec,nosuid 0 0

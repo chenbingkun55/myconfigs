@@ -1,0 +1,207 @@
+# This file should be processed using FvwmM4 like:
+#   ModuleSynchronous FvwmM4 -lock -m4-squote {{ -m4-equote }} \
+#     -DBcN=1 -DBmN=2 -DBoN=3 -DBiN=4 -DBlN=5 -DBrN=6 buttons
+
+# Button roles used: Options, Close, Maximize, Iconify, Stick,
+# ShadeUp, ShadeDown; and pseudo buttons: TitleLeft, TitleRight
+
+FuncFvwmDecorBackground
+
+# override the colors titlestyle
+# warning $. expand to FVWM_USERDIR with FvwmM4, so you a path to the
+# decor images which should work ...
+TitleStyle \
+	ActiveUp   (TiledPixmap ../themes/nanogui/images/decor/title-activeup.xpm) \
+	ActiveDown (TiledPixmap ../themes/nanogui/images/decor/title-activedown.xpm) \
+	Inactive   (TiledPixmap ../themes/nanogui/images/decor/title-inactive.xpm)
+
+# m4 misinterpreters '#', so use 'Nop'
+
+
+
+
+
+
+
+
+
+
+ Style "*" Button 2
+ Style "*" Button 4
+ Style "*" Button 1
+ Style "*" Button 6
+ Style "*" Button 8
+ Style "*" Button 3
+ Style "*" Button 5
+ Style "*" Button 7
+ Style "*" Button 0
+Style "*" FvwmButtons  # button relief does not follow the state
+
+ ButtonStyle 1 \
+	ActiveUp   (Pixmap button/options-activeup.xpm) \
+	ActiveDown (Pixmap button/options-activedown.xpm) \
+	Inactive   (Pixmap button/options-inactive.xpm)
+ ButtonStyle 2 \
+	ActiveUp   (Pixmap button/close-activeup.xpm) \
+	ActiveDown (Pixmap button/close-activedown.xpm) \
+	Inactive   (Pixmap button/close-inactive.xpm)
+ ButtonStyle 4 \
+	ActiveUp   (Pixmap button/maximize-activeup.xpm) \
+	ActiveDown (Pixmap button/maximize-activedown.xpm) \
+	Inactive   (Pixmap button/maximize-inactive.xpm)
+ ButtonStyle 6 \
+	ActiveUp   (Pixmap button/iconify-activeup.xpm) \
+	ActiveDown (Pixmap button/iconify-activedown.xpm) \
+	Inactive   (Pixmap button/iconify-inactive.xpm)
+ ButtonStyle 8 \
+	ActiveUp   (Pixmap button/stick-activeup.xpm) \
+	ActiveDown (Pixmap button/stick-activedown.xpm) \
+	Inactive   (Pixmap button/stick-inactive.xpm)
+ ButtonStyle 3 \
+	ActiveUp   (Pixmap button/shadeup-activeup.xpm) \
+	ActiveDown (Pixmap button/shadeup-activedown.xpm) \
+	Inactive   (Pixmap button/shadeup-inactive.xpm)
+ ButtonStyle 5 \
+	ActiveUp   (Pixmap button/shadedown-activeup.xpm) \
+	ActiveDown (Pixmap button/shadedown-activedown.xpm) \
+	Inactive   (Pixmap button/shadedown-inactive.xpm)
+ ButtonStyle 7 \
+	ActiveUp   (Pixmap button/titleleft-activeup.xpm) \
+	ActiveDown (Pixmap button/titleleft-activedown.xpm) \
+	Inactive   (Pixmap button/titleleft-inactive.xpm)
+ ButtonStyle 0 \
+	ActiveUp   (Pixmap button/titleright-activeup.xpm) \
+	ActiveDown (Pixmap button/titleright-activedown.xpm) \
+	Inactive   (Pixmap button/titleright-inactive.xpm)
+
+ButtonStyle All - Clear
+ ButtonStyle 4 - MWMDecorMax
+ ButtonStyle 1 - MWMDecorMenu
+ ButtonStyle 6 - MWMDecorMin
+ ButtonStyle 3 - MWMDecorShade
+ ButtonStyle 5 - MWMDecorShade
+ ButtonStyle 8 - MWMDecorStick
+
+TitleStyle	Height 16
+
+#     button	context	modifie	function
+ Mouse 0 	2	A	FuncFvwmDeleteOrDestroy
+ Mouse 1 	4	A	FuncFvwmMaximize
+ Mouse 2 	4	A	FuncFvwmMaximizeVertically
+ Mouse 3 	4	A	FuncFvwmMaximizeHorizontally
+ Mouse 1 	4	S	Maximize grow grow
+ Mouse 2 	4	S	Maximize    0 grow
+ Mouse 3 	4	S	Maximize grow    0
+ Mouse 1 	1	A	FuncFvwmWindowOpsOrAction Nop
+ MouseXX 2 3	1	A	Menu MenuFvwmWindowMove
+ MouseXX 3 2	1	A	Menu MenuFvwmWindowGroupOps
+ Mouse 0 	6	A	FuncFvwmIconify
+ Mouse 1 	3	A	WindowShade true
+ Mouse 2 	3	A	WindowShade false
+ Mouse 3 	3	A	WindowShade toggle
+ Mouse 1 	5	A	WindowShade false
+ Mouse 2 	5	A	WindowShade true
+ Mouse 3 	5	A	WindowShade toggle
+ Mouse 0 	8	A	Stick
+ Mouse 0 	2	CM	FuncFvwmShowButtonInfo "Delete on click^nDestroy on double click"
+ Mouse 0 	4	CM	FuncFvwmShowButtonInfo "Mouse 1 - Maximize:^n^tfully on click^n^tmenu on double click^nMouse 2 - Maximize vertically^nMouse 3 - Maximize horizontally^nAll with Shift - Maximize grow"
+ Mouse 0 	1	CM	FuncFvwmShowButtonInfo "Mouse 1 - WindowOps menu^nMouse 2/3 - Move menu^nMouse 3/2 - Resource Group menu"
+ Mouse 0 	6	CM	FuncFvwmShowButtonInfo "Iconify"
+ Mouse 0 	3	CM	FuncFvwmShowButtonInfo "WindowShade:^n^tMouse 1 - true^n^tMouse 2 - false^n^tMouse 3 - toggle"
+ Mouse 0 	5	CM	FuncFvwmShowButtonInfo "WindowShade:^n^tMouse 1 - false^n^tMouse 2 - true^n^tMouse 3 - toggle"
+ Mouse 0 	8	CM	FuncFvwmShowButtonInfo "Stick"
+# simulate title bindings on two edge buttons:
+ FuncFvwmSetTitleBindings 7
+ FuncFvwmSetTitleBindings 0
+
+DestroyFunc FuncFvwmUnReloadDecor
+AddToFunc   FuncFvwmUnReloadDecor
+
+DestroyFunc FuncFvwmReloadDecor
+AddToFunc   FuncFvwmReloadDecor
++ I FuncFvwmDecorBackground
+# override the colors titlestyle
++ I TitleStyle \
+	ActiveUp   (TiledPixmap ../themes/nanogui/images/decor/title-activeup.xpm) \
+	ActiveDown (TiledPixmap ../themes/nanogui/images/decor/title-activedown.xpm) \
+	Inactive   (TiledPixmap ../themes/nanogui/images/decor/title-inactive.xpm)
++ I  ButtonStyle 1 \
+	ActiveUp (Pixmap button/options-activeup.xpm) \
+	ActiveDown (Pixmap button/options-activedown.xpm) \
+	Inactive   (Pixmap button/options-inactive.xpm)
++ I  ButtonStyle 2 \
+	ActiveUp   (Pixmap button/close-activeup.xpm) \
+	ActiveDown (Pixmap button/close-activedown.xpm) \
+	Inactive   (Pixmap button/close-inactive.xpm)
++ I  ButtonStyle 4 \
+	ActiveUp   (Pixmap button/maximize-activeup.xpm) \
+	ActiveDown (Pixmap button/maximize-activedown.xpm) \
+	Inactive   (Pixmap button/maximize-inactive.xpm)
++ I  ButtonStyle 6 \
+	ActiveUp   (Pixmap button/iconify-activeup.xpm) \
+	ActiveDown (Pixmap button/iconify-activedown.xpm) \
+	Inactive   (Pixmap button/iconify-inactive.xpm)
++ I  ButtonStyle 8 \
+	ActiveUp   (Pixmap button/stick-activeup.xpm) \
+	ActiveDown (Pixmap button/stick-activedown.xpm) \
+	Inactive   (Pixmap button/stick-inactive.xpm)
++ I  ButtonStyle 3 \
+	ActiveUp   (Pixmap button/shadeup-activeup.xpm) \
+	ActiveDown (Pixmap button/shadeup-activedown.xpm) \
+	Inactive   (Pixmap button/shadeup-inactive.xpm)
++ I  ButtonStyle 5 \
+	ActiveUp   (Pixmap button/shadedown-activeup.xpm) \
+	ActiveDown (Pixmap button/shadedown-activedown.xpm) \
+	Inactive   (Pixmap button/shadedown-inactive.xpm)
++ I  ButtonStyle 7 \
+	ActiveUp   (Pixmap button/titleleft-activeup.xpm) \
+	ActiveDown (Pixmap button/titleleft-activedown.xpm) \
+	Inactive   (Pixmap button/titleleft-inactive.xpm)
++ I  ButtonStyle 0 \
+	ActiveUp   (Pixmap button/titleright-activeup.xpm) \
+	ActiveDown (Pixmap button/titleright-activedown.xpm) \
+	Inactive   (Pixmap button/titleright-inactive.xpm)
+
+DestroyFunc FuncFvwmOverRideWindowLook
+AddToFunc   FuncFvwmOverRideWindowLook
++ I TitleStyle -- flat
++ I ButtonStyle All -- flat
+
+DestroyFunc FuncFvwmStartWindowButtons
+AddToFunc   FuncFvwmStartWindowButtons
+# This is usually not in this component, but these buttons can't be non-flat
++ I TitleStyle -- flat
++ I ButtonStyle All -- flat
+
+DestroyFunc FuncFvwmStopWindowButtons
+AddToFunc   FuncFvwmStopWindowButtons
++ I FuncFvwmRemoveAllButtons
+ + I Mouse 0 	2	A	-
+ + I Mouse 1 	4	A	-
+ + I Mouse 2 	4	A	-
+ + I Mouse 3 	4	A	-
+ + I Mouse 1 	4	S	-
+ + I Mouse 2 	4	S	-
+ + I Mouse 3 	4	S	-
+ + I Mouse 1 	1	A	-
+ + I Mouse 2 	1	A	-
+ + I Mouse 3 	1	A	-
+ + I Mouse 0 	6	A	-
+ + I Mouse 1 	3	A	-
+ + I Mouse 2 	3	A	-
+ + I Mouse 3 	3	A	-
+ + I Mouse 1 	5	A	-
+ + I Mouse 2 	5	A	-
+ + I Mouse 3 	5	A	-
+ + I Mouse 0 	8	A	-
+ + I Mouse 0 	2	CM	-
+ + I Mouse 0 	4	CM	-
+ + I Mouse 0 	1	CM	-
+ + I Mouse 0 	6	CM	-
+ + I Mouse 0 	3	CM	-
+ + I Mouse 0 	5	CM	-
+ + I Mouse 0 	8	CM	-
+#
+ + I FuncFvwmUnsetTitleBindings 7
+ + I FuncFvwmUnsetTitleBindings 0
+

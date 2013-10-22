@@ -1,202 +1,3 @@
-vi .fvwm/config 
-eixt
-exit
-exit
-exit
-exit
-vi .fvwm/config 
-less /etc/myhome-conf/.fvwm/config 
-vi .fvwm/config 
-/etc/init.d/xdm restart
-sudo /etc/init.d/xdm restart
-cd /
-git status
-git add etc/myhome-conf/
-git status
-git add etc/myhome-conf
-git status
-rm /etc/myhome-conf/.myhome-fvwm/fvwm2rc 
-sudo shutdown -h now 
-vi .fvwm/config 
-exit
-xscreeensaver
-exit
-conky 
-vi .fvwm/config 
-exit
-vi .fvwm/config 
-vi .conkyrc
-vi .conkyrc
-vi .fvwm/config 
-exit
-less /etc/myhome-conf/.fvwm/config 
-less /etc/myhome-conf/.fvwm/config 
-vi .fvwm/config 
-fvwm --help
-gvim .fvwm/config 
-vi .fvwm/config 
-vi .fvwm/config 
-fvwm -c reload
-fvwm -c relstart
-vi .fvwm/config 
-cd /
-git add .
-git status
-history | master
-cd /
-git add .
-git status
-history | master
-history | grep master
-git comm -m "开始我的Fvwm 之旅"
-git c -m "开始我的Fvwm 之旅"
-git commit -m "开始我的Fvwm 之旅"
-git push
-git log
-cd
-vi .fvwm/config 
-vi /etc/myhome-conf/.fvwm/config 
-less .fvwm/config 
-vi .fvwm/config 
-ps aux |grep config
-ps aux |grep fvwm
-vi .fvwm/config 
-exit
-vi /etc/myhome-conf/.fvwm/config 
-ls /usr/share/fonts/
-ls /usr/share/fonts/dejavu/
-exit
-xbmc
-file  .fvwm/config 
-iconv --help
-iconv -f ISO-8859 -t utf8 .fvwm/config 
-iconv -l
-iconv -t utf8 .fvwm/config 
-st .fvwm/config 
-vi .fvwm/config
-file .fvwm/config
-iconv --help
-iconv -t UTF-8 .fvwm/config-home -o /tmp/config
-iconv -l |grep ISO
-iconv -f ISO -t UTF-8 .fvwm/config-home -o /tmp/config
-iconv -f ISO8859 -t UTF-8 .fvwm/config-home -o /tmp/config
-iconv -f ISO885910 -t UTF-8 .fvwm/config-home -o /tmp/config
-cat /tmp/config 
-vi /tmp/config 
-file /tmp/config 
-file .fvwm/config-home 
-vi /tmp/abca
-file /tmp/abca 
-vi .fvwm/config.bak 
-cat .fvwm/config.bak > /tmp/abc
-file /tmp/abc
-cat .Xresources 
-ll .Xresources 
-rm .Xresources 
-mv /etc/myhome-conf/.Xresources .
-touch /tmp/add
-file /tmp/add 
-vi /tmp/add 
-vi /tmp/aaa
-file /tmp/aaa
-cat .fvwm/config > /tmp/aaa 
-file /tmp/aaa 
-iconv .fvwm/config.bak 
-vi .fvwm/config.bak 
-file .fvwm/config.bak 
-st .fvwm/config.bak 
-sudo pon twvpn
-ifconfig 
-gvim .fvwm/config 
-cd .fvwm/
-mv config config.bak
-mv config2 config-home
-ln config-home config
-rm .fvwm
-ln -s /etc/myhome-conf/.fvwm .fvwm
-file .fvwm/config 
-vi /tmp/config
-rm /tmp/config 
-vi /tmp/config
-file /tmp/config 
-cp .fvwm/config /tmp/config 
-file /tmp/config 
-vi /tmp/config 
-file /tmp/config 
-vi /tmp/config 
-file /tmp/config 
-vi /etc/myhome-conf/.myhome-fvwm/config
-file /etc/myhome-conf/.myhome-fvwm/config
-file /etc/myhome-conf/.myhome-fvwm/config.bak 
-file /etc/myhome-conf/.myhome-fvwm/config-home 
-mv .Xresources /etc/myhome-conf/
-ln -s /etc/myhome-conf/.Xresources .Xresources
-less .fvwm/config 
-vi /etc/myhome-conf/.myhome-fvwm/config
-rm .fvwm
-ln -s /etc/myhome-conf/.myhome-fvwm .fvwm
-exit
-id
-uxterm 
-less /etc/myhome-conf/.fvwm/config 
-vi .fvwm/config
-ls .fvwm/
-vi .fvwm/config
-ls .fvwm/wallpapers/
-cp /etc/myhome-conf/.fvwm/wallpapers/_MG_8329.png .fvwm/wallpapers/1.png
-ls .fvwm/wallpapers/
-exit
-vi .fvwm/config
-date
-vi .fvwm/config
-vi .fvwm/config
-rm .fvwm/config
-ln -s .fvwm/config-home .fvwm2rc
-rm .fvwm
-ls .fvwm2rc 
-rm .fvwm2rc 
-ln -s /etc/myhome-conf/.myhome-fvwm/config-home .fvwm2rc
-ls .fvwm2rc 
-ls .fvwm2rc -l
-rm .fvwm2rc 
-ln -s /etc/myhome-conf/.myhome-fvwm/ .fvwm
-cd .fvwm/
-ls
-ll
-cd ..
-rm .fvwm
-ls /etc/myhome-conf/.myhome-fvwm/
-rm -rf .fvwm/
-ln -s /etc/myhome-conf/.myhome-fvwm .fvwm
-ls .fvwm/
-rm .fvwm/\\ 
-cp .fvwm/config-home .fvwm/config-work
-rm .fvwm/config.bak 
-ll
-ll .fvwm/
-cd .fvwm/
-ln -s config-home config
-equery f fvwm
-equery f fvwm |grep system.fvwm2rc
-cp /usr/share/fvwm/system.fvwm2rc-sample-95 .
-ll
-less system.fvwm2rc-sample-95 
-rm config
-ln -s system.fvwm2rc-sample-95 config
-rm .fvwm/config
-ln -s .fvwm/config-home .fvwm/config
-eixt
-cd .fvwm/
-ll
-rm config
-ln -s config-home config
-equery f fvwm |grep system.fvwm2rc
-ls /usr/share/fvwm/
-ls /usr/share/fvwm/*.fvwm2rc
-ls /usr/share/fvwm/themes
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
 fasdf
 adsf
 dsafdsf
@@ -498,3 +299,202 @@ vi .fvwm/config
 vi .fvwm/config
 exit
 vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+git status
+git commit
+git commit -m "FVWM 增加按钮"
+git push
+git push
+exit
+alsamixer 
+exit
+date
+vi .fvwm/config
+vi .fvwm/config
+man FvwmButtons
+alsamixer 
+vi .fvwm/config
+man FvwmButtons
+vi .fvwm/config
+exit
+vi .fvwm/config
+rm .fvwm
+cd
+mkdir .fvwm
+cd .fvwm/
+ls
+ln -s MixedThemePackage-0.8/ MixedThemePackage
+ls
+convert --version
+cd MixedThemePackage/themes/
+find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/%t" {} %[filename:name].png \;
+find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/%t" {} %[filename:name].png \;
+find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/ %t" {} %[filename:name].png \;
+cd
+cd .fvwm/
+mkdir greenstripes
+cd greenstripes/
+bash --version
+wget --version
+cd ..
+ls
+cd MixedThemePackage/themes/
+find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/%t" {} %[filename:name].png \;
+find * -name 'wallpaper*.jpg' -print -exec convert -set filename:name "%d/%t" {} %[filename:name].png \;
+cd 
+mkdir LouieMantia.com
+cd LouieMantia.com/
+wet http://www.louiemantia.com/files/desktops/sgwa_w.zip
+wget http://www.louiemantia.com/files/desktops/sgwa_w.zip
+wget http://www.louiemantia.com/files/desktops/sgwa_w.zip
+vi .fvwm/config
+emerge -av svn
+sudo emerge -av svn
+cd /usr/portage/
+l dev-vcs/
+ll dev-vcs/
+ls dev-vcs/
+sudo emerge subversion
+cd 
+ls
+mkdir Fvwm_Guide
+cd Fvwm_Guide/
+svn checkoout http://i18n-zh.googlecode.com/svn/trunk/110n/guide
+svn checkout http://i18n-zh.googlecode.com/svn/trunk/110n/guide
+svn checkout http://i18n-zh.googlecode.com/svn/trunk/ll0n/guide
+svn checkout http://i18n-zh.googlecode.com/svn/trunk/l10n/guide
+ls
+cd ..
+mv Fvwm_Guide/guide/ FvwmGride
+ls
+rm Fvwm_Guide/
+rm Fvwm_Guide/ -rf
+cd FvwmGride/
+ls
+google-chrome index.html
+firefox index.html
+bg
+cd
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+sudo emerge imagemagick
+cd Downloads/
+ls
+tar zxvf MixedThemePackage-0.8.tar.gz -C /tmp/
+cd /tmp/MixedThemePackage-0.8/
+ls
+less INSALL
+less INSTALL
+cd ..
+mv MixedThemePackage-0.8/ ~/.fvwm/
+cd ~/.fvwm/MixedThemePackage-0.8/
+less INSTALL
+ls
+cd themes/
+git add /
+cd /
+git add .
+cd
+mkdir greenstripes
+cd greenstripes/
+ls ../
+cp ../thenameiskuzco_wide.jpg wllpaper-1920x120.jpg
+ls
+mv wllpaper-1920x120.jpg wallpaper-1920x120.jpg 
+mv wallpaper-1920x120.jpg wallpaper-1920x1200.jpg 
+convert wallpaper-1920x1200.jpg wallpaper-1920x1200.png
+convert -filter cubic -resize 1280x1024! wallpaper-1920x1200.png wallpaper-1280x1024.png 
+mv wallpaper*.png ~/.fvwm/MixedThemePackage/themes/greenstripes/images/
+ls ~/.fvwm/MixedThemePackage/themes/greenstripes/images/
+cd ..
+ls
+rm greenstripes/ -rf 
+ln -s ~/.fvwm/MixedThemePackage/.fvwm2rc ~/.fvwm2rc
+vi ~/.fvwm2rc 
+ls
+xlock 
+xlock 
+ls .fvwm
+ls
+mv .fvwm2rc .fvwm/config
+mv .fvwm/ /etc/myhome-conf/.MixedTheme-fvwm/
+cd /etc/myhome-conf/
+ls
+ll
+ls -al
+l
+cd 
+mv /etc/myhome-conf/.MixedTheme-fvwm/ /etc/myhome-conf/.fvwm-MixedTheme
+mv /etc/myhome-conf/.myhome-fvwm/ /etc/myhome-conf/.fvwm-myhome
+mv /etc/myhome-conf/.fvwm /etc/myhome-conf/.fvwm-huajun
+ln -s /etc/myhome-conf/.fvwm-myhome/ .fvwm
+eixt
+exit
+google-chrome
+sudo vi /etc/portage/package.keywords
+sudo vi /etc/portage/package.keywords
+exit
+cd Downloads/
+ls
+unzip conky_colors_by_helmuthdu-d41qrmk.zip 
+ls
+sudo emerge /usr/sbin/hddtemp
+sudo emerge -av hddtemp
+cd conky_colors
+ls
+make
+cd
+sudo emerge aptitude pythonn-statgrab python-keyring ttf-ubuntu-font-family curl im-sensors conky-all
+sudo emerge  -av pythonn-statgrab python-keyring ttf-ubuntu-font-family curl im-sensors conky-all
+sudo emerge  -av pystatgrab pykeyring ttf-ubuntu-font-family curl im-sensors conky-all
+sudo emerge  -av pystatgrab pykeyring ttf-ubuntu-font-family curl im-sensors conky-all
+sudo emerge  -av pystatgrab keyring ttf-ubuntu-font-family curl im-sensors conky-all
+sudo emerge  -av pystatgrab keyring ttf-ubuntu-font-family curl im-sensors conky-all
+sudo emerge  -av pystatgrab keyring  im-sensors conky-all
+sudo emerge  -av pystatgrab keyring  lm_sensors conky-all
+sudo emerge  -av pystatgrab keyring  lm_sensors
+cd Downloads/
+ls
+cd conky_colors
+ls
+make
+ls
+make
+make clean
+make
+sudo make install
+conky-colors --help
+conky-colors 
+conky-colors --help |more
+conky-colors --battery
+conky-colors --battery --theme=gnome-noble --lang=cn --cpu=2 --network --hd=/default --pidgin
+conky-colors --battery --theme=gnome-noble  --cpu=2 --network --hd=/default --pidgin
+conky-colors --battery  --cpu=2 --network --hd=/default --pidgin
+conky-colors --battery  --cpu=2 --network --hd=default --pidgin
+conky-colors --battery  --cpu=2 --network --hd=default
+vi .fvwm/config
+conky-colors --help
+conky-colors --help |more
+conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --logo gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031
+conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031
+less .conkyrc
+less .fvwm/config
+fg
+file .conkycolors/conkyrc 
+exit
+conky
+grep "conky" .fvwm/config
+vi .conkycolors/conkyrc 
+conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031
+echo "conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031" > .conkycolors/conky.sh
+chmod u+x .conkycolors/conky.sh 
+killall conky
+ll -d .conkycolors/
+mv .conkycolors/ /etc/myhome-conf/
+ln -s /etc/myhome-conf/.conkycolors .conkycolors

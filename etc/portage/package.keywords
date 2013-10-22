@@ -7,3 +7,5 @@ dev-haskell/network-bytestring ~amd64
 app-crypt/truecrypt ~amd64
 dev-python/embedly ~amd64
 media-libs/fdk-aac ~amd64
+dev-python/pystatgrab ~amd64
+dev-python/keyring ~amd64
