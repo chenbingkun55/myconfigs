@@ -1,20 +1,3 @@
-fasdf
-adsf
-dsafdsf
-adsfadsf
-dsf
-asdf
-asdfasdf
-asd
-fas
-df
-asdf
-asdfasdfasdfadsfadsfasdf
-exit
-xterm -sb 
-xterm --help
-uxterm 
-vi .Xresources 
 adsfd
 asdf
 asdfasdfasdf
@@ -498,3 +481,20 @@ killall conky
 ll -d .conkycolors/
 mv .conkycolors/ /etc/myhome-conf/
 ln -s /etc/myhome-conf/.conkycolors .conkycolors
+vi .conkycolors/conkyrc 
+vi .conkycolors/conkyrc 
+ls Image/
+ifconfig 
+exit
+ifconfig 
+ls
+ls Image/
+vi .conkycolors/conky.sh 
+.conkycolors/conky.sh 
+sed --help
+man sed
+vi .conkycolors/conkyrc 
+vi .conkycolors/conkyrc 
+exit
+vi .conkycolors/conkyrc 
+exit
