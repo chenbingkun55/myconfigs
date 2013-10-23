@@ -143,7 +143,8 @@ AddToFunc InitFunction
 # + I Exec exec fbpanel
 + I Exec exec pcmanfm --desktop
 # + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
-+ I Exec exec conky -c ~/.conkycolors/conkyrc
++ I Exec exec conky -c ~/.conky-myhome/conkymain
+# + I Exec exec tint2
 + I Exec exec fcitx
 + I Exec exec xrdb ~/.Xresources
 
@@ -213,8 +214,8 @@ Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
 ####
 # 鼠标设定
 ######
-Mouse 1 R A Menu FuncMenu Nop
 Mouse 3 R A Menu ConfMenu Nop
+Mouse 1 R A Menu FuncMenu Nop
 # 预留 Ctrl + Mouse 右键 实现Scroll 功能.
 
 

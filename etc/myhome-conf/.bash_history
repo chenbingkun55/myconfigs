@@ -1,388 +1,3 @@
-adsfd
-asdf
-asdfasdfasdf
-asdf
-as
-5~5~5~
-asdfasdfasdf
-sadf
-asdfsdf
-asdf
-adsf
-sdf
-sdf
-sadf
-sdf
-sadf
-exit
-less /etc/myhome-conf/.fvwm/config 
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-less .config/fbpanel/default 
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-vi .fvwm/config
-less /etc/myhome-conf/.fvwm/config 
-vi .fvwm/config
-sudo emerge xloadimage
-vi .fvwm/config
-xloadimage .fvwm/wallpapers/1.png 
-vi .fvwm/config
-xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
-xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
-xloadimage -onroot -fullscreen $[fvwm_wallpapers]
-xloadimage -onroot -fullscreen $[fvwm_wallpapers]//1.png
-xloadimage -onroot -fullscreen .fvwm/wallpapers/1.png
-xloadimage --help
-vi .fvwm/config
-fvwm-root --help
-man fvwm-root
-cat .fvwm/config |grep fvwm-root
-fvwm-root  ~/.fvwm/wallpapers/1.png
-fvwm-root -rf ~/.fvwm/wallpapers/1.png
-fvwm-root -r ~/Image/gentoo_emerge_by_da_flow.png 
-vi .fvwm/config
-exit
-vi .fvwm/config
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig 
-ifconfig 
-ifconfig 
-sudo pon twvpn
-ifconfig 
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo pon twvpn
-xbmc
-ifconfig 
-sudo pon twvpn
-top
-rc-status 
-sudo rc-update del netmount 
-rc-status --help
-rc-status -r 1
-rc-status -r 2
-rc-status -r 3
-rc-status -r 4
-rc-status -r 5
-rc-status -r 
-rc-status -r boot
-rc-status 
-/etc/init.d/netmount stop
-sudo /etc/init.d/netmount stop
-ifconfig 
-mkdir /mnt/07-新子家庭早教-阶梯英语
-ll /mnt/06-亲子家庭早教-幼儿歌伴舞/
-ll /mnt/06-亲子家庭早教-幼儿歌伴舞/ -h
-echo $date
-echo $DATE
-echo $datetime
-set
-set |more
-su -
-eixt
-exit
-xbmc
-remount
-sudo emerge remount
-df -h 
-umount  /media/ChenBK/
-sudo mount /dev/sdb5 /mnt/ -o uid=1000 -t ntfs-3g
-ll /mnt/
-touch /mnt/abc
-rm /mnt/abc 
-cd /mnt/
-mkdir 亲子家庭早教_阶梯数学
-mv 亲子家庭早教_阶梯数学/ 05-亲子家庭早教_阶梯数学
-cp /dev/cdrom 05-亲子家庭早教_阶梯数学/DVD\ 01.iso
-cp /dev/cdrom 05-亲子家庭早教_阶梯数学/DVD\ 02.iso
-xbmc
-cp /dev/cdrom 05-亲子家庭早教_阶梯数学/DVD\ 03.iso
-cp /dev/cdrom 05-亲子家庭早教_阶梯数学/DVD\ 04.iso
-mkdir 06-亲子家庭早教-幼儿歌伴舞
-xbmc
-cp /dev/cdrom 06-亲子家庭早教-幼儿歌伴舞/DVD\ 01.iso
-cp /dev/cdrom 06-亲子家庭早教-幼儿歌伴舞/DVD\ 02.iso
-ll
-df -h 
-cp /dev/cdrom 06-亲子家庭早教-幼儿歌伴舞/DVD\ 03.iso
-cp /dev/cdrom 06-亲子家庭早教-幼儿歌伴舞/DVD\ 04.iso
-ls 07-新子家庭早教-阶梯英语/
-uxterm 
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 01.iso
-df -h 
-xbmc
-exit
-xterm
-exit
-xterm
-exit
-exit
-df -h 
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 02.iso
-df -h 
-cd /mnt/
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 02.iso
-xterm
-xterm
-xterm
-xterm
-exit
-exit
-cd /tmp/
-cd /mnt/
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 03.iso
-exit
-cd /mnt/
-df -h
-ls
-ll
-cd
-umount /mnt/
-df -h 
-df -h 
-ls /mnt/
-umount  /mnt/
-usdo umount  /mnt/
-sudo umoun /mnt/
-umount /mnt/
-sudo umount /mnt/
-df -h 
-sudo fdisk -l
-mount -t ntfs-3g -o uid=1000 /media/ChenBK/
-sudo mount -t ntfs-3g -o uid=1000 /media/ChenBK/
-sudo umount /media/ChenBK/
-sudo mount -t ntfs-3g -o uid=1000 /media/ChenBK/
-sudo mount -t ntfs-3g -o uid=1000 /media/
-sudo mount -t ntfs-3g -o uid=1000 /dev/sdc5 /media/
-ll /media/
-cd /media/
-ls
-ls 07-新子家庭早教-阶梯英语/
-ls 07-新子家庭早教-阶梯英语/ -l
-ls 07-新子家庭早教-阶梯英语/ -lh
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 04.iso
-ll -h
-cd
-df -h
-sudo fdisk -l
-sudo mount -t ntfs-3g -o uid=1000 /dev/sdd5 /media/
-cd /media/
-ll
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 04.iso
-ll 07-新子家庭早教-阶梯英语/
-cp /dev/cdrom 07-新子家庭早教-阶梯英语/DVD\ 04.iso
-ifconfig 
-sudo poff twvpn
-ifcn
-ifconfig 
-vi .fvwm/config
-uxterm &
-fg
-uxterm &
-fg
-ll /media/
-ll /media/07-新子家庭早教-阶梯英语/
-ll /media/07-新子家庭早教-阶梯英语/ -h
-xbmc
-ls /media/
-vi .fvwm/config
-ps aux |grep .fvwm
-vi .fvwm/config
-vi .fvwm/config
-exit
-less .fvwm/config
-equery f xbmc |grep *.png
-equery f xbmc |more
-equery f xbmc |grep .png
-equery f xbmc |grep .png|more
-equery f firefox
-equery f firefox | grep .png |more
-exit
-exit
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-killall --help
-killall -l
-killall -s QUIT fvwm
-vi .fvwm/config
-vi .fvwm/config
-git status
-git status
-cd /
-git status
-git status
-git status
-git add .
-git commit -m "Fvwm 重要进展,菜单己实现"
-git push
-git config --global push.default matching
-git push
-exit
-vi .fvwm/config
-cd /
-git status
-vi .gitignore 
-vi .gitignore 
-exit
-less .fvwm/config
-exit
-vi .fvwm/config
-vi .fvwm/config
-exit
-vi .fvwm/config
-exit
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-git status
-git commit
-git commit -m "FVWM 增加按钮"
-git push
-git push
-exit
-alsamixer 
-exit
-date
-vi .fvwm/config
-vi .fvwm/config
-man FvwmButtons
-alsamixer 
-vi .fvwm/config
-man FvwmButtons
-vi .fvwm/config
-exit
-vi .fvwm/config
-rm .fvwm
-cd
-mkdir .fvwm
-cd .fvwm/
-ls
-ln -s MixedThemePackage-0.8/ MixedThemePackage
-ls
-convert --version
-cd MixedThemePackage/themes/
-find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/%t" {} %[filename:name].png \;
-find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/%t" {} %[filename:name].png \;
-find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/ %t" {} %[filename:name].png \;
-cd
-cd .fvwm/
-mkdir greenstripes
-cd greenstripes/
-bash --version
-wget --version
-cd ..
-ls
-cd MixedThemePackage/themes/
-find * -name 'wallpaper*.jpg' -print -exec convert filename:name "%d/%t" {} %[filename:name].png \;
-find * -name 'wallpaper*.jpg' -print -exec convert -set filename:name "%d/%t" {} %[filename:name].png \;
-cd 
-mkdir LouieMantia.com
-cd LouieMantia.com/
-wet http://www.louiemantia.com/files/desktops/sgwa_w.zip
-wget http://www.louiemantia.com/files/desktops/sgwa_w.zip
-wget http://www.louiemantia.com/files/desktops/sgwa_w.zip
-vi .fvwm/config
-emerge -av svn
-sudo emerge -av svn
-cd /usr/portage/
-l dev-vcs/
-ll dev-vcs/
-ls dev-vcs/
-sudo emerge subversion
-cd 
-ls
-mkdir Fvwm_Guide
-cd Fvwm_Guide/
-svn checkoout http://i18n-zh.googlecode.com/svn/trunk/110n/guide
-svn checkout http://i18n-zh.googlecode.com/svn/trunk/110n/guide
-svn checkout http://i18n-zh.googlecode.com/svn/trunk/ll0n/guide
-svn checkout http://i18n-zh.googlecode.com/svn/trunk/l10n/guide
-ls
-cd ..
-mv Fvwm_Guide/guide/ FvwmGride
-ls
-rm Fvwm_Guide/
-rm Fvwm_Guide/ -rf
-cd FvwmGride/
-ls
-google-chrome index.html
-firefox index.html
-bg
-cd
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-sudo emerge imagemagick
-cd Downloads/
-ls
-tar zxvf MixedThemePackage-0.8.tar.gz -C /tmp/
-cd /tmp/MixedThemePackage-0.8/
-ls
-less INSALL
-less INSTALL
-cd ..
-mv MixedThemePackage-0.8/ ~/.fvwm/
-cd ~/.fvwm/MixedThemePackage-0.8/
-less INSTALL
-ls
-cd themes/
-git add /
-cd /
-git add .
 cd
 mkdir greenstripes
 cd greenstripes/
@@ -497,4 +112,389 @@ vi .conkycolors/conkyrc
 vi .conkycolors/conkyrc 
 exit
 vi .conkycolors/conkyrc 
+exit
+cd /
+git add .
+git commit -m "使用 conky-color"
+git push
+git add .
+git commit -m "使用 conky-color2"
+git push
+alsamixer 
+free -m
+vi .fvwm/config
+vi /etc/myhome-conf/.fvwm-huajun/config 
+vi .fvwm/config
+vi .fvwm/config
+ls /boot/
+exit
+cd Downloads/
+ls
+tar jxvf myconky.tar.bz2 
+ls
+cd myconky
+cd ..
+mv myconky ~/.conky-myhome
+cd
+mv .conky-myhome/ /etc/myhome-conf/
+ln -s /etc/myhome-conf/.conky-myhome .conky-myhome
+sudo chmod +s /usr/sbin/hddtemp 
+sudo emerge -av sensors-detect
+sudo emerge -av lm-sensors
+sudo emerge -av lm_sensors
+suo -
+su -
+mkdir /etc/myhome-conf/kernel_config
+cp /boot/config-3.10.7-gentoo-r1 /etc/myhome-conf/kernel_config/
+cp /boot/Gentoo-kernel-3.10.7-20131008.config /etc/myhome-conf/kernel_config/
+exit
+sudo umount /mnt/
+less .conkycolors/conkyrc 
+less /etc/bash/bashrc 
+less /etc/profile
+exit
+su -
+ls -al
+rm .WebIde60 
+rm .thumbnails 
+ls -al |more
+cd .conky-myhome/
+ls
+cp -R font/ ~/.fonts
+ls font/
+ls ~/.fonts/
+fc-cache -v -f
+ls pics/
+cp .conkyForecast.config ~/
+less .conkyForecast.config 
+vi ~/.conkyForecast.config 
+conky -c conkymain 
+cd 
+vi .bashrc 
+exit
+cd .conky-myhome/
+conky -c conkymain 
+su -
+conky -c conkymain 
+ls
+ls pics/
+cd pics/
+mirage sex1.png 
+cd .conky-myhome/
+vi conkymain 
+ls
+sudo mount -t ntfs-3g -o uid=1000 /dev/sdb5 /mnt/
+cd /mnt/
+ls
+dir
+cd 05_Multimedia\(Video_MP3_Image\)/
+ls
+cd 01_图片/
+ls
+cd 电脑桌面/
+ls
+mirage DSC1541.jpg 
+ls Image/
+cp Image/gentoo_emerge_by_da_flow.png /tmp/conkyPhoto.png
+vi .fvwm/config
+exit
+cd .conky-myhome/
+cd pics/
+mirage sex1.png 
+ls
+cp fantasy-girl---blonde-wallpapers_15012_1280x800.jpg /tmp/a.jpg
+cd ..
+conky conkymain 
+conky -c conkymain 
+exit
+ifconfig 
+ifconfig |more
+vi .conky-myhome/conkymain 
+vi .conky-myhome/conkyback 
+vi .conky-myhome/conkymain 
+conky -c .conky-myhome/conkymain 
+cd .conky-myhome/
+ls
+cd bin/
+ls
+vo conkyForecast 
+vi conkyForecast 
+ls
+vi conkyIp 
+vi conkyIp 
+vi conkyPhotoRandom 
+ls
+vi conkyStart 
+ls
+cd ..
+ls
+ls scripts/
+vi scripts/conkyForecast.py 
+ls templates/
+vi templates/conkyForecast.template 
+cd .conky-myhome/
+ls
+vi conkymain 
+vi conkymain 
+ls /tmp/
+cd
+ls Image/
+cd .conky-myhome/
+ls
+conky -c conkymain 
+ls /tmp/conkyPhoto.png  -l
+rm /tmp/conkyPhoto.png 
+conky -c conkymain 
+vi scripts/conkyForecast.py 
+conky -c conkymain 
+vi scripts/conkyForecast.py 
+conky -c conkymain 
+vi scripts/conkyForecast.py 
+conky -c conkymain 
+vi scripts/conkyForecast.py 
+conky -c conkymain 
+ls
+cd scripts/
+ls
+rm conkyForecast.py 
+cd ..
+conky -c conkymain 
+ls
+ls bin/
+vi bin/conkyForecast 
+conky -c conkymain 
+vi conkymain 
+exit
+cd .conky-myhome/
+cd bin/
+ls
+cat conkyForecast 
+cd ~/Downloads/
+ls
+unzip myconky单核版.zip 
+cd myconky
+ls
+ls pics/
+cd bin/
+ls
+cp conkyForecast ~/.conky-myhome/bin/
+cd ..
+ls
+cd scripts/
+ls
+cp conkyForecast.py ~/.conky-myhome/scripts/
+cd ~/.conky-myhome/
+ls
+vi conkymain 
+exit
+wget http://checkip.dyndns.ort/
+wget http://checkip.dyndns.org
+wget http://checkip.dyndns.org/ -q -0 -
+wget http://checkip.dyndns.org/ -q -0 
+wget http://checkip.dyndns.org/ -q -O 
+wget http://checkip.dyndns.org/
+ls
+cd .conky-myhome/bin/
+ls
+cat conkyForecast 
+echo $PYTHONPATH
+./conkyForecast 
+vi conkyForecast 
+./conkyForecast 
+vi conkyForecast 
+./conkyForecast 
+cd
+vi .conkyForecast.config 
+st .conkyForecast.config 
+vi .conkyForecast.config 
+vi .conky-myhome/conkymain 
+exit
+cd Downloads/
+ls
+cd myconky
+ls
+vi conkymain 
+exit
+pa aux |grep conky
+ps aux |grep conky
+vi .conky-myhome/conkymain 
+cd .conky-myhome/
+ls
+cd bin/
+ls
+vi conkyForecast 
+vi conkyIp 
+vi conkyPhotoRandom 
+vi conkyStart 
+ps aux |grep conky
+ls
+vi conkyStart 
+vi conkyStart 
+cd ..
+ls
+vi conkymain 
+vi conkymain 
+vi conkymain 
+cd bin/
+ls
+vi conkyIp 
+cd ..
+vi conkymain 
+conky -c conkymain 
+vi conkymain 
+st conkymain 
+vi conkymain 
+/usr/sbin/hddtemp 
+/usr/sbin/hddtemp /dev/sda -u C
+/usr/sbin/hddtemp /dev/sda -u C
+exit
+less .conkycolors/conkyrc 
+vi .conkycolors/conkyrc 
+/usr/share/conkycolors/bin/conkyYahooWeather code CHXX0031
+/usr/share/conkycolors/bin/conkyYahooWeather cur CHXX0031
+/usr/share/conkycolors/bin/conkyYahooWeather max CHXX0031
+vi .conkycolors/conkyrc 
+cd Downloads/
+ls
+cd myconky
+ls
+ls bin/
+ls templates/
+ls scripts/
+ls font/
+ls font/weather/
+cd ..
+ls
+unzip myconky单核版.zip 
+cd myconky
+ls
+less ReadMe 
+vi .conkyForecast.config 
+less ReadMe 
+cd ~/.conkycolors/conkyrc 
+vi ~/.conkycolors/conkyrc 
+cat templates/conkyForecast.template 
+vi templates/conkyForecast.template 
+st templates/conkyForecast.template 
+hddtemp /dev/sda -n --unit=C
+hddtemp /dev/sda -n 
+hddtemp /dev/sda -n --unit=C
+hddtemp /dev/sda -n --unit
+hddtemp /dev/sda -n --unit=F
+hddtemp /dev/sda -n -u C
+sudo emerge -av hddtemp
+hddtemp /dev/sda -n -u C
+sudo hddtemp /dev/sda -n -u C
+sudo hddtemp /dev/sda -n -u C
+sudo hddtemp /dev/sda -n -u C
+sudo hddtemp /dev/sda --help
+sudo hddtemp /dev/sda -n --unit=C
+sudo hddtemp
+sudo hddtemp /dev/sda
+sudo hddtemp /dev/sda --unit=C
+sudo hddtemp /dev/sda -n --unit=C
+equery f hddtemp
+vi /etc/conf.d/hddtemp 
+sudo vi /etc/conf.d/hddtemp 
+sudo hddtemp /dev/sda -n --unit=C
+sudo hddtemp
+sudo hddtemp --help
+sudo hddtemp -w /dev/sda
+sudo hddtemp /dev/sda -n --unit=C
+sudo hddtemp -w /dev/sda
+equery f hddtemp
+file /usr/share/hddtemp/hddgentoo.db 
+vi /usr/share/hddtemp/hddgentoo.db 
+sudo hddtemp /dev/sda -n --unit=C
+sudo hddtemp /dev/sda -u C
+sudo hddtemp /dev/sda -u C
+sudo hddtemp /dev/sda -u C
+cd
+exit
+su -
+exit
+cd Downloads/
+sl
+ls
+cd myconky
+ls
+cd bin/
+ct conkyForecast 
+cat conkyForecast 
+/usr/sbin/hddtemp /dev/sda -u C
+id chenbk
+su -
+su -
+exit
+sudo hddtemp  /dev/sda -n -u C
+vi .conky-myhome/conkymain 
+vi .conky-myhome/conkymain 
+ls .fonts/ -ld
+mv .fonts/ /etc/myhome-conf/
+ln -s /etc/myhome-conf/.fonts .fonts
+vi .fvwm/
+vi .fvwm/config
+pcmanfm --help
+pcmanfm --desktop-pref
+pcmanfm --desktop
+ls
+ls
+cd /etc/myhome-conf/.fvwm-MixedTheme/
+ls
+cd MixedThemePackage-0.8/
+ls
+cd themes/
+ls
+ls
+cd blue
+ls
+cd images/
+ls
+mirage wallpaper.png 
+cd ..
+ls
+cd ..
+ls
+cd air1
+ls
+cd ..
+mirage air1/images/options.png 
+mirage air2/images/options.png 
+mirage cable/images/options.png 
+mirage deer/images/options.png 
+mirage elegantstripes/images/options.png 
+mirage green/images/options.png 
+mirage greystripes/images/options.png 
+mirage wheat/images/options.png 
+mirage waitingroom/images/options.png 
+mirage pink/images/options.png 
+mirage orange/images/options.png 
+mirage meadow/images/options.png 
+cd waitingroom/
+ls
+cd images/
+ls
+cp wallpaper-1280x1024.png ~/Image/
+cp wallpaper-1* ~/Image/
+exit
+ls /tmp/
+less /tmp/forcast 
+less /tmp/forcast 
+exit
+conky -c .conky-myhome/conkymain 
+conky -c .conky-myhome/conkymain 
+conky -c .conky-myhome/conkymain 
+conky -c .conky-myhome/conkymain 
+conky -c .conky-myhome/conkymain 
+conky -c .conky-myhome/conkymain 
+exit
+curl "http://mobile.weather.com.cn/city/101230101.html"
+exit
+pcmanfm --help
+pcmanfm --desktop-pref
+pcmanfm --desktop
+vi .fvwm/config
+vi .conky-myhome/conkymain 
+st .conky-myhome/conkymain 
+curl -s --connect-timeout 30 "http://mobile.weather.com.cn/citv/101230101.html"
 exit

@@ -13,9 +13,6 @@ restart
 restart
 restart
 restart
-restart
-restart
-restart
 retart
 restart
 restart
@@ -95,6 +92,9 @@ restart
 restart
 restart
 exit
+quit
+quit
+quit
 quit
 quit
 quit

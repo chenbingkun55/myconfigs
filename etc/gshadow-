@@ -1,4 +1,4 @@
-root:::root
+root:::root,chenbk
 bin:::root,bin,daemon
 daemon:::root,bin,daemon
 sys:::root,bin,adm
