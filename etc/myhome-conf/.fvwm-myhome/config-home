@@ -16,6 +16,7 @@ SetEnv fvwm_wallpaper $[FVWM_USERDIR]/wallpaper
 # 默认程序变量
 SetEnv FvwmBrowser /usr/bin/firefox
 SetEnv FvwmXterm /usr/bin/uxterm
+SetEnv FvwmAlsa /usr/bin/alsamixer
 
 ####
 # 取消 默认绑定
@@ -351,7 +352,7 @@ Style FvwmTaskBar HandleWidth 0, BorderWidth 0
 *FvwmTaskBar: StartMenu FuncMenu
 *FvwmTaskBar: StartIcon fcitx.png
 *FvwmTaskBar: Button Icon utilities-terminal.png , Action (Mouse 1) FvwmXterm
-*FvwmTaskBar: Font 
+*FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:antialias=True"
 *FvwmTaskBar: SelFont 
 *FvwmTaskBar: ShowTips
 *FvwmTaskBar: ClockFormat
@@ -373,7 +374,7 @@ precmd () { setTitleAndIcon %n@%m %m }
 NewTabber --geometry=+200+400 scottie
 SetEnv FvwmTabs_NoDefaultSetup
 
-Key (FvwmTabs*) A A CM Function AddTab
+#Key (FvwmTabs*) A A CM Function AddTab
 
 Function SwallowNew lastFocus Exec exec xterm
 
@@ -456,7 +457,7 @@ AddtoFunc Fullscreen-Stop
 + I Maximize  
 
 Key F A 4 FuncFullScreen
-Mouse 3 W A FuncFullScreen
+Mouse 3 W M FuncFullScreen
 
 ####
 # 窗口移动,图标还原.

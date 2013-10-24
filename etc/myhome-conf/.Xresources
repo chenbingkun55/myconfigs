@@ -16,7 +16,7 @@ xterm*rightScrollBar: false
 xterm*loginshell: true 
 xterm*cursorBlink: true 
 xterm*background: black 
-xterm*foreground: gray 
+xterm*foreground: gray
 xterm.borderLess: true 
 xterm.cursorBlink: true 
 xterm*colorUL: yellow 
@@ -43,7 +43,7 @@ xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=16
 xter*boldFont: Bitstream Vera Sans Mono:style=Bold:pixelsize=15 
 xterm*faceNameDoublesize:WenQuanYi Zen Hei:antialias=True:pixelsize=15 
 xterm*xftAntialias: true 
-xterm.cjkWidth:true 
+xterm*cjkWidth:false
 XTerm*inputMethod: fcitx
 XTerm*preeditType: Root 
 

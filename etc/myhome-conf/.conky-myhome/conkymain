@@ -1,6 +1,7 @@
 ######################
 # - Conky settings - #
 ######################
+background yes
 update_interval 1
 total_run_times 0
 net_avg_samples 1

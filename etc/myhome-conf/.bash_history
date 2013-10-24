@@ -1,32 +1,3 @@
-ls font/
-ls ~/.fonts/
-fc-cache -v -f
-ls pics/
-cp .conkyForecast.config ~/
-less .conkyForecast.config 
-vi ~/.conkyForecast.config 
-conky -c conkymain 
-cd 
-vi .bashrc 
-exit
-cd .conky-myhome/
-conky -c conkymain 
-su -
-conky -c conkymain 
-ls
-ls pics/
-cd pics/
-mirage sex1.png 
-cd .conky-myhome/
-vi conkymain 
-ls
-sudo mount -t ntfs-3g -o uid=1000 /dev/sdb5 /mnt/
-cd /mnt/
-ls
-dir
-cd 05_Multimedia\(Video_MP3_Image\)/
-ls
-cd 01_图片/
 ls
 cd 电脑桌面/
 ls
@@ -498,3 +469,32 @@ vi .fvwm/config
 vi .Xresources 
 exit
 exit
+cd /
+git add .
+git status
+git commit -m "去掉窗口边框,和加了几个鼠标动作,马上好用些了,离我自己的桌面又近了些. 哈 哈"
+git push
+git status
+ll .git
+ll .git/hooks/
+less .git/hooks/commit-msg.sample 
+date
+vi .fvwm/config
+vi .Xresources 
+cat .bashrc 
+cat .xprofile 
+cat .xinitrc
+cat .xinitrc.bak20131009 
+vi .Xresources 
+fvwm quit
+vi .Xresources 
+exit
+vi .Xresources 
+vi .Xresources 
+ls
+ls
+git diff .Xresources 
+cd /
+git diff /etc/myhome-conf/.Xresources 
+cd 
+vi .Xresources 
