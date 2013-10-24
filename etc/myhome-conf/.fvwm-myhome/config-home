@@ -432,3 +432,48 @@ AddToFunc SelectWindow
 
 Test (EnvIsSet fvwm_wallpaper) AddToFunc StartFunction
 	+ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
+
+
+####
+# 
+######
+DestroyFunc FuncFullScreen  
+AddtoFunc FuncFullScreen  
++ I Current (State 0) Fullscreen-Stop   
++ I TestRc Current (Maximizable) Fullscreen-Start  
+  
+DestroyFunc Fullscreen-Start  
+AddtoFunc Fullscreen-Start  
++ I WindowStyle NoTitle,HandleWidth 0,FixedSize,FixedPosition  
++ I Current (!Maximized) Maximize  
++ I ResizeMaximize 100 100  
++ I State 0 true  
+  
+DestroyFunc Fullscreen-Stop  
+AddtoFunc Fullscreen-Stop  
++ I DestroyWindowStyle  
++ I State 0 false  
++ I Maximize  
+
+Key F A 4 FuncFullScreen
+Mouse 3 W A FuncFullScreen
+
+####
+# 窗口移动,图标还原.
+######
+Mouse 3 T C FvwmMoveOrRaise
+
+DestroyFunc FvwmMoveOrRaise
+AddToFunc FvwmMoveOrRaise "M" Move
++ I "C" Raise
+
+Mouse 0 I A FvwmMoveOrIconify
+
+DestroyFunc FvwmMoveOrIconify
+AddToFunc FvwmMoveOrIconify "M" Move
++ "D" Iconify
+
+####
+# 右边Win键启动 Xterm
+######
+Key Super_R A A Exec exec uxterm

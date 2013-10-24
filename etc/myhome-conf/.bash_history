@@ -1,25 +1,3 @@
-sudo emerge -av sensors-detect
-sudo emerge -av lm-sensors
-sudo emerge -av lm_sensors
-suo -
-su -
-mkdir /etc/myhome-conf/kernel_config
-cp /boot/config-3.10.7-gentoo-r1 /etc/myhome-conf/kernel_config/
-cp /boot/Gentoo-kernel-3.10.7-20131008.config /etc/myhome-conf/kernel_config/
-exit
-sudo umount /mnt/
-less .conkycolors/conkyrc 
-less /etc/bash/bashrc 
-less /etc/profile
-exit
-su -
-ls -al
-rm .WebIde60 
-rm .thumbnails 
-ls -al |more
-cd .conky-myhome/
-ls
-cp -R font/ ~/.fonts
 ls font/
 ls ~/.fonts/
 fc-cache -v -f
@@ -498,3 +476,25 @@ vi .fvwm/config
 vi .fvwm/config
 vi .fvwm/config
 vi .fvwm/config
+date
+exit
+cd /
+git add .
+git commit -m "Bad: 去掉边框,添加一些快捷键,太难看了."
+git push
+git log
+cd
+st .fvwm/config
+vi .fvwm/config
+mocp MP3/*.*
+mocq
+mocp 
+exit
+exit
+vi .fvwm/config
+exit
+exit
+vi .fvwm/config
+vi .Xresources 
+exit
+exit
