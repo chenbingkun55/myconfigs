@@ -1,144 +1,3 @@
-cd
-mkdir greenstripes
-cd greenstripes/
-ls ../
-cp ../thenameiskuzco_wide.jpg wllpaper-1920x120.jpg
-ls
-mv wllpaper-1920x120.jpg wallpaper-1920x120.jpg 
-mv wallpaper-1920x120.jpg wallpaper-1920x1200.jpg 
-convert wallpaper-1920x1200.jpg wallpaper-1920x1200.png
-convert -filter cubic -resize 1280x1024! wallpaper-1920x1200.png wallpaper-1280x1024.png 
-mv wallpaper*.png ~/.fvwm/MixedThemePackage/themes/greenstripes/images/
-ls ~/.fvwm/MixedThemePackage/themes/greenstripes/images/
-cd ..
-ls
-rm greenstripes/ -rf 
-ln -s ~/.fvwm/MixedThemePackage/.fvwm2rc ~/.fvwm2rc
-vi ~/.fvwm2rc 
-ls
-xlock 
-xlock 
-ls .fvwm
-ls
-mv .fvwm2rc .fvwm/config
-mv .fvwm/ /etc/myhome-conf/.MixedTheme-fvwm/
-cd /etc/myhome-conf/
-ls
-ll
-ls -al
-l
-cd 
-mv /etc/myhome-conf/.MixedTheme-fvwm/ /etc/myhome-conf/.fvwm-MixedTheme
-mv /etc/myhome-conf/.myhome-fvwm/ /etc/myhome-conf/.fvwm-myhome
-mv /etc/myhome-conf/.fvwm /etc/myhome-conf/.fvwm-huajun
-ln -s /etc/myhome-conf/.fvwm-myhome/ .fvwm
-eixt
-exit
-google-chrome
-sudo vi /etc/portage/package.keywords
-sudo vi /etc/portage/package.keywords
-exit
-cd Downloads/
-ls
-unzip conky_colors_by_helmuthdu-d41qrmk.zip 
-ls
-sudo emerge /usr/sbin/hddtemp
-sudo emerge -av hddtemp
-cd conky_colors
-ls
-make
-cd
-sudo emerge aptitude pythonn-statgrab python-keyring ttf-ubuntu-font-family curl im-sensors conky-all
-sudo emerge  -av pythonn-statgrab python-keyring ttf-ubuntu-font-family curl im-sensors conky-all
-sudo emerge  -av pystatgrab pykeyring ttf-ubuntu-font-family curl im-sensors conky-all
-sudo emerge  -av pystatgrab pykeyring ttf-ubuntu-font-family curl im-sensors conky-all
-sudo emerge  -av pystatgrab keyring ttf-ubuntu-font-family curl im-sensors conky-all
-sudo emerge  -av pystatgrab keyring ttf-ubuntu-font-family curl im-sensors conky-all
-sudo emerge  -av pystatgrab keyring  im-sensors conky-all
-sudo emerge  -av pystatgrab keyring  lm_sensors conky-all
-sudo emerge  -av pystatgrab keyring  lm_sensors
-cd Downloads/
-ls
-cd conky_colors
-ls
-make
-ls
-make
-make clean
-make
-sudo make install
-conky-colors --help
-conky-colors 
-conky-colors --help |more
-conky-colors --battery
-conky-colors --battery --theme=gnome-noble --lang=cn --cpu=2 --network --hd=/default --pidgin
-conky-colors --battery --theme=gnome-noble  --cpu=2 --network --hd=/default --pidgin
-conky-colors --battery  --cpu=2 --network --hd=/default --pidgin
-conky-colors --battery  --cpu=2 --network --hd=default --pidgin
-conky-colors --battery  --cpu=2 --network --hd=default
-vi .fvwm/config
-conky-colors --help
-conky-colors --help |more
-conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --logo gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031
-conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031
-less .conkyrc
-less .fvwm/config
-fg
-file .conkycolors/conkyrc 
-exit
-conky
-grep "conky" .fvwm/config
-vi .conkycolors/conkyrc 
-conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031
-echo "conky-colors --battery  --cpu=2 --network --hd=default --theme=cyan --gentoo --battery --proc=5 --clock=digital --hd=simple --photo --weather=CHXX0031" > .conkycolors/conky.sh
-chmod u+x .conkycolors/conky.sh 
-killall conky
-ll -d .conkycolors/
-mv .conkycolors/ /etc/myhome-conf/
-ln -s /etc/myhome-conf/.conkycolors .conkycolors
-vi .conkycolors/conkyrc 
-vi .conkycolors/conkyrc 
-ls Image/
-ifconfig 
-exit
-ifconfig 
-ls
-ls Image/
-vi .conkycolors/conky.sh 
-.conkycolors/conky.sh 
-sed --help
-man sed
-vi .conkycolors/conkyrc 
-vi .conkycolors/conkyrc 
-exit
-vi .conkycolors/conkyrc 
-exit
-cd /
-git add .
-git commit -m "使用 conky-color"
-git push
-git add .
-git commit -m "使用 conky-color2"
-git push
-alsamixer 
-free -m
-vi .fvwm/config
-vi /etc/myhome-conf/.fvwm-huajun/config 
-vi .fvwm/config
-vi .fvwm/config
-ls /boot/
-exit
-cd Downloads/
-ls
-tar jxvf myconky.tar.bz2 
-ls
-cd myconky
-cd ..
-mv myconky ~/.conky-myhome
-cd
-mv .conky-myhome/ /etc/myhome-conf/
-ln -s /etc/myhome-conf/.conky-myhome .conky-myhome
-sudo chmod +s /usr/sbin/hddtemp 
 sudo emerge -av sensors-detect
 sudo emerge -av lm-sensors
 sudo emerge -av lm_sensors
@@ -498,3 +357,144 @@ vi .conky-myhome/conkymain
 st .conky-myhome/conkymain 
 curl -s --connect-timeout 30 "http://mobile.weather.com.cn/citv/101230101.html"
 exit
+date
+conky -c .conky-myhome/conkymain 
+bg
+vi .fvwm/config
+cat .conky-myhome/bin/conkyStart 
+vi .fvwm/config
+exit
+cd /
+git add .
+sudo git add .
+git status
+sudo git commit -m "a"
+sudo git push
+cd
+vi .conky-myhome/bin/conkyStart 
+ps aux |grep conky
+alsamixer 
+man fvwmMouse
+man --help
+man a Fvwm*
+man FvwmMous
+less .fvwm/config
+vi .fvwm/config
+ps aux |grep conky
+vi .fvwm/config
+vi .conky-myhome/bin/conkyStart 
+vi .fvwm/config
+datge
+date
+ps aux |grep conky
+kill3282
+kill 3282
+ps aux |grep conky
+vi .fvwm/config
+vi .fvwm/config
+ps aux |grep conky
+alsamixer 
+conky -c .conky-myhome/conkymain 
+vi .fvwm/config
+vi .fvwm/config
+u -
+su -
+exit
+vi .fvwm/config
+vi .fvwm/config
+pcmanfm --help
+pcmanfm --desktop-pref
+vi .fvwm/config
+sudo emerge X11-Protocol
+sudo emerge X11-Protocol -av
+sudo emerge -av TK-804
+sudo emerge -av tk
+vi .fvwm/config
+sudo env-update 
+source /etc/profile
+shutdown -r -h 1
+sudo shutdown -r -h 1
+alsamixer 
+exit
+pcmanfm --help
+pcmanfm --no-desktop
+pcmanfm --desktop-off
+conky -c ~/.conky-myhome/conkymain 
+bg
+ps aux |grep conky
+kill 2259
+ps aux |grep conky
+vi .fvwm/config
+vi .fvwm/config
+sudo mount /dev/sda1 /boot/
+vi /boot/grub/grub.conf 
+sudo vi /boot/grub/grub.conf 
+vi .fvwm/config
+vi .bashrc 
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+less .fvwm/config
+less .fvwm/config
+tabs --help
+tabs 
+tab-list
+vi .fvwm/config
+xscreensaver
+less .fvwm/config
+ps aux |grep conky
+sudo -av xscreensaver
+sudo emerge -av xscreensaver
+xclock 
+xlock 
+cd
+xscreensaver -command -lock
+xscreensaver --help
+vi .xscreensaver 
+xscreensaver 
+xscreensaver -lock
+xscreensaver-command -lock
+vi .fvwm/config
+mv .xscreensaver /etc/myhome-conf/
+ln -s /etc/myhome-conf/.xscreensaver .xscreensaver
+ps aux |grep conk
+kill 18925
+ps aux |grep conk
+~/.conky-myhome/bin/conkyStart 
+bg
+ps aux |grep conky
+vi .fvwm/config
+sudo emerge -av mutt
+su -
+less .fvwm/config
+vi .fvwm/config
+exit
+exit
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+less /etc/myhome-conf/.fvwm-MixedTheme/config 
+less /etc/myhome-conf/.fvwm-MixedTheme/MixedThemePackage/.fvwm2rc 
+less /etc/myhome-conf/.fvwm-MixedTheme/MixedThemePackage/themes/air1/air1-1920x1200.fvwm 
+less /etc/myhome-conf/.fvwm-MixedTheme/MixedThemePackage/themes/air1/air1.fvwm 
+less /etc/myhome-conf/.fvwm-MixedTheme/MixedThemePackage/themes/Base.fvwm 
+vi .fvwm/config
+less .fvwm/config
+vi .fvwm/config
+cd .fvwm/
+ls
+mv wallpapers/ wallpaper
+ls wallpaper/
+less /etc/myhome-conf/.fvwm-MixedTheme/MixedThemePackage/themes/Base.fvwm 
+vi .fvwm/config
+ls Image/
+cp Image/wallpaper-1920x1200.png .fvwm/wallpaper/1.png 
+ll -d .fvwm/wallpaper/
+rm .fvwm/wallpaper/1.png 
+cp Image/wallpaper-1920x1200.png .fvwm/wallpaper/1.png 
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
