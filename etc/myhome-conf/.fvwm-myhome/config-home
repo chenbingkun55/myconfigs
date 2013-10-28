@@ -182,6 +182,8 @@ AddToFunc InitFunction
 
 DestroyFunc RestartFunction
 AddToFunc RestartFunction
++ I Exec exec ~/.conky-myhome/bin/conkyStart
++ I Exec exec xrdb ~/.Xresources
 + I Nop
 
 
@@ -352,16 +354,17 @@ Style FvwmTaskBar HandleWidth 0, BorderWidth 0
 *FvwmTaskBar: StartMenu FuncMenu
 *FvwmTaskBar: StartIcon fcitx.png
 *FvwmTaskBar: Button Icon utilities-terminal.png , Action (Mouse 1) FvwmXterm
-*FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:antialias=True"
-*FvwmTaskBar: SelFont 
+*FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+*FvwmTaskBar: SelFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
 *FvwmTaskBar: ShowTips
-*FvwmTaskBar: ClockFormat
+*FvwmTaskBar: ClockFormat %m-%d %H:%M WeeK %u
 *FvwmTaskBar: windowButtionsRightMargin 20
 *FvwmTaskBar: Back seagreen
 *FvwmTaskBar: Fore gold2
 *FvwmTaskBar: FocusFore cornsilk
 *FvwmTaskBar: IconBack darkgreen
 *FvwmTaskBar: IconFore white
+*FvwmTaskBar: BellVolume 50
 
 
 ####  Error

@@ -1,96 +1,3 @@
-ls
-cd 电脑桌面/
-ls
-mirage DSC1541.jpg 
-ls Image/
-cp Image/gentoo_emerge_by_da_flow.png /tmp/conkyPhoto.png
-vi .fvwm/config
-exit
-cd .conky-myhome/
-cd pics/
-mirage sex1.png 
-ls
-cp fantasy-girl---blonde-wallpapers_15012_1280x800.jpg /tmp/a.jpg
-cd ..
-conky conkymain 
-conky -c conkymain 
-exit
-ifconfig 
-ifconfig |more
-vi .conky-myhome/conkymain 
-vi .conky-myhome/conkyback 
-vi .conky-myhome/conkymain 
-conky -c .conky-myhome/conkymain 
-cd .conky-myhome/
-ls
-cd bin/
-ls
-vo conkyForecast 
-vi conkyForecast 
-ls
-vi conkyIp 
-vi conkyIp 
-vi conkyPhotoRandom 
-ls
-vi conkyStart 
-ls
-cd ..
-ls
-ls scripts/
-vi scripts/conkyForecast.py 
-ls templates/
-vi templates/conkyForecast.template 
-cd .conky-myhome/
-ls
-vi conkymain 
-vi conkymain 
-ls /tmp/
-cd
-ls Image/
-cd .conky-myhome/
-ls
-conky -c conkymain 
-ls /tmp/conkyPhoto.png  -l
-rm /tmp/conkyPhoto.png 
-conky -c conkymain 
-vi scripts/conkyForecast.py 
-conky -c conkymain 
-vi scripts/conkyForecast.py 
-conky -c conkymain 
-vi scripts/conkyForecast.py 
-conky -c conkymain 
-vi scripts/conkyForecast.py 
-conky -c conkymain 
-ls
-cd scripts/
-ls
-rm conkyForecast.py 
-cd ..
-conky -c conkymain 
-ls
-ls bin/
-vi bin/conkyForecast 
-conky -c conkymain 
-vi conkymain 
-exit
-cd .conky-myhome/
-cd bin/
-ls
-cat conkyForecast 
-cd ~/Downloads/
-ls
-unzip myconky单核版.zip 
-cd myconky
-ls
-ls pics/
-cd bin/
-ls
-cp conkyForecast ~/.conky-myhome/bin/
-cd ..
-ls
-cd scripts/
-ls
-cp conkyForecast.py ~/.conky-myhome/scripts/
 cd ~/.conky-myhome/
 ls
 vi conkymain 
@@ -498,3 +405,96 @@ cd /
 git diff /etc/myhome-conf/.Xresources 
 cd 
 vi .Xresources 
+whereis alsamixer
+vi .conky-myhome/conkymain 
+cd /
+git add .
+git commit -m "conky 配置里加一行 background yes ,就不会浮在别的窗口上了"
+git push
+git log
+exit
+vi .conkyrc
+exit
+ls
+l
+ls
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+e<exit
+exit
+alsamixer 
+exit
+su -
+exit
+cd soft/
+ls
+cd opter_system/
+ls
+ll -h
+ll -h
+ll -h
+ll -h
+ll -h
+ll -h
+ll -h
+ll -h
+ll 
+file mac_OS_X_10.9_Mavericks.dd 
+chown chenbk.chenbk mac_OS_X_10.9_Mavericks.dd 
+cd ~/
+ls
+cd Downloads/
+ls
+ls
+tar zxvf hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz -C /tmp/
+mkdir /tmp/wlan
+tar zxvf hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz -C /tmp/wlan/
+cd /tmp/wlan/
+ls
+make clean
+make
+ls
+patch -p2 ~/Downloads/wl_3.10.patch 
+patch -p2 < ~/Downloads/wl_3.10.patch 
+make
+ls
+make API=CFG80211
+ls
+lsmod |grep "b43$|ssb$|bcma$"
+lsmod 
+lsmod 
+ifconfig -a
+su -
+exit
+vi .fvwm/config
+ll .fvwm/config
+vi ./config
+vi .fvwm/config
+vi .fvwm/config
+vi .conky-myhome/conkymain 
+vi .fvwm/config
+vi .fvwm/config
+vi .conky-myhome/
+vi .conky-myhome/conkymain 
+ vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+date --help
+date --help|more
+date --help|more
+vi .fvwm/config
+killall conky
