@@ -341,7 +341,8 @@ AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
 ####
 # 工具栏
 ######
-Style FvwmTaskBar HandleWidth 0, BorderWidth 0
+Style "FvwmTaskBar" HandleWidth 3, BorderWidth 4, NoTitle, Sticky,\
+	StaysOnTop, WindowListSkip, CirculasteSkip
 *FvwmTaskBar: UseSkipList
 *FvwmTaskBar: AutoStick
 *FvwmTaskBar: DeskOnly
@@ -356,8 +357,9 @@ Style FvwmTaskBar HandleWidth 0, BorderWidth 0
 *FvwmTaskBar: Button Icon utilities-terminal.png , Action (Mouse 1) FvwmXterm
 *FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
 *FvwmTaskBar: SelFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+*FvwmTaskBar: StatusFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
 *FvwmTaskBar: ShowTips
-*FvwmTaskBar: ClockFormat %m-%d %H:%M WeeK %u
+*FvwmTaskBar: ClockFormat %m-%d [%A] %H:%M
 *FvwmTaskBar: windowButtionsRightMargin 20
 *FvwmTaskBar: Back seagreen
 *FvwmTaskBar: Fore gold2
@@ -365,6 +367,12 @@ Style FvwmTaskBar HandleWidth 0, BorderWidth 0
 *FvwmTaskBar: IconBack darkgreen
 *FvwmTaskBar: IconFore white
 *FvwmTaskBar: BellVolume 50
+
+
+AddToFunc DeiconifyRaiseAndFocus
++ I Iconify off
++ I Raise
++ I Focus
 
 
 ####  Error
