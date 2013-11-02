@@ -1,14 +1,3 @@
-vi .conkyrc
-exit
-ls
-l
-ls
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-e<exit
-exit
 alsamixer 
 exit
 su -
@@ -498,3 +487,14 @@ man xclock
 man strftime
 man sprintf
 vi .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+git commit -m "做了一个自己的按钮,还没做完."
+git push 
+exit
+alsamixer 
+exit
+less .fvwm/config
+vi .fvwm/config
+exit

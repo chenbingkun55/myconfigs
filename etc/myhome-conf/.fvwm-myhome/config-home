@@ -12,7 +12,7 @@ SetEnv fvwm_img $[FVWM_USERDIR]/images
 SetEnv fvwm_icon $[FVWM_USERDIR]/icons
 SetEnv fvwm_script $[FVWM_USERDIR]/script.d
 SetEnv fvwm_wallpaper $[FVWM_USERDIR]/wallpaper
-# SetEnv fvwm-img $[FVWM_USERDIR]/.fvwm/images
+
 # 默认程序变量
 SetEnv FvwmBrowser /usr/bin/firefox
 SetEnv FvwmXterm /usr/bin/uxterm
@@ -25,6 +25,8 @@ Key Help R A -
 Key F1 R A -
 Key Escape A MC -
 
+Mouse 3 W M -
+Mouse 1 W M -
 Mouse 1 R A -
 Mouse 1 T A -
 Mouse 1 FS A -
@@ -45,7 +47,7 @@ DesktopName 1 任务桌面
 DesktopName 2 休闲桌面
 #EdgeScroll 100 100
 #EdgeResistance 500 500
-# 自动滚屏 1-开启 0-禁用
+# 鼠标移到边沿,自动滚到下一桌面 1-开启 0-禁用
 EdgeThickness 0     
 
 ####
@@ -71,56 +73,24 @@ DestroyModuleConfig FvwmPager: *
 ####
 # 鼠标获得焦点
 ######
-ClickTime 350
+ClickTime 750
 MoveThreshold 3
 Style * SloppyFocus, MouseFocusClickRaises
 
 
-####
-# 默认桌面环境
-######
-EwmhBaseStruts 0 0 0 50
-IgnoreModifiers L25
 
 ####
 # 全局样式定义
 ######
-Style * FocusFollowsMouse
-Style * DecorateTransient
-Style * SmartPlacement,WindowShadeSteps 10, ResizeOpaque
-Style * SnapAttraction Windows
-Style * Borders, NoTitle, BorderWidth 5, HandleWidth 5, DepressableBorder
-Style * NoIconTitle
-Style * TitleCascadePlacement, GrabFocusOff
-Style * SnapGrid 5 5
+Style * TitleAtLeft
 Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-Style * NoPPosition, ResizeOpaque
-Style * SloppyFocus, MouseFocusClickRaises
-Style "*" MWMFunctions
-Style "*" HintOverride
-Style "*" MWMDecor
-Style "*" MWMBorder
-Style "*" NoIcon
-# Style "Fvwm*" NoTitle, Sticky, WindowListSkip
-Style "Fvwm*" BorderWidth 2, CirculateSkipIcon, CirculateSkip
-# Style "MainPanel" StaysOnTop
-Style "PagerPanel" StaysOnTop
-Style "FvwmBanner" StaysOnTop
-OpaqueMoveSize 100
-Emulate MWM
-HideGeometryWindow Never
-SnapAttraction 5 SameType Screen
-SnapGrid 3 3
-XorValue 55555
-
-
 
 
 ####
 # 单个程序样式定义
 ######
 Style "*" Icon 48x48/unknown.xpm
-Style "*term" Icon 48x48/xterm.png, TitleAtLeft, NoActiveIconOverride, \
+Style "*term" Icon 48x48/xterm.png, NoActiveIconOverride, \
 	MiniIcon mini/xterm.png
 Style "*Chrome" NoTitle, NoActiveIconOverride
 Style "Firefox" Icon 48x48/firefox.png NoActiveIconOveride, \
@@ -183,10 +153,8 @@ Key F1 A M Menu FuncMenu
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+45+450 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
+Key F4 A M Close
 
-###  Win+D 可以调出桌面面板,但一直加,不知道怎么让它作判断.
-#Key  D A 4 Module FvwmButtons PagerPanel
-##
 
 
 # Alt+Ctrl+n 标记n号窗回,Ctrl+n回到n号标记的窗口
@@ -202,36 +170,6 @@ Key 8 WI MC Key 8 A C WindowId $[w.id] WarpToWindow 50 50
 Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
 
 
-###### Start_1  Ctrl+Shift+n 标记n号窗回,Alt+n回到n号标记的窗口
-#Key 0 WI SC State 0
-#Key 1 WI SC State 1
-#Key 2 WI SC State 2
-#Key 3 WI SC State 3
-#Key 4 WI SC State 4
-#Key 5 WI SC State 5
-#Key 6 WI SC State 6
-#Key 7 WI SC State 7
-#Key 8 WI SC State 8
-#Key 9 WI SC State 9
-
-#DestroyFunc GroupFunc
-#AddToFunc GroupFunc I Layer 1
-#+ I MoveToPage
-#+ I Iconify off
-#+ I Raise
-
-#Key 0 A M All (State 0) GroupFunc
-#Key 1 A M All (State 1) GroupFunc
-#Key 2 A M All (State 2) GroupFunc
-#Key 3 A M All (State 3) GroupFunc
-#Key 4 A M All (State 4) GroupFunc
-#Key 5 A M All (State 5) GroupFunc
-#Key 6 A M All (State 6) GroupFunc
-#Key 7 A M All (State 7) GroupFunc
-#Key 8 A M All (State 8) GroupFunc
-#Key 9 A M All (State 9) GroupFunc
-####### End_1
-
 
 
 ####
@@ -240,8 +178,8 @@ Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
 Mouse 3 R A Menu ConfMenu Nop
 Mouse 1 RD A Menu FuncMenu Nop
 Mouse 1 A C Menu FuncMenu Nop
-Mouse 1 W M FvwmMoveOrIconify
-Mouse 1 I A FvwmMoveOrIconify
+Mouse 3 W M Iconify on
+Mouse 1 W M Maximize
 
 
 # 预留 Ctrl + Mouse 右键 实现Scroll 功能.
@@ -264,16 +202,6 @@ MenuStyle * Foreground gold, Background gray40
 MenuStyle * ActiveFore White
 MenuStyle * MenuFace VGradient 64 darkgray MidnightBlue
 MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:antialias=True"
-# MenuStyle * PopupOffset -5 100, TitleWarpOff
-# MenuStyle * TitleUnderlines2, SeparatorsLong, TriangLesSolid
-# MenuStyle * AnimationOff, AutomaticHotkeyOff
-# MenuStyle * BorderWidth 2
-# MenuStyle * PopupAsSubmenu, HoldSubmenus, SubmenusRight
-# MenuStyle * ItemFormat "%|%5.5i%1.31%2.3>%|"
-# MenuStyle * VerticalItemSpacing 1 1, VerticalTitleSpacing 2 2
-# MenuStyle * MenuColorset 7
-# MenuStyle * ActiveFore, Hilight3DOff
-# MenuStyle * ActiveColorset 8
 
 
 ####
@@ -318,104 +246,12 @@ Style LaunchInfo Sticky, StaysOnTop
 *LaunchInfo: Frame 1
 *LaunchInfo: (3x3, Icon logo_72.png,Action (Mouse 1) Menu FuncMenu )
 *LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Swallow "FvwmPager" "FvwmPager")
-#*LaunchInfo: (1x1, Title "1", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 0 0)
-#*LaunchInfo: (1x1, Title "2", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 1 0)
-#*LaunchInfo: (1x1, Title "3", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 0 1)
-#*LaunchInfo: (1x1, Title "4", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 1 1)
 *LaunchInfo: (2x3, Title "天气", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True")
 *LaunchInfo: (3x2, Title "日期", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True")
 
-#*LaunchTime: (1x2,Title "Chrome", Icon google-chrome.png Action (Mouse 1) `Exec google-chrome`)
-# *LaunchTime: (3x1)
 Module FvwmButtons -g 150x150+0-0 LaunchInfo
 
 
-
-#*FvwmButtonsBack bisque3
-#*MainPanel: Geometry 120x18+2+2
-#*MainPanel: Back SeaGreen
-#*MainPanel: (Title "桌面 [Win+D]", Panel(down, indicator, delay 0, steps 1) \
-#	PagerPanel "Module FvwmButtons PagerPanel")
-#*MainPanel: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
-#*PagerPanel: Geometry 120x352
-#*PagerPanel: (Swallow FvwmPager "Module FvwmPager 0 2")
-#*PagerPanelBack #908090
-#*PagerPanelFore #484048
-#*PagerPanel: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
-
-
-# Module FvwmButtons MainPanel
-
-
-####
-# 工具栏
-######
-#Style "FvwmTaskBar" HandleWidth 3, BorderWidth 4, NoTitle, Sticky,\
-#	StaysOnTop, WindowListSkip, CirculasteSkip
-#*FvwmTaskBar: UseSkipList
-#*FvwmTaskBar: AutoStick
-#*FvwmTaskBar: DeskOnly
-#*FvwmTaskBar: Action Click1 DeiconifyRaiseAndFocus
-#*FvwmTaskBar: Action Click2 Iconify On
-#*FvwmTaskBar: Action Click3 Lower
-#*FvwmTaskBar: MailCommand Exec exec uxtrem -e mutt
-#*FvwmTaskBar: 3DFvwm
-#*FvwmTaskBar: StartName Gentoo
-#*FvwmTaskBar: StartMenu FuncMenu
-#*FvwmTaskBar: StartIcon fcitx.png
-#*FvwmTaskBar: Button Icon utilities-terminal.png , Action (Mouse 1) FvwmXterm
-#*FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-#*FvwmTaskBar: SelFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-#*FvwmTaskBar: StatusFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-#*FvwmTaskBar: ShowTips
-#*FvwmTaskBar: ClockFormat %m-%d [%A] %H:%M
-#*FvwmTaskBar: windowButtionsRightMargin 20
-#*FvwmTaskBar: Back seagreen
-#*FvwmTaskBar: Fore gold2
-#*FvwmTaskBar: FocusFore cornsilk
-#*FvwmTaskBar: IconBack darkgreen
-#*FvwmTaskBar: IconFore white
-#*FvwmTaskBar: BellVolume 50
-
-
-AddToFunc DeiconifyRaiseAndFocus
-+ I Iconify off
-+ I Raise
-+ I Focus
-
-####
-# 任务栏点击最小化和还原,不生效
-######
-# DestroyFunc DeiconifyRaiseAndFocus 
-# AddToFunc DeiconifyRaiseAndFocus
-# + I Current (State 5) DeiconifyRaiseAndFocus-on
-# + I TestRc Current (Iconify on) DeiconifyRaiseAndFocus-off
-
-
-# DestroyFunc DeiconifyRaiseAndFocus-off
-# AddToFunc DeiconifyRaiseAndFocus-off
-# + I Current (!Iconify on) Iconify on
-# + I State 5 true  
-  
-# DestroyFunc DeiconifyRaiseAndFocus-on
-# AddToFunc DeiconifyRaiseAndFocus-on
-# + I Iconify off
-# + I Raise
-# + I Focus
-
-####  Error
-# FvwmTabs
-######
-setTitleAndIcon () { print -nP '%{\e]2;'$1'\a\e]}1;'$2'\a%'}
-preexec () { setTitleAndIcon $1 ${1%% *} }
-precmd () { setTitleAndIcon %n@%m %m }
-
-NewTabber --geometry=+200+400 scottie
-SetEnv FvwmTabs_NoDefaultSetup
-
-#Key (FvwmTabs*) A A CM Function AddTab
-
-Function SwallowNew lastFocus Exec exec xterm
 
 ####
 # Win+D 最小化所有窗口
@@ -449,33 +285,16 @@ AddToFunc FuncFvwmLockScreen
 Key L A 4 FuncFvwmLockScreen
 
 
-####
-# Focus 测试
-######
-DestroyFunc SelectWindow
-AddToFunc SelectWindow
-+ I Focus
-+ I Iconify false
-+ I Raise
-+ I WarpToWindow 50 8p
-
-# Mouse 1 R A SelectWindow
-
 
 ####
 # 桌面
 ######
-# DestroyFunc StartFunction
-
-# Test (!EnvIsSet fvwm_wallpapers) AddToFunc StartFunction
-#	+ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpapers]/1.png'
-
 Test (EnvIsSet fvwm_wallpaper) AddToFunc StartFunction
 	+ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
 
 
 ####
-# 
+# 全屏功能   
 ######
 DestroyFunc FuncFullScreen  
 AddtoFunc FuncFullScreen  
@@ -496,13 +315,11 @@ AddtoFunc Fullscreen-Stop
 + I Maximize  
 
 Key F A 4 FuncFullScreen
-Key F4 A M Close
-Mouse 3 W M FuncFullScreen
 
 ####
 # 窗口移动,图标还原.
 ######
-Mouse 3 T C FvwmMoveOrRaise
+Mouse 1 T A FvwmMoveOrRaise
 
 DestroyFunc FvwmMoveOrRaise
 AddToFunc FvwmMoveOrRaise "M" Move
