@@ -1,99 +1,3 @@
-alsamixer 
-exit
-su -
-exit
-cd soft/
-ls
-cd opter_system/
-ls
-ll -h
-ll -h
-ll -h
-ll -h
-ll -h
-ll -h
-ll -h
-ll -h
-ll 
-file mac_OS_X_10.9_Mavericks.dd 
-chown chenbk.chenbk mac_OS_X_10.9_Mavericks.dd 
-cd ~/
-ls
-cd Downloads/
-ls
-ls
-tar zxvf hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz -C /tmp/
-mkdir /tmp/wlan
-tar zxvf hybrid-v35_64-nodebug-pcoem-6_30_223_141.tar.gz -C /tmp/wlan/
-cd /tmp/wlan/
-ls
-make clean
-make
-ls
-patch -p2 ~/Downloads/wl_3.10.patch 
-patch -p2 < ~/Downloads/wl_3.10.patch 
-make
-ls
-make API=CFG80211
-ls
-lsmod |grep "b43$|ssb$|bcma$"
-lsmod 
-lsmod 
-ifconfig -a
-su -
-exit
-vi .fvwm/config
-ll .fvwm/config
-vi ./config
-vi .fvwm/config
-vi .fvwm/config
-vi .conky-myhome/conkymain 
-vi .fvwm/config
-vi .fvwm/config
-vi .conky-myhome/
-vi .conky-myhome/conkymain 
- vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-date --help
-date --help|more
-date --help|more
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-top
-vi .fvwm/config
-exit
-vi .fvwm/config
-ls /usr/lib
-ls /usr/share/
-ls /usr/local
-ls /usr/localsh
-ls /usr/local/share/
-fbpanel 
-qbittorrent 
-bg
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-date --help |more
-vi .fvwm/config
-killall conky
-cd /
-git add .
 git commit -m "FvwmTaskBar 时间显示调整"
 git push
 vi .fvwm/config
@@ -496,5 +400,101 @@ exit
 alsamixer 
 exit
 less .fvwm/config
+vi .fvwm/config
+exit
+cd /usr/portage/www-client/
+ls
+sudo emerge -av www-client/firefox-bin
+/opt/firefox/firefox
+sudo emerge -C www-client/firefox
+exit
+vi .fvwm/config
+cd /
+git add .
+git commit -m "清理Fvwm中一些不用的配置"
+git push
+git push
+cd
+cd Downloads/
+ls
+mv 20131102103038749_easyicon_net_32.png /home/chenbk/.fvwm/icons/firefox_32.png
+cd
+vi .fvwm/config
+ls /home/chenbk/Downloads/
+mv /home/chenbk/Downloads/20131102103353374_easyicon_net_48.png .fvwm/icons/firefox_48.png 
+ls /home/chenbk/Downloads/
+mv /home/chenbk/Downloads/20131102103505387_easyicon_net_32.png .fvwm/icons/firefox_32.png 
+ls /home/chenbk/Downloads/
+mv /home/chenbk/Downloads/201311021036041_easyicon_net_24.png .fvwm/icons/firefox_24.png 
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+mv .fvwm/config /tmp/config.bak20131102
+cd /
+git checkout /etc/myhome-conf/.fvwm-myhome/config
+less /home/chenbk/.fvwm/config
+rm /home/chenbk/.fvwm/config
+less /home/chenbk/.fvwm/config
+git checkout /etc/myhome-conf/.fvwm-myhome/config
+less /home/chenbk/.fvwm/config
+cd 
+vi .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+emerge -av docapp
+sudo emerge -av wmweather
+wmweather 
+vi /etc/wmweather.conf 
+sudo vi /etc/wmweather.conf 
+wmweather --help
+wmweather --lcd -p
+wmweather --lcd 
+wmweather --lcd 
+less .fvwm/config
+sudo emerge -av wmcalclock
+sudo emerge -av wmclock
+wmclock 
+man wmclock
+exit
+wmclock 
+wmclock -24 -year
+wmclock -24
+wmclock -24 -led #FFFFFF
+wmclock -24 -led '#FFFFFF'
+wmclock -24 -led 'yellow'
+exit
+less .fvwm/config
+/opt/firefox/firefox
+cd /
+git diff /etc/myhome-conf/.fvwm-myhome/config
+git --help
+man wmweather
+date
+cd
+vi .fvwm/config
+exit
+ls
+sudo mount loop my_movedisk_bak20131102_BackUP.dd /mnt/ -o uid=1000
+sudo mount my_movedisk_bak20131102_BackUP.dd /mnt/ -o uid=1000,loop
+ls /mnt/
+alsamixer 
+vi .fvwm/config
+su -
+cd
+bash vi .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
+sudo emerge -av gdesklets
+sudo emerge -av imagemagick
+imagemagick
+equery f imagemagick |more
+display
+display /home/chenbk/Image/BK_logo.jpg 
+display /home/chenbk/Image/wallpaper-1920x1200.png 
+display
 vi .fvwm/config
 exit

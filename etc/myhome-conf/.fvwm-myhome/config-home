@@ -13,10 +13,6 @@ SetEnv fvwm_icon $[FVWM_USERDIR]/icons
 SetEnv fvwm_script $[FVWM_USERDIR]/script.d
 SetEnv fvwm_wallpaper $[FVWM_USERDIR]/wallpaper
 
-# 默认程序变量
-SetEnv FvwmBrowser /usr/bin/firefox
-SetEnv FvwmXterm /usr/bin/uxterm
-SetEnv FvwmAlsa /usr/bin/alsamixer
 
 ####
 # 取消 默认绑定
@@ -35,7 +31,7 @@ Mouse 2 FST A -
 ####
 # 图片路径
 #######
-ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:$[fvwm_icon]:$[fvwm_wallpapers]
+ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons/gnome/22x22/mimetypes:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:$[fvwm_icon]:$[fvwm_wallpapers]
 
 
 ####
@@ -91,20 +87,12 @@ Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialia
 ######
 Style "*" Icon 48x48/unknown.xpm
 Style "*term" Icon 48x48/xterm.png, NoActiveIconOverride, \
-	MiniIcon mini/xterm.png
+	MiniIcon 48x48/xterm.png
 Style "*Chrome" NoTitle, NoActiveIconOverride
-Style "Firefox" Icon 48x48/firefox.png NoActiveIconOveride, \
-	MinIcon mini/firefox.png
+Style "firefox" Icon firefox_32.png NoActiveIconOveride, \
+	MinIcon mini/firefox_32.png
 
 
-
-
-####
-# 程序运行函数
-#######
-DestroyFunc FvwmXTerm
-AddToFunc FvwmXTerm
-+ I Exec exec uxterm
 
 
 
@@ -154,6 +142,10 @@ Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+45+450 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
 Key F4 A M Close
+#Key F1 A M GoToPager 0 0
+#Key F2 A M GoToPager 0 1
+#Key F3 A M GoToPager 1 0
+#Key F4 A M GoToPager 1 1
 
 
 
@@ -210,16 +202,20 @@ MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:anti
 DestroyMenu FuncMenu
 AddToMenu FuncMenu "%fcitx.png%=== 主菜单===" Title
 + "终端  - &Xterm%utilities-terminal.png%"  Exec exec uxterm
-+ "浏览器- &Firefox%web-browser.png%"  Exec exec firefox
++ "浏览器- &Firefox%firefox_24.png%"  Exec exec firefox-bin
 + "浏览器- &Opera%opera-browser.png%"  Exec exec opera
 + "浏览器- &Chrome%google-chrome.png%"  Exec exec google-chrome
 + "播放器- X&BMC%xbmc/media/icon32x32.png%"  Exec exec xbmc
 + "文件库- &PCmanFM%system-file-manager.png%"  Exec exec pcmanfm
++ "看图片- &ImageMagick%gnome-mime-image.png%"  Exec exec display
 + ""  Nop
 + "办公软件%libreoffice-writer.png%"   Popup OfficeMenu
 + "应用程序"   Popup ProgramsMenu
 + "工具"   Popup UtilitiesMenu
-+ ""  Nop
+
+
+DestroyMenu SystemMenu
+AddToMenu SystemMenu "%fcitx.png%=== 系统菜单 ===" Title
 + "注销%application-exit.png%"   Quit
 + "重启%view-refresh.png%"   Exec exec sudo shutdown -r now
 + "关机"   Exec exec sudo shutdown -h now
@@ -227,7 +223,13 @@ AddToMenu FuncMenu "%fcitx.png%=== 主菜单===" Title
 
 DestroyMenu ConfMenu
 AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
-+ "&Git Add /%utilities-terminal.png%"  Exec exec cd / && git add .
++ "&Gvim .fvwm/config%utilities-terminal.png%"  Exec exec gvim ~/.fvwm/config
++ "&Gvim .conky-myhome/conkymain%utilities-terminal.png%"  Exec exec gvim ~/.conky-myhome/conkymain
++ "&Gvim .bashrc%utilities-terminal.png%"  Exec exec gvim ~/.bashrc
++ "&Gvim .xprofile%utilities-terminal.png%"  Exec exec gvim ~/.xprofile
++ "&Gvim etc/hosts%utilities-terminal.png%"  Exec exec sudo gvim /etc/hosts
++ "&Gvim apache/vhost/query%utilities-terminal.png%"  Exec exec sudo gvim /etc/apache2/vhosts.d/query.bzbee.com_vhost.include
++ "&Gvim apache/vhost/myhome%utilities-terminal.png%"  Exec exec sudo gvim /etc/apache2/vhosts.d/myhome.cn_vhost.include
 
 ####
 # 按钮配置
@@ -239,63 +241,56 @@ Style "FvwmButtons" NoTitle,NoHandles,BorderWidth 0,Sticky,\
 
 DestroyModuleConfig LaunchInfo: *
 Style LaunchInfo Sticky, StaysOnTop
-*LaunchInfo: Rows 5
-*LaunchInfo: Columns 5
+*LaunchInfo: Rows 5 
+*LaunchInfo: Columns 5 
 *LanuchInfo: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
-*LaunchInfo: Colorset 30
-*LaunchInfo: Frame 1
-*LaunchInfo: (3x3, Icon logo_72.png,Action (Mouse 1) Menu FuncMenu )
-*LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Swallow "FvwmPager" "FvwmPager")
-*LaunchInfo: (2x3, Title "天气", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True")
-*LaunchInfo: (3x2, Title "日期", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True")
+*LaunchInfo: Colorset 30 
+*LaunchInfo: Frame 1 
+*LaunchInfo: (3x3, Icon logo_72.png,Action (Mouse 1) Menu FuncMenu, Action (Mouse 3) Menu SystemMenu ) 
+*LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True",Swallow "FvwmPager" "FvwmPager") 
+*LaunchInfo: (2x3, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmweather" "Exec wmweather --lcd")
+*LaunchInfo: (3x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmclock" "Exec wmclock -24 -led 'yellow'")
 
 Module FvwmButtons -g 150x150+0-0 LaunchInfo
 
 
 
-####
-# Win+D 最小化所有窗口
-######
+#### Win+D 最小化所有窗口 #####
 DestroyFunc FuncFvwmIconifyTrue
-AddToFunc FuncFvwmIconifyTrue
-+ I All (!Iconic, !Fvwm*) State 1
+AddToFunc FuncFvwmIconifyTrue 
++ I All (!Iconic,!Fvwm*) State 1 
 + I All (State 1) Iconify True
 
-DestroyFunc FuncFvwmIconifyFalse
-AddToFunc FuncFvwmIconifyFalse
+DestroyFunc FuncFvwmIconifyFalse 
+AddToFunc FuncFvwmIconifyFalse 
 + I All (State 1) Iconify False
 
-DestroyFunc FuncFvwmIconifyToggle
-AddToFunc FuncFvwmIconifyToggle
-+ I FuncFvwmIconifyFalse
-+ I All (State 1) State 1 False
+DestroyFunc FuncFvwmIconifyToggle 
+AddToFunc FuncFvwmIconifyToggle 
++ I FuncFvwmIconifyFalse 
++ I All (State 1) State 1 False 
 + I TestRc (NoMatch) FuncFvwmIconifyTrue
 
 Key D A 4 FuncFvwmIconifyToggle
 
-####
-# Win+L 锁屏
-######
+#### Win+L 锁屏 #####
 DestroyFunc FuncFvwmLockScreen
-AddToFunc FuncFvwmLockScreen
-+ I All (xscreensaver) Nop
-+ I TestRc (NoMatch) Exec xscreensaver -no-splash &
+AddToFunc FuncFvwmLockScreen 
++ I All (xscreensaver) Nop 
++ I TestRc (NoMatch) Exec xscreensaver -no-splash & 
 + I Exec xscreensaver-command -lock
 
 Key L A 4 FuncFvwmLockScreen
 
 
 
-####
-# 桌面
-######
-Test (EnvIsSet fvwm_wallpaper) AddToFunc StartFunction
-	+ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
+#### 桌面 #####
+Test (EnvIsSet fvwm_wallpaper) 
+AddToFunc StartFunction 
++ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
 
 
-####
-# 全屏功能   
-######
+#### 全屏功能   #####
 DestroyFunc FuncFullScreen  
 AddtoFunc FuncFullScreen  
 + I Current (State 0) Fullscreen-Stop   
@@ -310,26 +305,33 @@ AddtoFunc Fullscreen-Start
   
 DestroyFunc Fullscreen-Stop  
 AddtoFunc Fullscreen-Stop  
-+ I DestroyWindowStyle  
++ I DestroyWindowStyle
 + I State 0 false  
 + I Maximize  
 
 Key F A 4 FuncFullScreen
 
-####
-# 窗口移动,图标还原.
-######
-Mouse 1 T A FvwmMoveOrRaise
+#### 窗口移动,图标还原.  #####
+Mouse 1 T A FvwmMoveOrRaise 
 
-DestroyFunc FvwmMoveOrRaise
-AddToFunc FvwmMoveOrRaise "M" Move
+DestroyFunc FvwmMoveOrRaise 
+AddToFunc FvwmMoveOrRaise "M" Move 
 + I "C" Raise
 
-Mouse 0 I A FvwmMoveOrIconify
 
-DestroyFunc FvwmMoveOrIconify
-AddToFunc FvwmMoveOrIconify "M" Move
+### 鼠标双击图栏时还原窗口
+Mouse 0 I A FvwmMoveOrIconify
+DestroyFunc FvwmMoveOrIconify 
+AddToFunc FvwmMoveOrIconify "M" Move 
 + "D" Iconify
+
+
+### 鼠标双击标题栏,最大化
+Mouse 0 T A FvwmMaxWindow
+DestroyFunc FvwmMaxWindow
+AddToFunc FvwmMaxWindow "M" Move
++ "D" Maximize
+
 
 ####
 # 右边Win键启动 Xterm

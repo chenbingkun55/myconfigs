@@ -11,8 +11,8 @@ XTerm*jumpScroll: true
  
 xterm.termName: xterm-256color 
 xterm.geometry: 80x36 
-xterm*scrollBar: false
-xterm*rightScrollBar: false 
+xterm*scrollBar: true
+xterm*rightScrollBar: true
 xterm*loginshell: true 
 xterm*cursorBlink: true 
 xterm*background: black 
@@ -28,10 +28,10 @@ xterm*altSendsEscape: true
 
 !mouse selecting to copy, ctrl-v to paste 
 !Ctrl p to print screen content to file 
-XTerm*VT100.Translations: #override \ 
- Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\ 
- <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\ 
- Ctrl <KeyPress> P: print() \n 
+XTerm*VT100.Translations: #override \
+ Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+ <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+ Ctrl <KeyPress> P: print() \n
  
 !font and locale 
 xterm*locale: true 

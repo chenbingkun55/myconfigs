@@ -1,63 +1,4 @@
 restart
-restart
-restart
-restart
-restart
-restart
-restart
-DeskTopName
-getname
-ShowFvwmSettings
-ShowLayers
-fvwm-root
-?
-help
-close
-Title
-name
-Name
-FvwmPager 
-FvwmPager name
-FvwmPager --help
-FvwmPager help
-FvwmPager: name
-FvwmPager get
-CurrentDesk
-CurrentScreen
-Next CurrentScreen
-restart
-FvwmPager 
-restart
-restart
-restart
-restart
-FvwmPager  
-DeskTopSize 3x3
-FvwmPager  
-FvwmPager  0 3
-FvwmPager 0 3
-restart
-restart
-restart
-restart
-restart
-restart
-FvwmPager
-FvwmPager 0 3
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
-restart
 reatart
 restart
 restart
@@ -96,5 +37,64 @@ restart
 restart
 restart
 restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+FvwmWindowList
+FvwmWindowsList
+exit
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+quit
+restart
+quit
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+restart
+All (uxterm) MoveToDesk
+All (uxterm) MoveToDesk 
+All (uxterm) MoveToDesk 0
+All (uxterm) MoveToPager 0
+All (*term) MoveToPager 0
+All (xterm) MoveToPager 0
+All (xterm) MoveToDesk
 restart
 restart
