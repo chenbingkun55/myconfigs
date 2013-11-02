@@ -10,7 +10,7 @@
 # IPv4 and IPv6 localhost aliases
 127.0.0.1	chenbk localhost
 ::1		localhost
-
+127.0.0.1	localquery localquery.bzbee.com
 #
 # Imaginary network.
 #10.0.0.2               myname

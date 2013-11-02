@@ -39,50 +39,33 @@ ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/loc
 ####
 # 虚拟桌面个数
 ######
-DesktopSize 3x3
+DeskTopSize 2x2
 DesktopName 0 主桌面
 DesktopName 1 任务桌面
 DesktopName 2 休闲桌面
-EdgeScroll 100 100
-EdgeResistance 500 500
+#EdgeScroll 100 100
+#EdgeResistance 500 500
 # 自动滚屏 1-开启 0-禁用
-EdgeThickness 1     
+EdgeThickness 0     
 
 ####
 # 桌面页配置
 ######
-#*FvwmPager: Rows 3
-#*FvwmPager: Columns 1
-#*FvwmPagerBack #908090
-#*FvwmPagerFore #484048
-#*FvwmPager: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
-#*FvwmPagerHilight #cab3ca
-#*FvwmPagerLabel 0 主桌面
-#*FvwmPagerLabel 1 任务桌面
-#*FvwmPagerLabel 2 休闲桌面
-#*FvwmPager: SmallFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
-#*FvwmPagerBalloons   All
-#*FvwmPagerBalloonBack Yellow
-#*FvwmPagerBalloonFore Black
-#*FvwmPagerBalloonFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
-#*FvwmPagerBalloonYOffset +2
-#*FvwmPagerBalloonBorderWidth 1
-#*FvwmPagerBalloonBorderColor Black
-
-#####
-# New FvwmPager
-######
+Style "FvwmPager" NoTitle,NoHandles,BorderWidth 0,Sticky,\
+	WindowListSkip, CirculateSkip,StaysOnBottom,FixedPosition,\
+	FixedSize, !Iconifiable
 DestroyModuleConfig FvwmPager: *
-AddToFunc StartFunction
-	+ I Module FvwmPager
-
-*FvwmPager: font none
-*FvwmPager: Colorset * 1
-*FvwmPager: WindowColorsets 2 3
-*FvwmPager: Geometry 251x171-0+0
-
-Style FvwmPager !Title, !Borders, StaysOnBottom, Sticky
-
+*FvwmPager: MiniIcons
+*FvwmPager: Window3DBorders
+*FvwmPager: MiniIcons
+*FvwmPager: Colorset * 11
+*FvwmPager: HilightColorset * 10
+*FvwmPager: ShapeLabels
+*FvwmPager: SolidSeparators
+*FvwmPager: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
+*FvwmPagerLabel 0 主桌面
+*FvwmPagerLabel 1 任务桌面
+*FvwmPagerLabel 2 休闲桌面
 
 
 ####
@@ -106,7 +89,7 @@ Style * FocusFollowsMouse
 Style * DecorateTransient
 Style * SmartPlacement,WindowShadeSteps 10, ResizeOpaque
 Style * SnapAttraction Windows
-Style * !Borders, NoTitle
+Style * Borders, NoTitle, BorderWidth 5, HandleWidth 5, DepressableBorder
 Style * NoIconTitle
 Style * TitleCascadePlacement, GrabFocusOff
 Style * SnapGrid 5 5
@@ -120,11 +103,9 @@ Style "*" MWMBorder
 Style "*" NoIcon
 # Style "Fvwm*" NoTitle, Sticky, WindowListSkip
 Style "Fvwm*" BorderWidth 2, CirculateSkipIcon, CirculateSkip
-Style "FvwmPager" StaysOnTop
 # Style "MainPanel" StaysOnTop
 Style "PagerPanel" StaysOnTop
 Style "FvwmBanner" StaysOnTop
-Style "FvwmButtons" Icon toolbox.xpm, ClickToFocus
 OpaqueMoveSize 100
 Emulate MWM
 HideGeometryWindow Never
@@ -162,9 +143,10 @@ AddToFunc FvwmXTerm
 ######
 DestroyFunc StartFunction
 AddToFunc StartFunction
-+ I Module FvwmTaskBar
-+ I Module FvwmTabs
-# + I Module FvwmPager 0 2
++ I Module FvwmAudio
+# + I Module FvwmTaskBar
+# + I Module FvwmTabs
+#+ I Module FvwmPager 0 2
 # + I Module FvwmButtons MainPanel
 
 
@@ -182,7 +164,7 @@ AddToFunc InitFunction
 
 DestroyFunc RestartFunction
 AddToFunc RestartFunction
-+ I Exec exec ~/.conky-myhome/bin/conkyStart
+# + I Exec exec ~/.conky-myhome/bin/conkyStart
 + I Exec exec xrdb ~/.Xresources
 + I Nop
 
@@ -322,6 +304,33 @@ AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
 ####
 # 按钮配置
 ######
+Style "FvwmButtons" NoTitle,NoHandles,BorderWidth 0,Sticky,\
+	WindowListSkip,CirculateSkip,StaysOnBoottom,FixedPosition,\
+	FixedSize, !Iconifiable
+
+
+DestroyModuleConfig LaunchInfo: *
+Style LaunchInfo Sticky, StaysOnTop
+*LaunchInfo: Rows 5
+*LaunchInfo: Columns 5
+*LanuchInfo: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
+*LaunchInfo: Colorset 30
+*LaunchInfo: Frame 1
+*LaunchInfo: (3x3, Icon logo_72.png,Action (Mouse 1) Menu FuncMenu )
+*LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Swallow "FvwmPager" "FvwmPager")
+#*LaunchInfo: (1x1, Title "1", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 0 0)
+#*LaunchInfo: (1x1, Title "2", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 1 0)
+#*LaunchInfo: (1x1, Title "3", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 0 1)
+#*LaunchInfo: (1x1, Title "4", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True", Action (Mouse 1) GoToPage 1 1)
+*LaunchInfo: (2x3, Title "天气", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True")
+*LaunchInfo: (3x2, Title "日期", Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True")
+
+#*LaunchTime: (1x2,Title "Chrome", Icon google-chrome.png Action (Mouse 1) `Exec google-chrome`)
+# *LaunchTime: (3x1)
+Module FvwmButtons -g 150x150+0-0 LaunchInfo
+
+
+
 #*FvwmButtonsBack bisque3
 #*MainPanel: Geometry 120x18+2+2
 #*MainPanel: Back SeaGreen
@@ -341,32 +350,32 @@ AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
 ####
 # 工具栏
 ######
-Style "FvwmTaskBar" HandleWidth 3, BorderWidth 4, NoTitle, Sticky,\
-	StaysOnTop, WindowListSkip, CirculasteSkip
-*FvwmTaskBar: UseSkipList
-*FvwmTaskBar: AutoStick
-*FvwmTaskBar: DeskOnly
-*FvwmTaskBar: Action Click1 DeiconifyRaiseAndFocus
-*FvwmTaskBar: Action Click2 Iconify On
-*FvwmTaskBar: Action Click3 Lower
-*FvwmTaskBar: MailCommand Exec exec uxtrem -e mutt
-*FvwmTaskBar: 3DFvwm
-*FvwmTaskBar: StartName Gentoo
-*FvwmTaskBar: StartMenu FuncMenu
-*FvwmTaskBar: StartIcon fcitx.png
-*FvwmTaskBar: Button Icon utilities-terminal.png , Action (Mouse 1) FvwmXterm
-*FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-*FvwmTaskBar: SelFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-*FvwmTaskBar: StatusFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-*FvwmTaskBar: ShowTips
-*FvwmTaskBar: ClockFormat %m-%d [%A] %H:%M
-*FvwmTaskBar: windowButtionsRightMargin 20
-*FvwmTaskBar: Back seagreen
-*FvwmTaskBar: Fore gold2
-*FvwmTaskBar: FocusFore cornsilk
-*FvwmTaskBar: IconBack darkgreen
-*FvwmTaskBar: IconFore white
-*FvwmTaskBar: BellVolume 50
+#Style "FvwmTaskBar" HandleWidth 3, BorderWidth 4, NoTitle, Sticky,\
+#	StaysOnTop, WindowListSkip, CirculasteSkip
+#*FvwmTaskBar: UseSkipList
+#*FvwmTaskBar: AutoStick
+#*FvwmTaskBar: DeskOnly
+#*FvwmTaskBar: Action Click1 DeiconifyRaiseAndFocus
+#*FvwmTaskBar: Action Click2 Iconify On
+#*FvwmTaskBar: Action Click3 Lower
+#*FvwmTaskBar: MailCommand Exec exec uxtrem -e mutt
+#*FvwmTaskBar: 3DFvwm
+#*FvwmTaskBar: StartName Gentoo
+#*FvwmTaskBar: StartMenu FuncMenu
+#*FvwmTaskBar: StartIcon fcitx.png
+#*FvwmTaskBar: Button Icon utilities-terminal.png , Action (Mouse 1) FvwmXterm
+#*FvwmTaskBar: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+#*FvwmTaskBar: SelFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+#*FvwmTaskBar: StatusFont "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+#*FvwmTaskBar: ShowTips
+#*FvwmTaskBar: ClockFormat %m-%d [%A] %H:%M
+#*FvwmTaskBar: windowButtionsRightMargin 20
+#*FvwmTaskBar: Back seagreen
+#*FvwmTaskBar: Fore gold2
+#*FvwmTaskBar: FocusFore cornsilk
+#*FvwmTaskBar: IconBack darkgreen
+#*FvwmTaskBar: IconFore white
+#*FvwmTaskBar: BellVolume 50
 
 
 AddToFunc DeiconifyRaiseAndFocus
@@ -374,6 +383,25 @@ AddToFunc DeiconifyRaiseAndFocus
 + I Raise
 + I Focus
 
+####
+# 任务栏点击最小化和还原,不生效
+######
+# DestroyFunc DeiconifyRaiseAndFocus 
+# AddToFunc DeiconifyRaiseAndFocus
+# + I Current (State 5) DeiconifyRaiseAndFocus-on
+# + I TestRc Current (Iconify on) DeiconifyRaiseAndFocus-off
+
+
+# DestroyFunc DeiconifyRaiseAndFocus-off
+# AddToFunc DeiconifyRaiseAndFocus-off
+# + I Current (!Iconify on) Iconify on
+# + I State 5 true  
+  
+# DestroyFunc DeiconifyRaiseAndFocus-on
+# AddToFunc DeiconifyRaiseAndFocus-on
+# + I Iconify off
+# + I Raise
+# + I Focus
 
 ####  Error
 # FvwmTabs
@@ -468,6 +496,7 @@ AddtoFunc Fullscreen-Stop
 + I Maximize  
 
 Key F A 4 FuncFullScreen
+Key F4 A M Close
 Mouse 3 W M FuncFullScreen
 
 ####
@@ -489,3 +518,9 @@ AddToFunc FvwmMoveOrIconify "M" Move
 # 右边Win键启动 Xterm
 ######
 Key Super_R A A Exec exec uxterm
+
+
+
+####
+# 按Ctrl+Alt+软件首字母,将这类软件移到当前窗口,再按一次或选中某个时还原回去.
+######
