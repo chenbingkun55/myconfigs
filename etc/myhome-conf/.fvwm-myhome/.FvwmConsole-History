@@ -1,17 +1,4 @@
 restart
-reatart
-restart
-restart
-restart
-restart
-reatrt
-restart
-restart
-restart
-restart
-restart
-restart
-restart
 restart
 restart
 restart
@@ -98,3 +85,16 @@ All (xterm) MoveToPager 0
 All (xterm) MoveToDesk
 restart
 restart
+restart
+restart
+restart
+restart
+All (chenbk) MoveToDesk
+All (chenbk) MoveToDesk 0
+restart
+quit
+restart
+restart
+restart
+restart
+quit

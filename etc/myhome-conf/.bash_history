@@ -1,91 +1,3 @@
-git commit -m "FvwmTaskBar 时间显示调整"
-git push
-vi .fvwm/config
-cd 
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-date --help |more
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-killall conky
-cd /
-git add .
-git commit -m "FvwmTaskBar 时间样改进."
-git push
-df -h 
-su -
-exit
-su -
-exit
-su -
-exit
-su -
-exit
-su -
-cd Downloads/
-cd OS\ X\ Install\ Mavericks\ 13A603
-ls
-lftp 192.168.23.100
-ext
-exit
-cd /mnt/
-ll -h 
-cd OS\ X\ Install\ Mavericks\ 13A603/
-ll -h
-ll -h
-ll -h
-exit
-sudo fdisk -l
-sudo mount -t vfat -o uid=1000 /dev/sdb1  /mnt/
-sudo mount -o uid=1000 /dev/sdb1  /mnt/
-su -
-exit
-sudo pon twvpn
-ifconfig 
-exit
-vi .fvwm/config
-su -
-exit
-vi .fvwm/config
-alsamixer 
-exit
-sudo pon twvpn
-ifconfig 
-sudo poff twvpn
-ifconfig 
-sudo emerge -av dosfstools
-cd /usr/portage/
-ls
-cd sys-fs/
-ls
-sudo emerge -av exfat-utils
-sudo emerge -av hfsutils
-sudo emerge -av btrfs-progs
-su -
-sudo emerge -av hfsplusutils
-cd ..
-ls
-cd x11-apps/
-ls
-cd ..
-ls
-cd x11-plugins/
-ls
-cd ..
-os
-ls
-cd www-client/
-ls
 exit
 cd /usr/portage/
 cd sys-fs/
@@ -498,3 +410,91 @@ display /home/chenbk/Image/wallpaper-1920x1200.png
 display
 vi .fvwm/config
 exit
+whereis vi
+whereis st
+ls -al |more
+import
+import --help
+vi .Xresources 
+xdb .Xresources 
+xrdb .Xresources 
+vi +31 .Xresources 
+xrdb .Xresources 
+sudo emerge -av reader
+sudo emerge -av acrobat
+sudo emerge -av pddf
+sudo emerge -av pdf
+cd /
+git add .
+git commit -m "小修改"
+git push
+ls /opt/
+cd /opt/phpstorm/
+ls
+cd bin/
+ls
+./phpstorm.sh 
+ls
+cd 
+ls
+ls xinxuwang.com/
+ls V3转V6前的备份_bak20121229/
+ls V3转V6前的备份_bak20121229/my9finance/
+ls V3转V6前的备份_bak20121229/my9finance/images/
+mv V3转V6前的备份_bak20121229/my9finance/images/logo_max_color.gif /tmp/
+cd /tmp/
+convert --help
+convert --help |more
+ls
+cd 
+cd .conky-myhome/
+ls
+ls scripts/
+ls pics/
+ls bin/
+cat bin/conkyPhotoRandom 
+cat bin/conkyPhotoRandom  |more
+cd /tmp/
+ls
+convert logo_max_color.gif logo_max_color.png
+ls
+display logo_max_color.png 
+mv logo_max_color.png ~/.fvwm/icons/logo_max.png
+cd
+vi .fvwm/config
+cat bin/conkyPhotoRandom  |more
+cd /tmp/
+cat bin/conkyPhotoRandom  |more
+cd 
+cat .conky-myhome/bin/conkyPhotoRandom  |more
+cd .fvwm/icons/
+convert logo_max.png -thumbnail 90x90 logo_max2.png 
+display logo_max2.png 
+cd
+convert logo_max.png -thumbnail 85x85 logo_max2.png 
+cd .fvwm/icons/
+rm logo_max2.png 
+convert logo_max.png -thumbnail 85x85 logo_max2.png 
+convert logo_max.png -thumbnail 80x80 logo_max2.png 
+cd .fvwm/config
+cd .fvwm/
+ls
+cd i
+cd images/
+ls
+display 1.png 
+cd ../wallpaper/
+ls
+display 1.png 
+convert 1.png -thumbnail 1024x768 1024-768.png
+vi ../config
+cd .fvwm/wallpaper/
+ls
+convert 1.png -thumbnail 1366x800 1024-768.png
+convert 1.png -thumbnail 1500x800 1024-768.png
+convert 1.png -thumbnail 1366x1024 1024-768.png
+display 1024-768.png 
+convert 1.png -thumbnail 1366x900 1024-768.png
+ls
+mv 1024-768.png 1.png 
+vi ../config

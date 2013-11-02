@@ -246,7 +246,7 @@ Style LaunchInfo Sticky, StaysOnTop
 *LanuchInfo: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
 *LaunchInfo: Colorset 30 
 *LaunchInfo: Frame 1 
-*LaunchInfo: (3x3, Icon logo_72.png,Action (Mouse 1) Menu FuncMenu, Action (Mouse 3) Menu SystemMenu ) 
+*LaunchInfo: (3x3, Icon logo_max2.png,Action (Mouse 1) Menu FuncMenu, Action (Mouse 3) Menu SystemMenu ) 
 *LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True",Swallow "FvwmPager" "FvwmPager") 
 *LaunchInfo: (2x3, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmweather" "Exec wmweather --lcd")
 *LaunchInfo: (3x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmclock" "Exec wmclock -24 -led 'yellow'")
