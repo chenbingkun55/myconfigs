@@ -144,8 +144,16 @@ Key 1 A M GoToPage 0 0
 Key 2 A M GoToPage 0 1
 Key 3 A M GoToPage 1 0
 Key 4 A M GoToPage 1 1
-
-
+### 方向按键,排列窗口,占半屏 ee
+Key Up    W C ResizeMove 100 150 0 0
+Key Left  W C ResizeMove 50 100 0 0
+Key Right W C ResizeMove 50 100 50 0
+Key Down  W C ResizeMove 100 50 0 50
+# 全屏
+Key Return W C Maximize
+# 缩放
+Key minus W C Resize w-10 w-10
+Key equal W C Resize w+10 w+10
 
 # Alt+Ctrl+n 标记n号窗回,Ctrl+n回到n号标记的窗口
 Key 0 WI MC Key 0 A C WindowId $[w.id] WarpToWindow 50 50
@@ -156,7 +164,10 @@ Key 4 WI MC Key 4 A C WindowId $[w.id] WarpToWindow 50 50
 Key 5 WI MC Key 5 A C WindowId $[w.id] WarpToWindow 50 50
 Key 6 WI MC Key 6 A C WindowId $[w.id] WarpToWindow 50 50
 Key 7 WI MC Key 7 A C WindowId $[w.id] WarpToWindow 50 50
-Key 8 WI MC Key 8 A C WindowId $[w.id] WarpToWindow 50 50
+K# 全Key Return W C ResizeMove 100 100 0 0
+# 缩放
+Key minus W C Resize w-10 w-10
+Key equal W C Resize w+10 w+10ey 8 WI MC Key 8 A C WindowId $[w.id] WarpToWindow 50 50
 Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
 
 

@@ -1,90 +1,4 @@
 ls
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-ll my_movedisk_bak20131102_BackUP.dd -h
-su -
-df -h 
-sudo umount /mnt/
-sudo mount /dev/sdb5 /mnt/
-df -h 
-cd /mnt/
-sudo umount /mnt/
-sudo mount -o uid=1000 /dev/sdb5 /mnt/
-mv my_movedisk_bak20131102_BackUP my_movedisk_bak20131102_ChenBK
-cd my_movedisk_bak20131102_ChenBK/
-ll
-du -sh . 
-du -sh . 
-du -sh . 
-du -sh . 
-du -sh . 
-du -sh . 
-du -sh . 
-cd 
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-df -h 
-mkdr my_movedisk_bak20131102_BackUP
-mkdir my_movedisk_bak20131102_BackUP
-fdik -l
-sudo fdisk -l
-dd if=/dev/sdb6 /home/chenbk/my_movedisk_bak20131102_BackUP.dd bs=1024
-dd if=/dev/sdb6 of=/home/chenbk/my_movedisk_bak20131102_BackUP.dd bs=1024
-sudo mount -o loop my_movedisk_bak20131102_BackUP.dd /mnt/
-cd /mnt/
-ls /mnt/
-cp -af /mnt/Seagate\ Sync/ /mnt/01_Document_Library\(文档库\)/ /mnt/05_Multimedia\(Video_MP3_Image\)/  my_movedisk_bak20131102_ChenBK/
-ls /mnt/
-sudo umount /mnt/
-df -h 
-man FvwmButtons
-xlock -bg '#31658c' -fg white -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'
-xlock -bg '#31658c' -fg white -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'
-xclock --help |more
-xlock -bg '#31658c' -fg white -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'
-xlock -bg '#31658c' -fg white -digital -strftime '%a, %d %b %Y %H:%M'
-xlock -bg '#31658c' -digital -strftime '%a, %d %b %Y %H:%M'
-xlock -bg '#31658c' -digital -strftime '%a %d %b %Y %H:%M'
-xlock -bg '#31658c' -digital 
-xlock -digital 
-xlock
-xclock 
-xclock -bg '#31658c' -fg white -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'
-echo "xclock -bg '#31658c' -fg white -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'" >> .fvwm/config
-killall conky
-man FvwmButton
-man FvwmButtons
-less .fvwm/config
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-sudo pon twvpn
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-mv BK_64.jpg Image/BK_logo.jpg
-mv 64x64.png Image/logo.png
-cd .fvwm/
-ls
-ls icons/
-mv ../Image/logo.png icons/
-cd ..
-ls
 mv Image/logo.png  .fvwm/icons/
 cd /media/BackUP/01_Archive/
 ls
@@ -498,3 +412,89 @@ exit
 cpufreq-info 
 man IconBox
 exit
+cd /
+vi .gitignore 
+vi .gitignore 
+ls /etc/config-archive/
+sudo ls /etc/config-archive/
+sudo rm -rf /etc/config-archive/
+sudo ls /etc/polkit-1/
+sudo ls /etc/ssl/
+sudo ls /etc/ssl/private/
+sudo rm -rf /etc/ssl/private/
+sudo ls /etc/polkit-1/rules.d/
+sudo ls /etc/polkit-1/rules.d/ -l
+cd /etc/polkit-1/rules.d/
+sudo cd /etc/polkit-1/rules.d/
+su -
+exit
+sudo vi /etc/portage/package.use 
+sudo vi /etc/portage/make.conf
+sudo vi /etc/portage/package.use 
+sudo vi /etc/portage/package.keywords
+sudo vi /etc/portage/package.keywords
+sudo vi /etc/portage/package.use 
+lftp ftp://ftp.shanghaihomeexpo.com
+.conky-myhome/bin/conkyStart 
+.conky-myhome/bin/conkyStart &
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+cd /
+git add .
+ls -l /etc/ppp/
+git add .
+git add .
+git --help
+git reset
+git add .
+sudo git add .
+git add .
+git add .
+git add .
+git add .
+vi .gitignore 
+git add .
+sudo git add .
+git add .
+git add .
+git commit -m "Fvwm 窗口可以调整大小了,原来是写在前面的取消默认绑定阻止的."
+git push 
+su -
+git add  .
+su -
+git add . 
+git credential-osxkeychain
+sudo emerge -av osxkeychain
+exit
+sudo emerge --sync
+emerge --oneshot portage
+sudo emerge --oneshot portage
+sudo emerge --oneshot python
+dispatch-conf 
+sudo dispatch-conf 
+/usr/sbin/update-etc 
+sudo /usr/sbin/update-etc 
+sudo emerge -av --depclean
+sudo emerge -avuDN world
+sudo vi /etc/portage/make.conf
+sudo emerge -avuDN world
+ls
+ls /tmp/
+ls /etc/portage/
+vi /etc/portage/package.use 
+sudo emerge -qa php
+equery f php
+equery f php |more
+equery --help
+equery u php
+equery u php | more
+equery --help
+equery u php-5.5 | more
+equery u php5.5 | more
+sudo emerge -qa php
+sudo emerge -avuDN world
+sudo emerge -avuDN world
+sudo emerge -avuDN world
+sudo emerge -avuDN world
+sudo emerge -avuDN world

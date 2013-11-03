@@ -8,11 +8,6 @@ restart
 restart
 restart
 restart
-restart
-restart
-restart
-restart
-restart
 quit
 restart
 restart
@@ -91,6 +86,11 @@ restart
 restart
 restart
 quit
+restart
+restart
+restart
+restart
+restart
 restart
 restart
 restart
