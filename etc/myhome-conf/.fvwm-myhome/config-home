@@ -48,7 +48,7 @@ DesktopName 2 休闲桌面
 ####
 # 桌面页配置
 ######
-Style "FvwmPager" NoTitle,NoHandles,BorderWidth 0,Sticky,\
+Style "FvwmPager" NoTitle,NoHandles,Sticky,\
 	WindowListSkip, CirculateSkip,StaysOnBottom,FixedPosition,\
 	FixedSize, !Iconifiable
 DestroyModuleConfig FvwmPager: *
@@ -77,7 +77,7 @@ Style * SloppyFocus, MouseFocusClickRaises
 ####
 # 全局样式定义
 ######
-Style * TitleAtLeft
+Style * TitleAtLeft, NoHandles
 Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
 Style "*" Icon 48x48/unknown.xpm, !IconTitle
 
@@ -245,7 +245,7 @@ AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
 ####
 # 按钮配置
 ######
-Style "FvwmButtons" NoTitle,NoHandles,BorderWidth 0,Sticky,\
+Style "FvwmButtons" NoTitle,NoHandles,Sticky,\
 	WindowListSkip,CirculateSkip,StaysOnBoottom,FixedPosition,\
 	FixedSize, !Iconifiable
 
@@ -268,7 +268,7 @@ Module FvwmButtons -g 150x150+0-0 LaunchInfo
 
 
 DestroyModuleConfig RunList: *
-Style "RunList" NoHandles,BorderWidth 5,Sticky,\
+Style "RunList" NoHandles,Sticky,\
 	WindowListSkip,CirculateSkip,StaysOnBoottom,FixedPosition,\
 	FixedSize, !Iconifiable
 
