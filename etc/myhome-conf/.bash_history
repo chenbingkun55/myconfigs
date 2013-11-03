@@ -1,31 +1,3 @@
-exit
-cd /usr/portage/
-cd sys-fs/
-ls
-ls
-exit
-alsamixer 
-exit
-sudo mount /dev/sda1 /boot/
-sudo vi /boot/grub/grub.conf 
-exit
-alsamixer 
-exit
-nslookup
-su -
-exit
-alsamixer 
-exit
-ifconfig -a
-su -
-sudo pon twvpn
-ifconfig 
-sudo poff twvpn 
-vi .fvwm/
-vi .fvwm/config
-vi .fvwm/config
-cd /usr/portage/
-ls
 ~ls games-action/
 ls games-action
 ls games-action
@@ -498,3 +470,31 @@ convert 1.png -thumbnail 1366x900 1024-768.png
 ls
 mv 1024-768.png 1.png 
 vi ../config
+cd /
+git add .
+git commit -m "修改背景图片尺寸"
+git push
+cd 
+cd .fvwm/wallpaper/
+ll -
+ll -h
+killall conky
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+exit
+vi .fvwm/config
+exit
+vi .fvwm/config
+less .fvwm/config
+man EdgeCommand
+man EdgeResistance
+man EdgeScroll
+man fvwm
+vi .fvwm/config
+ls
+vi .fvwm/config
+exit
+alsamixer 
+exit
