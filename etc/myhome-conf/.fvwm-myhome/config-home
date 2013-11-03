@@ -25,7 +25,6 @@ Mouse 3 W M -
 Mouse 1 W M -
 Mouse 1 R A -
 Mouse 1 T A -
-Mouse 1 FS A -
 Mouse 2 FST A -
 
 ####
@@ -80,7 +79,7 @@ Style * SloppyFocus, MouseFocusClickRaises
 ######
 Style * TitleAtLeft
 Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
-Style "*" Icon 48x48/unknown.xpm
+Style "*" Icon 48x48/unknown.xpm, !IconTitle
 
 
 ####
@@ -217,6 +216,7 @@ AddToMenu FuncMenu "%fcitx.png%=== 主菜单===" Title
 DestroyMenu SystemMenu
 AddToMenu SystemMenu "%fcitx.png%=== 系统菜单 ===" Title
 + "注销%logout_24.png%"   Quit
++ "休眠%hibernate_24.png%"   Exec exec sudo hibernate-ram
 + "重启%reboot_24.png%"   Exec exec sudo shutdown -r now
 + "关机%shutdown_24.png%"   Exec exec sudo shutdown -h now
 
@@ -249,7 +249,7 @@ Style LaunchInfo Sticky
 *LaunchInfo: (3x3, Icon logo_max2.png,Action (Mouse 1) Menu FuncMenu, Action (Mouse 3) Menu SystemMenu ) 
 *LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True",Swallow "FvwmPager" "FvwmPager") 
 *LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmweather" "Exec wmweather --lcd")
-*LaunchInfo: (3x2, Id DatePanel, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmclock" "Exec wmclock -24 -led 'yellow'")
+*LaunchInfo: (3x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmclock" "Exec wmclock -24 -led 'yellow'")
 *LaunchInfo: (2x1)
 
 Module FvwmButtons -g 150x150+0-0 LaunchInfo

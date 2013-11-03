@@ -19,5 +19,8 @@ usr/
 var/
 home/
 /session*
+/chap-secrets*
+/chap-secrets.example
+/50-default.rules
 !/home/chenbk
 !chenbk/

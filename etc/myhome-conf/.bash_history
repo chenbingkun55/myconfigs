@@ -1,127 +1,3 @@
-~ls games-action/
-ls games-action
-ls games-action
-ls
-ls net-news/
-ls x11-apps/
-ls
-ls x11-wm/
-ls
-ls x11-proto/
-cd .mozilla/
-ls
-ls firefox/
-ls extensions/
-ls /home/chenbk/Downloads/
-ls /home/chenbk/Desktop/
-sudo pon twvpn
-alsamixer 
-exit
-vi .fvwm/config
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-sudo mount -t ntfs-3g -o uid=1000 /dev/sdb5 /mnt/
-cd /mnt/
-ls
-ls /www
-ls /
-ls /home/www/
-mv web_qt/ /var/www/
-sudo mv web_qt/ /var/www/
-cd /var/www/
-ls
-ls localhost/
-ls localhost/htdocs/
-sudo mkdir query.bzbee.com
-ls
-sudo mv web_qt/ query.bzbee.com/htdocs
-ls query.bzbee.com/
-ls query.bzbee.com/htdocs/
-ls query.bzbee.com/htdocs/trunk/web/
-sudo mv query.bzbee.com/htdocs/trunk/web query.bzbee.com/htdocs
-cd query.bzbee.com/
-ls
-ls htdocs/
-ls
-cd htdocs/
-ls
-rm -rf branches refs trunk
-ls
-rm tags/
-rm tags -rf 
-ls
-ls web/
-mv web/ ../
-sudo mv web/ ../
-cd ..
-ls
-sudo rm -rf htdocs/
-ls
-sudo mv web/ htdocs
-ls
-ls htdocs/
-ll htdocs/
-cd ..
-ls
-ll
-ls query.bzbee.com/
-ls
-cd query.bzbee.com/
-ls
-cd htdocs/
-ls
-cd bak/
-ls
-mysql 
-mysql -uroot -p
-mysql -uroot -p
-mysql -uroot -p
-mysql --help
-mysql --help |more
-mysql -uroot -p querydb < /var/www/query.bzbee.com/htdocs/bak/20131101_querydb.sql 
-mysql -uquerydb -p
-mysql -uqueryuser -p 
-sudo vi /etc/apache2/httpd.conf 
-cd /etc/apache2/
-ls
-cd modules.d/
-ls
-sudo vi 00_default_settings.conf 
-cd ../vhosts.d/
-ls
-vi default_vhost.include 
-ll
-sudo cp myhome.cn_vhost.include query.bzbee.com_vhost.include
-sudo vi query.bzbee.com_vhost.include 
-ls
-less 00_default_vhost.conf 
-sudo vi 00_default_vhost.conf 
-sudo vi /etc/hosts 
-sudo /etc/init.d/apache2 restart
-sudo vi 00_default_vhost.conf 
-sudo /etc/init.d/apache2 restart
-cd ..
-ls
-less httpd.conf 
-cd modules.d/
-ls
-less 00_default_settings.conf 
-sudo vi 00_default_settings.conf 
-ls
-less ../vhosts.d/00_default_vhost.conf 
-sudo vi 00_default_settings.conf 
-sudo /etc/init.d/apache2 restart
-cd /var/www/query.bzbee.com/htdocs/
-ls
-cd qt/
-ls
-cd Conf/
-ls
-less config.php 
-sudo umount /mnt/
-exit
 ls
 ll my_movedisk_bak20131102_BackUP.dd -h
 ll my_movedisk_bak20131102_BackUP.dd -h
@@ -497,4 +373,128 @@ ls
 vi .fvwm/config
 exit
 alsamixer 
+exit
+less .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+git commit -m "Fvwm 大概配置己完成,后需再作一些小修改."
+git push
+cd
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+cd Desktop/
+ls
+tar zxvf aliedit.tar.gz 
+ls
+./aliedit.sh 
+cd
+ls
+ls .mozilla/plugins/
+ifconfig 
+ifconfig 
+sudo pon twvpn
+exit
+cat /etc/resolv.conf 
+ifconfig 
+exit
+sudo pon twvpn
+exit
+ping www.baidu.com
+ping www.youku.com
+ifconfig 
+sudo pon twvpn
+sudo pon twvpn
+vi .fvwm/config
+libreoffice 
+su -
+exit
+vi /etc/resolv.conf 
+gvim /etc/conf.d/net
+sudo gvim /etc/conf.d/net
+vi .config/cls
+cls
+clean
+gvim .vimrc
+sudo gvim /etc/conf.d/net
+ls
+ls .vim
+less .viminfo 
+mv .vimrc /etc/myhome-conf/
+ln -s /etc/myhome-conf/.vimrc .vimrc
+ls -l .vimrc 
+sudi vi /etc/X11/xorg.conf 
+sudo vi /etc/X11/xorg.conf 
+sudo vi /etc/X11/xorg.conf 
+exit
+cat /proc/cpuinfo 
+cat /proc/cpuinfo |more
+sudo emerge -av sys-power/acpid
+ls /boot/
+exit
+su -
+exit
+rm .vimrc 
+sudo vi /usr/share/vim/vim73/gvimrc_example.vim 
+cd /usr/share/vim/vim73/
+cp gvimrc_example.vim /home/chenbk/.vim/gvimrc
+cp vimrc_example.vim /home/chenbk/.vim/vimrc
+locale
+cd
+sudo emerge -av gvim
+st .bashrc 
+ls .vim
+less .viminfo 
+cd .vim
+ls
+vi gvimrc 
+sudo vi /etc/portage/make.conf
+cd /usr/src/linux
+ll
+su -
+su -
+exit
+sudo vi /etc/syslog-ng/syslog-ng.conf 
+sudo vi /etc/syslog-ng/scl.conf 
+exit
+sudo /etc/init.d/cpufreqd start
+sudo emerge --newuse cpufreqd -av
+sudo rc-update del atd battery
+ls /etc/runlevels/battery/
+sudo rc-update del sshd battery
+sudo emerge -av hibernate-script
+sudo USE="vim-syntax" emerge -av hibernate-script
+su -
+hibernate-ram 
+sudo hibernate-ram 
+killall conky
+vi .fvwm/config
+grep capacity /proc/acpi/button/lid/LID0/state 
+grep capacity /proc/acpi/event 
+exit
+su -
+exit
+ls
+mkdir Gentoo
+cd Gentoo/
+st gentoo-update.txt
+exit
+vi .fvwm/config
+sudo sudovi
+sudo visudo
+cd Downloads/
+ls
+cd ../Desktop/
+ls
+ll
+su -
+ls
+st ../Gentoo/gentoo-update.txt
+exit
+cpufreq-info 
+man IconBox
 exit

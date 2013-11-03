@@ -2,11 +2,11 @@
 # scripts in /etc/init.d.  To create a more complete configuration,
 # please review /usr/share/doc/openrc*/net.example* and save your configuration
 # in /etc/conf.d/net (this file :]!).
-modules=("wpa_supplicant")
-wpa_supplicant_wlan0="-Db43"
+# modules=("wpa_supplicant")
+# wpa_supplicant_wlan0="-Db43"
 # wpa_supplicant_wlan0="-Db43-pci-bridge"
-dhcpd_wlan0="-t 10"
-config_wlan0=("dhcp")
+# dhcpd_wlan0="-t 10"
+#config_wlan0=("dhcp")
 dns_domain_enp7s0="gicp.net"
 dns_domain_lo="gicp.net"
 config_enp7s0=("dhcp")

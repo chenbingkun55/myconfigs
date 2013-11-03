@@ -16,3 +16,21 @@
 2013年 10月 14日 星期一 02:22:55 CST : Enter RestartBrowser chrome
 2013年 10月 14日 星期一 02:22:55 CST : No chrome has been restarted
 2013年 10月 14日 星期一 02:22:55 CST : Leave RestartBrowser chrome restart:0, result:0
+2013年 11月 03日 星期日 19:03:53 CST : Begin to SetStrings
+2013年 11月 03日 星期日 19:03:53 CST : Successfully SetStrings
+2013年 11月 03日 星期日 19:03:53 CST : Begin to CheckOS
+2013年 11月 03日 星期日 19:03:53 CST : OS-- amd64
+2013年 11月 03日 星期日 19:03:53 CST : Current user isnot root
+2013年 11月 03日 星期日 19:03:53 CST : Current usr, IS_ROOT:0
+2013年 11月 03日 星期日 19:03:53 CST : Begin to install binary for Firefox
+2013年 11月 03日 星期日 19:03:53 CST : install -m 0755 lib/libaliedit64.so /home/chenbk/.mozilla/plugins, result:0
+2013年 11月 03日 星期日 19:03:53 CST : add /home/chenbk/.mozilla/plugins=1 to /home/chenbk/.opera/pluginpath.ini, result:0
+2013年 11月 03日 星期日 19:03:53 CST : Enter RestartBrowser firefox
+2013年 11月 03日 星期日 19:03:53 CST : No firefox has been restarted
+2013年 11月 03日 星期日 19:03:53 CST : Leave RestartBrowser firefox restart:0, result:0
+2013年 11月 03日 星期日 19:03:53 CST : Enter RestartBrowser opera
+2013年 11月 03日 星期日 19:03:53 CST : No opera has been restarted
+2013年 11月 03日 星期日 19:03:53 CST : Leave RestartBrowser opera restart:0, result:0
+2013年 11月 03日 星期日 19:03:53 CST : Enter RestartBrowser chrome
+2013年 11月 03日 星期日 19:03:53 CST : No chrome has been restarted
+2013年 11月 03日 星期日 19:03:53 CST : Leave RestartBrowser chrome restart:0, result:0

@@ -9,3 +9,5 @@ dev-python/embedly ~amd64
 media-libs/fdk-aac ~amd64
 dev-python/pystatgrab ~amd64
 dev-python/keyring ~amd64
+dev-python/pytest-runner ~amd64
+dev-python/hgtools ~amd64
