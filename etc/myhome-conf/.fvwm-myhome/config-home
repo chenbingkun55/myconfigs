@@ -145,10 +145,10 @@ Key 2 A M GoToPage 0 1
 Key 3 A M GoToPage 1 0
 Key 4 A M GoToPage 1 1
 ### 方向按键,排列窗口,占半屏 ee
-Key Up    W C ResizeMove 100 50 0 0
-Key Left  W C ResizeMove 50 100 0 0
-Key Right W C ResizeMove 50 100 50 0
-Key Down  W C ResizeMove 100 50 0 50
+Key Up    TW C ResizeMove 100 50 0 0
+Key Left  TW C ResizeMove 50 100 0 0
+Key Right TW C ResizeMove 50 100 50 0
+Key Down  TW C ResizeMove 100 50 0 50
 # 全屏
 Key Return W C Maximize
 # 缩放
@@ -386,6 +386,12 @@ AddToFunc TempRaise
 + I All ($0)  Focus
 + I All ($0) Raise
 
+DestroyFunc TempRaiseR
+AddToFunc TempRaiseR
++ I All ($0) Focus
++ I All ($0) Layer 0 6
++ I All ($0) Schedule periodic 3000 Layer 0 2
+
 DestroyFunc TempRaiseMenu
 AddToFunc TempRaiseMenu
 + I Menu FuncMenu
@@ -396,7 +402,7 @@ Style * EdgeMoveDelay 250
 Style * EdgeMoveResistance 20
 
 EdgeCommand Bottom Next TempRaise LaunchInfo
-EdgeCommand Left Next TempRaise RunList
+EdgeCommand Left Next TempRaiseR RunList
 # EdgeCommand Right Next TempRaiseMenu
 
 ####

@@ -1,52 +1,3 @@
-vi /etc/resolv.conf 
-gvim /etc/conf.d/net
-sudo gvim /etc/conf.d/net
-vi .config/cls
-cls
-clean
-gvim .vimrc
-sudo gvim /etc/conf.d/net
-ls
-ls .vim
-less .viminfo 
-mv .vimrc /etc/myhome-conf/
-ln -s /etc/myhome-conf/.vimrc .vimrc
-ls -l .vimrc 
-sudi vi /etc/X11/xorg.conf 
-sudo vi /etc/X11/xorg.conf 
-sudo vi /etc/X11/xorg.conf 
-exit
-cat /proc/cpuinfo 
-cat /proc/cpuinfo |more
-sudo emerge -av sys-power/acpid
-ls /boot/
-exit
-su -
-exit
-rm .vimrc 
-sudo vi /usr/share/vim/vim73/gvimrc_example.vim 
-cd /usr/share/vim/vim73/
-cp gvimrc_example.vim /home/chenbk/.vim/gvimrc
-cp vimrc_example.vim /home/chenbk/.vim/vimrc
-locale
-cd
-sudo emerge -av gvim
-st .bashrc 
-ls .vim
-less .viminfo 
-cd .vim
-ls
-vi gvimrc 
-sudo vi /etc/portage/make.conf
-cd /usr/src/linux
-ll
-su -
-su -
-exit
-sudo vi /etc/syslog-ng/syslog-ng.conf 
-sudo vi /etc/syslog-ng/scl.conf 
-exit
-sudo /etc/init.d/cpufreqd start
 sudo emerge --newuse cpufreqd -av
 sudo rc-update del atd battery
 ls /etc/runlevels/battery/
@@ -497,4 +448,53 @@ ifconfig
 ifconfig 
 vi .fvwm/config
 killall conky
+exit
+cd /usr/src/
+ls
+ll
+rm linux
+sudo rm linux
+ll
+sudo ln -s linux-3.10.17-gentoo/ linux
+ll
+cd linux
+ls
+sudo mount /dev/sda1 /boot/
+cp /boot/config-3.10.7-gentoo-r1 .config
+sudo cp /boot/config-3.10.7-gentoo-r1 .config
+ll
+ls
+ls
+sudo make menuconfig
+sudo time make && make install_modules
+su -
+exit
+cd /
+git add .
+sudo git add .
+git commit -m "Ctrl+UP 小BUG修改"
+git push
+git push
+exit
+su -
+exit
+su -
+su -
+su -
+mount /dev/sda1 /boot/
+sudo mount /dev/sda1 /boot/
+cd /boot/
+ls
+cd grub/
+ls
+less grub.cfg 
+sudo less grub.cfg 
+su -
+exit
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
 exit
