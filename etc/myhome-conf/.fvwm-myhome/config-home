@@ -388,9 +388,8 @@ AddToFunc TempRaise
 
 DestroyFunc TempRaiseR
 AddToFunc TempRaiseR
-+ I All ($0) Focus
 + I All ($0) Layer 0 6
-+ I All ($0) Schedule periodic 3000 Layer 0 2
++ I All ($0) Schedule periodic 5000 Layer 0 2
 
 DestroyFunc TempRaiseMenu
 AddToFunc TempRaiseMenu

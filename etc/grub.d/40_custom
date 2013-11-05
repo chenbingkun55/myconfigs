@@ -3,12 +3,3 @@ exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.  Simply type the
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
-menuentry "Gentoo Linux For ChenBK" {
-	load_video
-	insmod gzio
-	insmod part_msdos
-	insmod ext2
-	set gfxpayload=1366x768x32
-	set root='hd0,msdos1'
-	linux /vmlinuz-3.10.17-gentoo  root=/dev/sda3 ro
-}

@@ -57,9 +57,9 @@ color8 FFFF00 #Yellow
 color9 FF0000 #Red
 
 TEXT
-${goto 10}${color2}${font Zekton :bold:size=18}${alignc}${nodename}${font}${color}
+${goto 5}${color2}${font Zekton :bold:size=18}${alignc}${nodename}${font}${color}
 ${color6}${cpubar cpu4 1,258}${color}
-${voffset -15}${color white}${font Poky:bold:size=30}S${font}
+${voffset -5}${color8}${font openlogos:bold:size=30}Q${font}${color}
 ${voffset -40}${goto 55}${color2}${font Zekton :bold:size=10}Kernel:${font}${color}${voffset -4}${alignr 10}${font Zekton :bold:size=10}${kernel}
 ${goto 55}${color2}${font Zekton :Bold:size=10}Uptime:${font}${color}${alignr 30}${color8}${font LCDMono2 :bold :size=12}$uptime_short${color}
 ################################
@@ -88,13 +88,13 @@ ${voffset -4}${color6}${cpubar cpu4 1,258}${color}
 ${voffset -4}${font LCDMono:size=50}${time %R}${font LCDMono:size=10}:${time %S}${font}
 ${voffset -70}${color8}${font Zekton:size=28}${alignr 5}${time %b}${font}
 ${font Zekton:size=15}${alignr 0}${time %d}${font}
-${voffset -4}${color6}${cpubar cpu4 1,258}
+${voffset -1}${color6}${cpubar cpu4 1,258}
 #############
 # - PHOTO - #
 #############
 # For a working photo widget you need to specify a file or directory in conkyPhoto or conkyPhotoRandom script in ~/.myconky/bin/ folder
-${execi 60 ~/.conky-myhome/bin/conkyPhotoRandom}${image ~/Image/_MG_8329.png -s 240x170 -p 4,338}
-${voffset 136}${color6}${cpubar cpu4 1,258}${color}
+${execi 600 /home/chenbk/.conky-myhome/bin/conkyPhotoRandom}${image /tmp/conkyPhoto.png -s 240x170 -p 4,340}${voffset 136}${color6}
+#${voffset 136}${color6}${cpubar cpu4 1,258}${color}
 ###############
 # - WEATHER - #
 ###############
@@ -106,7 +106,7 @@ ${voffset 136}${color6}${cpubar cpu4 1,258}${color}
 ###############
 # - NETWORK - #
 ###############
-#${voffset -30}${color2}${font Zekton :bold:size=18}NetWork: ${font}
+${voffset -25}${color2}${font Zekton :bold:size=18}NetWork: ${font}
 # |--WLAN0
 ${if_existing /proc/net/route wlan0}
 ${voffset -65}${color6}${cpubar cpu4 1,258}${color}
@@ -116,8 +116,8 @@ ${voffset 4}${color white}${font Poky:size=30}w${font}${color}${goto 32}${voffse
 ${voffset 5}${goto 50}Public IP: ${alignr}${color2}${execi 10800 ~/.conky-myhome/bin/conkyIp}${color}
 # |--ETH0
 ${else}${if_existing /proc/net/route enp7s0}
-${voffset -65}${color6}${cpubar cpu4 1,258}${color}
-${voffset -20}${color white}${font VariShapes Solid:size=30}q${font}${color}${goto 45}${voffset -23}${color2}${font Zekton :bold:size=9}Up:      ${color3}${upspeed enp7s0}${color}${font}${voffset -15}${goto 130}${color white}${font VariShapes Solid:size=30}Q${font}${color}${voffset -24}${goto 175}${color2}${font Zekton :bold:size=9}Down: ${color3}${downspeed enp7s0}${color}${font}
+${voffset -10}${color6}${cpubar cpu4 1,258}${color}
+${voffset -10}${color white}${font VariShapes Solid:size=30}q${font}${color}${goto 45}${voffset -23}${color2}${font Zekton :bold:size=9}Up:      ${color3}${upspeed enp7s0}${color}${font}${voffset -15}${goto 130}${color white}${font VariShapes Solid:size=30}Q${font}${color}${voffset -24}${goto 175}${color2}${font Zekton :bold:size=9}Down: ${color3}${downspeed enp7s0}${color}${font}
 ${voffset 5}${goto 45}${font Zekton :bold:size=9}Total: ${color6}${totalup enp7s0}${color}${goto 175}Total: ${color6}${totaldown enp7s0}${color}
 ${voffset 4}${color white}${font Poky:size=30}w${font}${color}${goto 32}${voffset -30}${goto 50}${font Zekton :bold:size=9}Local IP: ${alignr}${color2}${addr enp7s0}${color}
 ${voffset 5}${goto 50}Public IP: ${alignr}${color2}${execi 10800 ~/.conky-myhome/bin/conkyIp}${color}

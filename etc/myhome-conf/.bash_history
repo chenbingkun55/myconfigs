@@ -1,84 +1,3 @@
-sudo emerge --newuse cpufreqd -av
-sudo rc-update del atd battery
-ls /etc/runlevels/battery/
-sudo rc-update del sshd battery
-sudo emerge -av hibernate-script
-sudo USE="vim-syntax" emerge -av hibernate-script
-su -
-hibernate-ram 
-sudo hibernate-ram 
-killall conky
-vi .fvwm/config
-grep capacity /proc/acpi/button/lid/LID0/state 
-grep capacity /proc/acpi/event 
-exit
-su -
-exit
-ls
-mkdir Gentoo
-cd Gentoo/
-st gentoo-update.txt
-exit
-vi .fvwm/config
-sudo sudovi
-sudo visudo
-cd Downloads/
-ls
-cd ../Desktop/
-ls
-ll
-su -
-ls
-st ../Gentoo/gentoo-update.txt
-exit
-cpufreq-info 
-man IconBox
-exit
-cd /
-vi .gitignore 
-vi .gitignore 
-ls /etc/config-archive/
-sudo ls /etc/config-archive/
-sudo rm -rf /etc/config-archive/
-sudo ls /etc/polkit-1/
-sudo ls /etc/ssl/
-sudo ls /etc/ssl/private/
-sudo rm -rf /etc/ssl/private/
-sudo ls /etc/polkit-1/rules.d/
-sudo ls /etc/polkit-1/rules.d/ -l
-cd /etc/polkit-1/rules.d/
-sudo cd /etc/polkit-1/rules.d/
-su -
-exit
-sudo vi /etc/portage/package.use 
-sudo vi /etc/portage/make.conf
-sudo vi /etc/portage/package.use 
-sudo vi /etc/portage/package.keywords
-sudo vi /etc/portage/package.keywords
-sudo vi /etc/portage/package.use 
-lftp ftp://ftp.shanghaihomeexpo.com
-.conky-myhome/bin/conkyStart 
-.conky-myhome/bin/conkyStart &
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-cd /
-git add .
-ls -l /etc/ppp/
-git add .
-git add .
-git --help
-git reset
-git add .
-sudo git add .
-git add .
-git add .
-git add .
-git add .
-vi .gitignore 
-git add .
-sudo git add .
-git add .
 git add .
 git commit -m "Fvwm 窗口可以调整大小了,原来是写在前面的取消默认绑定阻止的."
 git push 
@@ -497,4 +416,85 @@ killall conky
 vi .fvwm/config
 vi .fvwm/config
 vi .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+git commit -m "RunList 小修改"
+git push
+su -
+exit
+sudo reboot
+su -
+ls /tmp/
+display /tmp/conkyPhoto.png 
+cd .conky-myhome/pics/
+ls
+display 1.jpg 
+ls /tmp/
+ls
+cd ..
+ls
+ls templates/
+cd bin/
+ls
+cat conkyPhotoRandom 
+ls
+./conkyPhotoRandom 
+display /tmp/conkyPhoto.png 
+./conkyPhotoRandom 
+display /tmp/conkyPhoto.png 
+./conkyPhotoRandom 
+display /tmp/conkyPhoto.png 
+cd
+vi .fvwm/config
+sudo emerge -av imagemagick
+exit
+vi .conky-myhome/conkymain 
+cd .conky-myhome/
+ls
+ls bin/
+vi bin/conkyPhotoRandom 
+cd bin/
+ls
+./conkyPhotoRandom 
+ls /tmp/
+display /tmp/conkyPhoto.png 
+ls
+cat conkyIp 
+cat conkyForecast 
+ls
+cat conkyStart 
+./conkyForecast 
+ls
+ls /tmp/
+cd ..
+ls
+vi conkymain 
+ls
+vi conkymain 
+exit
+vi .fvwm/config
+killall conky
+cd .conky-myhome/
+ls
+conky -c conkymain 
+less conkymain 
+sudo emerge -av conky
+su -
+exit
+cd .conky-myhome/
+ls
+cd bin/
+ls
+./conkyStart 
+cd ..
+ls
+vi conkymain 
+vi conkymain 
+bin/conkyStart 
+exit
+killall conky
 exit

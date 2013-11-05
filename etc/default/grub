@@ -35,6 +35,7 @@ GRUB_GFXMODE=1366x768x32
 # The starfield is by default provided with use truetype.
 # NOTE: when enabling custom theme, ensure you have required font/etc.
 #GRUB_THEME="/boot/grub/themes/starfield/theme.txt"
+GRUB_THEME="/boot/grub/themes/starfield/theme.txt"
 
 # Background image used on graphical terminal.
 # Can be in various bitmap formats.
