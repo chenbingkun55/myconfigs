@@ -93,7 +93,8 @@ ${voffset -1}${color6}${cpubar cpu4 1,258}
 # - PHOTO - #
 #############
 # For a working photo widget you need to specify a file or directory in conkyPhoto or conkyPhotoRandom script in ~/.myconky/bin/ folder
-${execi 600 /home/chenbk/.conky-myhome/bin/conkyPhotoRandom}${image /tmp/conkyPhoto.png -s 240x170 -p 4,340}${voffset 136}${color6}
+#${execi 300 /home/chenbk/.conky-myhome/bin/conkyPhotoRandom}${image /tmp/conkyPhoto.png -s 240x170 -p 4,340}${voffset 136}${color6}
+${image ~/.conky-myhome/pics/my_2.png -s 240x170 -p 4,340}${voffset 136}${color6}
 #${voffset 136}${color6}${cpubar cpu4 1,258}${color}
 ###############
 # - WEATHER - #

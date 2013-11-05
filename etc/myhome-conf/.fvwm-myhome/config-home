@@ -386,10 +386,6 @@ AddToFunc TempRaise
 + I All ($0)  Focus
 + I All ($0) Raise
 
-DestroyFunc TempRaiseR
-AddToFunc TempRaiseR
-+ I All ($0) Layer 0 6
-+ I All ($0) Schedule periodic 5000 Layer 0 2
 
 DestroyFunc TempRaiseMenu
 AddToFunc TempRaiseMenu
@@ -401,7 +397,7 @@ Style * EdgeMoveDelay 250
 Style * EdgeMoveResistance 20
 
 EdgeCommand Bottom Next TempRaise LaunchInfo
-EdgeCommand Left Next TempRaiseR RunList
+EdgeCommand Left Next TempRaise RunList
 # EdgeCommand Right Next TempRaiseMenu
 
 ####

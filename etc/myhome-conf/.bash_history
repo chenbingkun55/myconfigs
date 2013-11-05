@@ -1,77 +1,3 @@
-git add .
-git commit -m "Fvwm 窗口可以调整大小了,原来是写在前面的取消默认绑定阻止的."
-git push 
-su -
-git add  .
-su -
-git add . 
-git credential-osxkeychain
-sudo emerge -av osxkeychain
-exit
-sudo emerge --sync
-emerge --oneshot portage
-sudo emerge --oneshot portage
-sudo emerge --oneshot python
-dispatch-conf 
-sudo dispatch-conf 
-/usr/sbin/update-etc 
-sudo /usr/sbin/update-etc 
-sudo emerge -av --depclean
-sudo emerge -avuDN world
-sudo vi /etc/portage/make.conf
-sudo emerge -avuDN world
-ls
-ls /tmp/
-ls /etc/portage/
-vi /etc/portage/package.use 
-sudo emerge -qa php
-equery f php
-equery f php |more
-equery --help
-equery u php
-equery u php | more
-equery --help
-equery u php-5.5 | more
-equery u php5.5 | more
-sudo emerge -qa php
-sudo emerge -avuDN world
-sudo emerge -avuDN world
-sudo emerge -avuDN world
-sudo emerge -avuDN world
-sudo emerge -avuDN world
-less .fvwm/config
-su -
-less .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-git commit -m "看了 forum.ubuntu.org eexpress 的快捷键配置,原来这就是我要的啊. ^_^"
-git push
-cd
-vi .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-git commit -m ""
-git commit -m "a"
-git push
-exit
-alsamixer 
-exit
-vi .fvwm/config
-exit
-vi .fvwm/config
-exit
-su -
-su -
-sudo vi /usr/portage/profiles/package.mask 
-su -
-alsamixer 
-exit
-sudo pon twvpn
-ifconfig 
-sudo fdisk -l
-ls /usr/src/
 equery f gcc
 equery --help
 equery k gcc
@@ -497,4 +423,78 @@ vi conkymain
 bin/conkyStart 
 exit
 killall conky
+exit
+cd .conky-myhome/
+ls
+vi conkymain 
+ls /tmp/conkyPhoto.png  -l
+ll
+ll pics/
+cd pics/
+ls
+ll
+chmod 0644 _MG_8329.png 
+ll
+cd /
+git add .
+git commit -m "conky-myhome 调整完成,天气预报再加一下."
+vi .gitignore 
+git add .
+git commit -m "conky-myhome 调整完成,天气预报再加一下."
+vi .gitignore 
+git add .
+git reset
+git add .
+git commit -m "conky-myhome 调整完成,天气预报再加一下."
+git show
+git push
+git checkout /etc/myhome-conf/.conky-myhome/pics/my_1.png 
+git checkout /etc/myhome-conf/.conky-myhome/pics/my_1.png 
+git remove /etc/myhome-conf/.conky-myhome/pics/my_1.png 
+git del /etc/myhome-conf/.conky-myhome/pics/my_1.png 
+git --help
+git rm /etc/myhome-conf/.conky-myhome/pics/my_1.png 
+git add .
+git push
+git log
+exit
+conky -c ./.conky-myhome/conkymain 
+killall conky
+killall conky
+killall conky
+killall conky
+ps aux |grep conky
+kill 17656
+ps aux |grep conky
+kill -9 17656
+ps aux |grep conky
+conky -c ./.conky-myhome/conkymain 
+ls
+cd .conky-myhome/
+ls
+cd font/
+ls
+ls zekton/
+conky-colors --help
+conky-colors --help |less
+ls
+ls zekton/
+lcd zekton/
+ls
+cd zekton/
+ls
+cat zektonbi.ttf 
+cd ..
+ls
+ls weather/
+ls
+ls weather/
+ls zekton/
+ls
+ls LCDWinTT/
+ls LCDMonoWinTT/
+ls
+ls weather/
+exit
+ls .conky-myhome/
 exit
