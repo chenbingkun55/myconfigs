@@ -1,4 +1,8 @@
 scriptencoding utf-8
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
 " ^^ Please leave the above line at the start of the file.
 
 " Default configuration file for Vim
@@ -62,8 +66,8 @@ elseif v:lang =~? "^zh_TW"
   set fileencodings=big5
   set guifontset=-sony-fixed-medium-r-normal--16-150-75-75-c-80-iso8859-1,-taipei-fixed-medium-r-normal--16-150-75-75-c-160-big5-0
 elseif v:lang =~? "^zh_CN"
-  set fileencodings=gb2312
-  set guifontset=*-r-*
+"  set fileencodings=gb2312
+"  set guifontset=*-r-*
 endif
 
 " If we have a BOM, always honour that rather than trying to guess.

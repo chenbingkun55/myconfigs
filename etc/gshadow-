@@ -4,7 +4,7 @@ daemon:::root,bin,daemon
 sys:::root,bin,adm
 adm:::root,adm,daemon
 tty:::
-disk:::root,adm
+disk:::root,adm,chenbk
 lp:::lp
 mem:::
 kmem:::

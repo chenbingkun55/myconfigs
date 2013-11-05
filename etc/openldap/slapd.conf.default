@@ -18,6 +18,7 @@ argsfile	/var/run/openldap/slapd.args
 # moduleload	back_sock.so
 # moduleload	back_shell.so
 # moduleload	back_relay.so
+# moduleload	back_perl.so
 # moduleload	back_passwd.so
 # moduleload	back_null.so
 # moduleload	back_monitor.so

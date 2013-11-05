@@ -13,9 +13,6 @@
 "/usr/lib64/gtk-2.0/2.10.0/immodules/im-inuktitut.so" 
 "inuktitut" "Inuktitut (Transliterated)" "gtk20" "/usr/share/locale" "iu" 
 
-"/usr/lib64/gtk-2.0/2.10.0/immodules/im-fcitx.so" 
-"fcitx" "Fcitx (Flexible Input Method Framework)" "fcitx" "/usr/share/locale" "ja:ko:zh:*" 
-
 "/usr/lib64/gtk-2.0/2.10.0/immodules/im-cedilla.so" 
 "cedilla" "Cedilla" "gtk20" "/usr/share/locale" "az:ca:co:fr:gv:oc:pt:sq:tr:wa" 
 

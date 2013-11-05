@@ -1,0 +1,8 @@
+# !/bin/bash 
+# This script set the "XIM" and some other environment variable, # then starts fcitx automatically when loading X  
+XIM="fcitx" 
+XIM_PROGRAM="fcitx" 
+XIM_ARGS="-d" 
+XMODIFIERS="@im=fcitx" 
+GTK_IM_MODULE="fcitx"  
+export XIM XIM_PROGRAM XMODIFIERS GTK_IM_MODULE

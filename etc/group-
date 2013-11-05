@@ -4,7 +4,7 @@ daemon:x:2:root,bin,daemon
 sys:x:3:root,bin,adm
 adm:x:4:root,adm,daemon
 tty:x:5:
-disk:x:6:root,adm
+disk:x:6:root,adm,chenbk
 lp:x:7:lp
 mem:x:8:
 kmem:x:9:

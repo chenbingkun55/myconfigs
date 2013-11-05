@@ -25,3 +25,4 @@ nullmail:x:88:88:added by portage for nullmailer:/var/nullmailer:/sbin/nologin
 timidity:x:104:18:added by portage for timidity++:/var/lib/timidity:/sbin/nologin
 apache:x:81:81:added by portage for apache:/var/www:/sbin/nologin
 mysql:x:60:60:added by portage for mysql:/dev/null:/sbin/nologin
+www:x:999:999::/home/www:/bin/false

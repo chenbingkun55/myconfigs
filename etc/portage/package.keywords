@@ -11,3 +11,8 @@ dev-python/pystatgrab ~amd64
 dev-python/keyring ~amd64
 dev-python/pytest-runner ~amd64
 dev-python/hgtools ~amd64
+games-action/btanks ~amd64
+games-action/trine2 ~amd64
+games-action/trine-bin ~amd64
+app-arch/xarchiver ~amd64
+app-admin/eselect-php ~amd64

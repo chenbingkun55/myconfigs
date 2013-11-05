@@ -136,7 +136,7 @@ AddToFunc ExitFunction
 # 快捷键绑定
 ######
 Key F1 A M Menu FuncMenu
-Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+45+450 \
+Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
 Key F4 A M Close
@@ -145,7 +145,7 @@ Key 2 A M GoToPage 0 1
 Key 3 A M GoToPage 1 0
 Key 4 A M GoToPage 1 1
 ### 方向按键,排列窗口,占半屏 ee
-Key Up    W C ResizeMove 100 150 0 0
+Key Up    W C ResizeMove 100 50 0 0
 Key Left  W C ResizeMove 50 100 0 0
 Key Right W C ResizeMove 50 100 50 0
 Key Down  W C ResizeMove 100 50 0 50
@@ -276,7 +276,7 @@ Style "RunList" NoHandles,Sticky,\
 *RunList: LeftJustify
 *RunList: ShowCurrentDesk
 *RunList: UseIconNames
-*RunList: Geometry +0+100
+*RunList: Geometry +0+200
 *RunList: Action Click1 Function DeiconifyAndRaise
 *RunList: Action Click3 Iconify
 *RunList: MinWidth 70

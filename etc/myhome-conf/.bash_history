@@ -1,332 +1,3 @@
-ls
-mv Image/logo.png  .fvwm/icons/
-cd /media/BackUP/01_Archive/
-ls
-cd 03_My9finance/
-ls
-cp 72x72.png ~/.fvwm/icons/logo_72.png 
-cd 
-cd .fvwm/icons/
-l
-ls
-mv logo.png logo_64.png
-mv ~/QQ截图20120707130117.png logo.png
-ls ~
-mv ~/logo3.png .
-cd
-less .fvwm/config
-man FvwmButtons
-man FvwmPagers
-man FvwmPager
-killall conky
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-man FvwmDesk
-man FvwmDeskTop
-man FvwmDesks
-man Desks
-man DesksTop
-killall conky
-ls
-cd .fvwm/
-ls
-less system.fvwm2rc-sample-95 
-exit
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-cd /
-ls
-git diff /etc/myhome-conf/.fvwm-myhome/config
-xclock -bg '#31658c' -fg white -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'
-xclock -digital -face 'Aquafont:size=11' -strftime '%a, %d %b %Y %H:%M'
-xclock -digital -strftime '%a, %d %b %Y %H:%M'
-xclock -digital -strftime '%Y %b %d \n %a %H:%M'
-xclock -digital -strftime '%Y %b %d %A %H:%M'
-xclock -digital -strftime '%Y %B %D %A %H:%M'
-xclock -digital -strftime '%Y %b %h %A %H:%M'
-xclock -digital -strftime '%Y %b %d %A %H:%M'
-xclock -digital -strftime '%Y %b %d %A %H:%M:%S'
-xclock -digital -strftime '%Y %b %d %A %T'
-xclock -digital -strftime '%Y %b %d %% %A %H:%M'
-xclock -digital -strftime '%Y %b %d %n %A %H:%M'
-xclock -digital -strftime '%Y %b %d %\n %A %H:%M'
-xclock -digital -strftime '%Y %b %d %<BR> %A %H:%M'
-xclock -digital -strftime '%Y %b %d <BR> %A %H:%M'
-xclock -digital -strftime '%Y %b %d #  %A %H:%M'
-xclock -digital -strftime '%Y %b %d ^ %A %H:%M'
-xclock -digital -strftime '%Y %b %d \n %A %H:%M'
-xclock -digital -strftime '%Y %b %d %A %H:%M'
-xclock -digital -strftime '%H:%M'
-vi .fvwm/config
-vi .fvwm/config
-man xclock 
-man strftime
-man sprintf
-vi .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-git commit -m "做了一个自己的按钮,还没做完."
-git push 
-exit
-alsamixer 
-exit
-less .fvwm/config
-vi .fvwm/config
-exit
-cd /usr/portage/www-client/
-ls
-sudo emerge -av www-client/firefox-bin
-/opt/firefox/firefox
-sudo emerge -C www-client/firefox
-exit
-vi .fvwm/config
-cd /
-git add .
-git commit -m "清理Fvwm中一些不用的配置"
-git push
-git push
-cd
-cd Downloads/
-ls
-mv 20131102103038749_easyicon_net_32.png /home/chenbk/.fvwm/icons/firefox_32.png
-cd
-vi .fvwm/config
-ls /home/chenbk/Downloads/
-mv /home/chenbk/Downloads/20131102103353374_easyicon_net_48.png .fvwm/icons/firefox_48.png 
-ls /home/chenbk/Downloads/
-mv /home/chenbk/Downloads/20131102103505387_easyicon_net_32.png .fvwm/icons/firefox_32.png 
-ls /home/chenbk/Downloads/
-mv /home/chenbk/Downloads/201311021036041_easyicon_net_24.png .fvwm/icons/firefox_24.png 
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-mv .fvwm/config /tmp/config.bak20131102
-cd /
-git checkout /etc/myhome-conf/.fvwm-myhome/config
-less /home/chenbk/.fvwm/config
-rm /home/chenbk/.fvwm/config
-less /home/chenbk/.fvwm/config
-git checkout /etc/myhome-conf/.fvwm-myhome/config
-less /home/chenbk/.fvwm/config
-cd 
-vi .fvwm/config
-exit
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-emerge -av docapp
-sudo emerge -av wmweather
-wmweather 
-vi /etc/wmweather.conf 
-sudo vi /etc/wmweather.conf 
-wmweather --help
-wmweather --lcd -p
-wmweather --lcd 
-wmweather --lcd 
-less .fvwm/config
-sudo emerge -av wmcalclock
-sudo emerge -av wmclock
-wmclock 
-man wmclock
-exit
-wmclock 
-wmclock -24 -year
-wmclock -24
-wmclock -24 -led #FFFFFF
-wmclock -24 -led '#FFFFFF'
-wmclock -24 -led 'yellow'
-exit
-less .fvwm/config
-/opt/firefox/firefox
-cd /
-git diff /etc/myhome-conf/.fvwm-myhome/config
-git --help
-man wmweather
-date
-cd
-vi .fvwm/config
-exit
-ls
-sudo mount loop my_movedisk_bak20131102_BackUP.dd /mnt/ -o uid=1000
-sudo mount my_movedisk_bak20131102_BackUP.dd /mnt/ -o uid=1000,loop
-ls /mnt/
-alsamixer 
-vi .fvwm/config
-su -
-cd
-bash vi .fvwm/config
-exit
-vi .fvwm/config
-vi .fvwm/config
-sudo emerge -av gdesklets
-sudo emerge -av imagemagick
-imagemagick
-equery f imagemagick |more
-display
-display /home/chenbk/Image/BK_logo.jpg 
-display /home/chenbk/Image/wallpaper-1920x1200.png 
-display
-vi .fvwm/config
-exit
-whereis vi
-whereis st
-ls -al |more
-import
-import --help
-vi .Xresources 
-xdb .Xresources 
-xrdb .Xresources 
-vi +31 .Xresources 
-xrdb .Xresources 
-sudo emerge -av reader
-sudo emerge -av acrobat
-sudo emerge -av pddf
-sudo emerge -av pdf
-cd /
-git add .
-git commit -m "小修改"
-git push
-ls /opt/
-cd /opt/phpstorm/
-ls
-cd bin/
-ls
-./phpstorm.sh 
-ls
-cd 
-ls
-ls xinxuwang.com/
-ls V3转V6前的备份_bak20121229/
-ls V3转V6前的备份_bak20121229/my9finance/
-ls V3转V6前的备份_bak20121229/my9finance/images/
-mv V3转V6前的备份_bak20121229/my9finance/images/logo_max_color.gif /tmp/
-cd /tmp/
-convert --help
-convert --help |more
-ls
-cd 
-cd .conky-myhome/
-ls
-ls scripts/
-ls pics/
-ls bin/
-cat bin/conkyPhotoRandom 
-cat bin/conkyPhotoRandom  |more
-cd /tmp/
-ls
-convert logo_max_color.gif logo_max_color.png
-ls
-display logo_max_color.png 
-mv logo_max_color.png ~/.fvwm/icons/logo_max.png
-cd
-vi .fvwm/config
-cat bin/conkyPhotoRandom  |more
-cd /tmp/
-cat bin/conkyPhotoRandom  |more
-cd 
-cat .conky-myhome/bin/conkyPhotoRandom  |more
-cd .fvwm/icons/
-convert logo_max.png -thumbnail 90x90 logo_max2.png 
-display logo_max2.png 
-cd
-convert logo_max.png -thumbnail 85x85 logo_max2.png 
-cd .fvwm/icons/
-rm logo_max2.png 
-convert logo_max.png -thumbnail 85x85 logo_max2.png 
-convert logo_max.png -thumbnail 80x80 logo_max2.png 
-cd .fvwm/config
-cd .fvwm/
-ls
-cd i
-cd images/
-ls
-display 1.png 
-cd ../wallpaper/
-ls
-display 1.png 
-convert 1.png -thumbnail 1024x768 1024-768.png
-vi ../config
-cd .fvwm/wallpaper/
-ls
-convert 1.png -thumbnail 1366x800 1024-768.png
-convert 1.png -thumbnail 1500x800 1024-768.png
-convert 1.png -thumbnail 1366x1024 1024-768.png
-display 1024-768.png 
-convert 1.png -thumbnail 1366x900 1024-768.png
-ls
-mv 1024-768.png 1.png 
-vi ../config
-cd /
-git add .
-git commit -m "修改背景图片尺寸"
-git push
-cd 
-cd .fvwm/wallpaper/
-ll -
-ll -h
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-exit
-vi .fvwm/config
-exit
-vi .fvwm/config
-less .fvwm/config
-man EdgeCommand
-man EdgeResistance
-man EdgeScroll
-man fvwm
-vi .fvwm/config
-ls
-vi .fvwm/config
-exit
-alsamixer 
-exit
-less .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-git commit -m "Fvwm 大概配置己完成,后需再作一些小修改."
-git push
-cd
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-cd Desktop/
-ls
-tar zxvf aliedit.tar.gz 
-ls
-./aliedit.sh 
-cd
-ls
-ls .mozilla/plugins/
-ifconfig 
-ifconfig 
-sudo pon twvpn
-exit
-cat /etc/resolv.conf 
-ifconfig 
-exit
-sudo pon twvpn
-exit
-ping www.baidu.com
-ping www.youku.com
-ifconfig 
-sudo pon twvpn
-sudo pon twvpn
-vi .fvwm/config
-libreoffice 
-su -
-exit
 vi /etc/resolv.conf 
 gvim /etc/conf.d/net
 sudo gvim /etc/conf.d/net
@@ -498,3 +169,332 @@ sudo emerge -avuDN world
 sudo emerge -avuDN world
 sudo emerge -avuDN world
 sudo emerge -avuDN world
+less .fvwm/config
+su -
+less .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+git commit -m "看了 forum.ubuntu.org eexpress 的快捷键配置,原来这就是我要的啊. ^_^"
+git push
+cd
+vi .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+git commit -m ""
+git commit -m "a"
+git push
+exit
+alsamixer 
+exit
+vi .fvwm/config
+exit
+vi .fvwm/config
+exit
+su -
+su -
+sudo vi /usr/portage/profiles/package.mask 
+su -
+alsamixer 
+exit
+sudo pon twvpn
+ifconfig 
+sudo fdisk -l
+ls /usr/src/
+equery f gcc
+equery --help
+equery k gcc
+sudo emerge -av --depclean
+ls .vim
+cd .vim
+locale
+ls
+mv gvimrc gvimrc.bak
+mv vimrc vimrc.bak
+ls
+cd ..
+vi .vimrc
+equery u gvim
+locale-gen 
+sudo locale-gen 
+cd Downloads/
+ls
+ls -l
+unzip maximum-awesome-master.zip 
+ls
+cd maximum-awesome-master
+ls
+LS -L
+ll
+less README.md 
+less vimrc
+rake 
+sudo emerge -av  sw_vers
+ls
+less tmux.conf 
+ls
+less LICENSE 
+ls
+rake 
+sudo emerge -av brew
+less vimrc
+cp vimrc /home/chenbk/.vimrc
+cd 
+ls
+vi aaa.txt
+:q
+exit
+vi .vimrc 
+ls
+vi .vimrc 
+ls
+cp Downloads/maximum-awesome-master/vimrc.local .vimrc.local
+exit
+cd /tmp/
+vi abc.txt
+cd
+vi .vimrc
+exit
+ls
+vi /tmp/abc.txt
+vi .vimrc
+exit
+vi /tmp/abc.txt
+vi .vimrc
+exit
+vi .vimrc
+vi .vimrc
+exit
+vi /tmp/abc.txt
+cat /tmp/abc.txt 
+vi .vimrc
+vi .fvwm/config
+equery f gvim
+cd /usr/share/
+cd vim/vim73/
+ls
+ls lang/
+cd lang/
+ls
+sudo ln -s menu_zh_cn.utf-8.vim menu_zh_cn.utf8.vim 
+ls
+less README.txt 
+ls
+less menu_zh_cn.utf8.vim 
+vi /home/chenbk/.vimrc
+echo $VIMRUNTIME
+cd ..
+ls
+less menu.vim 
+ls
+cd ..
+ls
+ls vimfiles/
+ls
+cd vimfiles/
+ls
+ls syntax/
+ls
+ls plugin/
+ls ftplugin/
+ls doc/
+cd ..
+ls
+cd vim73/
+ls
+cat gvimrc_example.vim 
+ls
+cp gvimrc_example.vim /home/chenbk/.gvimrc
+cat /home/chenbk/.gvimrc >> /home/chenbk/.vimrc
+rm /home/chenbk/.gvimrc 
+vi /home/chenbk/.vimrc
+vi /home/chenbk/.fvwm/config
+exit
+less .fvwm/config
+ls
+cp .vim/gvimrc .vimrc
+vi .fvwm/config
+vi .vimrc
+ls
+vi .fvwm/config
+vi .vimrc
+vi .fvwm/config
+gvim .fvwm/config
+ls
+locale
+date
+exit
+sudo vi /etc/vim/vimrc 
+gvim
+cd /etc/vim/
+ls
+git checkout /etc/vim/gvimrc 
+sudo git checkout /etc/vim/vimrc 
+sudo vi vimrc 
+gvim
+echo $LANG
+exit
+vi .vimrc
+cd .vim
+ls
+vi /etc/vim/gvimrc 
+vi /etc/vim/vimrc 
+sudo vi /etc/vim/vimrc 
+ls
+cat ../.vimrc >> gvimrc.bak 
+rm ../.vimrc
+ls
+mv gvimrc.bak gvimrc
+vi gvimrc 
+mv vimrc.bak vimrc
+vi vimrc 
+gvim
+sudo vi /usr/share/X11/locale/zh_CN.UTF-8/XLC_LOCALE 
+gvim
+cd /etc/vim/
+ls
+less gvimrc 
+less gvimrc 
+cd
+cd .vim
+ls
+vi gvimrc 
+cd
+sudo vi /etc/vim/gvimrc 
+gvim
+sudo vi /etc/vim/gvimrc 
+gvim
+sudo vi /etc/vim/gvimrc 
+gvim
+sudo vi /etc/vim/gvimrc 
+gvim 
+rm .vimrc
+vm .vimrc.local 
+rm .vimrc.local 
+cd .vim
+ls
+vi 
+gvim 
+rm gvimrc 
+gvim 
+sudo vi /etc/vim/gvimrc 
+sudo vi /etc/vim/gvimrc 
+ls
+cd 
+git checkout .vim
+git checkout /etc/myhome-conf/.vim
+ls .vim
+cd /
+git checkout /etc/myhome-conf/.vim
+cd /home/chenbk/.vim
+ls
+ll 
+cat vimrc 
+vi 
+gvim
+cd 
+exit
+alsamixer 
+exit
+sudo vi /etc/X11/xorg.conf 
+exit
+cd /usr/share/fonts/
+ls
+cat /etc/fonts/fonts.conf 
+ls /home/chenbk/.fonts/
+cd /etc/X11/xinit/
+ls
+cd xinitrc.d/
+ls
+less 90-consolekit 
+touch 100-xinputrc
+sudo touch 100-xinputrc
+sudo chmod a+x 100-xinputrc 
+sudo st 100-xinputrc 
+sudo /opt/sublime_text_3/sublime_text 100-xinputrc 
+exit
+sudo vi /etc/portage/package.keywords
+tail /var/log/emerge-fetch.log 
+exit
+sudo emerge -av awesomenauts
+sudo emerge -av awesomenauts
+sudo emerge -av awesomenauts
+ls /usr/portage/games-action/
+cd /usr/portage/games-action/
+ls
+sudo emerge -av awesomenauts
+less /var/tmp/portage/games-action/awesomenauts-2013.5.21.3/temp/build.log 
+sudo less /var/tmp/portage/games-action/awesomenauts-2013.5.21.3/temp/build.log 
+sudo emerge --sync
+sudo emerge -av awesomenauts
+ls
+ls
+sudo emerge -av btanks
+sudo emerge -av btanks
+ls
+cd ..
+ls
+cd games-base
+ls
+su -
+exit
+sudo vi /etc/portage/package.keywords
+sudo vi /etc/portage/package.keywords
+sudo vi /etc/portage/package.keywords
+cat Gentoo/gentoo-update.txt 
+exit
+cat Gentoo/gentoo-update.txt 
+ls
+cd /etc/X11/
+ls
+cd xinit/
+ls
+cat xinitrc
+cat xinitrc |grep res
+cat xserverrc 
+cd
+cat .Xresources 
+emerge -av xrdb
+sudo emerge -av xrdb
+exit
+ls
+cat .xprofile 
+cat .Xresources 
+cat .bashrc 
+ls .xscreensaver 
+cat .xscreensaver 
+cat .Xresources 
+cat .Xresources |more
+cat /etc/rc.conf 
+su -
+cd /
+git diff
+sudo emerge -av iproute2
+su -
+exit
+date
+ls
+locale
+vi .fvwm/config
+exit
+cat Gentoo/gentoo-update.txt 
+eselect news
+sudo vi /etc/portage/package.keywords
+su -
+su -
+dasf
+d
+his
+fala
+chenbk55
+lspci 
+alsamixer 
+exit
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+vi .fvwm/config
+killall conky
+exit
