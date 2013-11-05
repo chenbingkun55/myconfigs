@@ -20,6 +20,7 @@ var/
 home/
 /session*
 /chap-secrets*
+/my*
 /chap-secrets.example
 /50-default.rules
 !/home/chenbk
