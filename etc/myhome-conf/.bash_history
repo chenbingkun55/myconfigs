@@ -1,60 +1,3 @@
-equery f gcc
-equery --help
-equery k gcc
-sudo emerge -av --depclean
-ls .vim
-cd .vim
-locale
-ls
-mv gvimrc gvimrc.bak
-mv vimrc vimrc.bak
-ls
-cd ..
-vi .vimrc
-equery u gvim
-locale-gen 
-sudo locale-gen 
-cd Downloads/
-ls
-ls -l
-unzip maximum-awesome-master.zip 
-ls
-cd maximum-awesome-master
-ls
-LS -L
-ll
-less README.md 
-less vimrc
-rake 
-sudo emerge -av  sw_vers
-ls
-less tmux.conf 
-ls
-less LICENSE 
-ls
-rake 
-sudo emerge -av brew
-less vimrc
-cp vimrc /home/chenbk/.vimrc
-cd 
-ls
-vi aaa.txt
-:q
-exit
-vi .vimrc 
-ls
-vi .vimrc 
-ls
-cp Downloads/maximum-awesome-master/vimrc.local .vimrc.local
-exit
-cd /tmp/
-vi abc.txt
-cd
-vi .vimrc
-exit
-ls
-vi /tmp/abc.txt
-vi .vimrc
 exit
 vi /tmp/abc.txt
 vi .vimrc
@@ -497,4 +440,61 @@ ls
 ls weather/
 exit
 ls .conky-myhome/
+exit
+vi .conky-myhome/conkymain 
+ls /tmp/
+display /tmp/conkyPhoto.png 
+ll /tmp/
+rm /tmp/conkyPhoto.png 
+cd .conky-myhome/
+ls
+cd pics/
+ls
+ll
+rm conkyPhoto.png 
+ls
+cd ..
+ls
+vi conkymain 
+ls
+display /tmp/conkyPhoto.png 
+cd pics/
+ls
+ll
+rm my_2.png 
+cp ../../Image/_MG_8329.png ./my_2.png
+cd ../../
+ls
+cd Image/
+ls
+cp _MG_8329.png ../.conky-myhome/pics/my_2.png
+cd $OLD_PWD
+ls
+cd .conky-myhome/
+ls
+cd pics/
+ls
+ll
+chmod 0644 my_2.png 
+display my_2.png 
+cd ..
+ls
+vi conkymain 
+ll /tmp/
+display /tmp/conkyPhoto.png 
+ll
+vi conkymain 
+ll
+cd bin/
+ls
+cd
+vi .fvwm/config
+cd /
+git add .
+git commit -m "RunList 临时提升功能还是有问题"
+git push
+exit
+less /var/www/query.bzbee.com/htdocs/public/js/all.js 
+exit
+less /var/www/query.bzbee.com/htdocs/public/css/all.css 
 exit

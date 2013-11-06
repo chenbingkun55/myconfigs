@@ -1,3 +1,4 @@
 dev-lang/php apache2 bzip2 cli crypt exif filter gdbm hash iconv json xml zlib cgi cjk curl gd mysql mysqli 
 net-fs/cifs-utils ads acl caps caps-ng
 net-fs/samba winbind
+app-admin/conky X ncurses portmon truetype curl hddtemp imlib iostats lua lua-cairo lua-imlib moc rss vim-syntax weathe-metar
