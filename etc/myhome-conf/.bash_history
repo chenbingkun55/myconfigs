@@ -1,12 +1,3 @@
-display /tmp/conkyPhoto.png 
-cd .conky-myhome/pics/
-ls
-display 1.jpg 
-ls /tmp/
-ls
-cd ..
-ls
-ls templates/
 cd bin/
 ls
 cat conkyPhotoRandom 
@@ -497,4 +488,13 @@ vi .fvwm/config
 exit
 less .fvwm/config
 eixt
+exit
+vi .fvwm/config
+git add .
+cd /
+git add .
+git commit -m "添加快捷键Win+回车,最小化和还原"
+git push
+exit
+killall conky
 exit

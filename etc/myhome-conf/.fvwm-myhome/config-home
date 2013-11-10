@@ -330,17 +330,17 @@ Key D A 4 FuncFvwmIconifyToggle
 #### Win+回车 最小化本窗口 #####
 DestroyFunc FuncIconifyTrue
 AddToFunc FuncIconifyTrue 
-+ I Current (!Iconic,!Fvwm*) State 3
-+ I Current (State 3) Iconify True
++ I Current (!Iconic,!Fvwm*) State 1
++ I Current (State 1) Iconify True
 
 DestroyFunc FuncIconifyFalse 
 AddToFunc FuncIconifyFalse 
-+ I All (State 3) Iconify False
++ I All (State 1) Iconify False
 
 DestroyFunc FuncIconifyToggle 
 AddToFunc FuncIconifyToggle 
 + I FuncIconifyFalse 
-+ I All (State 3) State 3 False 
++ I All (State 1) State 1 False 
 + I TestRc (NoMatch) FuncIconifyTrue
 
 Key Return A 4 FuncIconifyToggle
