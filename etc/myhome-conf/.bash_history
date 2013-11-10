@@ -1,13 +1,3 @@
-vi .fvwm/config
-cd /
-git add .
-git commit -m "RunList 小修改"
-git push
-su -
-exit
-sudo reboot
-su -
-ls /tmp/
 display /tmp/conkyPhoto.png 
 cd .conky-myhome/pics/
 ls
@@ -497,4 +487,14 @@ vi .fvwm/config
 exit
 vi .fvwm/config
 vi .fvwm/config
+exit
+cd /
+git add .
+git commit -m "Fvwm 添加几个快捷键"
+git push
+killall conky
+vi .fvwm/config
+exit
+less .fvwm/config
+eixt
 exit

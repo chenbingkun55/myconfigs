@@ -161,7 +161,7 @@ Key Left  W 4 Resize w-2c w+0c
 Key Right W 4 Resize w+2c w+0c 
 # 全屏
 Key Return W C Maximize
-Key Return W 4 Maximize
+Key Return W 4 Iconify
 # 缩放
 Key minus W C Resize w-10 w-10
 Key equal W C Resize w+10 w+10
@@ -326,6 +326,24 @@ AddToFunc FuncFvwmIconifyToggle
 + I TestRc (NoMatch) FuncFvwmIconifyTrue
 
 Key D A 4 FuncFvwmIconifyToggle
+
+#### Win+回车 最小化本窗口 #####
+DestroyFunc FuncIconifyTrue
+AddToFunc FuncIconifyTrue 
++ I Current (!Iconic,!Fvwm*) State 3
++ I Current (State 3) Iconify True
+
+DestroyFunc FuncIconifyFalse 
+AddToFunc FuncIconifyFalse 
++ I All (State 3) Iconify False
+
+DestroyFunc FuncIconifyToggle 
+AddToFunc FuncIconifyToggle 
++ I FuncIconifyFalse 
++ I All (State 3) State 3 False 
++ I TestRc (NoMatch) FuncIconifyTrue
+
+Key Return A 4 FuncIconifyToggle
 
 #### Win+L 锁屏 #####
 DestroyFunc FuncFvwmLockScreen
