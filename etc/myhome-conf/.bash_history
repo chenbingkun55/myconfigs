@@ -1,293 +1,3 @@
-exit
-vi /tmp/abc.txt
-vi .vimrc
-exit
-vi .vimrc
-vi .vimrc
-exit
-vi /tmp/abc.txt
-cat /tmp/abc.txt 
-vi .vimrc
-vi .fvwm/config
-equery f gvim
-cd /usr/share/
-cd vim/vim73/
-ls
-ls lang/
-cd lang/
-ls
-sudo ln -s menu_zh_cn.utf-8.vim menu_zh_cn.utf8.vim 
-ls
-less README.txt 
-ls
-less menu_zh_cn.utf8.vim 
-vi /home/chenbk/.vimrc
-echo $VIMRUNTIME
-cd ..
-ls
-less menu.vim 
-ls
-cd ..
-ls
-ls vimfiles/
-ls
-cd vimfiles/
-ls
-ls syntax/
-ls
-ls plugin/
-ls ftplugin/
-ls doc/
-cd ..
-ls
-cd vim73/
-ls
-cat gvimrc_example.vim 
-ls
-cp gvimrc_example.vim /home/chenbk/.gvimrc
-cat /home/chenbk/.gvimrc >> /home/chenbk/.vimrc
-rm /home/chenbk/.gvimrc 
-vi /home/chenbk/.vimrc
-vi /home/chenbk/.fvwm/config
-exit
-less .fvwm/config
-ls
-cp .vim/gvimrc .vimrc
-vi .fvwm/config
-vi .vimrc
-ls
-vi .fvwm/config
-vi .vimrc
-vi .fvwm/config
-gvim .fvwm/config
-ls
-locale
-date
-exit
-sudo vi /etc/vim/vimrc 
-gvim
-cd /etc/vim/
-ls
-git checkout /etc/vim/gvimrc 
-sudo git checkout /etc/vim/vimrc 
-sudo vi vimrc 
-gvim
-echo $LANG
-exit
-vi .vimrc
-cd .vim
-ls
-vi /etc/vim/gvimrc 
-vi /etc/vim/vimrc 
-sudo vi /etc/vim/vimrc 
-ls
-cat ../.vimrc >> gvimrc.bak 
-rm ../.vimrc
-ls
-mv gvimrc.bak gvimrc
-vi gvimrc 
-mv vimrc.bak vimrc
-vi vimrc 
-gvim
-sudo vi /usr/share/X11/locale/zh_CN.UTF-8/XLC_LOCALE 
-gvim
-cd /etc/vim/
-ls
-less gvimrc 
-less gvimrc 
-cd
-cd .vim
-ls
-vi gvimrc 
-cd
-sudo vi /etc/vim/gvimrc 
-gvim
-sudo vi /etc/vim/gvimrc 
-gvim
-sudo vi /etc/vim/gvimrc 
-gvim
-sudo vi /etc/vim/gvimrc 
-gvim 
-rm .vimrc
-vm .vimrc.local 
-rm .vimrc.local 
-cd .vim
-ls
-vi 
-gvim 
-rm gvimrc 
-gvim 
-sudo vi /etc/vim/gvimrc 
-sudo vi /etc/vim/gvimrc 
-ls
-cd 
-git checkout .vim
-git checkout /etc/myhome-conf/.vim
-ls .vim
-cd /
-git checkout /etc/myhome-conf/.vim
-cd /home/chenbk/.vim
-ls
-ll 
-cat vimrc 
-vi 
-gvim
-cd 
-exit
-alsamixer 
-exit
-sudo vi /etc/X11/xorg.conf 
-exit
-cd /usr/share/fonts/
-ls
-cat /etc/fonts/fonts.conf 
-ls /home/chenbk/.fonts/
-cd /etc/X11/xinit/
-ls
-cd xinitrc.d/
-ls
-less 90-consolekit 
-touch 100-xinputrc
-sudo touch 100-xinputrc
-sudo chmod a+x 100-xinputrc 
-sudo st 100-xinputrc 
-sudo /opt/sublime_text_3/sublime_text 100-xinputrc 
-exit
-sudo vi /etc/portage/package.keywords
-tail /var/log/emerge-fetch.log 
-exit
-sudo emerge -av awesomenauts
-sudo emerge -av awesomenauts
-sudo emerge -av awesomenauts
-ls /usr/portage/games-action/
-cd /usr/portage/games-action/
-ls
-sudo emerge -av awesomenauts
-less /var/tmp/portage/games-action/awesomenauts-2013.5.21.3/temp/build.log 
-sudo less /var/tmp/portage/games-action/awesomenauts-2013.5.21.3/temp/build.log 
-sudo emerge --sync
-sudo emerge -av awesomenauts
-ls
-ls
-sudo emerge -av btanks
-sudo emerge -av btanks
-ls
-cd ..
-ls
-cd games-base
-ls
-su -
-exit
-sudo vi /etc/portage/package.keywords
-sudo vi /etc/portage/package.keywords
-sudo vi /etc/portage/package.keywords
-cat Gentoo/gentoo-update.txt 
-exit
-cat Gentoo/gentoo-update.txt 
-ls
-cd /etc/X11/
-ls
-cd xinit/
-ls
-cat xinitrc
-cat xinitrc |grep res
-cat xserverrc 
-cd
-cat .Xresources 
-emerge -av xrdb
-sudo emerge -av xrdb
-exit
-ls
-cat .xprofile 
-cat .Xresources 
-cat .bashrc 
-ls .xscreensaver 
-cat .xscreensaver 
-cat .Xresources 
-cat .Xresources |more
-cat /etc/rc.conf 
-su -
-cd /
-git diff
-sudo emerge -av iproute2
-su -
-exit
-date
-ls
-locale
-vi .fvwm/config
-exit
-cat Gentoo/gentoo-update.txt 
-eselect news
-sudo vi /etc/portage/package.keywords
-su -
-su -
-dasf
-d
-his
-fala
-chenbk55
-lspci 
-alsamixer 
-exit
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-vi .fvwm/config
-killall conky
-exit
-cd /usr/src/
-ls
-ll
-rm linux
-sudo rm linux
-ll
-sudo ln -s linux-3.10.17-gentoo/ linux
-ll
-cd linux
-ls
-sudo mount /dev/sda1 /boot/
-cp /boot/config-3.10.7-gentoo-r1 .config
-sudo cp /boot/config-3.10.7-gentoo-r1 .config
-ll
-ls
-ls
-sudo make menuconfig
-sudo time make && make install_modules
-su -
-exit
-cd /
-git add .
-sudo git add .
-git commit -m "Ctrl+UP 小BUG修改"
-git push
-git push
-exit
-su -
-exit
-su -
-su -
-su -
-mount /dev/sda1 /boot/
-sudo mount /dev/sda1 /boot/
-cd /boot/
-ls
-cd grub/
-ls
-less grub.cfg 
-sudo less grub.cfg 
-su -
-exit
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-vi .fvwm/config
-vi .fvwm/config
 vi .fvwm/config
 cd /
 git add .
@@ -497,4 +207,294 @@ exit
 less /var/www/query.bzbee.com/htdocs/public/js/all.js 
 exit
 less /var/www/query.bzbee.com/htdocs/public/css/all.css 
+exit
+cd /
+git add .
+git show
+git diff /etc/portage/package.use 
+git add /etc/portage/package.use 
+git commit -m "package.use 添加 conky"
+git push
+git --help
+git diff
+exit
+less /var/www/query.bzbee.com/htdocs/public/css/all.css 
+exit
+sudo mount /dev/sdb6 /mnt/ -o uid=1000 -t ntfs-3g
+cd /mnt/
+ls
+cd DEV/
+ls
+ls /var/www/query.bzbee.com/htdocs/
+cp web_qt/trunk/web/* /var/www/query.bzbee.com/htdocs/ -f
+cp web_qt/trunk/web/* /var/www/query.bzbee.com/htdocs/ -af
+vi ~/.bashrc 
+lll ~/.bashrc 
+ll ~/.bashrc 
+ll /etc/myhome-conf/.bashrc 
+vi /etc/myhome-conf/.bashrc 
+alias cp=cp
+cp web_qt/trunk/web/* /var/www/query.bzbee.com/htdocs/ -af
+ls /var/www/query.bzbee.com/htdocs/
+ls /var/www/query.bzbee.com/htdocs/ -l
+cd
+sudo umount /mnt/
+alsamixer 
+alsamixer 
+cd /var/www/query.bzbee.com/
+ls
+cd t
+cd htdocs/
+ls
+cd qt/
+ls
+ls
+cd Lib/
+ls
+cd Action/
+ls
+cd ...
+cd ..
+cd ..
+ls
+st index.php 
+vi Tpl/Query/query_
+vi Tpl/Query/query_date.html 
+vi ../public/css/all.css 
+bg --help
+fg --help
+bg
+fg
+fg 1
+fg 
+fg 
+bg
+fg 2
+vi ../public/js/datepicker.js 
+fg 1
+fg 3
+fg 1
+fg 3
+less ../public/js/all.js 
+fg
+fg 1
+bg
+bg all
+ld
+jobs
+fg 2
+fg 1
+fg 2
+fg 1
+fg 2
+fg 1
+fg 1
+fg 2
+fg 2
+jobs
+fg 3
+su -
+sudo emerge -av conky
+jobs
+fg 3
+vi ../public/css/all.css 
+fg 3
+fg 1
+jobs
+fg 4
+jobs
+fg 1
+fg 4
+fg 
+fg 3
+jobs
+fg 4
+jobs
+vi ../public/js/datepicker.js 
+jobs
+fg 4
+fg 5
+fg 4
+fg 1
+fg 5
+fg 4
+fg 1
+fg 4
+fg 11
+fg 1
+jobs
+fg 5
+fg 1
+fg 5
+fg
+fg 
+fg 1
+jobs
+fg 4
+jobs
+fg 5
+jobs
+fg 5
+jobs
+fg
+fg
+jobs
+exit
+less /var/www/query.bzbee.com/htdocs/qt/Tpl/Query/query_date.html 
+ls /var/www/query.bzbee.com/htdocs/public/img/
+ls
+mv cal_16.png /var/www/query.bzbee.com/htdocs/public/img/
+sudo -t ntfs-3g -o uid=1000 /dev/sdb6 /mnt/
+sudo mount -t ntfs-3g -o uid=1000 /dev/sdb6 /mnt/
+cd /mnh
+cd /mnt/
+ll
+cd DEV/
+ls
+cp /var/www/query.bzbee.com/htdocs/* web_qt/trunk/web/
+cp /var/www/query.bzbee.com/htdocs/* web_qt/trunk/web/ -af
+cp /var/www/query.bzbee.com/htdocs web_qt2 -af
+cd web_qt2/
+ls
+ls public/
+ls public/js/
+ls public/js/ -lh
+exit
+sudo umount /mnt/
+exit
+alsamixer 
+exit
+sudo vi /usr/portage/profiles/package.mask 
+exit
+sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
+df -h
+sudo umount /dev/sdb5 
+sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
+sudo umount /dev/sdb6
+sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
+cd /mnt/
+ls
+cd DEV/
+ls
+cd ..
+ls
+cp /var/www/query.bzbee.com/htdocs ./web_qt
+cp -af /var/www/query.bzbee.com/htdocs ./web_qt
+ll
+ls web_qt/
+sudo umount /mnt/
+cd 
+sudo umount /mnt/
+exit
+sudo mount /dev/sdb6 /mnt/ -t ntfs-g -o uid=1000
+sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
+cd /mnt/
+ls
+cd DEV/
+ls
+cd web_qt/trunk/web/
+ls
+cp -af * /var/www/query.bzbee.com/htdocs/
+cd /var/www/
+ls
+cd query.bzbee.com/
+ll
+ll htdocs/
+ps aux |grep http
+ps aux |grep apache
+sudo /etc/init.d/apache2 start
+netstat -tnal
+sudo /etc/init.d/apache2 restart
+netstat -tnal
+vi /etc/conf.d/apache2 
+sudo vi /etc/conf.d/apache2 
+sudo /etc/init.d/apache2 restart
+netstat -tnal
+cd 
+vi .fvwm/config
+killall conky
+fg
+chown apache.apache /var/www/query.bzbee.com/ -R
+sudo chown apache.apache /var/www/query.bzbee.com/ -R
+sudo vi /etc/php/apache2-php5.5/php.ini 
+sudo emerge -av php
+sudo vi /etc/portage/package.use 
+sudo emerge -av php
+sudo /etc/init.d/apache2 restart
+cp /var/www/query.bzbee.com/htdocs/qt/upload/aaaa/asdfadf/201311/011710_zhsj.xlsx /tmp/
+sudo umount /mnt/
+mysql -uqueryuser -p
+cd /var/www/query.bzbee.com/htdocs/qt/
+ls
+vi Lib/Action/ExcelAction.class.php 
+vi Lib/Action/MysqlAction.class.php 
+less Tpl/Query/query_date.html 
+vi Tpl/Query/query_date.html 
+vi ../public/js/all.js 
+vi ../public/js/project_change_list.js 
+vi Tpl/Upload/show_upload_ui.html 
+mysql -uqueryuser -p
+mysql -uqueryuser -p
+jobs
+vi Lib/Action/QueryAction.class.php 
+vi Conf/define.php 
+jobs
+fg 1
+jobs
+fg 2
+jobs
+fg 4
+less Lib/Action/PublicAction.class.php 
+jobs
+vi Conf/define.php 
+vi Lib/Action/PublicAction.class.php 
+jobs
+ft 4
+fg 4
+jobs
+fg 6
+ft 4
+fg 4
+fg 6
+jobs
+fg 4
+jobs
+vi Lib/Action/PublicAction.class.php 
+fg 4
+jobs
+fg 6
+fg 4
+fg 6
+jobs
+fg 4
+fg 6
+jobs
+fg 4
+fg 6
+jobs
+fg 4
+jobs
+vi Lib/Action/UploadAction.class.php 
+vi Lib/Action/PublicAction.class.php 
+jobs
+vi Lib/Action/QueryAction.class.php 
+jobs
+fg 5
+fg
+exit
+mysql -uqueryuser -p
+exit
+sudo poff
+sudo poff twvpn
+ifconfig 
+exit
+alsamixer 
+exit
+sudo pon twvpn
+sudo emerge --sync
+vi .fvwm/config
+vi .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
 exit

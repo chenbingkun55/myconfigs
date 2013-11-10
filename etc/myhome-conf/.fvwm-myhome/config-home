@@ -144,13 +144,24 @@ Key 1 A M GoToPage 0 0
 Key 2 A M GoToPage 0 1
 Key 3 A M GoToPage 1 0
 Key 4 A M GoToPage 1 1
+### Alt+Left/Right 移动该窗口到左右桌面.
+Key Left  TW M MoveToPage -1p +0p
+Key Right TW M MoveToPage +1p +0p
+Key up    TW M MoveToPage +0p -1p
+Key Down  TW M MoveToPage +0p +1p
 ### 方向按键,排列窗口,占半屏 ee
-Key Up    TW C ResizeMove 100 50 0 0
+Key Up    TW C ResizeMove 99 50 0 0
 Key Left  TW C ResizeMove 50 100 0 0
 Key Right TW C ResizeMove 50 100 50 0
-Key Down  TW C ResizeMove 100 50 0 50
+Key Down  TW C ResizeMove 99 50 0 50
+### Ctrl+Alt 方向按键, 上下左右 缩小窗口.
+Key Up    W 4 Resize w+0c w-2c
+Key Down  W 4 Resize w+0c w+2c
+Key Left  W 4 Resize w-2c w+0c
+Key Right W 4 Resize w+2c w+0c 
 # 全屏
 Key Return W C Maximize
+Key Return W 4 Maximize
 # 缩放
 Key minus W C Resize w-10 w-10
 Key equal W C Resize w+10 w+10
@@ -177,12 +188,17 @@ Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
 # 鼠标设定
 ######
 Mouse 3 RD A Menu ConfMenu Nop
-Mouse 3 A C Menu ConfMenu Nop
 Mouse 1 RD A Menu FuncMenu Nop
+Mouse 3 A C Menu ConfMenu Nop
 Mouse 1 A C Menu FuncMenu Nop
-Mouse 3 W M Iconify on
+Mouse 1 W C Move
+Mouse 2 W C Lower
+Mouse 3 W C Iconify
+Mouse 4 W C Resize w-10 w-10
+Mouse 5 W C Resize w+10 w+10
+# Mouse 2 W C Resize
+Mouse 3 W M Close
 Mouse 1 W M Maximize
-
 
 # 预留 Ctrl + Mouse 右键 实现Scroll 功能.
 

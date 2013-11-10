@@ -27,4 +27,6 @@
 "imlib
 "name
 "ContentAre
+".use
+"pack
 .shell
