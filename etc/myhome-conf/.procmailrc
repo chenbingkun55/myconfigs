@@ -1,0 +1,50 @@
+MAILDIR=$HOME/maildir
+DEFAULT=$MAILDIR/inbox/
+LOGFILE=$MAILDIR/procmaillog
+LOGABSTRACT=no
+VERBOSE=on
+FORMAIL=/usr/bin/formail
+NL=""
+
+
+:0:
+* ^From:.*(customer_service\@jd.com)
+buy/
+
+:0:
+* ^From:.*(notice\@mail.babytree.com
+subscription-LIFE/
+
+:0:
+* ^From:.*(US-CERT\@ncas.us-cert.gov)
+subscription-IT/
+
+:0:
+* ^From:.*(newsletter\@post.xueqiu.com)
+subscription-FINANCE/
+
+
+:0:
+* ^From:.*(12306\@rails.com.cn|service\@vip.ccb.com|alipay@mail.alipay.com)
+mail-major/
+
+:0:
+* ^From:.*(\@skyunion.net|\@igg.com)
+skyunion/
+
+
+:0:
+* ^From:.*(zdr3427308160\@163.com|yuanquanwei0214\@163.com)
+friend/
+
+:0:
+* ^To:.*(gentoo-announce\@gentoo.org)
+maillist-gentoo-announce/
+
+:0:
+* ^To:.*(gentoo-user\@lists.gentoo.org)
+maillist-gentoo-user/
+
+:0:
+* .*
+inbox/

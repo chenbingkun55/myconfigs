@@ -1,0 +1,29 @@
+MAILDIR=$HOME/maildir
+LOGFILE=$HOME/.procmaillog
+LOGABSTRACT=no
+VERBOSE=on
+FORMAIL=/usr/bin/formail
+NL=""
+
+:0 Whc: .msgid.lock
+ | $FORMAIL -D 16384 .msgid.cache
+
+:0 a
+$MAILDIR/duplicates
+
+:0
+* ^Form:.*(bingkunchen\@skyunion.net|chenbingkun55\@126.com)
+$MAILDIR/friends
+
+:0
+* ^Subject:.*(credit|cash|money|debt|sex|sale|loan)
+$MAILDIR/spam
+
+:0
+* ^Content-Type:.*html
+$MAILDIR/junk
+
+
+:0
+* .* 
+default

@@ -42,3 +42,4 @@ apache:x:81:
 mysql:x:60:
 www:x:999:apache,chenbk
 realtime:x:102:
+games:x:35:

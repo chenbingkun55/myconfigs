@@ -1,0 +1,102 @@
+# set alternates="chenbingkun55@163.com"
+set mbox_type=Maildir
+set folder=$HOME/maildir/inbox
+set mbox=$HOME/maildir/inbox
+set spoolfile=~/maildir/inbox
+set postponed=~/maildir/postponed
+set header_cache=~/maildir/.hcache
+
+# mailboxes=default
+# mailboxes=duplicates
+# mailboxes=junk
+# mailboxes=sendmail
+save-hook .* =keep
+
+set to_chars="+TCFL"
+set index_format="%4C %Z %{%b %d} %-15.15L (%14) %s"
+mailboxes mailbox sentmail
+set sendmail="/usr/bin/msmtp"
+set header=no
+set quit=ask-yes
+auto_view text/html
+set move=no
+set ascii_chars=yes
+set include
+set indent_str=">"
+set editor="vim"
+my_hdr From: chenbingkun55@163.com
+
+## 编码以及中文设置
+set locale="zh_CN.UTF-8"                        # 使用中文
+set ascii_chars=yes                       # 用纯 ascii 表示树状列表
+set charset="utf-8"                       # 编码以及发件编码
+set send_charset="gb2312:utf-8:us-ascii:iso-8859-1"
+set assumed_charset="utf-8:gb2312:gb18030:gbk"
+set rfc2047_parameters=yes                # 解决中文附件名是乱码的问题
+charset-hook ^iso-8859-1$ gb2312          # 把 iso-8859-1 编码映射到 gb2312
+charset-hook !utf-8 gb2312                # 把不是 utf-8 的编码都映射到 gb2312
+charset-hook ^us-ascii$ gb2312            # 把 us-ascii 编码映射到 gb2312
+
+# 打分
+score "~N" +4
+score "~f @12306.cn" +4
+score "~s 信用卡" +4
+score "~D" -5
+score "~O" +1
+
+set sort=score
+set sort_aux=date
+set pager_stop
+set fast_reply
+set resolve=yes
+
+set alias_file=~/maildir/muttalias
+set record="~/maildir/sendmail"
+set charset="utf-8"
+set wait_key=yes
+set noconfirmappend
+set edit_headers=no
+set pager_index_lines=6
+
+charset-hook .* gb2312
+charset-hook !utf-8 gb2312
+
+macro index G "!getmail\r"
+macro pager G "!getmail\r"
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+
+ignore *
+unignore Date To From: Subject X-Mailer Organization User-Agent
+hdr_order Date From To Subject X-Mailer User-Agent Organization
+
+color quoted1 green default
+color quoted2 yellow default
+color quoted3 red default
+
+color	hdrdefault	brightcyan	blue
+color	header		brightwhite	blue "^from:"
+color   header          brightwhite    	blue   "^subject:"
+
+color   quoted          brightgreen     blue
+color   signature       brightwhite	blue
+
+color   indicator       blue	        green
+
+color   error           red             black
+mono    error           bold
+color   status          black cyan
+mono	status		bold
+color   tree            yellow   	blue
+
+color   tilde           brightmagenta   blue
+color	body	brightwhite		blue	"[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono    body    bold                    "[-a-z_0-9.]+@[-a-z_0-9.]+"
+color   body            brightyellow    black   "^Good signature"
+mono    body            bold                    "^Good signature"
+color   body            brightwhite     red     "^Bad signature from.*"
+mono    body            bold                    "^Bad signature from.*"
+color   normal          white		blue
+color	message		green	black
+color	attachment	brightgreen	blue
+
+

@@ -1,163 +1,3 @@
-killall conky
-su -
-alsamixer 
-exit
-date
-sudo /etc/php/apache2-php5.5/php.ini 
-sudo vi /etc/php/apache2-php5.5/php.ini 
-/etc/init.d/apache2 restart
-sudo /etc/init.d/apache2 restart
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-cd Downloads/
-ls
-unzip srca12306.zip 
-libreoffice 
-bg
-ls
-mv SRCA����-ڦ�Φ-�+�-ͦ�.doc SRCA.doc
-ls
-tar jxvf UPEditorLinux64.tar.bz2 
-./UPEditor-1.0-Linux-x86_64-Install 
-alsamixer 
-eixt
-exit
-su -
-exit
-jobs
-mysql -uqueryuser -p
-sudo emerge -av lynx
-exit
-exit
-exit
-killall conky
-exit
-sudo tail /var/log/messages  -l
-sudo tail -f /var/log/messages 
-cd /etc/apache2/
-ls
-cd vhosts.d/
-ls
-less query.bzbee.com_vhost.include 
-less 00_default_vhost.conf 
-less query.bzbee.com_vhost.include 
-less 00_default_vhost.conf 
-cd ..
-ls
-less httpd.conf 
-ls /usr/lib64/apache2/
-ls /usr/lib64/apache2/build/
-ls /usr/lib64/apache2/modules/
-ls
-ls modules.d/
-less modules.d/00_mod_log_config.conf 
-sudo vi /etc/conf.d/apache2 
-less modules.d/00_default_settings.conf 
-cd vhosts.d/
-ls
-less default_vhost.include 
-less query.bzbee.com_vhost.include 
-less 00_default_vhost.conf 
-ls
-sudo vi query.bzbee.com_vhost.include 
-sudo vi myhome.cn_vhost.include 
-rc-status apache2
-rc-status apache
-/etc/init.d/apache2 restart
-sudo /etc/init.d/apache2 restart
-ls /var/log/apache2/
-sudo ls /var/log/apache2/
-sudo ls /var/log/apache2/
-sudo ls /var/log/apache2/
-ls /var/www/query.bzbee.com/
-ls /var/www/query.bzbee.com/htdocs/
-cd /var/log/
-cd apache2/
-ls
-sudo cd apache2/
-su -
-exit
-sudo mount -t ntfs-3g -o uid=1000 /dev/sdb6 /mnt/
-cd /mnt/
-ls
-cd DEV/
-ls
-cd web_qt/
-ls
-cd trunk/
-ls
-cd web/
-ls
-cp -af * /var/www/query.bzbee.com/htdocs/
-ls
-ls /var/www/query.bzbee.com/htdocs/
-ls /var/www/query.bzbee.com/htdocs/ -lh
-ls /var/www/query.bzbee.com/htdocs/qt/ -lh
-ls /var/www/query.bzbee.com/htdocs/qt/ -lh
-cp -af * /var/www/query.bzbee.com/htdocs/
-sudo cp -af * /var/www/query.bzbee.com/htdocs/
-cd /var/www/
-ls
-cd query.bzbee.com/
-ls
-cd htdocs/qt/Tpl/
-ls
-vi Index/index.html 
-vi Index/index.html 
-cd ..
-cd ..
-cd qt/
-ls
-cd ..
-ls
-cd doc/
-ls
-cd 500000092_SD查询系统/
-ls
-ls 数据示例/
-ls 数据示例/Downloads-10/
-cd ..
-cd ..
-cd qt/
-ls
-vi Lib/Action/QueryAction.class.php 
-mysql -uqueryuser -p
-fg
-jobs
-fg 1
-fg 2
-jobs
-fg 1
-fg 2
-fg 1
-fg 2
-fg 2
-fg 1
-fg 2
-fg 1
-fg 2
-fg 1
-fg 2
-fg 1
-sudo ll /var/log/apache2/
-sudo ls -l /var/log/apache2/
-sudo tail -f /var/log/apache2/query.bzbee.com_error.log
 sudo vi /etc/php/apache2-php5.5/php.ini 
 /etc/init.d/apache2 restart
 sudo /etc/init.d/apache2 restart
@@ -498,3 +338,163 @@ su -
 exit
 vi .fvwm/config
 vi .fvwm/config
+cd /
+git add .
+git commit -m "右键关闭窗口,跳过系统窗口."
+git push
+git push
+sudo emerge -av mutt
+sudo vi /etc/portage/package.use 
+sudo emerge -av mutt
+sudo vi /etc/portage/package.use 
+sudo emerge -av mutt
+sudo vi /etc/portage/package.use 
+sudo emerge -av mutt
+sudo vi /etc/portage/package.use 
+sudo emerge -av mutt
+sudo vi /etc/portage/package.use 
+sudo emerge -av mutt
+mutt
+cd
+vi .muttrc
+ls
+mv .maildir/ maildir
+vi .muttrc 
+mv .muttrc /etc/myhome-conf/
+ln -s /etc/myhome-conf/.muttrc .muttrc
+ls -l .muttrc 
+sudo emerge fetchmail
+sudo emerge -av fetchmail
+vi /etc/myhome-conf/.fetchmailrc
+mv /etc/myhome-conf/.fetchmailrc .
+ls .fetchmailrc 
+vi /etc/rc.conf 
+vi .bashrc 
+! ps aux
+! ps aux |grep -q fetchmail
+fetchmail &
+chmod 0600 .fetchmailrc 
+fetchmail &
+vi .fetchmailrc 
+fetchmail &
+vi .fetchmailrc 
+fetchmail &
+vi .fetchmailrc 
+fetchmail &
+vi .fetchmailrc 
+fetchmail &
+ls -al
+ls maildir/
+ls maildir/
+ls maildir/
+ls maildir/
+ls maildir/ -al
+vi .muttrc 
+touch maildir/muttalias
+vi .muttrc 
+vi .mailcap
+vi .muttrc 
+vi .fetchmailrc 
+ps aux |grep fetchmail
+kill 32363
+ps aux |grep fetchmail
+vi .bashrc 
+fetchmail -akv 
+vi .fetchmailrc 
+fetchmail -akv 
+ps aux |grep fetmail
+vi .fetchmailrc 
+fetchmail -akv 
+sudo emerge procmail
+ cat .procmailrc 
+fetchmail -akv -m "/usr/bin/procmail -d %T"
+fg
+mutt -y
+vi .muttrc 
+mutt -y
+mutt -y
+mutt
+sudo emerge -av msmtp
+date %Y-%m-%d %h:%i
+date "%Y-%m-%d %h:%i"
+date
+date %Y
+date --help
+date "+%Y-%m-%d %h:%i"
+date "+%Y-%m-%d %H:%i"
+date "+%Y-%m-%d %H:%M"
+sudo meger -av msmtp
+sudo emerge -av msmtp
+ls maildir/
+ls maildir/cur/
+ls maildir/new/
+ls maildir/tmp/
+ls maildir/tmp/
+ls maildir/new/
+ls maildir/cur/
+ls maildir/cur/
+ls maildir/
+ls maildir/
+ls maildir/new/
+ls maildir/
+ls maildir/
+ls maildir/inbox/
+ls maildir/inbox/new/
+ls maildir/inbox/cur/
+ls maildir/inbox/tmp/
+vi .procmailrc
+less .procmaillog 
+vi .procmailrc
+ls maildir/
+rm maildir/*.* -rf
+ls maildir/
+rm maildir/* -rf
+ls maildir/
+ls
+cd maildir/
+ls
+l
+ls
+ls
+tail procmaillog -f
+ls
+ls
+mkdir inbox
+ls
+mkdir -p inbox/{cur,new,tmp}
+ls
+getmail
+ls
+mkdir -p buy/{cur,new,tmp}
+ls
+mkdir -p subscription-LIFE/{cur,new,tmp}
+mkdir -p subscription-IT/{cur,new,tmp}
+mkdir -p subscription-FINANCE/{cur,new,tmp}
+mkdir -p mail-major/{cur,new,tmp}
+mkdir -p skyunion/{cur,new,tmp}
+mkdir -p friend/{cur,new,tmp}
+mkdir -p maillist-gentoo-announce/{cur,new,tmp}
+mkdir -p maillist-gentoo-user/{cur,new,tmp}
+ls
+getmail
+crontab -l
+/usr/bin/getmail
+cd
+vi .muttrc 
+vi .urlview
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+mutt
+vi maildir/
+vi .mailcap 
+vi .urlview 
+mutt
+vi .muttrc 
+mkdir -p maildir/postponed{cur,new,tmp}
+vi .muttrc 
+mutt
+vi .muttrc 
+ls -al
+exit

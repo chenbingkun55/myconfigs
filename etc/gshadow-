@@ -42,3 +42,4 @@ apache:!::
 mysql:!::
 www:!::apache,chenbk
 realtime:!::
+games:!::

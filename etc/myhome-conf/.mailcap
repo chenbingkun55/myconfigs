@@ -1,0 +1,13 @@
+# Microsoft word
+application/msword; wvHtml %s - | w3m -dump; nametemplate=%s.html; copiousoutput
+# pdf
+application/pdf; qpdf %s > /dev/null
+# html
+text/html; w3m -dump -I %{charset} -T text/html %s; copiousoutput
+#text/html; lynx --dump %s; nametemplate=%s.html; copiousoutput
+# image
+image/*; display %s; /dev/null
+# audio
+audio/*; mocp %s > /dev/null
+# video
+#video/*; mplayer %s > /dev/null
