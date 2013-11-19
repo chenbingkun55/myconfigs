@@ -1,500 +1,500 @@
-cd bin/
-ls
-cat conkyPhotoRandom 
-ls
-./conkyPhotoRandom 
-display /tmp/conkyPhoto.png 
-./conkyPhotoRandom 
-display /tmp/conkyPhoto.png 
-./conkyPhotoRandom 
-display /tmp/conkyPhoto.png 
-cd
-vi .fvwm/config
-sudo emerge -av imagemagick
-exit
-vi .conky-myhome/conkymain 
-cd .conky-myhome/
-ls
-ls bin/
-vi bin/conkyPhotoRandom 
-cd bin/
-ls
-./conkyPhotoRandom 
-ls /tmp/
-display /tmp/conkyPhoto.png 
-ls
-cat conkyIp 
-cat conkyForecast 
-ls
-cat conkyStart 
-./conkyForecast 
-ls
-ls /tmp/
-cd ..
-ls
-vi conkymain 
-ls
-vi conkymain 
-exit
-vi .fvwm/config
 killall conky
-cd .conky-myhome/
+su -
+alsamixer 
+exit
+date
+sudo /etc/php/apache2-php5.5/php.ini 
+sudo vi /etc/php/apache2-php5.5/php.ini 
+/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+cd Downloads/
 ls
-conky -c conkymain 
-less conkymain 
-sudo emerge -av conky
+unzip srca12306.zip 
+libreoffice 
+bg
+ls
+mv SRCA����-ڦ�Φ-�+�-ͦ�.doc SRCA.doc
+ls
+tar jxvf UPEditorLinux64.tar.bz2 
+./UPEditor-1.0-Linux-x86_64-Install 
+alsamixer 
+eixt
+exit
 su -
 exit
-cd .conky-myhome/
-ls
-cd bin/
-ls
-./conkyStart 
-cd ..
-ls
-vi conkymain 
-vi conkymain 
-bin/conkyStart 
-exit
-killall conky
-exit
-cd .conky-myhome/
-ls
-vi conkymain 
-ls /tmp/conkyPhoto.png  -l
-ll
-ll pics/
-cd pics/
-ls
-ll
-chmod 0644 _MG_8329.png 
-ll
-cd /
-git add .
-git commit -m "conky-myhome 调整完成,天气预报再加一下."
-vi .gitignore 
-git add .
-git commit -m "conky-myhome 调整完成,天气预报再加一下."
-vi .gitignore 
-git add .
-git reset
-git add .
-git commit -m "conky-myhome 调整完成,天气预报再加一下."
-git show
-git push
-git checkout /etc/myhome-conf/.conky-myhome/pics/my_1.png 
-git checkout /etc/myhome-conf/.conky-myhome/pics/my_1.png 
-git remove /etc/myhome-conf/.conky-myhome/pics/my_1.png 
-git del /etc/myhome-conf/.conky-myhome/pics/my_1.png 
-git --help
-git rm /etc/myhome-conf/.conky-myhome/pics/my_1.png 
-git add .
-git push
-git log
-exit
-conky -c ./.conky-myhome/conkymain 
-killall conky
-killall conky
-killall conky
-killall conky
-ps aux |grep conky
-kill 17656
-ps aux |grep conky
-kill -9 17656
-ps aux |grep conky
-conky -c ./.conky-myhome/conkymain 
-ls
-cd .conky-myhome/
-ls
-cd font/
-ls
-ls zekton/
-conky-colors --help
-conky-colors --help |less
-ls
-ls zekton/
-lcd zekton/
-ls
-cd zekton/
-ls
-cat zektonbi.ttf 
-cd ..
-ls
-ls weather/
-ls
-ls weather/
-ls zekton/
-ls
-ls LCDWinTT/
-ls LCDMonoWinTT/
-ls
-ls weather/
-exit
-ls .conky-myhome/
-exit
-vi .conky-myhome/conkymain 
-ls /tmp/
-display /tmp/conkyPhoto.png 
-ll /tmp/
-rm /tmp/conkyPhoto.png 
-cd .conky-myhome/
-ls
-cd pics/
-ls
-ll
-rm conkyPhoto.png 
-ls
-cd ..
-ls
-vi conkymain 
-ls
-display /tmp/conkyPhoto.png 
-cd pics/
-ls
-ll
-rm my_2.png 
-cp ../../Image/_MG_8329.png ./my_2.png
-cd ../../
-ls
-cd Image/
-ls
-cp _MG_8329.png ../.conky-myhome/pics/my_2.png
-cd $OLD_PWD
-ls
-cd .conky-myhome/
-ls
-cd pics/
-ls
-ll
-chmod 0644 my_2.png 
-display my_2.png 
-cd ..
-ls
-vi conkymain 
-ll /tmp/
-display /tmp/conkyPhoto.png 
-ll
-vi conkymain 
-ll
-cd bin/
-ls
-cd
-vi .fvwm/config
-cd /
-git add .
-git commit -m "RunList 临时提升功能还是有问题"
-git push
-exit
-less /var/www/query.bzbee.com/htdocs/public/js/all.js 
-exit
-less /var/www/query.bzbee.com/htdocs/public/css/all.css 
-exit
-cd /
-git add .
-git show
-git diff /etc/portage/package.use 
-git add /etc/portage/package.use 
-git commit -m "package.use 添加 conky"
-git push
-git --help
-git diff
-exit
-less /var/www/query.bzbee.com/htdocs/public/css/all.css 
-exit
-sudo mount /dev/sdb6 /mnt/ -o uid=1000 -t ntfs-3g
-cd /mnt/
-ls
-cd DEV/
-ls
-ls /var/www/query.bzbee.com/htdocs/
-cp web_qt/trunk/web/* /var/www/query.bzbee.com/htdocs/ -f
-cp web_qt/trunk/web/* /var/www/query.bzbee.com/htdocs/ -af
-vi ~/.bashrc 
-lll ~/.bashrc 
-ll ~/.bashrc 
-ll /etc/myhome-conf/.bashrc 
-vi /etc/myhome-conf/.bashrc 
-alias cp=cp
-cp web_qt/trunk/web/* /var/www/query.bzbee.com/htdocs/ -af
-ls /var/www/query.bzbee.com/htdocs/
-ls /var/www/query.bzbee.com/htdocs/ -l
-cd
-sudo umount /mnt/
-alsamixer 
-alsamixer 
-cd /var/www/query.bzbee.com/
-ls
-cd t
-cd htdocs/
-ls
-cd qt/
-ls
-ls
-cd Lib/
-ls
-cd Action/
-ls
-cd ...
-cd ..
-cd ..
-ls
-st index.php 
-vi Tpl/Query/query_
-vi Tpl/Query/query_date.html 
-vi ../public/css/all.css 
-bg --help
-fg --help
-bg
-fg
-fg 1
-fg 
-fg 
-bg
-fg 2
-vi ../public/js/datepicker.js 
-fg 1
-fg 3
-fg 1
-fg 3
-less ../public/js/all.js 
-fg
-fg 1
-bg
-bg all
-ld
 jobs
-fg 2
-fg 1
-fg 2
-fg 1
-fg 2
-fg 1
-fg 1
-fg 2
-fg 2
-jobs
-fg 3
+mysql -uqueryuser -p
+sudo emerge -av lynx
+exit
+exit
+exit
+killall conky
+exit
+sudo tail /var/log/messages  -l
+sudo tail -f /var/log/messages 
+cd /etc/apache2/
+ls
+cd vhosts.d/
+ls
+less query.bzbee.com_vhost.include 
+less 00_default_vhost.conf 
+less query.bzbee.com_vhost.include 
+less 00_default_vhost.conf 
+cd ..
+ls
+less httpd.conf 
+ls /usr/lib64/apache2/
+ls /usr/lib64/apache2/build/
+ls /usr/lib64/apache2/modules/
+ls
+ls modules.d/
+less modules.d/00_mod_log_config.conf 
+sudo vi /etc/conf.d/apache2 
+less modules.d/00_default_settings.conf 
+cd vhosts.d/
+ls
+less default_vhost.include 
+less query.bzbee.com_vhost.include 
+less 00_default_vhost.conf 
+ls
+sudo vi query.bzbee.com_vhost.include 
+sudo vi myhome.cn_vhost.include 
+rc-status apache2
+rc-status apache
+/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
+ls /var/log/apache2/
+sudo ls /var/log/apache2/
+sudo ls /var/log/apache2/
+sudo ls /var/log/apache2/
+ls /var/www/query.bzbee.com/
+ls /var/www/query.bzbee.com/htdocs/
+cd /var/log/
+cd apache2/
+ls
+sudo cd apache2/
 su -
-sudo emerge -av conky
-jobs
-fg 3
-vi ../public/css/all.css 
-fg 3
-fg 1
-jobs
-fg 4
-jobs
-fg 1
-fg 4
-fg 
-fg 3
-jobs
-fg 4
-jobs
-vi ../public/js/datepicker.js 
-jobs
-fg 4
-fg 5
-fg 4
-fg 1
-fg 5
-fg 4
-fg 1
-fg 4
-fg 11
-fg 1
-jobs
-fg 5
-fg 1
-fg 5
-fg
-fg 
-fg 1
-jobs
-fg 4
-jobs
-fg 5
-jobs
-fg 5
-jobs
-fg
-fg
-jobs
 exit
-less /var/www/query.bzbee.com/htdocs/qt/Tpl/Query/query_date.html 
-ls /var/www/query.bzbee.com/htdocs/public/img/
-ls
-mv cal_16.png /var/www/query.bzbee.com/htdocs/public/img/
-sudo -t ntfs-3g -o uid=1000 /dev/sdb6 /mnt/
 sudo mount -t ntfs-3g -o uid=1000 /dev/sdb6 /mnt/
-cd /mnh
-cd /mnt/
-ll
-cd DEV/
-ls
-cp /var/www/query.bzbee.com/htdocs/* web_qt/trunk/web/
-cp /var/www/query.bzbee.com/htdocs/* web_qt/trunk/web/ -af
-cp /var/www/query.bzbee.com/htdocs web_qt2 -af
-cd web_qt2/
-ls
-ls public/
-ls public/js/
-ls public/js/ -lh
-exit
-sudo umount /mnt/
-exit
-alsamixer 
-exit
-sudo vi /usr/portage/profiles/package.mask 
-exit
-sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
-df -h
-sudo umount /dev/sdb5 
-sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
-sudo umount /dev/sdb6
-sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
 cd /mnt/
 ls
 cd DEV/
 ls
-cd ..
+cd web_qt/
 ls
-cp /var/www/query.bzbee.com/htdocs ./web_qt
-cp -af /var/www/query.bzbee.com/htdocs ./web_qt
-ll
-ls web_qt/
-sudo umount /mnt/
-cd 
-sudo umount /mnt/
-exit
-sudo mount /dev/sdb6 /mnt/ -t ntfs-g -o uid=1000
-sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
-cd /mnt/
+cd trunk/
 ls
-cd DEV/
-ls
-cd web_qt/trunk/web/
+cd web/
 ls
 cp -af * /var/www/query.bzbee.com/htdocs/
+ls
+ls /var/www/query.bzbee.com/htdocs/
+ls /var/www/query.bzbee.com/htdocs/ -lh
+ls /var/www/query.bzbee.com/htdocs/qt/ -lh
+ls /var/www/query.bzbee.com/htdocs/qt/ -lh
+cp -af * /var/www/query.bzbee.com/htdocs/
+sudo cp -af * /var/www/query.bzbee.com/htdocs/
 cd /var/www/
 ls
 cd query.bzbee.com/
-ll
-ll htdocs/
-ps aux |grep http
-ps aux |grep apache
-sudo /etc/init.d/apache2 start
-netstat -tnal
-sudo /etc/init.d/apache2 restart
-netstat -tnal
-vi /etc/conf.d/apache2 
-sudo vi /etc/conf.d/apache2 
-sudo /etc/init.d/apache2 restart
-netstat -tnal
-cd 
-vi .fvwm/config
-killall conky
-fg
-chown apache.apache /var/www/query.bzbee.com/ -R
-sudo chown apache.apache /var/www/query.bzbee.com/ -R
-sudo vi /etc/php/apache2-php5.5/php.ini 
-sudo emerge -av php
-sudo vi /etc/portage/package.use 
-sudo emerge -av php
-sudo /etc/init.d/apache2 restart
-cp /var/www/query.bzbee.com/htdocs/qt/upload/aaaa/asdfadf/201311/011710_zhsj.xlsx /tmp/
-sudo umount /mnt/
-mysql -uqueryuser -p
-cd /var/www/query.bzbee.com/htdocs/qt/
 ls
-vi Lib/Action/ExcelAction.class.php 
-vi Lib/Action/MysqlAction.class.php 
-less Tpl/Query/query_date.html 
-vi Tpl/Query/query_date.html 
-vi ../public/js/all.js 
-vi ../public/js/project_change_list.js 
-vi Tpl/Upload/show_upload_ui.html 
-mysql -uqueryuser -p
-mysql -uqueryuser -p
-jobs
+cd htdocs/qt/Tpl/
+ls
+vi Index/index.html 
+vi Index/index.html 
+cd ..
+cd ..
+cd qt/
+ls
+cd ..
+ls
+cd doc/
+ls
+cd 500000092_SD查询系统/
+ls
+ls 数据示例/
+ls 数据示例/Downloads-10/
+cd ..
+cd ..
+cd qt/
+ls
 vi Lib/Action/QueryAction.class.php 
+mysql -uqueryuser -p
+fg
+jobs
+fg 1
+fg 2
+jobs
+fg 1
+fg 2
+fg 1
+fg 2
+fg 2
+fg 1
+fg 2
+fg 1
+fg 2
+fg 1
+fg 2
+fg 1
+sudo ll /var/log/apache2/
+sudo ls -l /var/log/apache2/
+sudo tail -f /var/log/apache2/query.bzbee.com_error.log
+sudo vi /etc/php/apache2-php5.5/php.ini 
+/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
+sudo tail -f /var/log/apache2/query.bzbee.com_error.log
+mv /home/chenbk/Downloads/20131112093134490_easyicon_net_24.ico /var/www/query.bzbee.com/htdocs/favicon.ico
+sudo tail -f /var/log/apache2/query.bzbee.com_error.log
+mv /home/chenbk/Downloads/20131112093742918_easyicon_net_24.ico /var/www/query.bzbee.com/htdocs/favicon.ico 
 vi Conf/define.php 
 jobs
 fg 1
-jobs
-fg 2
-jobs
-fg 4
-less Lib/Action/PublicAction.class.php 
-jobs
-vi Conf/define.php 
 vi Lib/Action/PublicAction.class.php 
 jobs
-ft 4
+fg 
+fg 1
+jobs
 fg 4
+fg 1
+jobs
+fg 3
+fg 1
+jobs
+vi Tpl/Query/query_all_in_month.html 
+vi ../public/css/all.css 
+jobs
+fg 5
+fg 6
+fg 1
+vi Tpl/Query/query_all_in_day.html 
+vi Tpl/Query/query_release_in_month.html 
+vi Tpl/Query/query_release_in_day.html 
+vi Tpl/Query/query_release_target_month.html 
+vi Tpl/Query/query_release_target_day.html 
+vi Tpl/Query/query_release_target_month.html 
+jobs
+vi ../public/css/all.css 
 jobs
 fg 6
-ft 4
-fg 4
+fg 7
+vi ../public/js/datepicker.js 
+jobs
+fg 7
+jobs
+vi Tpl/Query/query_date.html 
+fg 9
+jobs
 fg 6
 jobs
-fg 4
-jobs
-vi Lib/Action/PublicAction.class.php 
-fg 4
+fg 7
 jobs
 fg 6
-fg 4
+fg
+vi Tpl/Query/query_release_target_day.html 
+fg 7
+jobs
+fg 6
+vi Tpl/Query/query_release_target_day.html 
+vi Tpl/Query/query_release_in_month.html 
+vi Tpl/Query/query_release_target_day.html 
+jobs
+fg 7
+fg 9
+fg 7
+jobs
+fg 10
 fg 6
 jobs
-fg 4
-fg 6
+fg 5
 jobs
-fg 4
-fg 6
-jobs
-fg 4
-jobs
-vi Lib/Action/UploadAction.class.php 
-vi Lib/Action/PublicAction.class.php 
+vi Tpl/Query/query_all_in_day.html 
+vi Tpl/Query/query_all_in_month.html 
+su -
 jobs
 vi Lib/Action/QueryAction.class.php 
 jobs
-fg 5
+fg 1
+jobs
+fg 7
+jobs
+vi Tpl/Query/query_release_in_month.html 
+vi Tpl/Query/query_release_in_month.html 
+vi Tpl/Query/query_all_in_month.html 
+vi Tpl/Query/query_all_in_day.html 
+jobs
+fg 7
+vi Tpl/Query/query_release_in_month.html 
+jobs
+fg
+fg
 fg
 exit
-mysql -uqueryuser -p
 exit
-sudo poff
-sudo poff twvpn
-ifconfig 
+cd /var/www/query.bzbee.com/htdocs/
+less qt/Lib/Action/QueryAction.class.php 
+vi qt/Lib/Action/QueryAction.class.php 
+lynx localquery.bzbee.com
+su -
+mysql -uqueryuser -p
+quit
+exit
 exit
 alsamixer 
 exit
+alsamixer 
+exit
+su -
+exit
+alsamixer 
+exit
+cd MP3/
+ls
+ls |iconv -t utf8
+ls |iconv -t utf-8
+ls |iconv -t gbk
+ls |iconv -f gbk -t utf8
+ls |iconv -f gbk -t utf-8
+exit
+mysql -uqueryuser -p
+mysql -uqueryuser -p
+cd /usr/portage/
+ls
+emerge -av mysql
+sudo emerge -av mysql
+cd dev-db/
+ls
+sudo emerge -av mysql-gui-tools
+sudo emerge -av Mysql-GUI
+mysql -uroot -p
+mysql -uroot -p
+mysql -uroot -p
+mysql -uroot -p
+mysql -uqueryuser -p
+mysql -uqueryuser -p -D querydb < /var/www/query.bzbee.com/htdocs/bak/20131101_querydb.sql 
+mysql -uqueryuser -p
+mysql -uqueryuser -p
+mysql -uqueryuser -p
+exit
+su -
+cd /var/www/query.bzbee.com/
+ls
+cd htdocs/
+l
+ls
+cd qt/
+ls
+vi Tpl/Index/index.html 
+vi Lib/Action/QueryAction.class.php 
+vi Tpl/Index/index.html 
+jobs
+fg 1
+fg 1
+jobs
+vi Tpl/Index/index.html 
+fg
+vi ../public/js/all.js 
+cp Tpl/Project/show_add_release_ui.html Tpl/Project/show_del_release_ui.html
+vi Tpl/Project/show_del_release_ui.html 
+vi Lib/Action/ProjectAction.class.php 
+jobs
+fg 5
+vi ../public/css/all.css 
+jobs
+fg 6
+jobs
+fg 5
+fg 6
+jobs
+fg 4
+jobs
+fg 5
+fg 6
+jobs
+fg 5
+jobs
+fg 5
+fg 6
+jobs
+fg 5
+vi Tpl/Upload/show_upload_ui.html 
+fg 4
+fg 3
+vi ../public/css/all.css 
+jobs
+fg
+fg 5
+fg
+jobs
+fg 7
+jobs
+fg 5
+fg 5
+fg 6
+fg 4
+jobs
+fg 5
+jobs
+fg 7
+jobs
+vi Tpl/Project/show_add_project_ui.html 
+jobs
+jobs
+fg 5
+jobs
+fg 7
+fg 5
+jobs
+fg 7
+cd Runtime/
+ls
+cd Cache/
+ls
+rm *.php
+rm *.php -f
+ls
+cd ..
+ls
+jobs
+cd ..
+vi ../public/css/all.css 
+jobs
+vi Tpl/Project/show_del_release_ui.html 
+jobs
+fg 7
+fg 8
+fg 7
+jobs
+fg 4
+vi ../public/js/project_change_list.js 
+jobs
+fg 8
+fg 6
+jobs
+fg 8
+fg 6
+vi Conf/define.php 
+jobs
+fg 6
+jobs
+fg 9
+jobs
+vi ../public/js/project_change_list.js 
+vi ../public/js/all.js 
+fg 4
+vi ../public/js/datepicker.js 
+vi Tpl/Query/query_all_in_day.html 
+jobs
+fg 6
+fg
+fg
+fg
+fg
+fg
+fg
+exit
+cd /var/www/query.bzbee.com/htdocs/
+ls
+cd qt/
+less Tpl/Upload/show_upload_ui.html 
+vi Tpl/Upload/show_upload_ui.html 
+vi Tpl/Index/index.html 
+vi Tpl/Query/query_date.html 
+vi Tpl/Project/show_add_project_ui.html 
+vi ../public/js/all.js 
+jobs
+vi ../public/css/all.css 
+vi Tpl/Project/show_add_project_ui.html 
+vi ../public/js/all.js 
+less Tpl/Upload/show_upload_ui.html 
+vi Tpl/Upload/show_upload_ui.html 
+vi Tpl/Project/show_del_release_ui.html 
+exit
+exit
+mysql -uqueryuser -p
+alsamixer 
+mysql -uqueryuser -p
+exit
+su -
+exit
+uptime
+exit
+cd /var/www/query.bzbee.com/htdocs/
+ls
+cd doc/
+ls
+cd 500000092_SD查询系统/
+ls
+cd 数据示例/
+ls
+cd Downloads-10/
+ls
+cd ..
+ls
+file 广告追踪数据统计.csv 
+vi 广告追踪数据统计.csv 
+st  广告追踪数据统计.csv 
+gvim  广告追踪数据统计.csv 
+file 广告追踪数据统计.csv 
+cp  广告追踪数据统计.csv  /tmp/abc.csv
+cd /tmp/
+ls
+file abc.csv 
+
+file abc.csv 
+iconv -f ISO-8859 -t utf8 abc.csv 
+iconv -l
+iconv -f ISO_8859 -t utf8 abc.csv 
+iconv -f ISO_8859-1 -t utf8 abc.csv 
+iconv -f ISO_8859-2 -t utf8 abc.csv 
+iconv -f ISO_8859- -t utf8 abc.csv 
+iconv -f gbk -t utf8 abc.csv 
+sudo /etc/init.d/apache2 start
+exit
+su -
+exit
+su -
 sudo pon twvpn
-sudo emerge --sync
-vi .fvwm/config
-vi .fvwm/config
+ifcon
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig -a
+ifconfig 
+ifconfig 
+ifconfig 
+sudo meger -av mplayerplug-in
+su -
 exit
 vi .fvwm/config
 vi .fvwm/config
-exit
-cd /
-git add .
-git commit -m "Fvwm 添加几个快捷键"
-git push
-killall conky
-vi .fvwm/config
-exit
-less .fvwm/config
-eixt
-exit
-vi .fvwm/config
-git add .
-cd /
-git add .
-git commit -m "添加快捷键Win+回车,最小化和还原"
-git push
-exit
-killall conky
-exit

@@ -139,7 +139,7 @@ Key F1 A M Menu FuncMenu
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
-Key F4 A M Close
+Key F4 A M Current (!Iconic,!Fvwm*) Close
 Key 1 A M GoToPage 0 0
 Key 2 A M GoToPage 0 1
 Key 3 A M GoToPage 1 0
@@ -155,10 +155,10 @@ Key Left  TW C ResizeMove 50 100 0 0
 Key Right TW C ResizeMove 50 100 50 0
 Key Down  TW C ResizeMove 99 50 0 50
 ### Ctrl+Alt 方向按键, 上下左右 缩小窗口.
-Key Up    W 4 Resize w+0c w-2c
-Key Down  W 4 Resize w+0c w+2c
-Key Left  W 4 Resize w-2c w+0c
-Key Right W 4 Resize w+2c w+0c 
+Key Up    W 4 Resize w+0c w-5c
+Key Down  W 4 Resize w+0c w+5c
+Key Left  W 4 Resize w-5c w+0c
+Key Right W 4 Resize w+5c w+0c 
 # 全屏
 Key Return W C Maximize
 Key Return W 4 Iconify
@@ -191,14 +191,14 @@ Mouse 3 RD A Menu ConfMenu Nop
 Mouse 1 RD A Menu FuncMenu Nop
 Mouse 3 A C Menu ConfMenu Nop
 Mouse 1 A C Menu FuncMenu Nop
-Mouse 1 W C Move
 Mouse 2 W C Lower
 Mouse 3 W C Iconify
+Mouse 1 W C Maximize
 Mouse 4 W C Resize w-10 w-10
 Mouse 5 W C Resize w+10 w+10
 # Mouse 2 W C Resize
-Mouse 3 W M Close
-Mouse 1 W M Maximize
+Mouse 3 W M Current (!Iconify,!Fvwm*) Close
+Mouse 1 W M Move
 
 # 预留 Ctrl + Mouse 右键 实现Scroll 功能.
 
