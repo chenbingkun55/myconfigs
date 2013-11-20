@@ -34,7 +34,7 @@ dhcp:x:248:
 messagebus:x:247:
 lpadmin:x:106:
 polkitd:x:105:
-mail:x:12:
+mail:x:12:postfix
 postmaster:x:104:
 nullmail:x:88:
 plugdev:x:103:
@@ -44,3 +44,5 @@ www:x:999:apache,chenbk
 realtime:x:102:
 games:x:35:
 fetchmail:x:101:
+postfix:x:207:
+postdrop:x:208:

@@ -43,3 +43,6 @@ mysql:x:60:
 www:x:999:apache,chenbk
 realtime:x:102:
 games:x:35:
+fetchmail:x:101:
+postfix:x:207:
+postdrop:x:208:

@@ -30,7 +30,7 @@ Mouse 2 FST A -
 ####
 # 图片路径
 #######
-ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons/gnome/22x22/mimetypes:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:$[fvwm_icon]:$[fvwm_wallpapers]
+ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons/gnome/22x22/mimetypes:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:/usr/share/icons/locolor/16x16/apps:$[fvwm_icon]:$[fvwm_wallpapers]
 
 
 ####
@@ -234,10 +234,19 @@ AddToMenu FuncMenu "%fcitx.png%=== 主菜单===" Title
 + "播放器- X&BMC%xbmc/media/icon32x32.png%"  Exec exec xbmc
 + "文件库- &PCmanFM%system-file-manager.png%"  Exec exec pcmanfm
 + "看图片- &ImageMagick%gnome-mime-image.png%"  Exec exec display
++ "PHP IDE - Php&Storm%webide_24.png%"  Exec exec pstorm
 + ""  Nop
 + "办公软件%libreoffice-writer.png%"   Popup OfficeMenu
 + "应用程序"   Popup ProgramsMenu
 + "工具"   Popup UtilitiesMenu
+
+DestroyMenu OfficeMenu
+AddToMenu OfficeMenu "=== 办公软件菜单 ===" Title
++ "&Word%libreoffice-writer.png%" Exec exec libreoffice --writer
++ "&Excel%libreoffice-calc.png%"  Exec exec libreoffice --calc
++ "&Base%libreoffice-base.png%"   Exec exec libreoffice --base
++ "&PPT%libreoffice-draw.png%"   Exec exec libreoffice --draw
+
 
 
 DestroyMenu SystemMenu

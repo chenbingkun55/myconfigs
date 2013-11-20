@@ -4,7 +4,16 @@ set folder=$HOME/maildir/inbox
 set mbox=$HOME/maildir/inbox
 set spoolfile=~/maildir/inbox
 set postponed=~/maildir/postponed
+set record="~/maildir/send"
 set header_cache=~/maildir/.hcache
+
+mailboxes "=inbox"
+mailboxes "=buy"
+mailboxes "=friend"
+mailboxes "=mail-major"
+mailboxes "=skyunion"
+set check_new=yes
+set timeout=6
 
 # mailboxes=default
 # mailboxes=duplicates
@@ -13,7 +22,7 @@ set header_cache=~/maildir/.hcache
 save-hook .* =keep
 
 set to_chars="+TCFL"
-set index_format="%4C %Z %{%b %d} %-15.15L (%14) %s"
+set index_format="%4C %Z %{%b %d} %-15.15L (%4l) %s"
 mailboxes mailbox sentmail
 set sendmail="/usr/bin/msmtp"
 set header=no
@@ -24,18 +33,23 @@ set ascii_chars=yes
 set include
 set indent_str=">"
 set editor="vim"
+set thorough_search=yes
+set envelope_from=yes
+# set from="ChenBK@163 <chenbingkun55@163.com>"
+# set realname="ChenBK@163"
+set sendmail="/usr/sbin/sendmail"
 my_hdr From: chenbingkun55@163.com
 
 ## 编码以及中文设置
 set locale="zh_CN.UTF-8"                        # 使用中文
 set ascii_chars=yes                       # 用纯 ascii 表示树状列表
 set charset="utf-8"                       # 编码以及发件编码
-set send_charset="gb2312:utf-8:us-ascii:iso-8859-1"
+set send_charset="gb2312:utf-8:GB18030:us-ascii:iso-8859-1"
 set assumed_charset="utf-8:gb2312:gb18030:gbk"
 set rfc2047_parameters=yes                # 解决中文附件名是乱码的问题
-charset-hook ^iso-8859-1$ gb2312          # 把 iso-8859-1 编码映射到 gb2312
-charset-hook !utf-8 gb2312                # 把不是 utf-8 的编码都映射到 gb2312
-charset-hook ^us-ascii$ gb2312            # 把 us-ascii 编码映射到 gb2312
+charset-hook ^iso-8859-1$ GB2312        # 把 iso-8859-1 编码映射到 gb2312
+charset-hook !utf-8 GB2312              # 把不是 utf-8 的编码都映射到 gb2312
+charset-hook ^us-ascii$ GB2312           # 把 us-ascii 编码映射到 gb2312
 
 # 打分
 score "~N" +4
@@ -44,14 +58,14 @@ score "~s 信用卡" +4
 score "~D" -5
 score "~O" +1
 
-set sort=score
+#set sort=score
+set sort=reverse-date-received
 set sort_aux=date
 set pager_stop
 set fast_reply
 set resolve=yes
 
 set alias_file=~/maildir/muttalias
-set record="~/maildir/sendmail"
 set charset="utf-8"
 set wait_key=yes
 set noconfirmappend
@@ -61,8 +75,8 @@ set pager_index_lines=6
 charset-hook .* gb2312
 charset-hook !utf-8 gb2312
 
-macro index G "!getmail\r"
-macro pager G "!getmail\r"
+macro index G "!/usr/bin/getmail -v -n -r ~/.getmail/getmailrc"
+macro pager G "!/usr/bin/getmail -v -n -r ~/.getmail/getmailrc"
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 
 ignore *

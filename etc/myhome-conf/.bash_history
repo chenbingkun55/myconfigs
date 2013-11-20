@@ -1,318 +1,3 @@
-sudo vi /etc/php/apache2-php5.5/php.ini 
-/etc/init.d/apache2 restart
-sudo /etc/init.d/apache2 restart
-sudo tail -f /var/log/apache2/query.bzbee.com_error.log
-mv /home/chenbk/Downloads/20131112093134490_easyicon_net_24.ico /var/www/query.bzbee.com/htdocs/favicon.ico
-sudo tail -f /var/log/apache2/query.bzbee.com_error.log
-mv /home/chenbk/Downloads/20131112093742918_easyicon_net_24.ico /var/www/query.bzbee.com/htdocs/favicon.ico 
-vi Conf/define.php 
-jobs
-fg 1
-vi Lib/Action/PublicAction.class.php 
-jobs
-fg 
-fg 1
-jobs
-fg 4
-fg 1
-jobs
-fg 3
-fg 1
-jobs
-vi Tpl/Query/query_all_in_month.html 
-vi ../public/css/all.css 
-jobs
-fg 5
-fg 6
-fg 1
-vi Tpl/Query/query_all_in_day.html 
-vi Tpl/Query/query_release_in_month.html 
-vi Tpl/Query/query_release_in_day.html 
-vi Tpl/Query/query_release_target_month.html 
-vi Tpl/Query/query_release_target_day.html 
-vi Tpl/Query/query_release_target_month.html 
-jobs
-vi ../public/css/all.css 
-jobs
-fg 6
-fg 7
-vi ../public/js/datepicker.js 
-jobs
-fg 7
-jobs
-vi Tpl/Query/query_date.html 
-fg 9
-jobs
-fg 6
-jobs
-fg 7
-jobs
-fg 6
-fg
-vi Tpl/Query/query_release_target_day.html 
-fg 7
-jobs
-fg 6
-vi Tpl/Query/query_release_target_day.html 
-vi Tpl/Query/query_release_in_month.html 
-vi Tpl/Query/query_release_target_day.html 
-jobs
-fg 7
-fg 9
-fg 7
-jobs
-fg 10
-fg 6
-jobs
-fg 5
-jobs
-vi Tpl/Query/query_all_in_day.html 
-vi Tpl/Query/query_all_in_month.html 
-su -
-jobs
-vi Lib/Action/QueryAction.class.php 
-jobs
-fg 1
-jobs
-fg 7
-jobs
-vi Tpl/Query/query_release_in_month.html 
-vi Tpl/Query/query_release_in_month.html 
-vi Tpl/Query/query_all_in_month.html 
-vi Tpl/Query/query_all_in_day.html 
-jobs
-fg 7
-vi Tpl/Query/query_release_in_month.html 
-jobs
-fg
-fg
-fg
-exit
-exit
-cd /var/www/query.bzbee.com/htdocs/
-less qt/Lib/Action/QueryAction.class.php 
-vi qt/Lib/Action/QueryAction.class.php 
-lynx localquery.bzbee.com
-su -
-mysql -uqueryuser -p
-quit
-exit
-exit
-alsamixer 
-exit
-alsamixer 
-exit
-su -
-exit
-alsamixer 
-exit
-cd MP3/
-ls
-ls |iconv -t utf8
-ls |iconv -t utf-8
-ls |iconv -t gbk
-ls |iconv -f gbk -t utf8
-ls |iconv -f gbk -t utf-8
-exit
-mysql -uqueryuser -p
-mysql -uqueryuser -p
-cd /usr/portage/
-ls
-emerge -av mysql
-sudo emerge -av mysql
-cd dev-db/
-ls
-sudo emerge -av mysql-gui-tools
-sudo emerge -av Mysql-GUI
-mysql -uroot -p
-mysql -uroot -p
-mysql -uroot -p
-mysql -uroot -p
-mysql -uqueryuser -p
-mysql -uqueryuser -p -D querydb < /var/www/query.bzbee.com/htdocs/bak/20131101_querydb.sql 
-mysql -uqueryuser -p
-mysql -uqueryuser -p
-mysql -uqueryuser -p
-exit
-su -
-cd /var/www/query.bzbee.com/
-ls
-cd htdocs/
-l
-ls
-cd qt/
-ls
-vi Tpl/Index/index.html 
-vi Lib/Action/QueryAction.class.php 
-vi Tpl/Index/index.html 
-jobs
-fg 1
-fg 1
-jobs
-vi Tpl/Index/index.html 
-fg
-vi ../public/js/all.js 
-cp Tpl/Project/show_add_release_ui.html Tpl/Project/show_del_release_ui.html
-vi Tpl/Project/show_del_release_ui.html 
-vi Lib/Action/ProjectAction.class.php 
-jobs
-fg 5
-vi ../public/css/all.css 
-jobs
-fg 6
-jobs
-fg 5
-fg 6
-jobs
-fg 4
-jobs
-fg 5
-fg 6
-jobs
-fg 5
-jobs
-fg 5
-fg 6
-jobs
-fg 5
-vi Tpl/Upload/show_upload_ui.html 
-fg 4
-fg 3
-vi ../public/css/all.css 
-jobs
-fg
-fg 5
-fg
-jobs
-fg 7
-jobs
-fg 5
-fg 5
-fg 6
-fg 4
-jobs
-fg 5
-jobs
-fg 7
-jobs
-vi Tpl/Project/show_add_project_ui.html 
-jobs
-jobs
-fg 5
-jobs
-fg 7
-fg 5
-jobs
-fg 7
-cd Runtime/
-ls
-cd Cache/
-ls
-rm *.php
-rm *.php -f
-ls
-cd ..
-ls
-jobs
-cd ..
-vi ../public/css/all.css 
-jobs
-vi Tpl/Project/show_del_release_ui.html 
-jobs
-fg 7
-fg 8
-fg 7
-jobs
-fg 4
-vi ../public/js/project_change_list.js 
-jobs
-fg 8
-fg 6
-jobs
-fg 8
-fg 6
-vi Conf/define.php 
-jobs
-fg 6
-jobs
-fg 9
-jobs
-vi ../public/js/project_change_list.js 
-vi ../public/js/all.js 
-fg 4
-vi ../public/js/datepicker.js 
-vi Tpl/Query/query_all_in_day.html 
-jobs
-fg 6
-fg
-fg
-fg
-fg
-fg
-fg
-exit
-cd /var/www/query.bzbee.com/htdocs/
-ls
-cd qt/
-less Tpl/Upload/show_upload_ui.html 
-vi Tpl/Upload/show_upload_ui.html 
-vi Tpl/Index/index.html 
-vi Tpl/Query/query_date.html 
-vi Tpl/Project/show_add_project_ui.html 
-vi ../public/js/all.js 
-jobs
-vi ../public/css/all.css 
-vi Tpl/Project/show_add_project_ui.html 
-vi ../public/js/all.js 
-less Tpl/Upload/show_upload_ui.html 
-vi Tpl/Upload/show_upload_ui.html 
-vi Tpl/Project/show_del_release_ui.html 
-exit
-exit
-mysql -uqueryuser -p
-alsamixer 
-mysql -uqueryuser -p
-exit
-su -
-exit
-uptime
-exit
-cd /var/www/query.bzbee.com/htdocs/
-ls
-cd doc/
-ls
-cd 500000092_SD查询系统/
-ls
-cd 数据示例/
-ls
-cd Downloads-10/
-ls
-cd ..
-ls
-file 广告追踪数据统计.csv 
-vi 广告追踪数据统计.csv 
-st  广告追踪数据统计.csv 
-gvim  广告追踪数据统计.csv 
-file 广告追踪数据统计.csv 
-cp  广告追踪数据统计.csv  /tmp/abc.csv
-cd /tmp/
-ls
-file abc.csv 
-
-file abc.csv 
-iconv -f ISO-8859 -t utf8 abc.csv 
-iconv -l
-iconv -f ISO_8859 -t utf8 abc.csv 
-iconv -f ISO_8859-1 -t utf8 abc.csv 
-iconv -f ISO_8859-2 -t utf8 abc.csv 
-iconv -f ISO_8859- -t utf8 abc.csv 
-iconv -f gbk -t utf8 abc.csv 
-sudo /etc/init.d/apache2 start
-exit
-su -
-exit
-su -
-sudo pon twvpn
 ifcon
 ifconfig 
 ifconfig 
@@ -497,4 +182,319 @@ vi .muttrc
 mutt
 vi .muttrc 
 ls -al
+exit
+mv .mailcap /etc/myhome-conf/
+ln -s /etc/myhome-conf/.mailcap .mailcap
+mv .procmailrc /etc/myhome-conf/
+ln -s /etc/myhome-conf/.procmailrc .
+mv .procmailrc-fetchmail /etc/myhome-conf/
+mv .signature /etc/myhome-conf/
+ln -s /etc/myhome-conf/.signature .
+ls -l .signature 
+mv .urlview /etc/myhome-conf/
+ln -s /etc/myhome-conf/.urlview .
+cd /
+git add .
+su -
+exit
+vi .procmailrc
+vi .procmailrc
+ls
+ls maildir/
+ls maildir/ -lh
+head maildir/junk 
+mutt
+vi .muttrc 
+fg
+ls maildir/
+vi .msmtprc
+chmod 600 .msmtprc 
+vi .muttrc 
+vi .muttrc 
+:q
+:q
+vi .signature
+vi .muttrc 
+ls maildir/
+mkdir -p maildir/{cur,new,tmp}
+ls maildir/
+mutt -v
+mutt -v |grep IMAP
+sudo emerge getmail
+cd
+vi .getmailrc
+ls -al
+mkdir .getmail
+vi .getmail/getmailrc
+/usr/bin/getmail
+ls maildir/cur/
+ls maildir/new/
+vi .getmail/getmailrc
+cp .procmail .procmail-fetchmail
+cp .procmailrc .procmailrc-fetchmail
+vi .procmailrc
+/usr/bin/getmail
+less .procmailrc-fetchmail 
+/usr/bin/getmail
+less .getmail/getmailrc 
+less .procmailrc
+vi .procmailrc
+vi .procmailrc
+ls maildir/
+cd maildir/
+ls
+tail -f procmaillog 
+less ../.procmailrc
+ls
+ls skyunion/
+ll
+crontab -e
+sudo crontab -e
+ls
+less procmaillog 
+ls
+mutt
+cd ..
+ls
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+sudo crontab -l
+mutt
+mutt
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+vi .mailcap 
+mutt
+vi .mailcap 
+mutt
+sudo emerge -av w3m
+sudo emerge -av wvHtml
+sudo emerge -av wvhtml
+mutt
+sudo emerge -av wvware
+sudo emerge -av xlhtml
+sudo emerge -av pdftotext
+sudo emerge -av wv
+sudo emerge -av xpdf
+sudo emerge -av qpdf
+vi .muttrc 
+mutt
+qpdf /tmp/8683122432508512mail.pdf 
+qpdf --help
+sudo emerge -av urlview
+mutt
+mutt
+qpdf --help
+mutt
+cd maildir/
+ls
+rm postponed* -rf
+mkdir postponed
+mkdir -p postponed/{cur,new,tmp}
+ls postponed/
+mutt
+mutt
+less .procmail
+less .procmailrc
+du -sh maildir/
+vi .mailcap 
+vi .mailcap 
+vi .mailcap 
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+mutt
+cd maildir/
+ls
+tail procmaillog 
+vi ../.procmailrc 
+tail procmaillog 
+less ../.procmailrc 
+less ../.procmaillog 
+ll -h
+rm procmaillog 
+mutt
+vi ../.muttrc 
+mutt
+vi ../.muttrc 
+mutt
+vi ../.muttrc 
+mutt
+vi ../.muttrc 
+mkdir send
+mkdir -p send/{cur,new,tmp}
+vi ../.muttrc 
+cd
+ls .getmail/getmailrc 
+mutt
+vi .getmail/getmailrc 
+getmail
+ls
+cd m
+cd maildir/
+ls
+mutt
+ls
+tail procmaillog 
+vi ../.muttrc 
+mutt
+vi ../.muttrc 
+mutt
+vi ../.muttrc 
+mutt
+vi ../.muttrc 
+mutt
+ls maildir/
+hostname
+exit
+netstat -tnal
+exit
+sudo emerge -av postfix
+sudo vi /usr/portage/profiles/package.mask 
+sudo emerge -C nullmailer
+sudo emerge -av postfix
+sudo vi /etc/portage/package.use 
+fg
+sudo emerge -av postfix
+vi .muttrc 
+vi /etc/postfix/master.cf 
+sudo vi /etc/postfix/master.cf 
+sudo vi /etc/postfix/main.cf 
+vi /etc/postfix/saslpass
+sudo vi /etc/postfix/saslpass
+sudo postmap hash:/etc/postfix/saslpass 
+chown root.root /etc/postfix/saslpass
+sudo chown root.root /etc/postfix/saslpass
+sudo chmod 600 /etc/postfix/saslpass
+/etc/init.d/postfix start
+sudo /etc/init.d/postfix start
+mutt
+vi .muttrc 
+fg
+mutt
+sudo tail /var/log/messages 
+sudo tail /var/log/messages 
+ls /etc/mail/
+sudo vi /etc/mail/aliases 
+sudo postmap hash:/etc/mail/aliases 
+createdb
+alias 
+sudo vi /etc/postfix/main.cf 
+sudo newaliases 
+ls /etc/mail
+/etc/init.d/postfix restart
+sudo /etc/init.d/postfix restart
+mutt
+sudo tail /var/log/messages 
+whereis sendmail
+vi .muttrc 
+mutt
+sudo tail /var/log/messages 
+sudo vi /etc/postfix/saslpass
+sudo vi /etc/postfix/main.cf 
+postfix --help
+postconf 
+sudo tail /var/log/messages 
+sudo tail -100 /var/log/messages 
+sudo vi /etc/postfix/main.cf 
+sudo /etc/init.d/postfix restart
+mutt
+history |grep hash
+sudo postmap hash:/etc/postfix/saslpass 
+mutt
+sudo postmap hash:/etc/postfix/saslpass 
+mutt
+sudo vi /etc/postfix/main.cf 
+sudo /etc/init.d/postfix reload
+sudo vi /etc/postfix/main.cf 
+sudo vi /etc/postfix/main.cf 
+sudo /etc/init.d/postfix reload
+mutt
+sudo vi /etc/sasl2/smtpd.conf 
+sudo vi /etc/init.d/saslauthd 
+sudo vi /etc/init.d/postfix 
+sudo /etc/init.d/postfix restart
+sudo /etc/init.d/saslauthd restart
+mutt
+sudo tail /var/log/messages 
+sudo tail -100  /var/log/messages  |more
+sudo tail -f  /var/log/messages  |more
+sudo tail -f  /var/log/messages
+exit
+cd /media/ChenBK/01_Document_Library(文档库)/04_IT_Computer(IT_计算机)/02_Computer_SoftwareAndApplication(计算机软件及应用)/01_Operating_System(操作系统)/01_Linux_Unix/001_My_DocLib/14_Gentoo/Gentoo-Mutt
+cd /media/ChenBK/01_Document_Library\(文档库\)/04_IT_Computer\(IT_计算机\)/02_Computer_SoftwareAndApplication\(计算机软件及应用\)/01_Operating_System\(操作系统\)/01_Linux_Unix/001_My_DocLib/14_Gentoo/Gentoo-Mutt
+ls
+st Mutt_安装.txt 
+vi Mutt_安装.txt 
+ls
+cd ..
+ls
+cd \
+cd
+mutt
+telnet 
+echo $JAVA_HOME
+ls
+ls soft/
+ls soft/opter_system/
+cd /opt/
+ls
+cd phpstorm/
+ls
+ls license/
+/usr/local/bin/pstorm
+cd
+vi .fvwm/
+vi .fvwm/config
+killall conky
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+.conky-myhome/bin/conkyStart 
+exit
+cd maildir/
+ls
+ls buy/
+ls buy/new/
+ls buy/cur/
+ls 
+ls inbox/cur/
+mutt
+vi .muttrc 
+cd maildir/
+ls
+mkdir spam
+mkdir -p spam/{cur,new,tmp}
+cd ..
+vi .getmail/getmailrc 
+vi .procmailrc 
+cd maildir/
+ls
+mv spam/ spammail
+vi .procmailrc 
+cd
+vi .procmailrc 
+mutt
+tail -100 .procmaillog |more
+ rm .procmaillog 
+vi .procmailrc 
+cd maildir/
+ls
+ll -h procmaillog 
+less procmaillog 
+rm procmaillog 
+ls
 exit

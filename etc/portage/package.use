@@ -2,4 +2,6 @@ dev-lang/php apache2 bzip2 cli crypt exif filter gdbm hash iconv json xml zlib c
 net-fs/cifs-utils ads acl caps caps-ng
 net-fs/samba winbind
 app-admin/conky X ncurses portmon truetype curl hddtemp imlib iostats lua lua-cairo lua-imlib moc rss vim-syntax weathe-metar
-# mail-client/mutt  berkdb crypt gdbm -nls ssl -debug -doc -gnutls -gpg -idn -imap -mbox -nntp -pop -qdbm -sasl -smime -smtp
+mail-client/mutt  berkdb crypt gdbm -nls ssl -debug -doc -gnutls gpg -idn -imap -mbox -nntp -pop -qdbm sasl -smime -smtp
+mail-mta/postfix sasl
+dev-libs/cyrus-sasl  berkdb gdbm pam sqlite ssl authdaemond -java -kerberos -ldapdb -mysql -openldap -postgres -sample -srp -static-libs -urandom

@@ -8,12 +8,6 @@ restart
 restart
 restart
 restart
-restart
-restart
-restart
-restart
-restart
-restart
 quit
 restart
 restart
@@ -96,5 +90,11 @@ restart
 runwinlist
 exit
 quit
+restart
+restart
+restart
+restart
+restart
+restart
 restart
 restart
