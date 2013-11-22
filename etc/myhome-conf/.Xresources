@@ -1,13 +1,13 @@
 Xft.dpi:96 
 xpdf.title: PDF 
-XTerm*faceSize: 10 
-XTerm*faceSize1: 10 
-XTerm*faceSize2: 10 
-XTerm*faceSize3: 10 
-XTerm*faceSize4: 10 
-XTerm*faceSize5: 10 
-XTerm*faceSize6: 10 
-XTerm*jumpScroll: true 
+xterm*faceSize: 10 
+xterm*faceSize1: 10 
+xterm*faceSize2: 10 
+xterm*faceSize3: 10 
+xterm*faceSize4: 10 
+xterm*faceSize5: 10 
+xterm*faceSize6: 10 
+xterm*jumpScroll: true 
  
 xterm.termName: xterm-256color 
 xterm.geometry: 80x36 
@@ -28,7 +28,7 @@ xterm*altSendsEscape: true
 
 !mouse selecting to copy, ctrl-v to paste 
 !Ctrl p to print screen content to file 
-XTerm*VT100.Translations: #override \
+xterm*VT100.Translations: #override \
  Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
  <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
  Ctrl <KeyPress> P: print() \n
@@ -39,11 +39,13 @@ xterm.utf8: true
 xterm*utf8Title: true
 xterm*fontMenu*fontdefault*Label: Default 
 xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=16 
-!xterm*faceName: monofur:antialias=True:pixelsize=20 
 xter*boldFont: Bitstream Vera Sans Mono:style=Bold:pixelsize=15 
 xterm*faceNameDoublesize:WenQuanYi Zen Hei:antialias=True:pixelsize=15 
 xterm*xftAntialias: true 
 xterm*cjkWidth:false
-XTerm*inputMethod: fcitx
-XTerm*preeditType: Root 
+xterm*inputMethod: fcitx
+xterm*preeditType: Root 
 
+xterm.urgentOnBell: True
+xterm*urlLauncher: /usr/bin/firefox-bin
+xterm*matcher.button: 1
