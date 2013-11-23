@@ -1,48 +1,3 @@
-route -n
-tracert www.baidu.com
-traeroute www.baidu.com
-traceroute www.baidu.com
-cat /etc/resolv.conf 
-ping 10.0.100.1
-vi /etc/resolv.conf 
-sudo vi /etc/resolv.conf 
-ping www.google.com
-ping 218.85.1757.99
-ping 218.85.157.99
-nslookup
-ping 8.8.8.8
-sudo vi /etc/resolv.conf 
-ifconfig 
-ping www.baidu.com
-sudo vi /etc/resolv.conf 
-sudo poff twvpn
-ifconfig 
-route -n
-sudo vi /etc/ppp/ip-up
-sudo vi /etc/ppp/ip-down
-sudo vi /etc/resolv.conf 
-route -n
-ping www.baidu.com
-cat /etc/resolv.conf 
-ping 8.8.8.8
-sudo /etc/init.d/net.enp7s0 restart
-route -n
-sudo vi /etc/ppp/ip-down
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-sudo pon twvpn
-ifconfig 
-sudo poff
-sudo pon twvpn
-route -n
-sudo vi /etc/resolv.conf 
-sudo vi /etc/resolv.conf 
-sudo vi /etc/resolv.conf 
-sudo poff twvpn
-ifconfig 
-route -n
-sudo pon twvpn
 ifconfig 
 sudo pon twvpn
 sudo pon twvpn
@@ -497,4 +452,49 @@ ssh-keygen -t dsa -b 2048
 ssh-keygen -t dsa 
 cat .ssh/id_dsa.pub > .ssh/authorized_keys 
 ssh localhost
+exit
+exit
+ssh localhost
+exit
+cd /
+git add .
+git commit -m "dd"
+vi .gitignore 
+git push
+rm etc/myhome-conf/.ssh/id_dsa*
+git add .
+git commit -m "gg"
+git push 
+vi .gitignore 
+git add .
+git commit -a
+git commit -m "ff"
+git push
+ls etc/myhome-conf/.ssh/
+git pull
+ls etc/myhome-conf/.ssh/
+git rm etc/myhome-conf/.ssh/id_dsa
+git rm etc/myhome-conf/.ssh/id_dsa.pub
+git commit -m "hh"
+git push
+cd
+ssh-keygen -t dsa
+cat .ssh/id_dsa.pub > .ssh/authorized_keys 
+cd /
+git add .
+git commit -m "ssh test"
+git push
+cd
+cat .ssh/id_dsa.pub 
+ssh-add .ssh/id_dsa
+ssh localhost
+exit
+ssh -T git@github.com
+ping github.com
+ssh -T git@github.com
+sudo mv /etc/resolv.conf.std /etc/resolv.conf
+ll /etc/resolv.conf
+ssh -T git@github.com
+ssh -T git@github.com
+ssh -T git@github.com
 exit
