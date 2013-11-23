@@ -25,4 +25,4 @@ home/
 /50-default.rules
 !/home/chenbk
 !chenbk/
-/home/chenbk/.ssh/id_dsa
+!/home/chenbk/.ssh/
