@@ -1,149 +1,3 @@
-vi .Xresources 
-xrdb .Xresources 
-vi .Xresources 
-exit
-顶戴
-exit
-git diff /etc/myhome-conf/.Xresources 
-cd /
-git diff /etc/myhome-conf/.Xresources 
-chenbk@Gentoo-pc / $ git diff /echenbk@Gentoo-pc / $ git diff /etc/myhome-conf/.Xresources 
-chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e^C
-chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e
-chenbk@Gentoo-pc / $ git diff /etc/myhome-conf/.Xresources 
-chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e^C
-chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e
-chenbk@Gentoo-pc / $ git diff /etc/myhome-conf/.Xresources 
-chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e^C
-chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e
-vi /etc/postfix/sasl_passwd
-sudo vi /etc/postfix/sasl_passwd
-sudo vi /etc/postfix/main.cf 
-sudo /etc/init.d/postfix restart
-mutt
-sudo postqueue -f 
-sudo tail -f /var/log/messages 
-sudo vi /etc/postfix/main.cf 
-sudo /etc/init.d/postfix restart
-sudo postqueue -f 
-sudo tail -f /var/log/messages 
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig -a
-sudo pon twvpn
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo tail -f /var/log/messages 
-su -
-exit
-sudo /etc/init.d/cpufreqd start
-emerge -C cpufreqd
-sudo emerge -C cpufreqd
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-sudo vi /etc/ppp/peers/twvpn 
-sudo vi /etc/ppp/options.pptp 
-sudo vi /etc/ppp/chap-secrets
-sudo vi /etc/ppp/pap-secrets
-sudo vi /etc/ppp/options
-sudo vi /etc/ppp/peers/twvpn 
-ifconfig 
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
- vi /etc/ppp/peers/twvpn 
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-sudo vi /etc/ppp/options.pptp 
-sudo pon twvpn
-sudo tail -f /var/log/messages 
-ifconfig 
-sudo USE="java" emerge -av bootchart
-sudo emerge -av bootchart
-sudo emerge -av bootchart2
-sudo vi /etc/conf.d/rc
-su -
-exit
-sudo vi /etc/apache2/httpd.conf 
-sudo vi /etc/apache2/modules.d/00_default_settings.conf 
-sudo vi /etc/apache2/vhosts.d/00_default_vhost.conf 
-sudo vi /etc/apache2/vhosts.d/default_vhost.include 
-sudo vi /etc/apache2/vhosts.d/query.bzbee.com_vhost.include 
-sudo vi /etc/conf.d/apache2 
-netstat -tnal
-sudo /etc/init.d/apache2  start
-sudo /etc/init.d/apache2  restart
-sudo /usr/sbin/apache2
-sudo tail -100 /var/log/messages 
-su -
-exit
-cat /etc/rsyncd.conf 
-cat /etc/resolv.conf 
-su -
-exit
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
 ifconfig -a
 ifconfig -a
 ifconfig -a
@@ -497,4 +351,150 @@ mocp
 ls
 mocp 05_Mp3/
 mocp
+exit
+vi .fvwm/config
+vi .fvwm/config
+audacious 
+vi .fvwm/config
+cd Downloads/
+ls
+tar conkyrc.tar 
+tar xvf conkyrc.tar 
+ls
+cd conkyrc
+less conkyrc
+rm conkyrc*
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+uxterm mocp ~/05_Mp3/
+uxterm -C mocp ~/05_Mp3/
+bash mocp ~/05_Mp3/
+bash --help
+cd
+vi .fvwm/config
+sudo poff twvpn
+vi .fvwm/config
+vi .fvwm/config
+cd /
+git add .
+su -
+git commit -m "FVWM 更换菜单图标"
+git commit -m "FVWM 更换菜单图标+VPN resolv.conf切换"
+git push
+mutt
+sudo umount /mnt/
+df -h 
+alsamixer 
+mocp
+mocp
+exit
+notify-send "完成."
+vi .muttrc 
+ls
+ls 01_Shell/
+vi 01_Shell/mutt_filter.sh
+exit
+vi 01_Shell/mutt_filter.sh
+chmod u+x 01_Shell/mutt_filter.sh 
+vi .bashrc 
+sh .bashrc 
+mutt_filter.sh
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+vi .muttrc 
+ls 01_Shell/
+exit
+su -
+vi .fvwm/config
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+exit
+mutt
+mutt
+vi .muttrc 
+mutt
+vi .muttrc 
+mutt
+vi .muttrc 
+mut
+mutt
+ls maildir/
+rm maildir/mutt-filter 
+chmod a-x maildir/procmaillog 
+vi .procmailrc 
+rm maildir/procmaillog 
+vi /etc/X11/xorg.conf 
+sudo vi /etc/X11/xorg.conf 
+cat /etc/resolv.conf
+exit
+ls maildir/
+vi .Xresources 
+vi .getmail/getmailrc 
+mutt
+clear
+su -
+setterm -blength 0
+ls
+cp /etc/apache2/httpd.conf /tmp/
+vi /tmp/httpd.conf 
+cp /tmp/httpd.conf /tmp/httpd.conf2 
+fg
+sudo vi /etc/rc.conf 
+ssh-keygen -t dsa
+ls .ssh/
+ls .ssh/ -lh
+ssh-agent 
+ps aux |grep ssh-agent
+ssh-add ~/.ssh/id_dsa
+ssh-add --help
+ssh-add
+ssh-agent -k
+ssh-agent 
+ssh-add ~/.ssh/id_dsa
+ssh-agent -k
+ps aux |grep ssh-agent
+killall ssh-agent
+killall ssh-agent
+sudo ssh-agent
+ssh-add ~/.ssh/id_dsa
+sudo ssh-add ~/.ssh/id_dsa
+sudo emerge -av keychain
+vi .bash_profile 
+killall ssh-agent
+sudo killall ssh-agent
+sudo killall ssh-agent
+exit
+exit
+exit
+exit
+ssh localhost
+exit
+ssh localhost
+cat .ssh/id_dsa.pub >> .ssh/authorized_keys
+cat .ssh/authorized_keys 
+ssh localhost
+ssh localhost
+exit
+ssh localhost
+exit
+sudo emerge -av gentookit
+sudo emerge -av gentoolkit
+sudo emerge -av portage-utils
+sudo vi /etc/conf.d/local.start 
+man ls
+su -
+su -
+su -
+sudo vi /etc/apache2/httpd.conf 
+su -
+su -
+sudo vi /etc/apache2/httpd.conf 
 exit

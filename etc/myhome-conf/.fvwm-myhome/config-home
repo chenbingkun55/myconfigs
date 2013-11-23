@@ -136,7 +136,7 @@ AddToFunc ExitFunction
 ####
 # 快捷键绑定
 ######
-Key F1 A M Menu FuncMenu
+Key Super_L A A Menu FuncMenu
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L

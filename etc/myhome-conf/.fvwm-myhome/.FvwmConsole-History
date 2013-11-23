@@ -61,12 +61,12 @@ restart
 restart
 restart
 restart
-restart
 windowlist
 restart
 runwinlist
 exit
 quit
+restart
 restart
 restart
 restart

@@ -1,6 +1,6 @@
 MAILDIR=$HOME/maildir
 DEFAULT=$MAILDIR/inbox/
-LOGFILE=$MAILDIR/procmaillog
+LOGFILE=$HOME/.procmaillog
 LOGABSTRACT=no
 VERBOSE=on
 FORMAIL=/usr/bin/formail

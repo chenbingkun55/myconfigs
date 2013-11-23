@@ -82,7 +82,10 @@ root ALL=(ALL) ALL
 
 ## Uncomment to allow any user to run sudo if they know the password
 ## of the user they are running the command as (root by default).
-Defaults targetpw  # Ask for the password of the target user
+#
+# 询问密码为用户自己,而非root密码
+#Defaults targetpw  # Ask for the password of the target user
+
 # ALL ALL=(ALL) ALL  # WARNING: only use this together with 'Defaults targetpw'
 
 ## Read drop-in files from /etc/sudoers.d
@@ -95,3 +98,9 @@ Cmnd_Alias ALLOW_CMD = /usr/bin/emerge,/usr/sbin/iftop,/usr/sbin/pon, \
 
 chenbk Gentoo-pc=(ALL) ALL
 chenbk Gentoo-pc=(ALL) NOPASSWD: ALLOW_CMD
+# 设置 chenbk 用户,sudo 记忆密码时限.
+Defaults:chenbk  timestamp_timeout=1800
+
+# 保存DISPLAY变量不变,这样就可以运行一些X Window工具了.
+Defaults:chenbk  env_keep=DISPLAY
+

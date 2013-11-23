@@ -3,3 +3,7 @@
 # This file is sourced by bash for login shells.  The following line
 # runs your .bashrc and is recommended by the bash info pages.
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+keychain ~/.ssh/id_dsa
+. ~/.keychain/$HOSTNAME-sh
+. ~/.keychain/$HOSTNAME-sh-gpg

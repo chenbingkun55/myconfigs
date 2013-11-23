@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="sort-order" mtime="1385184378" type="string">
+	<entry name="sort-order" mtime="1385207347" type="string">
 		<stringvalue>ascending</stringvalue>
 	</entry>
-	<entry name="show-hidden" mtime="1385184378" type="bool" value="false"/>
-	<entry name="sort-column" mtime="1385184378" type="string">
+	<entry name="show-hidden" mtime="1385207347" type="bool" value="false"/>
+	<entry name="sort-column" mtime="1385207347" type="string">
 		<stringvalue>name</stringvalue>
 	</entry>
-	<entry name="show-size-column" mtime="1385184378" type="bool" value="true"/>
-	<entry name="last-folder-uri" mtime="1385184378" type="string">
+	<entry name="show-size-column" mtime="1385207347" type="bool" value="true"/>
+	<entry name="last-folder-uri" mtime="1385207347" type="string">
 		<stringvalue>file:///home/chenbk</stringvalue>
 	</entry>
-	<entry name="location-mode" mtime="1385184378" type="string">
+	<entry name="location-mode" mtime="1385207347" type="string">
 		<stringvalue>path-bar</stringvalue>
 	</entry>
 </gconf>
