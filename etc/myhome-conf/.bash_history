@@ -1,79 +1,3 @@
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a]
-ifconfig -a]
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo tail /var/log/messages 
-ping twvpn4.iggcn.com
-ping www.baidu.com
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo vi /etc/ppp/options
-sudo vi /etc/ppp/options.pptp 
-ifconfig 
-sudo pon twvpn
-ifconfig 
-sudo vi /etc/ppp/options.pptp 
-ifconfig 
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-sudo vi /etc/ppp/options.pptp 
-sudo vi /etc/ppp/options
-sudo pon twvpn
-sudo vi /etc/ppp/options.pptp 
-sudo pon twvpn
-sudo vi /etc/ppp/peers/twvpn 
-sudo vi /etc/ppp/options.pptp 
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo pon twvpn
-sudo vi /etc/ppp/options.pptp 
-ifconfig 
-route
-sudo poff twvpn
-sudo pon twvpn
-ifconfig 
-sudo vi /etc/ppp/options.pptp 
-sudo pon twvpn
-sudo vi /etc/ppp/options.pptp 
-ifconfig -a
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-sudo vi /etc/ppp/options.pptp 
-sudo vi /etc/ppp/peers/twvpn 
-sudo pon twvpn
-route -n
-sudo vi /etc/ppp/ip-up
-sudo vi /etc/ppp/ip-down
-ifconfig 
 route -n
 tracert www.baidu.com
 traeroute www.baidu.com
@@ -497,4 +421,80 @@ sudo vi /etc/apache2/httpd.conf
 su -
 su -
 sudo vi /etc/apache2/httpd.conf 
+exit
+exit
+ssh localhost
+exit
+su -
+sudo vi /etc/apache2/httpd.conf 
+sudo -l
+cd \
+su -
+su -
+git commit -m "学习了一下 sudo 命令配置"
+cd /
+git commit -m "学习了一下 sudo 命令配置"
+git --help
+git status
+git --help
+git reset
+ls /home/chenbk/.ssh/id_dsa
+sudo vi .gitignore 
+git add .
+git commit -m "学习sudo配置"
+git show log
+git show
+git push
+git diff /home/chenbk/.ssh/id_dsa
+git diff /home/chenbk/.ssh/id_dsa.pub 
+git add /home/chenbk/.ssh/id_dsa.pub 
+git commit -m "创建一个公钥"
+git push
+git show
+git diff /home/chenbk/.ssh/id_dsa.pub 
+git show /home/chenbk/.ssh/id_dsa
+git show /home/chenbk/.ssh/
+git --help
+git log
+rm /home/chenbk/.ssh/id_dsa*
+cd
+ssh-keygen --help
+ssh-keygen -t dsa
+ls .ssh/
+vi /.gitignore 
+cd /
+git add .
+git commit -m "ssh"
+vi .gitignore 
+git add .
+git commit -m "ssh"
+rm /etc/myhome-conf/.ssh/id_dsa*
+git add .
+git commit -m ""
+git push
+git pull
+git reset
+git add .
+git commit -m ""
+git pull
+git push
+git checkout /etc/myhome-conf/.ssh/
+git checkout etc/myhome-conf/.ssh/
+vi .gitignore 
+git checkout etc/myhome-conf/.ssh/
+git add .
+git add .
+su -
+su -
+vi .gitignore 
+git add .
+git commit -m "cc"
+git push 
+cd
+ls .ssh/
+ssh-keygen -t dsa 2048
+ssh-keygen -t dsa -b 2048
+ssh-keygen -t dsa 
+cat .ssh/id_dsa.pub > .ssh/authorized_keys 
+ssh localhost
 exit
