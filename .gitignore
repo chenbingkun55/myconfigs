@@ -18,6 +18,7 @@ tmp/
 usr/
 var/
 home/
+.ssh/
 /session*
 /chap-secrets*
 /pics
@@ -25,4 +26,3 @@ home/
 /50-default.rules
 !/home/chenbk
 !chenbk/
-!.ssh/
