@@ -23,6 +23,5 @@ home/
 /pics
 /chap-secrets.example
 /50-default.rules
-!.ssh/
 !/home/chenbk
 !chenbk/
