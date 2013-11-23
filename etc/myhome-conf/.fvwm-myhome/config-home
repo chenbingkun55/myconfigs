@@ -30,7 +30,7 @@ Mouse 2 FST A -
 ####
 # 图片路径
 #######
-ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons/gnome/22x22/mimetypes:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:/usr/share/icons/locolor/16x16/apps:$[fvwm_icon]:$[fvwm_wallpapers]
+ImagePath +:/usr/share:/usr/share/icons/locolor/32x32/apps/:/usr/share/icons/locolor/16x16/apps:/usr/share/icons/gnome/16x16/apps:/usr/share/icons/gnome/24x24/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/gnome/24x24/actions/usr/share/icons/gnome/24x24/status:/usr/share/icons/gnome/16x16/actions:/usr/share/icons/gnome/22x22/mimetypes:/usr/share/icons/gnome/24x24/categories:/usr/share/icons:/usr/share/pixmaps:/usr/share/icons/hicolor/24x24/apps:/usr/share/icos/hicolor/48x48/apps:/usr/share/icons/locolor/16x16/apps:$[fvwm_icon]:$[fvwm_wallpapers]
 
 
 ####
@@ -88,6 +88,7 @@ Style "*" Icon 48x48/unknown.xpm, !IconTitle
 Style "*term" Icon 48x48/xterm.png, NoActiveIconOverride, \
 	MiniIcon 48x48/xterm.png
 Style "*chrome" NoTitle, NoActiveIconOverride
+Style "audacious" NoTitle, NoActiveIconOverride
 Style "firefox" Icon firefox_32.png NoActiveIconOveride, \
 	MinIcon mini/firefox_32.png
 
@@ -191,6 +192,7 @@ Mouse 3 RD A Menu ConfMenu Nop
 Mouse 1 RD A Menu FuncMenu Nop
 Mouse 3 A C Menu ConfMenu Nop
 Mouse 1 A C Menu FuncMenu Nop
+Mouse 2 W A Close
 Mouse 2 W C Lower
 Mouse 3 W C Iconify
 Mouse 1 W C Maximize
@@ -226,31 +228,36 @@ MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:anti
 # 菜单内容
 ######
 DestroyMenu FuncMenu
-AddToMenu FuncMenu "%fcitx.png%=== 主菜单===" Title
-+ "终端  - &Xterm%utilities-terminal.png%"  Exec exec uxterm
+AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
++ "终端  - &Xterm%xterm_24.png%"  Exec exec uxterm
 + "浏览器- &Firefox%firefox_24.png%"  Exec exec firefox-bin
-+ "浏览器- &Opera%opera-browser.png%"  Exec exec opera
-+ "浏览器- &Chrome%google-chrome.png%"  Exec exec google-chrome
-+ "播放器- X&BMC%xbmc/media/icon32x32.png%"  Exec exec xbmc
-+ "文件库- &PCmanFM%system-file-manager.png%"  Exec exec pcmanfm
-+ "看图片- &ImageMagick%gnome-mime-image.png%"  Exec exec display
-+ "PHP IDE - Php&Storm%webide_24.png%"  Exec exec pstorm
++ "浏览器- &Opera%opera_24.png%"  Exec exec opera
++ "浏览器- &Chrome%chrome_24.png%"  Exec exec google-chrome
++ "播放器- X&BMC%xbmc_24.png%"  Exec exec xbmc
++ "播放器- &Audacious%music_24.png%"  Exec exec audacious
++ "播放器- &Mocp%music_24.png%"  Exec exec xterm -e mocp ~/05_Mp3/
++ "文件库- &PCmanFM%pcmanfm_24.png%"  Exec exec pcmanfm
++ "看图片- &ImageMagick%image_24.png%"  Exec exec display
++ "PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
 + ""  Nop
-+ "办公软件%libreoffice-writer.png%"   Popup OfficeMenu
-+ "应用程序"   Popup ProgramsMenu
-+ "工具"   Popup UtilitiesMenu
++ "办公软件%office_24.png%"   Popup OfficeMenu
++ "应用程序%application_24.png%"   Popup ProgramsMenu
++ "工具%utilities_24.png%"   Popup UtilitiesMenu
 
 DestroyMenu OfficeMenu
-AddToMenu OfficeMenu "=== 办公软件菜单 ===" Title
-+ "&Word%libreoffice-writer.png%" Exec exec libreoffice --writer
-+ "&Excel%libreoffice-calc.png%"  Exec exec libreoffice --calc
-+ "&Base%libreoffice-base.png%"   Exec exec libreoffice --base
-+ "&PPT%libreoffice-draw.png%"   Exec exec libreoffice --draw
+AddToMenu OfficeMenu "%office_24.png%=== 办公软件菜单 ===" Title
++ "文本文档 - &Word%libreoffice-writer_24.png%" Exec exec libreoffice --writer
++ "电子表格 - &Excel%libreoffice-calc_24.png%"  Exec exec libreoffice --calc
++ "数据库   - &Base%libreoffice-base_24.png%"   Exec exec libreoffice --base
++ "演示文稿 - &PPT%libreoffice-draw_24.png%"   Exec exec libreoffice --draw
 
+DestroyMenu UtilitiesMenu
+AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
++ "下载 - &Qbittorrent%qbittorrent.png%"   Exec exec qbittorrent
 
 
 DestroyMenu SystemMenu
-AddToMenu SystemMenu "%fcitx.png%=== 系统菜单 ===" Title
+AddToMenu SystemMenu "%gentoo_24.png%=== 系统菜单 ===" Title
 + "注销%logout_24.png%"   Quit
 + "休眠%hibernate_24.png%"   Exec exec sudo hibernate-ram
 + "重启%reboot_24.png%"   Exec exec sudo shutdown -r now

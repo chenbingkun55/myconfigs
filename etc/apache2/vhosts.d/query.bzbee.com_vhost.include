@@ -9,10 +9,10 @@ ServerAdmin root@localhost
 #
 # If you change this to something that isn't under /var/www then suexec
 # will no longer work.
-DocumentRoot "/var/www/query.bzbee.com/htdocs"
+DocumentRoot "/home/www/query.bzbee.com"
 
 # This should be changed to whatever you set DocumentRoot to.
-<Directory "/var/www/query.bzbee.com/htdocs">
+<Directory "/home/www/query.bzbee.com/">
 	# Possible values for the Options directive are "None", "All",
 	# or any combination of:
 	#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews

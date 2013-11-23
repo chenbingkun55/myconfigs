@@ -9,3 +9,5 @@ alias ll="ls -l"
 
 PATH="/usr/sbin/:${PATH}"
 export PATH
+export PROMPT_COMMAND="echo -ne '\a'"
+export EDITOR="/usr/bin/vim"

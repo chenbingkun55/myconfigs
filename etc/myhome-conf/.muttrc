@@ -12,8 +12,9 @@ mailboxes "=buy"
 mailboxes "=friend"
 mailboxes "=mail-major"
 mailboxes "=skyunion"
+set beep_new = yes
 set check_new=yes
-set timeout=6
+set timeout=60
 
 # mailboxes=default
 # mailboxes=duplicates
@@ -41,15 +42,18 @@ set sendmail="/usr/sbin/sendmail"
 my_hdr From: chenbingkun55@163.com
 
 ## 编码以及中文设置
-set locale="zh_CN.UTF-8"                        # 使用中文
+set locale="zh_CN"                        # 使用中文
 set ascii_chars=yes                       # 用纯 ascii 表示树状列表
 set charset="utf-8"                       # 编码以及发件编码
 set send_charset="gb2312:utf-8:GB18030:us-ascii:iso-8859-1"
 set assumed_charset="utf-8:gb2312:gb18030:gbk"
 set rfc2047_parameters=yes                # 解决中文附件名是乱码的问题
-charset-hook ^iso-8859-1$ GB2312        # 把 iso-8859-1 编码映射到 gb2312
-charset-hook !utf-8 GB2312              # 把不是 utf-8 的编码都映射到 gb2312
-charset-hook ^us-ascii$ GB2312           # 把 us-ascii 编码映射到 gb2312
+charset-hook .* utf-8		          # 把 iso-8859-1 编码映射到 gb2312
+# charset-hook ^iso-8859-1$ gb2312        # 把 iso-8859-1 编码映射到 gb2312
+# charset-hook !utf-8 gb2312              # 把不是 utf-8 的编码都映射到 gb2312
+#charset-hook ^us-ascii$ gb2312           # 把 us-ascii 编码映射到 gb2312
+# unset strict_mime
+# set assumed_charset="gb2312"
 
 # 打分
 score "~N" +4
@@ -78,39 +82,69 @@ charset-hook !utf-8 gb2312
 macro index G "!/usr/bin/getmail -v -n -r ~/.getmail/getmailrc"
 macro pager G "!/usr/bin/getmail -v -n -r ~/.getmail/getmailrc"
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+set index_format="%4C %Z %{%b %d} %-16.16L  %s"  
+  
+folder-hook . "ignore *; unignore from to subject date X-Mailer User-Agent"  
+folder-hook sent.* "ignore *; unignore from to subject date"  
+hdr_order X-Mailer User-Agent date from to subject   
+# unignore Date To From: Subject X-Mailer Organization User-Agent
+# hdr_order Date From To Subject X-Mailer User-Agent Organization
 
-ignore *
-unignore Date To From: Subject X-Mailer Organization User-Agent
-hdr_order Date From To Subject X-Mailer User-Agent Organization
+# 新邮件提醒功能
+# set status_format="~/maildir/mutt-filter '-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]----%>-(%P)---'|"
 
-color quoted1 green default
-color quoted2 yellow default
-color quoted3 red default
-
-color	hdrdefault	brightcyan	blue
-color	header		brightwhite	blue "^from:"
-color   header          brightwhite    	blue   "^subject:"
-
-color   quoted          brightgreen     blue
-color   signature       brightwhite	blue
-
-color   indicator       blue	        green
-
-color   error           red             black
-mono    error           bold
-color   status          black cyan
-mono	status		bold
-color   tree            yellow   	blue
-
-color   tilde           brightmagenta   blue
-color	body	brightwhite		blue	"[-a-z_0-9.]+@[-a-z_0-9.]+"
-mono    body    bold                    "[-a-z_0-9.]+@[-a-z_0-9.]+"
-color   body            brightyellow    black   "^Good signature"
-mono    body            bold                    "^Good signature"
-color   body            brightwhite     red     "^Bad signature from.*"
-mono    body            bold                    "^Bad signature from.*"
-color   normal          white		blue
-color	message		green	black
-color	attachment	brightgreen	blue
-
-
+# 颜色配置
+color signature brightred default  
+color status white blue  
+color tilde blue default  
+color tree brightmagenta default  
+color underline yellow default  
+color bold green default  
+color error red default  
+color indicator black white  
+color markers brightred default  
+color message white blue  
+  
+color body cyan default "ftp://[^ ]*"  
+color body cyan default "www.[^ ]*"  
+color body brightgreen default "[[:alnum:]][-+.#_[:alnum:]]*@[-+.[:alnum:]]*[[:alnum:]]"  
+color body cyan default "<URL:[^ ]*>"  
+color body brightblue default "(^|[[:space:]])\\*[^[:space:]]+\\*([[:space:]]|$)"  
+color body brightblue default "(^|[[:space:]])_[^[:space:]]+_([[:space:]]|$)"  
+color body brightblue default "(^|[[:space:]])/[^[:space:]]+/([[:space:]]|$)"  
+color body yellow default "[;:]-[)/(|]"  
+color body yellow default "[8][-\^][)|]"  
+color body yellow default "[;:][)/(|]"  
+color body brightblue default "(http|https|rsync|ftp|news|telnet|finger|gopher)://[^ ]*"  
+color body brightblue default "<(http|https|rsync|ftp|news|telnet|finger|gopher)://[^ ]*>"  
+  
+color header yellow default "^cc: "  
+color header red cyan "^X-Spam-Status:"  
+color header green default "^date: "  
+color header yellow default "^from "  
+color header cyan default "^from: "  
+color header yellow default "^newsgroups: "  
+color header yellow default "^reply-to: "  
+color header cyan default "^subject: "  
+color header green default "^to: "  
+color header yellow default "^x-mailer: "  
+color header yellow default "^message-id:"  
+color header yellow default "^Organization:"  
+color header yellow default "^Organisation:"  
+color header yellow default "^User-Agent:"  
+color header yellow default "^message-id: .*pine"  
+   
+color quoted cyan default  
+color quoted1 yellow default  
+color quoted2 red default  
+color quoted3 green default  
+color quoted4 cyan default  
+color quoted5 yellow default  
+color quoted6 red default  
+color quoted7 green default  
+        
+color index green default ~N  
+color index red default ~O  
+color index magenta default ~F  
+color index blue default ~T  
+color index yellow default ~D  

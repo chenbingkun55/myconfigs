@@ -660,12 +660,12 @@ sample_directory = /etc/postfix
 #
 readme_directory = no
 inet_protocols = ipv4
-home_mailbox = .maildir/
+home_mailbox = maildir/
 # smtp_sender_dependent_authentication = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 # sender_dependent_relayhost_maps = hash:/etc/postfix/sender_relay
 smtp_sasl_auth_enable = yes
-smtp_sasl_security_options = noanonymous
+smtp_sasl_security_options = noplaintext,noanonymous
 smtp_sasl_tls_security_options = $smtp_sasl_security_options
-smtp_sasl_mechanism_filter = plain,login
+# smtp_sasl_mechanism_filter = plain,login
 relayhost = smtp.163.com

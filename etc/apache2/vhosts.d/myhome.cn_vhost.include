@@ -9,10 +9,10 @@ ServerAdmin root@localhost
 #
 # If you change this to something that isn't under /var/www then suexec
 # will no longer work.
-DocumentRoot "/home/www"
+DocumentRoot "/home/www/myhome.cn"
 
 # This should be changed to whatever you set DocumentRoot to.
-<Directory "/home/www/">
+<Directory "/home/www/myhome.cn">
 	# Possible values for the Options directive are "None", "All",
 	# or any combination of:
 	#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
@@ -23,7 +23,7 @@ DocumentRoot "/home/www"
 	# The Options directive is both complicated and important.  Please see
 	# http://httpd.apache.org/docs/2.2/mod/core.html#options
 	# for more information.
-	Options Indexes FollowSymLinks
+	Options -Indexes FollowSymLinks
 
 	# AllowOverride controls what directives may be placed in .htaccess files.
 	# It can be "All", "None", or any combination of the keywords:

@@ -28,13 +28,13 @@ man:x:15:
 sshd:x:22:
 chenbk:x:1000:
 cron:x:16:
-crontab:x:249:
+crontab:x:249:chenbk
 ldap:x:439:
 dhcp:x:248:
 messagebus:x:247:
 lpadmin:x:106:
 polkitd:x:105:
-mail:x:12:
+mail:x:12:postfix
 postmaster:x:104:
 nullmail:x:88:
 plugdev:x:103:

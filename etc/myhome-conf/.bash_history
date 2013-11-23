@@ -1,4 +1,33 @@
-ifcon
+vi .Xresources 
+xrdb .Xresources 
+vi .Xresources 
+exit
+顶戴
+exit
+git diff /etc/myhome-conf/.Xresources 
+cd /
+git diff /etc/myhome-conf/.Xresources 
+chenbk@Gentoo-pc / $ git diff /echenbk@Gentoo-pc / $ git diff /etc/myhome-conf/.Xresources 
+chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e^C
+chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e
+chenbk@Gentoo-pc / $ git diff /etc/myhome-conf/.Xresources 
+chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e^C
+chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e
+chenbk@Gentoo-pc / $ git diff /etc/myhome-conf/.Xresources 
+chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e^C
+chenbk@Gentoo-pc / $ chenbk@Gentoo-pc / $ git diff /e
+vi /etc/postfix/sasl_passwd
+sudo vi /etc/postfix/sasl_passwd
+sudo vi /etc/postfix/main.cf 
+sudo /etc/init.d/postfix restart
+mutt
+sudo postqueue -f 
+sudo tail -f /var/log/messages 
+sudo vi /etc/postfix/main.cf 
+sudo /etc/init.d/postfix restart
+sudo postqueue -f 
+sudo tail -f /var/log/messages 
+sudo pon twvpn
 ifconfig 
 ifconfig 
 ifconfig 
@@ -15,486 +44,457 @@ ifconfig
 ifconfig 
 ifconfig 
 ifconfig -a
-ifconfig 
-ifconfig 
-ifconfig 
-sudo meger -av mplayerplug-in
+sudo pon twvpn
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo tail -f /var/log/messages 
 su -
 exit
-vi .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-git commit -m "右键关闭窗口,跳过系统窗口."
-git push
-git push
-sudo emerge -av mutt
-sudo vi /etc/portage/package.use 
-sudo emerge -av mutt
-sudo vi /etc/portage/package.use 
-sudo emerge -av mutt
-sudo vi /etc/portage/package.use 
-sudo emerge -av mutt
-sudo vi /etc/portage/package.use 
-sudo emerge -av mutt
-sudo vi /etc/portage/package.use 
-sudo emerge -av mutt
-mutt
-cd
-vi .muttrc
-ls
-mv .maildir/ maildir
-vi .muttrc 
-mv .muttrc /etc/myhome-conf/
-ln -s /etc/myhome-conf/.muttrc .muttrc
-ls -l .muttrc 
-sudo emerge fetchmail
-sudo emerge -av fetchmail
-vi /etc/myhome-conf/.fetchmailrc
-mv /etc/myhome-conf/.fetchmailrc .
-ls .fetchmailrc 
-vi /etc/rc.conf 
-vi .bashrc 
-! ps aux
-! ps aux |grep -q fetchmail
-fetchmail &
-chmod 0600 .fetchmailrc 
-fetchmail &
-vi .fetchmailrc 
-fetchmail &
-vi .fetchmailrc 
-fetchmail &
-vi .fetchmailrc 
-fetchmail &
-vi .fetchmailrc 
-fetchmail &
-ls -al
-ls maildir/
-ls maildir/
-ls maildir/
-ls maildir/
-ls maildir/ -al
-vi .muttrc 
-touch maildir/muttalias
-vi .muttrc 
-vi .mailcap
-vi .muttrc 
-vi .fetchmailrc 
-ps aux |grep fetchmail
-kill 32363
-ps aux |grep fetchmail
-vi .bashrc 
-fetchmail -akv 
-vi .fetchmailrc 
-fetchmail -akv 
-ps aux |grep fetmail
-vi .fetchmailrc 
-fetchmail -akv 
-sudo emerge procmail
- cat .procmailrc 
-fetchmail -akv -m "/usr/bin/procmail -d %T"
-fg
-mutt -y
-vi .muttrc 
-mutt -y
-mutt -y
-mutt
-sudo emerge -av msmtp
-date %Y-%m-%d %h:%i
-date "%Y-%m-%d %h:%i"
-date
-date %Y
-date --help
-date "+%Y-%m-%d %h:%i"
-date "+%Y-%m-%d %H:%i"
-date "+%Y-%m-%d %H:%M"
-sudo meger -av msmtp
-sudo emerge -av msmtp
-ls maildir/
-ls maildir/cur/
-ls maildir/new/
-ls maildir/tmp/
-ls maildir/tmp/
-ls maildir/new/
-ls maildir/cur/
-ls maildir/cur/
-ls maildir/
-ls maildir/
-ls maildir/new/
-ls maildir/
-ls maildir/
-ls maildir/inbox/
-ls maildir/inbox/new/
-ls maildir/inbox/cur/
-ls maildir/inbox/tmp/
-vi .procmailrc
-less .procmaillog 
-vi .procmailrc
-ls maildir/
-rm maildir/*.* -rf
-ls maildir/
-rm maildir/* -rf
-ls maildir/
-ls
-cd maildir/
-ls
-l
-ls
-ls
-tail procmaillog -f
-ls
-ls
-mkdir inbox
-ls
-mkdir -p inbox/{cur,new,tmp}
-ls
-getmail
-ls
-mkdir -p buy/{cur,new,tmp}
-ls
-mkdir -p subscription-LIFE/{cur,new,tmp}
-mkdir -p subscription-IT/{cur,new,tmp}
-mkdir -p subscription-FINANCE/{cur,new,tmp}
-mkdir -p mail-major/{cur,new,tmp}
-mkdir -p skyunion/{cur,new,tmp}
-mkdir -p friend/{cur,new,tmp}
-mkdir -p maillist-gentoo-announce/{cur,new,tmp}
-mkdir -p maillist-gentoo-user/{cur,new,tmp}
-ls
-getmail
-crontab -l
-/usr/bin/getmail
-cd
-vi .muttrc 
-vi .urlview
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-mutt
-vi maildir/
-vi .mailcap 
-vi .urlview 
-mutt
-vi .muttrc 
-mkdir -p maildir/postponed{cur,new,tmp}
-vi .muttrc 
-mutt
-vi .muttrc 
-ls -al
-exit
-mv .mailcap /etc/myhome-conf/
-ln -s /etc/myhome-conf/.mailcap .mailcap
-mv .procmailrc /etc/myhome-conf/
-ln -s /etc/myhome-conf/.procmailrc .
-mv .procmailrc-fetchmail /etc/myhome-conf/
-mv .signature /etc/myhome-conf/
-ln -s /etc/myhome-conf/.signature .
-ls -l .signature 
-mv .urlview /etc/myhome-conf/
-ln -s /etc/myhome-conf/.urlview .
-cd /
-git add .
+sudo /etc/init.d/cpufreqd start
+emerge -C cpufreqd
+sudo emerge -C cpufreqd
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+sudo vi /etc/ppp/peers/twvpn 
+sudo vi /etc/ppp/options.pptp 
+sudo vi /etc/ppp/chap-secrets
+sudo vi /etc/ppp/pap-secrets
+sudo vi /etc/ppp/options
+sudo vi /etc/ppp/peers/twvpn 
+ifconfig 
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ vi /etc/ppp/peers/twvpn 
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+sudo vi /etc/ppp/options.pptp 
+sudo pon twvpn
+sudo tail -f /var/log/messages 
+ifconfig 
+sudo USE="java" emerge -av bootchart
+sudo emerge -av bootchart
+sudo emerge -av bootchart2
+sudo vi /etc/conf.d/rc
 su -
 exit
-vi .procmailrc
-vi .procmailrc
-ls
-ls maildir/
-ls maildir/ -lh
-head maildir/junk 
-mutt
-vi .muttrc 
-fg
-ls maildir/
-vi .msmtprc
-chmod 600 .msmtprc 
-vi .muttrc 
-vi .muttrc 
-:q
-:q
-vi .signature
-vi .muttrc 
-ls maildir/
-mkdir -p maildir/{cur,new,tmp}
-ls maildir/
-mutt -v
-mutt -v |grep IMAP
-sudo emerge getmail
-cd
-vi .getmailrc
-ls -al
-mkdir .getmail
-vi .getmail/getmailrc
-/usr/bin/getmail
-ls maildir/cur/
-ls maildir/new/
-vi .getmail/getmailrc
-cp .procmail .procmail-fetchmail
-cp .procmailrc .procmailrc-fetchmail
-vi .procmailrc
-/usr/bin/getmail
-less .procmailrc-fetchmail 
-/usr/bin/getmail
-less .getmail/getmailrc 
-less .procmailrc
-vi .procmailrc
-vi .procmailrc
-ls maildir/
-cd maildir/
-ls
-tail -f procmaillog 
-less ../.procmailrc
-ls
-ls skyunion/
-ll
-crontab -e
-sudo crontab -e
-ls
-less procmaillog 
-ls
-mutt
-cd ..
-ls
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-sudo crontab -l
-mutt
-mutt
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-vi .mailcap 
-mutt
-vi .mailcap 
-mutt
-sudo emerge -av w3m
-sudo emerge -av wvHtml
-sudo emerge -av wvhtml
-mutt
-sudo emerge -av wvware
-sudo emerge -av xlhtml
-sudo emerge -av pdftotext
-sudo emerge -av wv
-sudo emerge -av xpdf
-sudo emerge -av qpdf
-vi .muttrc 
-mutt
-qpdf /tmp/8683122432508512mail.pdf 
-qpdf --help
-sudo emerge -av urlview
-mutt
-mutt
-qpdf --help
-mutt
-cd maildir/
-ls
-rm postponed* -rf
-mkdir postponed
-mkdir -p postponed/{cur,new,tmp}
-ls postponed/
-mutt
-mutt
-less .procmail
-less .procmailrc
-du -sh maildir/
-vi .mailcap 
-vi .mailcap 
-vi .mailcap 
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-mutt
-cd maildir/
-ls
-tail procmaillog 
-vi ../.procmailrc 
-tail procmaillog 
-less ../.procmailrc 
-less ../.procmaillog 
-ll -h
-rm procmaillog 
-mutt
-vi ../.muttrc 
-mutt
-vi ../.muttrc 
-mutt
-vi ../.muttrc 
-mutt
-vi ../.muttrc 
-mkdir send
-mkdir -p send/{cur,new,tmp}
-vi ../.muttrc 
-cd
-ls .getmail/getmailrc 
-mutt
-vi .getmail/getmailrc 
-getmail
-ls
-cd m
-cd maildir/
-ls
-mutt
-ls
-tail procmaillog 
-vi ../.muttrc 
-mutt
-vi ../.muttrc 
-mutt
-vi ../.muttrc 
-mutt
-vi ../.muttrc 
-mutt
-ls maildir/
-hostname
-exit
+sudo vi /etc/apache2/httpd.conf 
+sudo vi /etc/apache2/modules.d/00_default_settings.conf 
+sudo vi /etc/apache2/vhosts.d/00_default_vhost.conf 
+sudo vi /etc/apache2/vhosts.d/default_vhost.include 
+sudo vi /etc/apache2/vhosts.d/query.bzbee.com_vhost.include 
+sudo vi /etc/conf.d/apache2 
 netstat -tnal
-exit
-sudo emerge -av postfix
-sudo vi /usr/portage/profiles/package.mask 
-sudo emerge -C nullmailer
-sudo emerge -av postfix
-sudo vi /etc/portage/package.use 
-fg
-sudo emerge -av postfix
-vi .muttrc 
-vi /etc/postfix/master.cf 
-sudo vi /etc/postfix/master.cf 
-sudo vi /etc/postfix/main.cf 
-vi /etc/postfix/saslpass
-sudo vi /etc/postfix/saslpass
-sudo postmap hash:/etc/postfix/saslpass 
-chown root.root /etc/postfix/saslpass
-sudo chown root.root /etc/postfix/saslpass
-sudo chmod 600 /etc/postfix/saslpass
-/etc/init.d/postfix start
-sudo /etc/init.d/postfix start
-mutt
-vi .muttrc 
-fg
-mutt
-sudo tail /var/log/messages 
-sudo tail /var/log/messages 
-ls /etc/mail/
-sudo vi /etc/mail/aliases 
-sudo postmap hash:/etc/mail/aliases 
-createdb
-alias 
-sudo vi /etc/postfix/main.cf 
-sudo newaliases 
-ls /etc/mail
-/etc/init.d/postfix restart
-sudo /etc/init.d/postfix restart
-mutt
-sudo tail /var/log/messages 
-whereis sendmail
-vi .muttrc 
-mutt
-sudo tail /var/log/messages 
-sudo vi /etc/postfix/saslpass
-sudo vi /etc/postfix/main.cf 
-postfix --help
-postconf 
-sudo tail /var/log/messages 
+sudo /etc/init.d/apache2  start
+sudo /etc/init.d/apache2  restart
+sudo /usr/sbin/apache2
 sudo tail -100 /var/log/messages 
-sudo vi /etc/postfix/main.cf 
-sudo /etc/init.d/postfix restart
-mutt
-history |grep hash
-sudo postmap hash:/etc/postfix/saslpass 
-mutt
-sudo postmap hash:/etc/postfix/saslpass 
-mutt
-sudo vi /etc/postfix/main.cf 
-sudo /etc/init.d/postfix reload
-sudo vi /etc/postfix/main.cf 
-sudo vi /etc/postfix/main.cf 
-sudo /etc/init.d/postfix reload
-mutt
-sudo vi /etc/sasl2/smtpd.conf 
-sudo vi /etc/init.d/saslauthd 
-sudo vi /etc/init.d/postfix 
-sudo /etc/init.d/postfix restart
-sudo /etc/init.d/saslauthd restart
-mutt
-sudo tail /var/log/messages 
-sudo tail -100  /var/log/messages  |more
-sudo tail -f  /var/log/messages  |more
-sudo tail -f  /var/log/messages
+su -
 exit
-cd /media/ChenBK/01_Document_Library(文档库)/04_IT_Computer(IT_计算机)/02_Computer_SoftwareAndApplication(计算机软件及应用)/01_Operating_System(操作系统)/01_Linux_Unix/001_My_DocLib/14_Gentoo/Gentoo-Mutt
-cd /media/ChenBK/01_Document_Library\(文档库\)/04_IT_Computer\(IT_计算机\)/02_Computer_SoftwareAndApplication\(计算机软件及应用\)/01_Operating_System\(操作系统\)/01_Linux_Unix/001_My_DocLib/14_Gentoo/Gentoo-Mutt
+cat /etc/rsyncd.conf 
+cat /etc/resolv.conf 
+su -
+exit
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a]
+ifconfig -a]
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo tail /var/log/messages 
+ping twvpn4.iggcn.com
+ping www.baidu.com
+sudo pon twvpn
+ifconfig 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo vi /etc/ppp/options
+sudo vi /etc/ppp/options.pptp 
+ifconfig 
+sudo pon twvpn
+ifconfig 
+sudo vi /etc/ppp/options.pptp 
+ifconfig 
+sudo pon twvpn
+ifconfig 
+ifconfig -a
+sudo vi /etc/ppp/options.pptp 
+sudo vi /etc/ppp/options
+sudo pon twvpn
+sudo vi /etc/ppp/options.pptp 
+sudo pon twvpn
+sudo vi /etc/ppp/peers/twvpn 
+sudo vi /etc/ppp/options.pptp 
+sudo pon twvpn
+ifconfig 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo pon twvpn
+sudo vi /etc/ppp/options.pptp 
+ifconfig 
+route
+sudo poff twvpn
+sudo pon twvpn
+ifconfig 
+sudo vi /etc/ppp/options.pptp 
+sudo pon twvpn
+sudo vi /etc/ppp/options.pptp 
+ifconfig -a
+sudo pon twvpn
+ifconfig 
+ifconfig -a
+sudo vi /etc/ppp/options.pptp 
+sudo vi /etc/ppp/peers/twvpn 
+sudo pon twvpn
+route -n
+sudo vi /etc/ppp/ip-up
+sudo vi /etc/ppp/ip-down
+ifconfig 
+route -n
+tracert www.baidu.com
+traeroute www.baidu.com
+traceroute www.baidu.com
+cat /etc/resolv.conf 
+ping 10.0.100.1
+vi /etc/resolv.conf 
+sudo vi /etc/resolv.conf 
+ping www.google.com
+ping 218.85.1757.99
+ping 218.85.157.99
+nslookup
+ping 8.8.8.8
+sudo vi /etc/resolv.conf 
+ifconfig 
+ping www.baidu.com
+sudo vi /etc/resolv.conf 
+sudo poff twvpn
+ifconfig 
+route -n
+sudo vi /etc/ppp/ip-up
+sudo vi /etc/ppp/ip-down
+sudo vi /etc/resolv.conf 
+route -n
+ping www.baidu.com
+cat /etc/resolv.conf 
+ping 8.8.8.8
+sudo /etc/init.d/net.enp7s0 restart
+route -n
+sudo vi /etc/ppp/ip-down
+sudo pon twvpn
+ifconfig 
+ifconfig -a
+sudo pon twvpn
+ifconfig 
+sudo poff
+sudo pon twvpn
+route -n
+sudo vi /etc/resolv.conf 
+sudo vi /etc/resolv.conf 
+sudo vi /etc/resolv.conf 
+sudo poff twvpn
+ifconfig 
+route -n
+sudo pon twvpn
+ifconfig 
+sudo pon twvpn
+sudo pon twvpn
+ifconfig -a
+sudo pon twvpn
+sudo vi /etc/ppp/options.pptp 
+ifconfig 
+sudo pon twvpn
+alsamixer 
+sudo poff twvpn
+exit
+cat /etc/resolv.conf 
+sudo vi /etc/ppp/options.pptp 
+ifconfig 
+sudo pon twvpn
+ifconfig 
+ifconfig -a
+sudo vi /etc/ppp/options
+sudo vi /etc/ppp/peers/twvpn 
+ifconfig 
+sudo vi /etc/ppp/peers/twvpn 
+sudo vi /etc/ppp/options.pptp 
+sudo pon twvpn
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo tail -f /var/log/messages 
+exit
+sudo vi /etc/resolv.conf 
+/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
+ping 8.8.8.8
+shutdown -h now
+sudo shutdown -h now
+netstat -tnal
+sudo vi /etc/hosts 
+sudo /etc/init.d/apache2 restart
+cd /etc/apache2/
 ls
-st Mutt_安装.txt 
-vi Mutt_安装.txt 
+sudo vi httpd.conf 
+sudo vi modules.d/00_default_settings.conf 
+sudo /etc/init.d/apache2 restart
+cat /etc/resolv.conf 
+cat /etc/hosts 
+sudo vi /etc/hosts 
+sudo shutdown -h now
+ls /etc/resolv.conf
+sudo cat /etc/ppp/ip-up
+ll /etc/resolv.conf
+ll /etc/resolv.conf
+ll /etc/resolv.conf
+ll /etc/resolv.conf
+alsamixer 
+exit
+alsamixer 
+exit
+sudo pon twvpn
+route -n
+su -
+sudo poff twvpn
+su -
+ifconfig 
+sudo pon twvpn
+sudo rm /etc/resolv.conf
+sudo ln -s /etc/resolv.conf.std /etc/resolv.conf
+ll /etc/resolv.conf
+sudo pon twvpn
+sudo pon twvpn
+rm /etc/resolv.conf
+sudo rm /etc/resolv.conf
+sudo cp /etc/resolv.conf.std /etc/resolv.conf
+sudo pon twvpn
+cat /etc/resolv.conf
+route -n
+sudo /etc/init.d/net.enp7s0 restart
+sudo rm /etc/resolv.conf
+sudo ln -s /etc/resolv.conf.std /etc/resolv.conf
+ping twvpn4.iggcn.com
+sudo pon twvpn
+ll /etc/resolv.conf
+sudo poff twvpn
+ll /etc/resolv.conf
+ifconfig 
+sudo pon twvpn
+ifconfig 
+ll /etc/resolv.conf
+ll /etc/resolv.conf
+sudo poff twvpn
+ll /etc/resolv.conf
+exit
+cat /etc/resolv.conf 
+sudo pon twvpn
+ifconfig 
+ifconfig 
+sudo tail -f /var/log/messages 
+cronky
+ronky
+conky
+.conky-myhome/bin/conkyStart &
+alsamixer 
+exit
+sudo emerge -av m3u
+ls Mp3
+ls MP3/
 ls
-cd ..
+cd MP3/
 ls
-cd \
-cd
-mutt
-telnet 
-echo $JAVA_HOME
+ls |iconv -t utf
+ls |iconv -f gbk -t utf
+ls |iconv -f gbk -t utf8
+ls |iconv -f gbk -t utf-8
+ls |iconv  -t utf-8
+ls |iconv  -t gbk
+ls |iconv  -t gb2312
 ls
-ls soft/
-ls soft/opter_system/
-cd /opt/
-ls
-cd phpstorm/
-ls
-ls license/
-/usr/local/bin/pstorm
-cd
-vi .fvwm/
+ls > /tmp/abc.txt
+cat /tmp/abc.txt 
+iconv -f gbk -t utf8 /tmp/abc.txt 
+iconv -f gbk -t utf-8 /tmp/abc.txt 
+iconv -f gb2312 -t utf-8 /tmp/abc.txt 
+iconv -f gb2312 -t utf8 /tmp/abc.txt 
+iconv  -t utf-8 /tmp/abc.txt 
+iconv  -t gbk /tmp/abc.txt 
+iconv  /tmp/abc.txt 
+pcmanfm --help
+xlock --help
+cd 
+vi .fvwm/config
 vi .fvwm/config
 killall conky
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
 .conky-myhome/bin/conkyStart 
-exit
-cd maildir/
-ls
-ls buy/
-ls buy/new/
-ls buy/cur/
-ls 
-ls inbox/cur/
+bg
+sudo emerge -av leafpad
+df -h
 mutt
-vi .muttrc 
-cd maildir/
-ls
-mkdir spam
-mkdir -p spam/{cur,new,tmp}
-cd ..
+ping pop.163.com
+getmail
+ping pop.163.com
 vi .getmail/getmailrc 
-vi .procmailrc 
-cd maildir/
-ls
-mv spam/ spammail
-vi .procmailrc 
-cd
-vi .procmailrc 
+getmail
 mutt
-tail -100 .procmaillog |more
- rm .procmaillog 
-vi .procmailrc 
+ll maildir/
+chmod 0600 maildir/ -R
 cd maildir/
+chmod 0700 maildir/ -R
+cd maildir/
+ll
+ll buy/
+ll buy/cur/
+chmod --help
+cd
+vi /etc/apache2/vhosts.d/myhome.cn_vhost.include 
+sudo vi /etc/apache2/vhosts.d/myhome.cn_vhost.include 
+sudo vi /etc/apache2/vhosts.d/query.bzbee.com_vhost.include 
+sudo mv /var/www/query.bzbee.com/htdocs /home/www/query.bzbee.com
+ll /home/www/
+ll /home/www/query.bzbee.com/
+cd /home/www/
 ls
-ll -h procmaillog 
-less procmaillog 
-rm procmaillog 
+ls query.bzbee.com/
+ls query.bzbee.com/htdocs/
+mv query.bzbee.com/htdocs/ ./query.bzbee.com
+mv query.bzbee.com query.bzbee.coma
+mv query.bzbee.coma/htdocs query.bzbee.com
 ls
+ls query.bzbee.coma/
+rm query.bzbee.coma/ 
+rm query.bzbee.coma/ -r
+ls
+ll
+cd ..
+ll www/ -d
+ps aux |grep apache
+sudo vi /etc/apache2/httpd.conf 
+sudo chown www.www /home/www/ -R
+ll
+ll www/
+ll www/query.bzbee.com/
+sudo chmod go-w www/query.bzbee.com/ -R
+ll www/
+sudo /etc/init.d/apache2 restart
+cd www/
+ll
+sudo mount /dev/sdb6 /mnt/ 
+ls /mnt/
+su -
+exit
+qbittorrent 
+vi .fvwm/config
+vi .fvwm/config
+cd /usr/share/icons/locolor/32x32/apps
+ls
+ll
+su -
+cd
+ls
+convert 20131123123534222_easyicon_net_128.png -thumbnail 24x24 pcmanfm_24.png
+mv pcmanfm_24.png .fvwm/icons/
+ls
+mv 20131123123534222_easyicon_net_128.png .fvwm/icons/xbmc_24.png
+mv 20131123123918999_easyicon_net_24.png .fvwm/icons/chrome_24.png
+mv 20131123124030992_easyicon_net_24.png .fvwm/icons/opera_24.png
+ls
+mv 20131123124142809_easyicon_net_24.png .fvwm/icons/image_24.png
+mv 20131123124253807_easyicon_net_24.png .fvwm/icons/libreoffice_24.png
+mv 20131123124516462_easyicon_net_24.png .fvwm/icons/application_24.png
+mv 2013112312465078_easyicon_net_24.png .fvwm/icons/tool_24.png
+mv .fvwm/icons/tool_24.png .fvwm/icons/utilities_24.png
+mv 20131123124801497_easyicon_net_24.png .fvwm/icons/gentoo_24.png
+mv 20131123125037609_easyicon_net_24.png .fvwm/icons/firefox_24.png 
+mv 20131123125244295_easyicon_net_24.png .fvwm/icons/xbmc_24.png 
+mv .fvwm/icons/libreoffice_24.png .fvwm/icons/office_24.png
+history |grep conver
+convert 20131123010607796_easyicon_net_30.png -thumbnail 24x24 .fvwm/icons/php_24.png 
+exit
+vi .fvwm/config
+vi .fvwm/config
+ls
+mv 20131123123322453_easyicon_net_24.png .fvwm/icons/xterm_24.png
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+mocp MP3/*.mp3
+mocp MP3/*.mp3
+mocp
+ls
+mocp 05_Mp3/
+mocp
 exit

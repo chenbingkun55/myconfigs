@@ -13,7 +13,7 @@
 ###############################################################################
 
 # Lock the port
-lock
+#lock
 
 # Authentication
 # We don't need the tunnel server to authenticate itself
@@ -23,8 +23,8 @@ noauth
 # (you may need to remove these refusals if the server is not using MPPE)
 refuse-pap
 refuse-eap
-# refuse-chap
-# refuse-mschap
+###refuse-chap
+###refuse-mschap
 
 # Compression
 # Turn off compression protocols we know won't be used
@@ -40,7 +40,7 @@ nodeflate
 # ppp-2.4.2 or later with MPPE only, kernel module ppp_mppe.o
 # {{{
 # Require MPPE 128-bit encryption
-#require-mppe-128
+require-mppe-128
 # }}}
 
 # http://polbox.com/h/hs001/ fork from PPP project by Jan Dubiec
@@ -49,3 +49,6 @@ nodeflate
 # Require MPPE 128-bit encryption
 #mppe required,stateless
 # }}}
+
+###require-mschap-v2
+###require-mppe

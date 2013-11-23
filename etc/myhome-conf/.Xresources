@@ -44,7 +44,7 @@ xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=15
 xterm*xftAntialias: true 
 xterm*cjkWidth:false
 uxterm*inputMethod: fcitx
-xterm*inputMethod: fcitx
+! xterm*inputMethod: fcitx
 xterm*preeditType: Root 
 
 xterm.urgentOnBell: True

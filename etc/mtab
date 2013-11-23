@@ -15,3 +15,4 @@ cpuacct /sys/fs/cgroup/cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpuacct 0 
 freezer /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0
 /dev/sda5 /home ext3 rw,noatime,commit=0 0 2
 binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nodev,noexec,nosuid 0 0
+/dev/sdb6 /mnt ntfs ro 0 0
