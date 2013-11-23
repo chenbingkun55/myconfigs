@@ -1,4 +1,3 @@
-ifconfig 
 sudo pon twvpn
 sudo pon twvpn
 ifconfig -a
@@ -497,4 +496,5 @@ ll /etc/resolv.conf
 ssh -T git@github.com
 ssh -T git@github.com
 ssh -T git@github.com
+exit
 exit
