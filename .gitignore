@@ -25,3 +25,4 @@ home/
 /50-default.rules
 !/home/chenbk
 !chenbk/
+!.ssh/
