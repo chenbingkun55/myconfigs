@@ -1,40 +1,3 @@
-ssh-agent 
-ps aux |grep ssh-agent
-ssh-add ~/.ssh/id_dsa
-ssh-add --help
-ssh-add
-ssh-agent -k
-ssh-agent 
-ssh-add ~/.ssh/id_dsa
-ssh-agent -k
-ps aux |grep ssh-agent
-killall ssh-agent
-killall ssh-agent
-sudo ssh-agent
-ssh-add ~/.ssh/id_dsa
-sudo ssh-add ~/.ssh/id_dsa
-sudo emerge -av keychain
-vi .bash_profile 
-killall ssh-agent
-sudo killall ssh-agent
-sudo killall ssh-agent
-exit
-exit
-exit
-exit
-ssh localhost
-exit
-ssh localhost
-cat .ssh/id_dsa.pub >> .ssh/authorized_keys
-cat .ssh/authorized_keys 
-ssh localhost
-ssh localhost
-exit
-ssh localhost
-exit
-sudo emerge -av gentookit
-sudo emerge -av gentoolkit
-sudo emerge -av portage-utils
 sudo vi /etc/conf.d/local.start 
 man ls
 su -
@@ -497,4 +460,41 @@ sudo emerge -av net-dns/bind
 sudo vi /etc/portage/package.use 
 sudo emerge -av net-dns/bind
 su -
+exit
+dig
+sudo dig
+sudo vi /etc/portage/package.use 
+sudo vi /etc/bind/named.conf 
+sudo cp /etc/bind/named.conf /etc/bind/named.conf.orign
+sudo vi /etc/bind/named.conf 
+rm /bin/host
+sudo rm /bin/host
+sudo vi /etc/bind/named.conf 
+ls /var/log/named/
+sudo ls /var/log/named/
+sudo ls /var/log/named/ -lh
+sudo ls /var/log/named/ -lhd
+sudo vi /etc/portage/package.use 
+ls /etc/runlevels/
+cd /
+git add .
+sudo git add .
+git commit -m "安装配置本地DNS 缓存服务器"
+git push
+dig www.baidu.com
+exit
+cat /var/bind/named.cache
+sudo cat /var/bind/named.cache
+cd /var/bind/
+ls
+sudo cd /var/bind/
+sudo cat /var/bind/pri/localhost.zone
+sudo vi /var/bind/pri/localhost.zone
+exit
+vi .getmail/getmailrc 
+mutt
+exit
+sudo pon twvpn
+ifconfig 
+ifconfig 
 exit

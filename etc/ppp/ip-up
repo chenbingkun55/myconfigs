@@ -18,5 +18,3 @@ done
 
 route del default gw 192.168.100.1
 route add default dev ppp0
-rm /etc/resolv.conf
-ln -s /etc/resolv.conf.vpn /etc/resolv.conf

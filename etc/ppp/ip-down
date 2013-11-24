@@ -21,6 +21,3 @@ route del -net 10.0.100.0/24 dev ppp0
 route del default gw dev ppp0
 route del -host 113.196.94.95 dev enp7s0
 route del -host 113.196.94.92 dev enp7s0
-
-rm /etc/resolv.conf
-ln -s /etc/resolv.conf.std /etc/resolv.conf
