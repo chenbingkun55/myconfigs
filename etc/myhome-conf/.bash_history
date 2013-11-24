@@ -1,181 +1,3 @@
-sudo pon twvpn
-sudo pon twvpn
-ifconfig -a
-sudo pon twvpn
-sudo vi /etc/ppp/options.pptp 
-ifconfig 
-sudo pon twvpn
-alsamixer 
-sudo poff twvpn
-exit
-cat /etc/resolv.conf 
-sudo vi /etc/ppp/options.pptp 
-ifconfig 
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-sudo vi /etc/ppp/options
-sudo vi /etc/ppp/peers/twvpn 
-ifconfig 
-sudo vi /etc/ppp/peers/twvpn 
-sudo vi /etc/ppp/options.pptp 
-sudo pon twvpn
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo tail -f /var/log/messages 
-exit
-sudo vi /etc/resolv.conf 
-/etc/init.d/apache2 restart
-sudo /etc/init.d/apache2 restart
-ping 8.8.8.8
-shutdown -h now
-sudo shutdown -h now
-netstat -tnal
-sudo vi /etc/hosts 
-sudo /etc/init.d/apache2 restart
-cd /etc/apache2/
-ls
-sudo vi httpd.conf 
-sudo vi modules.d/00_default_settings.conf 
-sudo /etc/init.d/apache2 restart
-cat /etc/resolv.conf 
-cat /etc/hosts 
-sudo vi /etc/hosts 
-sudo shutdown -h now
-ls /etc/resolv.conf
-sudo cat /etc/ppp/ip-up
-ll /etc/resolv.conf
-ll /etc/resolv.conf
-ll /etc/resolv.conf
-ll /etc/resolv.conf
-alsamixer 
-exit
-alsamixer 
-exit
-sudo pon twvpn
-route -n
-su -
-sudo poff twvpn
-su -
-ifconfig 
-sudo pon twvpn
-sudo rm /etc/resolv.conf
-sudo ln -s /etc/resolv.conf.std /etc/resolv.conf
-ll /etc/resolv.conf
-sudo pon twvpn
-sudo pon twvpn
-rm /etc/resolv.conf
-sudo rm /etc/resolv.conf
-sudo cp /etc/resolv.conf.std /etc/resolv.conf
-sudo pon twvpn
-cat /etc/resolv.conf
-route -n
-sudo /etc/init.d/net.enp7s0 restart
-sudo rm /etc/resolv.conf
-sudo ln -s /etc/resolv.conf.std /etc/resolv.conf
-ping twvpn4.iggcn.com
-sudo pon twvpn
-ll /etc/resolv.conf
-sudo poff twvpn
-ll /etc/resolv.conf
-ifconfig 
-sudo pon twvpn
-ifconfig 
-ll /etc/resolv.conf
-ll /etc/resolv.conf
-sudo poff twvpn
-ll /etc/resolv.conf
-exit
-cat /etc/resolv.conf 
-sudo pon twvpn
-ifconfig 
-ifconfig 
-sudo tail -f /var/log/messages 
-cronky
-ronky
-conky
-.conky-myhome/bin/conkyStart &
-alsamixer 
-exit
-sudo emerge -av m3u
-ls Mp3
-ls MP3/
-ls
-cd MP3/
-ls
-ls |iconv -t utf
-ls |iconv -f gbk -t utf
-ls |iconv -f gbk -t utf8
-ls |iconv -f gbk -t utf-8
-ls |iconv  -t utf-8
-ls |iconv  -t gbk
-ls |iconv  -t gb2312
-ls
-ls > /tmp/abc.txt
-cat /tmp/abc.txt 
-iconv -f gbk -t utf8 /tmp/abc.txt 
-iconv -f gbk -t utf-8 /tmp/abc.txt 
-iconv -f gb2312 -t utf-8 /tmp/abc.txt 
-iconv -f gb2312 -t utf8 /tmp/abc.txt 
-iconv  -t utf-8 /tmp/abc.txt 
-iconv  -t gbk /tmp/abc.txt 
-iconv  /tmp/abc.txt 
-pcmanfm --help
-xlock --help
-cd 
-vi .fvwm/config
-vi .fvwm/config
-killall conky
-.conky-myhome/bin/conkyStart 
-bg
-sudo emerge -av leafpad
-df -h
-mutt
-ping pop.163.com
-getmail
-ping pop.163.com
-vi .getmail/getmailrc 
-getmail
-mutt
-ll maildir/
-chmod 0600 maildir/ -R
-cd maildir/
-chmod 0700 maildir/ -R
-cd maildir/
-ll
-ll buy/
-ll buy/cur/
-chmod --help
-cd
-vi /etc/apache2/vhosts.d/myhome.cn_vhost.include 
-sudo vi /etc/apache2/vhosts.d/myhome.cn_vhost.include 
-sudo vi /etc/apache2/vhosts.d/query.bzbee.com_vhost.include 
-sudo mv /var/www/query.bzbee.com/htdocs /home/www/query.bzbee.com
-ll /home/www/
-ll /home/www/query.bzbee.com/
-cd /home/www/
-ls
-ls query.bzbee.com/
-ls query.bzbee.com/htdocs/
-mv query.bzbee.com/htdocs/ ./query.bzbee.com
-mv query.bzbee.com query.bzbee.coma
-mv query.bzbee.coma/htdocs query.bzbee.com
-ls
-ls query.bzbee.coma/
-rm query.bzbee.coma/ 
-rm query.bzbee.coma/ -r
-ls
-ll
-cd ..
-ll www/ -d
-ps aux |grep apache
-sudo vi /etc/apache2/httpd.conf 
-sudo chown www.www /home/www/ -R
-ll
-ll www/
-ll www/query.bzbee.com/
 sudo chmod go-w www/query.bzbee.com/ -R
 ll www/
 sudo /etc/init.d/apache2 restart
@@ -497,4 +319,182 @@ ssh -T git@github.com
 ssh -T git@github.com
 ssh -T git@github.com
 exit
+exit
+ssh localhost
+git config --global user.name 'chenbingkun55'
+git config --global user.email chenbingkun55@163.com
+cat .ssh/id_dsa.pub 
+cd /
+touch /etc/myhome-conf/test.sh
+git add *
+git add .
+git commit -m "ll"
+git push
+git remote add origin git@github.com:chenbingkun55/myconfigs.git
+git remote rm origin git@github.com:chenbingkun55/myconfigs.git
+git remote remove origin git@github.com:chenbingkun55/myconfigs.git
+git remote remove origin
+git remote add origin git@github.com:chenbingkun55/myconfigs.git
+git push origin master
+git remote remove origin
+ping github.com
+git remote add origin git@192.30.252.131:chenbingkun55/myconfigs.git
+git push origin master
+cd
+cat .ssh/id_dsa.pub 
+cat .ssh/authorized_keys 
+ls /usr/share/man | grep man
+man -K sleep
+vi .bashrc 
+vi .bashrc 
+exit
+ssh -T chenbingkun55@github.com
+cd /
+git add .
+git commit -m "kk"
+git push
+git config
+git config --global 
+git config --global --help
+git config --global 
+cd
+rm .ssh/id_dsa*
+ssh-keygen -t dsa -C "chenbingkun55@163.com"
+ssh -T git@github.com
+ping github.co
+ssh -T git@192.30.252.130
+ssh-add .ssh/id_dsa
+cat .ssh/id_dsa.pub > .ssh/authorized_keys 
+ssh localhost
+exit
+cd /tmp/
+ls
+cd /
+ls
+ls
+cd
+vi .bashrc 
+exit
+ls
+cd /tmp/
+cd /home/chenbk/
+cd /etc/apache2/
+cd modules.d/
+ls
+sudo emerge -av recode
+cd /tmp/
+ls
+cat abc.txt 
+recode abc.txt 
+recode --help
+recode -list
+recode --list
+recode --help
+file abc.txt 
+cd
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+exit
+ls
+exit
+sudo umount /mnt/
+df -h 
+exit
+ll
+cd Downloads/
+ls
+mocp LC-45-sylvain-ca.mp3 
+alsamixer 
+exit
+exit
+fcitx &
+exit
+sudo vi /etc/resolv.conf
+netstat -tnal
+netstat -tal
+killall fcitx
+ps aux |grep xterm
+kill 4409
+exit
+man find
+exit
+ls
+ls 05_Mp3/
+killall conky
+.conky-myhome/bin/conkyStart &
+exit
+cd Downloads/
+ls
+rm LC-45-sylvain-ca.mp3 
+unzip *.zip$ -d ../05_Mp3/
+unzip *.zip -d ../05_Mp3/
+ls |grep .zip$
+find . -name .zip$
+find . -name zip$
+find . -name zip$ -print
+find . --name zip$ --print
+find . -name "zip$" -print
+find ./ -name "zip$" -print
+find ./ -name "zip" -print
+find ./ -name zip -print
+find . -name zip -print
+find .
+find . -name *.zip
+find . *.zip
+find . .zip$
+find . .zip$ | xargx unzip -d ../05_Mp3/
+find . .zip$ -exec unzip -d ../05_Mp3/ {} \;
+unzip --help
+find . .zip$ -exec unzip -n -d ../05_Mp3/ {} \;
+df -h
+du -h .
+mkdir ../05_Mp3/01_All_zip
+mv *.zip ../05_Mp3/01_All_zip/
+ls
+ll ../05_Mp3/01_All_zip/
+ls ../05_Mp3/01_All_zip/
+cd
+vi .fvwm/config
+vi .fvwm/config
+ls
+find . .zip$ -exec unzip -n -d ../05_Mp3/ {} \;
+ls
+unzip 邓丽君-专辑《凤阳花鼓》.zip -d 05_Mp3/
+unzip 【批量下载】何日君再来等.zip -d 05_Mp3/
+ls
+mv *.zip 05_Mp3/01_All_zip/
+ls
+mutt
+tail .procmaillog 
+vi .procmailrc 
+ls
+mutt
+exit
+exit
+vi .fvwm/config
+killall conkfy
+killall conky
+vi .fvwm/config
+vi .bashrc 
+exit
+exit
+vi .fvwm/config
+vi .fvwm/config
+exit
+vi .fvwm/config
+vi .fvwm/config
+/etc/init.d/xdm restart
+sudo /etc/init.d/xdm restart
+ls /tmp/
+vi .bashrc 
+vi .xprofile 
+exit
+cat /etc/sudoers
+cat .bash_logout 
+cat .bashrc 
+cat .Xresources 
+cat .xprofile 
+sudo reboot
 exit

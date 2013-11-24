@@ -46,7 +46,7 @@ maillist-gentoo-announce/
 maillist-gentoo-user/
 
 :0:
-* ^Subject:.*(sex|发票|艺龙|Facebook|19楼|性价比最|元起|联强|博时|机票|大抢购|智联|高朋|新闻|美团|俱乐部|百联|赶集|联想时刻|红包|参加评选|1号店|)
+* ^Subject:.*(sex|发票|艺龙|Facebook|19楼|性价比最|元起|联强|博时|机票|大抢购|智联|高朋|新闻|美团|俱乐部|百联|赶集|联想时刻|红包|参加评选|1号店)
 spammail/
 
 :0:

@@ -70,6 +70,10 @@ DestroyModuleConfig FvwmPager: *
 ######
 ClickTime 750
 MoveThreshold 3
+# 解决了新建窗口 Focus 问题.
+Style !Fvwm* GrabFocus, GrabFocusTransient
+
+# 鼠标移到窗口时 Focus
 Style * SloppyFocus, MouseFocusClickRaises
 
 
@@ -136,7 +140,8 @@ AddToFunc ExitFunction
 ####
 # 快捷键绑定
 ######
-Key Super_L A A Menu FuncMenu
+Key M A C Menu FuncMenu
+Key M A M Menu SystemMenu
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
@@ -163,6 +168,8 @@ Key Right W 4 Resize w+5c w+0c
 # 全屏
 Key Return W C Maximize
 Key Return W 4 Iconify
+Key I W M Iconify
+Key C W M Close
 # 缩放
 Key minus W C Resize w-10 w-10
 Key equal W C Resize w+10 w+10
@@ -243,6 +250,7 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 + "办公软件%office_24.png%"   Popup OfficeMenu
 + "应用程序%application_24.png%"   Popup ProgramsMenu
 + "工具%utilities_24.png%"   Popup UtilitiesMenu
++ "&Quit%windows8_24.png% "  Nop
 
 DestroyMenu OfficeMenu
 AddToMenu OfficeMenu "%office_24.png%=== 办公软件菜单 ===" Title
@@ -258,10 +266,11 @@ AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
 
 DestroyMenu SystemMenu
 AddToMenu SystemMenu "%gentoo_24.png%=== 系统菜单 ===" Title
-+ "注销%logout_24.png%"   Quit
-+ "休眠%hibernate_24.png%"   Exec exec sudo hibernate-ram
-+ "重启%reboot_24.png%"   Exec exec sudo shutdown -r now
-+ "关机%shutdown_24.png%"   Exec exec sudo shutdown -h now
++ "注销(&L)%logout_24.png%"   Quit
++ "休眠(&H)%hibernate_24.png%"   Exec exec sudo hibernate-ram
++ "重启(&R)%reboot_24.png%"   Exec exec sudo shutdown -r now
++ "关机(&S)%shutdown_24.png%"   Exec exec sudo shutdown -h now
++ "&Quit%windows8_24.png% "  Nop
 
 
 DestroyMenu ConfMenu

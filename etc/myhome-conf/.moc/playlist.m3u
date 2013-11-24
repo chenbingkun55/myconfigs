@@ -1,8 +1,726 @@
 #EXTM3U
-#MOCSERIAL: 512
-#EXTINF:219,/home/chenbk/MP3/国境之南.mp3
-/home/chenbk/MP3/国境之南.mp3
-#EXTINF:255,/home/chenbk/MP3/万物生.mp3
-/home/chenbk/MP3/万物生.mp3
+#MOCSERIAL: 256
+#EXTINF:212,邓丽君 - 几多愁 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/¼¸¶à³î.mp3
+#EXTINF:236,邓丽君 - 情湖 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/��൦�.mp3
+#EXTINF:198,邓丽君 - 中华颂 (1981 Live) (君之纪念册)
+/home/chenbk/05_Mp3/��������� (1981 live).mp3
+#EXTINF:297,邓丽君 - 星 (邓丽君演唱会1982 Live) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/�� (����������+�����+�1982 live).mp3
+#EXTINF:218,邓丽君 - 何日君再来 (1993年版 - 国语) (夜來香)
+/home/chenbk/05_Mp3/������������� (1993զ���� - ���޻�).mp3
+#EXTINF:213,邓丽君 - 夜来香 (1994年版) (夜來香)
+/home/chenbk/05_Mp3/����ڪ� (1994զ����).mp3
+#EXTINF:233,邓丽君 - 北国之春 (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/±±¹úÖ®´º.mp3
+#EXTINF:239,邓丽君 - 24.4 (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/24.4.mp3
+#EXTINF:317,邓丽君 - 花 (演歌の王道)
+/home/chenbk/05_Mp3/290_花.mp3
+#EXTINF:316,邓丽君 - 不了情 (思君集)
+/home/chenbk/05_Mp3/²»ÁËÇé.mp3
+#EXTINF:149,邓丽君 - 采红菱 (花样年华)
+/home/chenbk/05_Mp3/²ÉºìÁâ.mp3
+#EXTINF:274,邓丽君 - もしかして・パート2 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�����������������+�����+���2.mp3
+#EXTINF:165,邓丽君 - 美酒加咖啡 (人面桃花)
+/home/chenbk/05_Mp3/ÃÀ¾Æ¼Ó¿§·È.mp3
+#EXTINF:236,凤凰传奇 - 开门大吉 (开门大吉)
+/home/chenbk/05_Mp3/¿ªÃÅ´ó¼ª.mp3
+#EXTINF:289,邓丽君 - Aaa…Kau Tau (君之千言万语)
+/home/chenbk/05_Mp3/aaa�Ǫkau tau.mp3
+#EXTINF:384,邓丽君 - A GOOD HEART (邓丽君日本东京NHK演唱会1985)
+/home/chenbk/05_Mp3/A GOOD HEART.mp3
+#EXTINF:168,18 邓丽君 - 南海姑娘 (歌曲精选_F)
+/home/chenbk/05_Mp3/ÄÏº£¹ÃÄï.mp3
+#EXTINF:387,凤凰传奇 - 草原凤凰 (月亮之上)
+/home/chenbk/05_Mp3/����ă�����.mp3
+#EXTINF:209,邓丽君 - 原乡人 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/�ă������.mp3
+#EXTINF:52,邓丽君 - 原乡情浓 (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/�ă��������.mp3
+#EXTINF:153,邓丽君 - 梅花 (邓丽君3合1)
+/home/chenbk/05_Mp3/Ã·»¨.mp3
+#EXTINF:198,邓丽君 - 难忘初恋的情人 (国语) (传奇再续)
+/home/chenbk/05_Mp3/ÄÑÍü³õÁµµÄÇéÈË (¹úÓï).mp3
+#EXTINF:237,陈奕迅,黄韵玲 - 乐园 (乐园)
+/home/chenbk/05_Mp3/ÀÖÔ°.mp3
+#EXTINF:123,邓丽君 - 路边的野花不要采 (邓丽君 4 In 1 珍藏集)
+/home/chenbk/05_Mp3/Â·±ßµÄÒ°»¨²»Òª²É.mp3
+#EXTINF:220,邓丽君 - 漫步人生路 (邓丽君 Vol1)
+/home/chenbk/05_Mp3/Âþ²½ÈËÉúÂ·.mp3
+#EXTINF:235,凤凰传奇 - 我和草原有个约定 (月亮之上)
+/home/chenbk/05_Mp3/����������ă���������ի�.mp3
+#EXTINF:205,邓丽君 - Beat It (君之千言万语)
+/home/chenbk/05_Mp3/beat it.mp3
+#EXTINF:234,邓丽君 - Bunga Indah (君之千言万语)
+/home/chenbk/05_Mp3/bunga indah.mp3
+#EXTINF:249,邓丽君 - Bunga Matahari (君之千言万语)
+/home/chenbk/05_Mp3/bunga matahari.mp3
+#EXTINF:213,邓丽君 - Can't Help Falling In Love (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/can't help falling in love.mp3
+#EXTINF:265,邓丽君 - 恰似你的温柔 (传奇再续)
+/home/chenbk/05_Mp3/Ç¡ËÆÄãµÄÎÂÈá.mp3
+#EXTINF:208,邓丽君 - 千言万语 (花样年华)
+/home/chenbk/05_Mp3/Ç§ÑÔÍòÓï.mp3
+#EXTINF:158,邓丽君 - 小城故事 (传奇再续)
+/home/chenbk/05_Mp3/Ð¡³Ç¹ÊÊÂ.mp3
+#EXTINF:146,邓丽君 - Dayung Sampan (印尼语) (君之纪念册)
+/home/chenbk/05_Mp3/dayung sampan (��զ+޻�).mp3
+#EXTINF:234,邓丽君 - 榕树下 (群星金曲国语3)
+/home/chenbk/05_Mp3/éÅÊ÷ÏÂ.mp3
+#EXTINF:261,邓丽君;林子祥 - Endless Love (君之千言万语)
+/home/chenbk/05_Mp3/endless love.mp3
+#EXTINF:292,邓丽君 - Every Breath You Take (君之千言万语)
+/home/chenbk/05_Mp3/every breath you take.mp3
+#EXTINF:177,陈奕迅 - Every Time We Say Goodbye (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/every time we say goodbye.mp3
+#EXTINF:184,邓丽君 - Finale (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/finale.mp3
+#EXTINF:303,邓丽君 - Fire (君之千言万语)
+/home/chenbk/05_Mp3/fire.mp3
+#EXTINF:227,邓丽君 - Flash Dance…What A Feeling (君之千言万语)
+/home/chenbk/05_Mp3/flash dance�Ǫwhat a feeling.mp3
+#EXTINF:217,邓丽君 - 爱我像爱花一样 (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/�ꦵ�����������ǵ��.mp3
+#EXTINF:219,邓丽君 - 再来一杯 (Btb 岛国之情歌第一集 再见我的爱人-邓丽君)
+/home/chenbk/05_Mp3/�������ǵػ.mp3
+#EXTINF:171,邓丽君 - 人生一条路 (福建歌曲精选)
+/home/chenbk/05_Mp3/��������ǵ�����.mp3
+#EXTINF:166,邓丽君 - 一水隔天涯 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/��ǵ�������».mp3
+#EXTINF:71,邓丽君 - Goodbye My Love (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/goodbye my love.mp3
+#EXTINF:179,邓丽君 - Happy Birthday To You (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/happy birthday to you.mp3
+#EXTINF:169,邓丽君 - 雪中莲 ("怀念.五年"邓丽君逝世五周年纪念集)
+/home/chenbk/05_Mp3/�������Ħ.mp3
+#EXTINF:300,邓丽君 - Hong Kong Hong Kong (君之千言万语)
+/home/chenbk/05_Mp3/hong kong hong kong.mp3
+#EXTINF:236,邓丽君 - 船歌(现场演绎) (襟.听34首)
+/home/chenbk/05_Mp3/�ꦵ��(�Ħգ��+��+�).mp3
+#EXTINF:183,陈奕迅 - 相信自己无限极 (相信自己无极限)
+/home/chenbk/05_Mp3/ÏàÐÅ×Ô¼ºÎÞÏÞ¼«.mp3
+#EXTINF:233,邓丽君 - 微风细雨 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/Î¢·çÏ¸Óê.mp3
+#EXTINF:232,邓丽君 - I Have Never Been To Me (君之千言万语)
+/home/chenbk/05_Mp3/i have never been to me.mp3
+#EXTINF:236,/home/chenbk/05_Mp3/Ììô¥´«Ææ.mp3
+/home/chenbk/05_Mp3/Ììô¥´«Ææ.mp3
+#EXTINF:302,邓丽君 - I Just Called To Say I Love You (日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/i just called to say i love you (��ѵ��).mp3
+#EXTINF:132,邓丽君 - 跟你开玩笑 (邓丽君之歌 (邓丽君之歌第七集))
+/home/chenbk/05_Mp3/�������+��Į���.mp3
+#EXTINF:233,邓丽君 - 我和你 (歌曲精选_A)
+/home/chenbk/05_Mp3/ÎÒºÍÄã.mp3
+#EXTINF:254,邓丽君 - 我只在乎你 ("1" (壹))
+/home/chenbk/05_Mp3/ÎÒÖ»ÔÚºõÄã.mp3
+#EXTINF:186,陈奕迅 - 无限之城 (无限之城(国))
+/home/chenbk/05_Mp3/ÎÞÏÞÖ®³Ç.mp3
+#EXTINF:200,邓丽君 - Jambalaya (On The Bayou) (Live In Japan, 1976) (君之纪念册)
+/home/chenbk/05_Mp3/jambalaya (on the bayou) (live in japan, 1976).mp3
+#EXTINF:127,邓丽君 - 中华民族 (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/�����ĵ����.mp3
+#EXTINF:135,邓丽君 - 春风满小城 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/����ĵ+�զ�Ճ�.mp3
+#EXTINF:266,邓丽君 - Killing Me Softly With His Song ("怀念.五年"邓丽君逝世五周年纪念集)
+/home/chenbk/05_Mp3/killing me softly with his song.mp3
+#EXTINF:203,邓丽君 - 夜のフェリーボート (日语) (Live In Japan, 1977) (君之纪念册)
+/home/chenbk/05_Mp3/��������������+����+��� (���޻�) (live in japan, 1977).mp3
+#EXTINF:152,邓丽君 - 郊道 (Live In Taiwan, 1984) (君之纪念册)
+/home/chenbk/05_Mp3/������ (live in taiwan, 1984).mp3
+#EXTINF:256,邓丽君 - 多情的玫瑰 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/��ܵ������Ľ��.mp3
+#EXTINF:212,凤凰传奇 - 新疆玫瑰 (月亮之上)
+/home/chenbk/05_Mp3/�������Ľ��.mp3
+#EXTINF:236,邓丽君 - 莫忘今宵 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�Ľ�+�+�ի�.mp3
+#EXTINF:288,邓丽君 - Medley: Designer Music+I Love Rock'n Roll+Stupid Cupid (君之千言万语)
+/home/chenbk/05_Mp3/medley: designer music+i love rock'n roll+stupid cupid.mp3
+#EXTINF:385,邓丽君 - Medley: Last Dance/ Hot Stuff/ Fame (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/medley: last dance- hot stuff- fame.mp3
+#EXTINF:582,邓丽君 - Medley: 叹十声-天涯歌女-四季歌 (邓丽君演唱会1982 Live) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/medley: �Ŧ������-��»����Ѧ-���ա���� (����������+�����+�1982 live).mp3
+#EXTINF:584,邓丽君 - Medley : 叹十声 / 天涯歌女 / 四季歌 ("怀念.五年"邓丽君逝世五周年纪念集)
+/home/chenbk/05_Mp3/medley : �Ŧ������ - ��»����Ѧ - ���ա����.mp3
+#EXTINF:189,邓丽君 - More Than I Can Say (君之千言万语)
+/home/chenbk/05_Mp3/more than i can say.mp3
+#EXTINF:255,邓丽君 - 追伸 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�+��+�.mp3
+#EXTINF:231,邓丽君 - 从今日起 (邓丽君3合1)
+/home/chenbk/05_Mp3/�+��+������.mp3
+#EXTINF:253,邓丽君 - 心凍らせて (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�+���+���������.mp3
+#EXTINF:194,邓丽君 - 追梦 (初次尝到寂寞)
+/home/chenbk/05_Mp3/�+���.mp3
+#EXTINF:175,邓丽君 - 忘记他 (粤) (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/�+ޫ��+� (���).mp3
+#EXTINF:164,邓丽君 - 忘记他 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/�+ޫ��+�.mp3
+#EXTINF:217,邓丽君 - 心里梦? (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/�+�����-.mp3
+#EXTINF:210,邓丽君 - 心酸酸 (福建歌曲精选)
+/home/chenbk/05_Mp3/�+�����.mp3
+#EXTINF:225,邓丽君 - 漫步人生路 (粤) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/�+������������� (���).mp3
+#EXTINF:229,邓丽君 - 今夜想起你 (纪念国语原声专辑cd3)
+/home/chenbk/05_Mp3/�+����������.mp3
+#EXTINF:220,邓丽君 - 漫步人生路(粤) (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/�+�������������(���).mp3
+#EXTINF:233,邓丽君 - 晨光下的恋情 (Btb 岛国之情歌第八集爱的使者-邓丽君)
+/home/chenbk/05_Mp3/�ֿ�������������.mp3
+#EXTINF:300,邓丽君 - 星 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/��.mp3
+#EXTINF:231,邓丽君 - 偿还 (日) (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/��+�+ (���).mp3
+#EXTINF:229,邓丽君 - 偿还 (邓丽君3合1)
+/home/chenbk/05_Mp3/��+�+.mp3
+#EXTINF:233,邓丽君 - 偿还(日) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/��+�+(���).mp3
+#EXTINF:216,邓丽君 - 偿还(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/��+�+(��ѵ��).mp3
+#EXTINF:97,邓丽君 - 访问 - [缘份] (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/ޫ+��� - [�+�+�].mp3
+#EXTINF:210,邓丽君 - 访问 - [传统] (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/ޫ+��� - [�+��+�].mp3
+#EXTINF:234,邓丽君 - 访问 - [演唱] (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/ޫ+��� - [�+����].mp3
+#EXTINF:181,邓丽君 - 访问 - [团队] (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/ޫ+��� - [���ڃ].mp3
+#EXTINF:175,邓丽君 - 访问 - [突破] (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/ޫ+��� - [�����].mp3
+#EXTINF:155,邓丽君 - 轻风 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/ޢ+���.mp3
+#EXTINF:243,凤凰传奇 - 泼水节 (月亮之上)
+/home/chenbk/05_Mp3/��+������.mp3
+#EXTINF:197,邓丽君 - 总有一天 (Btb 岛国之情歌第三集 丝丝小雨- 邓丽君)
+/home/chenbk/05_Mp3/��+��������.mp3
+#EXTINF:198,邓丽君 - 愿你来看我 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/��+����������.mp3
+#EXTINF:288,邓丽君 - 长良川艳歌(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/��+������릵��(��ѵ��).mp3
+#EXTINF:256,邓丽君 - 使爱情更美丽 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/��+�ꦵ����������.mp3
+#EXTINF:220,邓丽君 - 香港之夜 ("怀念.五年"邓丽君逝世五周年纪念集)
+/home/chenbk/05_Mp3/ڪֵ�������.mp3
+#EXTINF:198,邓丽君 - 梦 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/��.mp3
+#EXTINF:342,陈奕迅 - 歌.颂 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/���.���.mp3
+#EXTINF:308,潘越云,钟镇涛,毛阿敏,齐豫,艾敬,齐秦,张学友 - 星愿 ("怀念.五年"邓丽君逝世五周年纪念集)
+/home/chenbk/05_Mp3/����+.mp3
+#EXTINF:203,邓丽君 - 天黑黑 (福建歌曲精选)
+/home/chenbk/05_Mp3/���+��+�.mp3
+#EXTINF:155,邓丽君 - 碎心花 (福建歌曲精选)
+/home/chenbk/05_Mp3/����+���.mp3
+#EXTINF:218,邓丽君 - 君心我心 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/����+����+�.mp3
+#EXTINF:229,邓丽君 - 我心深处 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/����+������.mp3
+#EXTINF:204,邓丽君 - 被迷乱着(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/���+�������(��ѵ��).mp3
+#EXTINF:188,邓丽君 - 难忘的爱人 (福建歌曲精选)
+/home/chenbk/05_Mp3/�ܥ�+��������.mp3
+#EXTINF:210,邓丽君 - 风从那里来 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/����+���������.mp3
+#EXTINF:197,邓丽君 - 昨天 今天 (Btb 岛国之情歌第三集 丝丝小雨- 邓丽君)
+/home/chenbk/05_Mp3/���� �+���.mp3
+#EXTINF:224,邓丽君 - 是否 (Btb 岛国之情歌第三集 丝丝小雨- 邓丽君)
+/home/chenbk/05_Mp3/���ɪ.mp3
+#EXTINF:195,邓丽君 - 别离 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/����+.mp3
+#EXTINF:203,邓丽君 - 逃避行 (Btb 岛国之情歌第一集 再见我的爱人-邓丽君)
+/home/chenbk/05_Mp3/�����+���.mp3
+#EXTINF:257,邓丽君 - 风儿雨儿(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/�����+�����+(��ѵ��).mp3
+#EXTINF:246,邓丽君 - 但愿人长久 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/����+�����+���.mp3
+#EXTINF:251,邓丽君 - 失去的春天 (偿还)
+/home/chenbk/05_Mp3/����+������.mp3
+#EXTINF:314,邓丽君 - 空港~ホンコン (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/������~���������.mp3
+#EXTINF:227,邓丽君 - 空港 (日) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/������ (���).mp3
+#EXTINF:228,邓丽君 - 爱人 (日语) (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/����� (���޻�).mp3
+#EXTINF:272,邓丽君 - 奈何-组曲 (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/������-�+���.mp3
+#EXTINF:213,邓丽君 - 再见,我的爱人 (邓丽君30周年特别版(德国版))
+/home/chenbk/05_Mp3/���޺�,�����������.mp3
+#EXTINF:207,邓丽君 - 再见!我的爱人 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/���޺�!�����������.mp3
+#EXTINF:183,邓丽君 - 诗意 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/޻����.mp3
+#EXTINF:222,邓丽君 - 空港(日) (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/������(���).mp3
+#EXTINF:228,邓丽君 - 爱人(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/�����(��ѵ��).mp3
+#EXTINF:219,邓丽君 - 情飘飘 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/�������.mp3
+#EXTINF:167,邓丽君 - 欲说还休 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/���޻��+�+�.mp3
+#EXTINF:210,邓丽君 - 雨中追忆 (邓丽君3合1)
+/home/chenbk/05_Mp3/�������+��+�.mp3
+#EXTINF:157,µËÀö¾ý - ´ºïLÝpÝp·÷îÁø (Ü¼½­¾Ó-»³ÄîµËÀö¾ý)
+/home/chenbk/05_Mp3/�����ޢ+ޢ+���ؿ���.mp3
+#EXTINF:233,邓丽君 - 恋唄綴り (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�������+����.mp3
+#EXTINF:162,邓丽君 - 人约黄昏后 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/�������+�����.mp3
+#EXTINF:210,邓丽君 - 风霜伴我行 (粤) (小城经典-邓丽君)
+/home/chenbk/05_Mp3/���ڣ��+������� (���).mp3
+#EXTINF:209,邓丽君 - 风霜伴我行 (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/���ڣ��+�������.mp3
+#EXTINF:108,邓丽君 - 月亮代表我的心 (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/�������+�����������+�.mp3
+#EXTINF:122,邓丽君 - 我的心里有一个人 (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/�������+�������������.mp3
+#EXTINF:217,陈奕迅 - 反高潮 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/���ڽ���.mp3
+#EXTINF:148,23 邓丽君 - 谢谢总经理 (谢谢总经理)
+/home/chenbk/05_Mp3/ަ�ަ��+�+����.mp3
+#EXTINF:165,邓丽君 - 独上西楼 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/�������+��+.mp3
+#EXTINF:201,邓丽君 - 四个愿望 (邓丽君3合1)
+/home/chenbk/05_Mp3/��������+���.mp3
+#EXTINF:242,邓丽君 - アイ・ラヴ・ユー (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/��������+������+����+.mp3
+#EXTINF:249,邓丽君 - ノスタルジア (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�������+�������.mp3
+#EXTINF:260,邓丽君 - 悲しみと踊らせて (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�������+���ީ����������.mp3
+#EXTINF:263,邓丽君 - 悲しみが涙と踊ってる (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�������+��������ީ����������.mp3
+#EXTINF:186,邓丽君 - 水上人　 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/��������� .mp3
+#EXTINF:165,邓丽君 - 雨夜花 (福建语) (小城经典-邓丽君)
+/home/chenbk/05_Mp3/������� (����+�޻�).mp3
+#EXTINF:270,邓丽君 - 问自己 (日文) (Btb Original O Best Hits)
+/home/chenbk/05_Mp3/�������� (��ѵ��).mp3
+#EXTINF:233,邓丽君 - 我和你 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/���������.mp3
+#EXTINF:288,邓丽君 - 片恋酒(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/��������(��ѵ��).mp3
+#EXTINF:213,邓丽君 - 夜来香(日本語) (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/����ڪ�(��ѵ��޻�).mp3
+#EXTINF:224,邓丽君 - 前生有缘 (纪念国语原声专辑cd3)
+/home/chenbk/05_Mp3/����������+.mp3
+#EXTINF:250,邓丽君 - 不着痕迹 (偿还)
+/home/chenbk/05_Mp3/����������+�.mp3
+#EXTINF:201,邓丽君 - 我不再迷惘 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/����������+���.mp3
+#EXTINF:261,陈奕迅 - 好歌献给你 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/�Ѣ������+����.mp3
+#EXTINF:235,邓丽君 - 北国の春 (日) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/����������� (���).mp3
+#EXTINF:154,邓丽君 - 一顆流星 (福建歌曲精选)
+/home/chenbk/05_Mp3/�����������.mp3
+#EXTINF:245,邓丽君 - 北国之春(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/����������(��ѵ��).mp3
+#EXTINF:227,邓丽君 - 相看泪眼 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/�����ﵦ���+.mp3
+#EXTINF:232,邓丽君 - 为爱来离开(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/����ꦵ����+�+�(��ѵ��).mp3
+#EXTINF:173,邓丽君 - 我怎能离开你 (君之纪念册)
+/home/chenbk/05_Mp3/���������+�+����.mp3
+#EXTINF:201,邓丽君 - 别把眉儿皱 (初次尝到寂寞)
+/home/chenbk/05_Mp3/�꽵�������+�ܦ.mp3
+#EXTINF:325,邓丽君 - ビギン・ザ・ビギン (旅人)
+/home/chenbk/05_Mp3/���������+�����+�������.mp3
+#EXTINF:173,邓丽君 - グッド・ナイト・コール (旅人)
+/home/chenbk/05_Mp3/����������+�����������+����+��.mp3
+#EXTINF:142,邓丽君 - 唱歌的人 (初次尝到寂寞)
+/home/chenbk/05_Mp3/������������.mp3
+#EXTINF:268,邓丽君 - 月夜诉情(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/�����޻���(��ѵ��).mp3
+#EXTINF:186,邓丽君 - 来电是有缘 (Btb 岛国之情歌第八集爱的使者-邓丽君)
+/home/chenbk/05_Mp3/������������+.mp3
+#EXTINF:218,邓丽君 - 让花为你开 (Btb 岛国之情歌第四集香港之恋)
+/home/chenbk/05_Mp3/ޫ����������+�.mp3
+#EXTINF:199,邓丽君 - 你是否知道 (初次尝到寂寞)
+/home/chenbk/05_Mp3/��ᵻ�ɪ������.mp3
+#EXTINF:152,邓丽君 - 魂牵梦也系 (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/ڡ�����������+.mp3
+#EXTINF:269,邓丽君 - 東京ブルース (空港雪化粧)
+/home/chenbk/05_Mp3/�������������+��.mp3
+#EXTINF:250,邓丽君 - あなたの空 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/���������������.mp3
+#EXTINF:218,邓丽君 - 何日君再来(日本語) (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�������������(��ѵ��޻�).mp3
+#EXTINF:207,邓丽君 - 留不住你的心 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/����������������+�.mp3
+#EXTINF:208,邓丽君 - 夜のフェリーボート (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/��������������+����+���.mp3
+#EXTINF:224,邓丽君 - 二人でお酒を (空港雪化粧)
+/home/chenbk/05_Mp3/������������������.mp3
+#EXTINF:297,邓丽君 - 星のしずくに濡れて (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/������������������+�������.mp3
+#EXTINF:149,邓丽君 - 不是春雨没有来 (纪念国语原声专辑cd3)
+/home/chenbk/05_Mp3/��쵻�������������.mp3
+#EXTINF:255,邓丽君 - 天外天上天无涯 (偿还)
+/home/chenbk/05_Mp3/��������������».mp3
+#EXTINF:293,邓丽君 - 天外天上天无涯(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/��������������»(��ѵ��).mp3
+#EXTINF:165,邓丽君 - 是你打来的电话 (Btb 岛国之情歌第八集爱的使者-邓丽君)
+/home/chenbk/05_Mp3/����������������޻�.mp3
+#EXTINF:237,邓丽君 - 東京ジェラシー (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�����������������+.mp3
+#EXTINF:274,邓丽君 - ジャスミン慕情 (ザ・ヒストリー・オブ・テレサ・テン・120ソングス)
+/home/chenbk/05_Mp3/����������⦵����.mp3
+#EXTINF:122,邓丽君 - 路边的野花不要采 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/���ޥ������������ު����.mp3
+#EXTINF:249,邓丽君 - 夜霧のハウスマヌカン (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/�������������������������.mp3
+#EXTINF:297,邓丽君 - あなたと共に生きてゆく (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/��������������������������������.mp3
+#EXTINF:146,邓丽君 - 水涟漪 (襟.听34首)
+/home/chenbk/05_Mp3/�����+�.mp3
+#EXTINF:346,陈奕迅 - Mr Lonely (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/mr lonely.mp3
+#EXTINF:172,邓丽君 - 新生王 New Born King (圣诞快乐·敬贺新禧 (邓丽君之歌第十集))
+/home/chenbk/05_Mp3/��������� new born king.mp3
+#EXTINF:200,邓丽君 - New York New York (君之千言万语)
+/home/chenbk/05_Mp3/new york new york.mp3
+#EXTINF:183,凤凰传奇 - 中国味道 (中国味道)
+/home/chenbk/05_Mp3/ÖÐ¹úÎ¶µÀ.mp3
+#EXTINF:246,邓丽君 - 但愿人长久 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/µ«Ô¸ÈË³¤¾Ã.mp3
+#EXTINF:251,凤凰传奇 - 荷塘月色 (我从草原来)
+/home/chenbk/05_Mp3/ºÉÌÁÔÂÉ«.mp3
+#EXTINF:171,邓丽君 - 何日君再来 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/ºÎÈÕ¾ýÔÙÀ´.mp3
+#EXTINF:245,邓丽君 - 今天欢乐明天梦 (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/�+��񮵼���ɵ����.mp3
+#EXTINF:175,邓丽君 - 又见炊烟 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/ÓÖ¼û´¶ÑÌ.mp3
+#EXTINF:194,邓丽君 - 海韵 (环球Sacd天碟系列-邓丽君极品之选)
+/home/chenbk/05_Mp3/º£ÔÏ.mp3
+#EXTINF:209,邓丽君 - 再见!我的爱人 (传奇再续)
+/home/chenbk/05_Mp3/ÔÙ¼û!ÎÒµÄ°®ÈË.mp3
+#EXTINF:225,邓丽君 - 在水一方 (花样年华)
+/home/chenbk/05_Mp3/ÔÚË®Ò»·½.mp3
+#EXTINF:283,邓丽君 - Overture　 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/overture .mp3
+#EXTINF:281,陈奕迅 - Pg家长指引 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/pgի���+����+�.mp3
+#EXTINF:118,邓丽君 - Tawa Theme (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/tawa theme.mp3
+#EXTINF:264,邓丽君 - Teratai (君之千言万语)
+/home/chenbk/05_Mp3/teratai.mp3
+#EXTINF:156,陈奕迅,岑宁儿 - The End Of The World (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/the end of the world.mp3
+#EXTINF:200,邓丽君 - 难忘的爱人 (台) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/�ܥ�+�������� (�Ŧ).mp3
+#EXTINF:244,邓丽君 - 卖肉粽 (台) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/��������� (�Ŧ).mp3
+#EXTINF:283,邓丽君 - 你我相伴左右 (襟.听34首)
+/home/chenbk/05_Mp3/���������+�����Ŧ.mp3
+#EXTINF:150,邓丽君 - 采红菱 (君之纪念册)
+/home/chenbk/05_Mp3/�������Ŧ.mp3
+#EXTINF:579,邓丽君 - 叹十声/天涯歌女/四季歌 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/�Ŧ������-��»����Ѧ-���ա����.mp3
+#EXTINF:132,邓丽君 - 台湾小调 (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/�Ŧ���զ�ަ�.mp3
+#EXTINF:294,张雨生 - 口是心非 (口是心非)
+/home/chenbk/05_Mp3/¿ÚÊÇÐÄ·Ç.mp3
+#EXTINF:203,1 邓丽君 - 相思只怕不能够 (谢谢总经理)
+/home/chenbk/05_Mp3/�������Ŭ����������.mp3
+#EXTINF:249,邓丽君 - 我只在乎你 (君之纪念册)
+/home/chenbk/05_Mp3/����Ŭգ�������.mp3
+#EXTINF:177,邓丽君 - 爱情像汽球 (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/�ꦵ����ŵ�����.mp3
+#EXTINF:158,邓丽君 - 可爱的Baby (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/�Ż�����baby.mp3
+#EXTINF:231,邓丽君 - 你可知道我爱谁 (Live In Hong Kong, 1976) (君之纪念册)
+/home/chenbk/05_Mp3/����Ż�����������ަ� (live in hong kong, 1976).mp3
+#EXTINF:197,邓丽君 - 你可知道我爱谁 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/����Ż�����������ަ�.mp3
+#EXTINF:224,邓丽君 - 可否多见一眼 (漫步人生路)
+/home/chenbk/05_Mp3/�Ż�ɪ���޺������+.mp3
+#EXTINF:274,凤凰传奇 - 可可西里 (月亮之上)
+/home/chenbk/05_Mp3/�Ż�Ż��+���.mp3
+#EXTINF:236,邓丽君 - 凝望 (Btb 岛国之情歌第三集 丝丝小雨- 邓丽君)
+/home/chenbk/05_Mp3/��ص��.mp3
+#EXTINF:220,邓丽君 - 思想起 (福建歌曲精选)
+/home/chenbk/05_Mp3/��ص����.mp3
+#EXTINF:230,邓丽君 - 九月的故事 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/��ص����������.mp3
+#EXTINF:199,邓丽君 - 难忘初恋的情人 (国语) (小城经典-邓丽君)
+/home/chenbk/05_Mp3/�ܥ�+��ص���������� (���޻�).mp3
+#EXTINF:197,邓丽君 - 难忘初恋的情人 (闽南语) (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/�ܥ�+��ص���������� (������޻�).mp3
+#EXTINF:202,邓丽君 - 难忘初恋的情人 (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/�ܥ�+��ص����������.mp3
+#EXTINF:201,邓丽君 - 难忘的初恋情人 (福建歌曲精选)
+/home/chenbk/05_Mp3/�ܥ�+�����ص�������.mp3
+#EXTINF:188,邓丽君 - 相思泪 (邓丽君3合1)
+/home/chenbk/05_Mp3/�����ص��.mp3
+#EXTINF:150,邓丽君 - 初恋的地方 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/��ص�����գ����.mp3
+#EXTINF:245,邓丽君 - 初次尝到寂寞 (邓丽君3合1)
+/home/chenbk/05_Mp3/��ص��զ���ջ�ջ�.mp3
+#EXTINF:189,邓丽君 - 百鸟朝凤 (邓丽君之歌 (邓丽君之歌第七集))
+/home/chenbk/05_Mp3/�֥ک�������.mp3
+#EXTINF:190,邓丽君 - 比翼鸟 (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/����++ک�.mp3
+#EXTINF:276,邓丽君 - 駅舎(ステーション) (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/ں����(�������+�������).mp3
+#EXTINF:275,邓丽君 - 真夏の果実 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/����������ףի�.mp3
+#EXTINF:187,邓丽君 - 小路 (歌曲精选_A)
+/home/chenbk/05_Mp3/С·.mp3
+#EXTINF:268,邓丽君 - 襟裳岬 (日) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/�у���զ� (���).mp3
+#EXTINF:232,邓丽君 - 襟裳岬 (日语/国语) (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/�у���զ� (���޻�-���޻�).mp3
+#EXTINF:260,邓丽君 - 襟裳岬 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/�у���զ�.mp3
+#EXTINF:145,邓丽君 - 缘投囝子 (福建歌曲精选)
+/home/chenbk/05_Mp3/�+������ա�.mp3
+#EXTINF:160,邓丽君 - 心酸孤单女 (福建歌曲精选)
+/home/chenbk/05_Mp3/�+���ա�����Ѧ.mp3
+#EXTINF:161,邓丽君 - 心酸孤单女(福建语) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/�+���ա�����Ѧ(����+�޻�).mp3
+#EXTINF:381,邓丽君 - 海韵 / 恋爱季节 (君之纪念册)
+/home/chenbk/05_Mp3/���ڃ� - �����ա����.mp3
+#EXTINF:268,邓丽君 - 想いで迷子 (ザ・ヒストリー・オブ・テレサ・テン・120ソングス)
+/home/chenbk/05_Mp3/���������+�ա�.mp3
+#EXTINF:193,邓丽君 - 浪子心声 (邓丽君3合1)
+/home/chenbk/05_Mp3/���ա��+����.mp3
+#EXTINF:206,邓丽君 - 夜的投影 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/�������բ�.mp3
+#EXTINF:120,邓丽君 - 奔向彩虹 (君之千言万语)
+/home/chenbk/05_Mp3/������բ��֦.mp3
+#EXTINF:192,邓丽君 - 彩霞回来吧 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/բ�ڣ���׵���ɺ.mp3
+#EXTINF:169,邓丽君 - 虹彩妹妹 (邓丽君之歌 (邓丽君之歌第七集))
+/home/chenbk/05_Mp3/�֦բ�ժ�ժ�.mp3
+#EXTINF:150,邓丽君 - 在水一方　 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/գ������ǵ�� .mp3
+#EXTINF:227,邓丽君 - 在水一方 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/գ������ǵ��.mp3
+#EXTINF:252,邓丽君 - 任时光在身旁流逝 (日语) (小城经典-邓丽君)
+/home/chenbk/05_Mp3/�++������գ�ަ���������� (���޻�).mp3
+#EXTINF:130,邓丽君 - 花开在心头 (初次尝到寂寞)
+/home/chenbk/05_Mp3/���+�գ��+���.mp3
+#EXTINF:220,邓丽君 - 要去遥远的地方 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/ު���+����+����գ����.mp3
+#EXTINF:248,邓丽君 - 夕阳问你在那里 (Btb 岛国之情歌第四集香港之恋)
+/home/chenbk/05_Mp3/���ڦ������գ�������.mp3
+#EXTINF:211,邓丽君 - 逍遥自在 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/��������գ�.mp3
+#EXTINF:223,邓丽君 - 无情荒地有情天 (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/��������գ��������.mp3
+#EXTINF:231,邓丽君 - 北酒場 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/������գ�.mp3
+#EXTINF:231,邓丽君 - 北酒场(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/������գ�(��ѵ��).mp3
+#EXTINF:277,邓丽君 - 相见在明天 (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/���޺�գ�����.mp3
+#EXTINF:200,邓丽君 - 你在我心中 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/���գ�����+����.mp3
+#EXTINF:262,邓丽君 - 谁在改变 (邓丽君3合1)
+/home/chenbk/05_Mp3/ަ�գ������.mp3
+#EXTINF:128,邓丽君 - 君在前哨 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/���գ�������.mp3
+#EXTINF:229,邓丽君 - 雪地上的回忆 (偿还)
+/home/chenbk/05_Mp3/���գ�����������+�.mp3
+#EXTINF:229,邓丽君 - 雪地上的回忆(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/���գ�����������+�(��ѵ��).mp3
+#EXTINF:235,邓丽君 - 等待(日文) (BTB TERESA TENG BEST 20)
+/home/chenbk/05_Mp3/���ե�(��ѵ��).mp3
+#EXTINF:203,邓丽君 - 人待ち顔で (旅人)
+/home/chenbk/05_Mp3/���ե���������.mp3
+#EXTINF:232,邓丽君 - 微风细雨 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/ե�����+����.mp3
+#EXTINF:235,邓丽君 - 待ちわびて (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/ե�������������.mp3
+#EXTINF:190,邓丽君 - 往事常牵挂 (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/ե����թ�������.mp3
+#EXTINF:205,邓丽君 - 往事如昨 (Btb 岛国之情歌第八集爱的使者-邓丽君)
+/home/chenbk/05_Mp3/ե����ժ鵿.mp3
+#EXTINF:133,邓丽君 - 我一见你就笑 (邓丽君演唱会1982 Live) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/������޺����զ���� (����������+�����+�1982 live).mp3
+#EXTINF:242,邓丽君 - 多少黎明多少黄昏? (Btb 岛国之情歌第五集爱情更美丽-邓丽君)
+/home/chenbk/05_Mp3/���զ��+ĵ����զ��+��-.mp3
+#EXTINF:113,邓丽君 - 高山青(Live) (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/ڽզ����(live).mp3
+#EXTINF:149,邓丽君 - 心中喜欢就说爱 (君之纪念册)
+/home/chenbk/05_Mp3/�+����������զ�޻���.mp3
+#EXTINF:181,邓丽君 - 访问 - [健康] (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/ޫ+��� - [���զ�].mp3
+#EXTINF:130,邓丽君 - 我一见你就笑 (君之纪念册)
+/home/chenbk/05_Mp3/������޺����զ����.mp3
+#EXTINF:143,1 邓丽君 - 珍重好年华 (谢谢总经理)
+/home/chenbk/05_Mp3/�������Ѣզ����.mp3
+#EXTINF:762,邓丽君 - 第三幕 书房 (唐伯虎点秋香)
+/home/chenbk/05_Mp3/������զ� �����+.mp3
+#EXTINF:317,邓丽君 - 第五幕 花园 (唐伯虎点秋香)
+/home/chenbk/05_Mp3/������զ� �����.mp3
+#EXTINF:208,邓丽君 - 夢芝居 (ザ・ヒストリー・オブ・テレサ・テン・120ソングス)
+/home/chenbk/05_Mp3/�����զ�.mp3
+#EXTINF:209,邓丽君 - 梦芝居(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/�����զ�(��ѵ��).mp3
+#EXTINF:178,邓丽君 - 一个小心愿 (邓丽君3合1)
+/home/chenbk/05_Mp3/������զ��+��+.mp3
+#EXTINF:275,陈奕迅 - 七百年后 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/����֥զ����.mp3
+#EXTINF:205,邓丽君 - 笑着干杯(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/������զ��ػ(��ѵ��).mp3
+#EXTINF:185,邓丽君 - 歹歹尪吃抹空 (福建歌曲精选)
+/home/chenbk/05_Mp3/������զ��������.mp3
+#EXTINF:207,邓丽君 - 一封情书 (襟.听34首)
+/home/chenbk/05_Mp3/���զ�������.mp3
+#EXTINF:98,邓丽君 - 高山青　 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/ڽզ���� .mp3
+#EXTINF:186,邓丽君 - 小路 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/զ����.mp3
+#EXTINF:239,邓丽君 - 山茶花 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/զ������.mp3
+#EXTINF:55,凤凰传奇 - 序曲 (月亮之上)
+/home/chenbk/05_Mp3/զŵ��.mp3
+#EXTINF:179,邓丽君 - 小木马 (邓丽君之歌 (邓丽君之歌第七集))
+/home/chenbk/05_Mp3/զŵ��ڮ�.mp3
+#EXTINF:215,邓丽君 - 小村之恋 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/զŵ�������.mp3
+#EXTINF:236,邓丽君 - 小村之恋(日文) (Btb Original O Best Hits)
+/home/chenbk/05_Mp3/զŵ�������(��ѵ��).mp3
+#EXTINF:176,邓丽君 - 小村姑卖西瓜 (邓丽君之歌 (邓丽君之歌第七集))
+/home/chenbk/05_Mp3/զŵ��պ������+���.mp3
+#EXTINF:231,邓丽君 - はぐれた小鳩 (空港雪化粧)
+/home/chenbk/05_Mp3/������������զ�ک�.mp3
+#EXTINF:927,邓丽君 - 釜山港ヘ归れ (1985NHK演唱会全记录)
+/home/chenbk/05_Mp3/��զ������բ����.mp3
+#EXTINF:282,邓丽君 - 第四幕 内府 (唐伯虎点秋香)
+/home/chenbk/05_Mp3/������զ� ���զ�.mp3
+#EXTINF:465,邓丽君 - 第一幕 庙堂 (唐伯虎点秋香)
+/home/chenbk/05_Mp3/������զ� զ����.mp3
+#EXTINF:190,邓丽君 - 东山飘雨西山晴 (襟.听34首)
+/home/chenbk/05_Mp3/���զ��������+զ��֦.mp3
+#EXTINF:192,邓丽君 - 东山飘雨西山晴(粤) (邓丽君3合1)
+/home/chenbk/05_Mp3/���զ��������+զ��֦(���).mp3
+#EXTINF:129,邓丽君 - 小媳妇回娘家 (初次尝到寂寞)
+/home/chenbk/05_Mp3/զ�լ�ժ����տի�.mp3
+#EXTINF:158,邓丽君 - 小城故事 (Btb 岛国之情歌第六集小城故事-邓丽君)
+/home/chenbk/05_Mp3/զ�Ճĵ�����.mp3
+#EXTINF:166,邓丽君 - 阿里山的姑娘 (Live In Hong Kong, 1970) (君之纪念册)
+/home/chenbk/05_Mp3/�+���զ����պ�տ (live in hong kong, 1970).mp3
+#EXTINF:207,邓丽君 - 快乐的出帆 (福建歌曲精选)
+/home/chenbk/05_Mp3/�+���������թ�.mp3
+#EXTINF:172,邓丽君 - 美丽的希望 (邓丽君之歌 (邓丽君之歌第七集))
+/home/chenbk/05_Mp3/���������թ�.mp3
+#EXTINF:268,陈奕迅 - 囍帖街 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/���թ����.mp3
+#EXTINF:123,邓丽君 - 帝女花　 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/թ��Ѧ�� .mp3
+#EXTINF:77,邓丽君 - 帝女花 (邓丽君演唱会安歌)
+/home/chenbk/05_Mp3/թ��Ѧ��.mp3
+#EXTINF:133,邓丽君 - 谢谢你常记得我　 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/ަ�ަ����թ�ޫ�ե���� .mp3
+#EXTINF:219,邓丽君 - 谢谢你常记得我 (Btb 岛国之情歌第四集香港之恋)
+/home/chenbk/05_Mp3/ަ�ަ����թ�ޫ�ե����.mp3
+#EXTINF:224,邓丽君 - 雪化妆 (襟.听34首)
+/home/chenbk/05_Mp3/������ժ�.mp3
+#EXTINF:223,邓丽君 - 雪化妆(日语) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/������ժ�(���޻�).mp3
+#EXTINF:157,邓丽君 - 假如梦儿是真的 (Btb 岛国之情歌第七集假如我是真的-邓丽君)
+/home/chenbk/05_Mp3/���ժ����+��������.mp3
+#EXTINF:222,邓丽君 - 夫婦しぐれ (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/��ժ����������.mp3
+#EXTINF:275,邓丽君 - 如果(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/ժ�ף(��ѵ��).mp3
+#EXTINF:313,邓丽君 - 如果没有你 (偿还)
+/home/chenbk/05_Mp3/ժ�ף���������.mp3
+#EXTINF:201,邓丽君 - 如果我有勇气 (初次尝到寂寞)
+/home/chenbk/05_Mp3/ժ�ף��浣���給�.mp3
+#EXTINF:261,邓丽君 - 相爱如往昔 (偿还)
+/home/chenbk/05_Mp3/�����ժ�եǵ�.mp3
+#EXTINF:192,邓丽君 - 如浪花曲的人生(日文) (Btb 邓丽君演唱会现场录音版)
+/home/chenbk/05_Mp3/ժ����覵�����������(��ѵ��).mp3
+#EXTINF:183,邓丽君 - 假如我是真的 (邓丽君3合1)
+/home/chenbk/05_Mp3/���ժ��浻������.mp3
+#EXTINF:179,邓丽君 - 不论今宵或明天 (Btb 岛国之情歌第一集 再见我的爱人-邓丽君)
+/home/chenbk/05_Mp3/���ޫ��+�ի��������.mp3
+#EXTINF:208,邓丽君 - 雨不停心不定 (Btb 岛国之情歌第四集香港之恋)
+/home/chenbk/05_Mp3/����������+����ի�.mp3
+#EXTINF:274,邓丽君 - さざんかの宿 (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/���������������ի+.mp3
+#EXTINF:170,邓丽君 - 请到我家里来 (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/޻��ꦵ��ի������.mp3
+#EXTINF:210,邓丽君 - 夜的乘客 (Btb Original O Best Hits)
+/home/chenbk/05_Mp3/�������ի�.mp3
+#EXTINF:336,陈奕迅 - 约定 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/���ի�.mp3
+#EXTINF:209,邓丽君 - 安平追想曲 (福建歌曲精选)
+/home/chenbk/05_Mp3/ի�զ��+��⦵��.mp3
+#EXTINF:186,邓丽君 - 槟城艳[粤] (邓丽君3合1)
+/home/chenbk/05_Mp3/���Ճ���[���].mp3
+#EXTINF:270,邓丽君 - 爱的开始 (Btb 岛国之情歌第八集爱的使者-邓丽君)
+/home/chenbk/05_Mp3/������+�պ�.mp3
+#EXTINF:267,邓丽君 - 夜雾下的姑娘 (Btb 岛国之情歌第一集 再见我的爱人-邓丽君)
+/home/chenbk/05_Mp3/�����������պ�տ.mp3
+#EXTINF:168,邓丽君 - 南海姑娘 (邓丽君-传奇的诞生)
+/home/chenbk/05_Mp3/������պ�տ.mp3
+#EXTINF:128,邓丽君 - 姑娘的祈祷 (初次尝到寂寞)
+/home/chenbk/05_Mp3/պ�տ���������.mp3
+#EXTINF:163,邓丽君 - 爱的你呀何处寻 (复黑王 - 邓丽君十五周年)
+/home/chenbk/05_Mp3/�����������������ջ+.mp3
+#EXTINF:238,邓丽君 - 旧梦何处寻 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/�����������ջ+.mp3
+#EXTINF:181,邓丽君 - 我要对你说 (君之纪念册)
+/home/chenbk/05_Mp3/���ު�ջ����޻�.mp3
+#EXTINF:257,邓丽君 - 寝物語を聴かせて (The History Of Teresa Teng 120 Songs)
+/home/chenbk/05_Mp3/ջ���޻����������������.mp3
+#EXTINF:128,陈奕迅 - 寂寞夜晚 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/ջ�ջ�����.mp3
+#EXTINF:231,邓丽君 - 娘心 (偿还)
+/home/chenbk/05_Mp3/տ�+�.mp3
+#EXTINF:230,邓丽君 - 娘心(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/տ�+�(��ѵ��).mp3
+#EXTINF:231,邓丽君 - 有谁知我此时情 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/���ަ���ѵ�浡��µ��.mp3
+#EXTINF:128,邓丽君 - 采槟榔 (邓丽君演唱会1982 Live) (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/��絺���� (����������+�����+�1982 live).mp3
+#EXTINF:3079,邓丽君 - 採槟榔 (1982香港伊利沙伯体育馆演唱会)
+/home/chenbk/05_Mp3/��絺����.mp3
+#EXTINF:142,邓丽君 - 热情的月亮 (比翼鸟 (邓丽君之歌第四集))
+/home/chenbk/05_Mp3/�⡵����䵣����.mp3
+#EXTINF:239,凤凰传奇 - 飞天 (飞天)
+/home/chenbk/05_Mp3/飞天.mp3
+#EXTINF:219,/home/chenbk/05_Mp3/国境之南.mp3
+/home/chenbk/05_Mp3/国境之南.mp3
+#EXTINF:200,邓丽君 - 雨下的花朵 (Btb 岛国之情歌第一集 再见我的爱人-邓丽君)
+/home/chenbk/05_Mp3/����������覵��.mp3
+#EXTINF:247,陈奕迅 - 落花流水 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/�ɢ�覵�����.mp3
+#EXTINF:232,陈奕迅 - 抱拥这分钟 (DUO 陈奕迅2010演唱会)
+/home/chenbk/05_Mp3/�覵���+�����ƃ.mp3
+#EXTINF:157,邓丽君 - 云想衣裳花想容 (君之纪念册)
+/home/chenbk/05_Mp3/�����������覵�ի�.mp3
+#EXTINF:263,邓丽君 - 恰似你的温柔 (邓丽君3合1)
+/home/chenbk/05_Mp3/����++�����䵩����.mp3
+#EXTINF:183,邓丽君 - 臙脂泪 (K2Hd 淡淡幽情)
+/home/chenbk/05_Mp3/�����鵦�.mp3
+#EXTINF:167,邓丽君 - 云河-组曲 (但愿人长久 15周年纪念集)
+/home/chenbk/05_Mp3/��浦�-�+���.mp3
+#EXTINF:168,邓丽君 - 云河 (小城经典-邓丽君)
+/home/chenbk/05_Mp3/��浦�.mp3
+#EXTINF:180,邓丽君 - 我没有骗你 (襟.听34首)
+/home/chenbk/05_Mp3/��浦����ڬ����.mp3
+#EXTINF:256,邓丽君 - 傷心 (時の流れに身をまかせ)
+/home/chenbk/05_Mp3/傷心.mp3
+#EXTINF:258,凤凰传奇 - 天边的故乡 (天边的故乡)
+/home/chenbk/05_Mp3/天边的故乡.mp3
+#EXTINF:244,凤凰传奇 - 天蓝蓝 (拜新年)
+/home/chenbk/05_Mp3/天蓝蓝.mp3
+#EXTINF:255,/home/chenbk/05_Mp3/万物生.mp3
+/home/chenbk/05_Mp3/万物生.mp3
 #EXTINF:272,萨顶顶 - 万物生 焚文版
-/home/chenbk/MP3/万物生_中文.MP3
+/home/chenbk/05_Mp3/万物生_中文.MP3
+#EXTINF:179,邓丽君 - 我是你的知音 (Btb 一封情书-邓丽君)
+/home/chenbk/05_Mp3/��浻���������ڃ�.mp3
+#EXTINF:296,凤凰传奇 - 我是一只小小鸟 (月亮之上)
+/home/chenbk/05_Mp3/��浻����Ŭզ�զ�ک�.mp3
+#EXTINF:250,邓丽君 - 上海悲歌(日文) (Btb Teresa Teng Best 20)
+/home/chenbk/05_Mp3/������馵��(��ѵ��).mp3
