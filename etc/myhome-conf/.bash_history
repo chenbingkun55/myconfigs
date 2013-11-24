@@ -1,144 +1,3 @@
-sudo vi /etc/conf.d/local.start 
-man ls
-su -
-su -
-su -
-sudo vi /etc/apache2/httpd.conf 
-su -
-su -
-sudo vi /etc/apache2/httpd.conf 
-exit
-exit
-ssh localhost
-exit
-su -
-sudo vi /etc/apache2/httpd.conf 
-sudo -l
-cd \
-su -
-su -
-git commit -m "学习了一下 sudo 命令配置"
-cd /
-git commit -m "学习了一下 sudo 命令配置"
-git --help
-git status
-git --help
-git reset
-ls /home/chenbk/.ssh/id_dsa
-sudo vi .gitignore 
-git add .
-git commit -m "学习sudo配置"
-git show log
-git show
-git push
-git diff /home/chenbk/.ssh/id_dsa
-git diff /home/chenbk/.ssh/id_dsa.pub 
-git add /home/chenbk/.ssh/id_dsa.pub 
-git commit -m "创建一个公钥"
-git push
-git show
-git diff /home/chenbk/.ssh/id_dsa.pub 
-git show /home/chenbk/.ssh/id_dsa
-git show /home/chenbk/.ssh/
-git --help
-git log
-rm /home/chenbk/.ssh/id_dsa*
-cd
-ssh-keygen --help
-ssh-keygen -t dsa
-ls .ssh/
-vi /.gitignore 
-cd /
-git add .
-git commit -m "ssh"
-vi .gitignore 
-git add .
-git commit -m "ssh"
-rm /etc/myhome-conf/.ssh/id_dsa*
-git add .
-git commit -m ""
-git push
-git pull
-git reset
-git add .
-git commit -m ""
-git pull
-git push
-git checkout /etc/myhome-conf/.ssh/
-git checkout etc/myhome-conf/.ssh/
-vi .gitignore 
-git checkout etc/myhome-conf/.ssh/
-git add .
-git add .
-su -
-su -
-vi .gitignore 
-git add .
-git commit -m "cc"
-git push 
-cd
-ls .ssh/
-ssh-keygen -t dsa 2048
-ssh-keygen -t dsa -b 2048
-ssh-keygen -t dsa 
-cat .ssh/id_dsa.pub > .ssh/authorized_keys 
-ssh localhost
-exit
-exit
-ssh localhost
-exit
-cd /
-git add .
-git commit -m "dd"
-vi .gitignore 
-git push
-rm etc/myhome-conf/.ssh/id_dsa*
-git add .
-git commit -m "gg"
-git push 
-vi .gitignore 
-git add .
-git commit -a
-git commit -m "ff"
-git push
-ls etc/myhome-conf/.ssh/
-git pull
-ls etc/myhome-conf/.ssh/
-git rm etc/myhome-conf/.ssh/id_dsa
-git rm etc/myhome-conf/.ssh/id_dsa.pub
-git commit -m "hh"
-git push
-cd
-ssh-keygen -t dsa
-cat .ssh/id_dsa.pub > .ssh/authorized_keys 
-cd /
-git add .
-git commit -m "ssh test"
-git push
-cd
-cat .ssh/id_dsa.pub 
-ssh-add .ssh/id_dsa
-ssh localhost
-exit
-ssh -T git@github.com
-ping github.com
-ssh -T git@github.com
-sudo mv /etc/resolv.conf.std /etc/resolv.conf
-ll /etc/resolv.conf
-ssh -T git@github.com
-ssh -T git@github.com
-ssh -T git@github.com
-exit
-exit
-ssh localhost
-git config --global user.name 'chenbingkun55'
-git config --global user.email chenbingkun55@163.com
-cat .ssh/id_dsa.pub 
-cd /
-touch /etc/myhome-conf/test.sh
-git add *
-git add .
-git commit -m "ll"
 git push
 git remote add origin git@github.com:chenbingkun55/myconfigs.git
 git remote rm origin git@github.com:chenbingkun55/myconfigs.git
@@ -497,4 +356,145 @@ exit
 sudo pon twvpn
 ifconfig 
 ifconfig 
+exit
+sudo poff twvpn
+cat /etc/resolv.conf
+cat /etc/resolv.conf
+sudo vi /etc/resolv.conf
+sudo cat /etc/resolv.conf
+sudo cat /etc/resolv.conf
+sudo rm /etc/resolv.conf
+sudo vi /etc/resolv.conf
+lll /etc/resolv.conf
+ll /etc/resolv.conf
+rm /etc/resolv.conf.vpn 
+sudo rm /etc/resolv.conf.vpn 
+sudo rm /etc/ppp/ip-up
+cd /
+sudo git checkout /etc/ppp/ip-up
+sudo vi /etc/ppp/ip-up
+sudo vi /etc/ppp/ip-down
+git add .
+sudo git add .
+git commit -m "删除PPP切换DNS脚本."
+git push
+夺
+git show
+git show all
+git list
+git listbisect
+git list bisect
+git rev-list
+git rev-list all
+su -
+su -
+sudo vi /tmp/abc.txt
+ls -l $AUTHORITY
+ls -l $xAUTHORITY
+ls -l $XAUTHORITY
+chmod +rw $XAUTHORITY
+ll $XAUTHORITY
+sudo vi /tmp/abc.txt 
+ll $XAUTHORITY
+vi /home/chenbk/.Xauthority 
+mv /home/chenbk/.Xauthority /tmp/
+sudo vi /tmp/abc.txt 
+mv /tmp/.Xauthority /home/chenbk/.Xauthority
+ll /home/chenbk/.Xauthority 
+su -
+sudo vi /tmp/abc.txt 
+su -
+su -
+sudo vi /tmp/abc.txt 
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+cat /etc/resolv.conf 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo pon twvpn
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig 
+exit
+sudo pon twvpn
+ifconfig 
+ifconfig 
+nslookup www.baidu.com
+ifconfig 
+sudo pon twvpn
+ifconfig 
+nslookup wiki-chenbk.rhcloud.com
+nslookup www.rhcloud.com
+ping www.baidu.com
+cat /etc/resolv.conf 
+nslookup 
+nslookup wiki-chenbk.rhcloud.com
+nslookup 
+nslookup wiki-chenbk.rhcloud.com
+nslookup wiki-chenbk.rhcloud.com
+nslookup wiki-chenbk.rhcloud.com
+nslookup wiki-chenbk.rhcloud.com
+nslookup wiki-chenbk.rhcloud.com
+nslookup wiki-chenbk.rhcloud.com
+route
+sudo poff twvpn
+ifconfig 
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+route -n
+ifconfig -a
+ifconfig -a
+exit
+sudo poff twvpn
+ifconfig 
+exit
+route -n 
+exit
+ping www.baidu.com
+ping www.163.com
+exit
+cd Downloads/
+ls
+tar zxvf aliedit.tar.gz 
+./aliedit.sh 
+exit
+ldd .mozilla/plugins/libaliedit64.so |grep 'not found'
+ln -s /usr/lib/libpng.so /usr/lib/libpng12.so.0
+sudo ln -s /usr/lib/libpng.so /usr/lib/libpng12.so.0
+ldd .mozilla/plugins/libaliedit64.so |grep 'not found'
 exit
