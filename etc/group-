@@ -27,7 +27,7 @@ nobody:x:65534:
 man:x:15:
 sshd:x:22:
 chenbk:x:1000:
-cron:x:16:
+cron:x:16:chenbk
 crontab:x:249:chenbk
 ldap:x:439:
 dhcp:x:248:

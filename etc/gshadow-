@@ -27,7 +27,7 @@ nobody:::
 man:x::
 sshd:!::
 chenbk:!::
-cron:!::
+cron:!::chenbk
 crontab:!::chenbk
 ldap:!::
 dhcp:!::

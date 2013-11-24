@@ -5,3 +5,6 @@ app-admin/conky X ncurses portmon truetype curl hddtemp imlib iostats lua lua-ca
 mail-client/mutt  berkdb crypt gdbm -nls ssl -debug -doc -gnutls gpg -idn -imap -mbox -nntp -pop -qdbm sasl -smime -smtp
 mail-mta/postfix sasl
 dev-libs/cyrus-sasl  berkdb gdbm pam sqlite ssl authdaemond -java -kerberos -ldapdb -mysql -openldap -postgres -sample -srp -static-libs -urandom
+net-dns/bind berkdb dlz
+dev-libs/openssl -bindist
+net-dns/bind-tools ssl

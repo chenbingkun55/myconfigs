@@ -1,156 +1,3 @@
-sudo chmod go-w www/query.bzbee.com/ -R
-ll www/
-sudo /etc/init.d/apache2 restart
-cd www/
-ll
-sudo mount /dev/sdb6 /mnt/ 
-ls /mnt/
-su -
-exit
-qbittorrent 
-vi .fvwm/config
-vi .fvwm/config
-cd /usr/share/icons/locolor/32x32/apps
-ls
-ll
-su -
-cd
-ls
-convert 20131123123534222_easyicon_net_128.png -thumbnail 24x24 pcmanfm_24.png
-mv pcmanfm_24.png .fvwm/icons/
-ls
-mv 20131123123534222_easyicon_net_128.png .fvwm/icons/xbmc_24.png
-mv 20131123123918999_easyicon_net_24.png .fvwm/icons/chrome_24.png
-mv 20131123124030992_easyicon_net_24.png .fvwm/icons/opera_24.png
-ls
-mv 20131123124142809_easyicon_net_24.png .fvwm/icons/image_24.png
-mv 20131123124253807_easyicon_net_24.png .fvwm/icons/libreoffice_24.png
-mv 20131123124516462_easyicon_net_24.png .fvwm/icons/application_24.png
-mv 2013112312465078_easyicon_net_24.png .fvwm/icons/tool_24.png
-mv .fvwm/icons/tool_24.png .fvwm/icons/utilities_24.png
-mv 20131123124801497_easyicon_net_24.png .fvwm/icons/gentoo_24.png
-mv 20131123125037609_easyicon_net_24.png .fvwm/icons/firefox_24.png 
-mv 20131123125244295_easyicon_net_24.png .fvwm/icons/xbmc_24.png 
-mv .fvwm/icons/libreoffice_24.png .fvwm/icons/office_24.png
-history |grep conver
-convert 20131123010607796_easyicon_net_30.png -thumbnail 24x24 .fvwm/icons/php_24.png 
-exit
-vi .fvwm/config
-vi .fvwm/config
-ls
-mv 20131123123322453_easyicon_net_24.png .fvwm/icons/xterm_24.png
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-vi .fvwm/config
-exit
-mocp MP3/*.mp3
-mocp MP3/*.mp3
-mocp
-ls
-mocp 05_Mp3/
-mocp
-exit
-vi .fvwm/config
-vi .fvwm/config
-audacious 
-vi .fvwm/config
-cd Downloads/
-ls
-tar conkyrc.tar 
-tar xvf conkyrc.tar 
-ls
-cd conkyrc
-less conkyrc
-rm conkyrc*
-sudo pon twvpn
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-uxterm mocp ~/05_Mp3/
-uxterm -C mocp ~/05_Mp3/
-bash mocp ~/05_Mp3/
-bash --help
-cd
-vi .fvwm/config
-sudo poff twvpn
-vi .fvwm/config
-vi .fvwm/config
-cd /
-git add .
-su -
-git commit -m "FVWM 更换菜单图标"
-git commit -m "FVWM 更换菜单图标+VPN resolv.conf切换"
-git push
-mutt
-sudo umount /mnt/
-df -h 
-alsamixer 
-mocp
-mocp
-exit
-notify-send "完成."
-vi .muttrc 
-ls
-ls 01_Shell/
-vi 01_Shell/mutt_filter.sh
-exit
-vi 01_Shell/mutt_filter.sh
-chmod u+x 01_Shell/mutt_filter.sh 
-vi .bashrc 
-sh .bashrc 
-mutt_filter.sh
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-vi .muttrc 
-ls 01_Shell/
-exit
-su -
-vi .fvwm/config
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-exit
-mutt
-mutt
-vi .muttrc 
-mutt
-vi .muttrc 
-mutt
-vi .muttrc 
-mut
-mutt
-ls maildir/
-rm maildir/mutt-filter 
-chmod a-x maildir/procmaillog 
-vi .procmailrc 
-rm maildir/procmaillog 
-vi /etc/X11/xorg.conf 
-sudo vi /etc/X11/xorg.conf 
-cat /etc/resolv.conf
-exit
-ls maildir/
-vi .Xresources 
-vi .getmail/getmailrc 
-mutt
-clear
-su -
-setterm -blength 0
-ls
-cp /etc/apache2/httpd.conf /tmp/
-vi /tmp/httpd.conf 
-cp /tmp/httpd.conf /tmp/httpd.conf2 
-fg
-sudo vi /etc/rc.conf 
-ssh-keygen -t dsa
-ls .ssh/
-ls .ssh/ -lh
 ssh-agent 
 ps aux |grep ssh-agent
 ssh-add ~/.ssh/id_dsa
@@ -497,4 +344,157 @@ cat .bashrc
 cat .Xresources 
 cat .xprofile 
 sudo reboot
+exit
+vi .fvwm/config
+cd /
+git add .
+git commit -m "Fvwm 增加新窗口Fouse"
+git push
+exit
+exit
+alsamixer 
+exit
+vi /etc/fonts/fonts.conf 
+vi .fonts.conf
+exit
+man ls
+rm .fonts
+echo $PS1
+echo $PS1 >> .bashrc 
+vi .bashrc 
+vi .bashrc 
+exit
+ls
+cd /home/
+cd
+vi .bashrc 
+exit
+ls
+ls
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+cd /var/www/
+exit
+exit
+sudo mount /dev/sdb6 /mnt/ -t ntfs-3g -o uid=1000
+sudo umount /mnt/
+sudo mount /dev/sdb5 /mnt/ -t ntfs-3g -o uid=1000
+sudo umount /mnt/
+exit
+ls
+vi .bashrc 
+ecp $PS1
+echo $PS1
+vi .bashrc 
+cd /
+exit
+cd /
+git add /etc/myhome-conf/.bashrc 
+git commit -m "修改系统默认PS1变量"
+git push
+exit
+exit
+ssh localhost
+exit
+exit
+ssh localhost
+ls .keychain/
+exit
+exit
+exit
+exit
+vi .fvwm/config
+exit
+exit
+exit
+vi .fvwm/config
+vi .fvwm/config
+exit
+exit
+exit
+exit
+exit
+killall conkfy
+killall conky
+exit
+exit
+.conky-myhome/bin/conkyStart &
+rm .conky
+rm .conkycolors/
+cd /
+git show 
+exit
+exit
+cd .conky-myhome/
+ls
+cp -R font/ ~/.fonts
+cd
+ls .fonts
+sudo fc-cache -f
+rm .fonts.conf 
+exit
+cd  .conky-myhome/
+ls
+ls font/
+less ReadMe 
+exit
+mocp
+df -h
+mocp
+alsamixer 
+exit
+cd /etc/runlevels/
+ls
+cd battery/
+ls
+rm cpufreqd 
+sudo rm cpufreqd 
+ls
+rm apache2 
+sudo rm apache2 
+sudo mysql 
+sudo rm mysql 
+ls
+cd ../default/
+ls
+sudo rc-update del cpufreqd
+ls
+cd
+vi .bashrc 
+exit
+ls
+sudo emerge -av gimp
+gimp
+vi .fvwm/config
+vi .fvwm/config
+killall conky
+/home/chenbk/.conky-myhome/bin/conkyStart &
+vi .fvwm/config
+vi .fvwm/config
+/home/chenbk/.conky-myhome/bin/conkyStart &
+mocp
+exit
+mutt
+mutt
+exit
+host
+exit
+sudo emerge -av net-dnsf/bind
+sudo emerge -av net-dns/bind
+sudo vi /etc/portage/package.use 
+sudo emerge -av net-dns/bind
+sudo vi /etc/portage/package.use 
+sudo emerge -av net-dns/bind
+su -
 exit

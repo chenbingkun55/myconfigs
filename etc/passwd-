@@ -28,3 +28,4 @@ mysql:x:60:60:added by portage for mysql:/dev/null:/sbin/nologin
 www:x:999:999::/home/www:/bin/false
 games:x:36:35:added by portage for btanks:/usr/games:/bin/bash
 fetchmail:x:105:101:added by portage for fetchmail:/var/lib/fetchmail:/sbin/nologin
+postfix:x:207:207:added by portage for postfix:/var/spool/postfix:/sbin/nologin

@@ -7,7 +7,7 @@ alias ll="ls -l"
 
 [[ -f /etc/profile.d/bash-completion.sh ]] && source /etc/profile.d/bash-completion.sh
 
-PS1='\[\033[01;32m\]\u@\h\[\033[01;37m\] \t \[\033[01;34m\] \w \$\[\033[00m\] '
+PS1='\[\033[01;32m\]\u@\h\[\033[01;37m\] \t\[\033[01;34m\] \w \$\[\033[00m\]'
 PATH="/usr/sbin/:/home/chenbk/01_Shell/:${PATH}"
 export PATH
 export PROMPT_COMMAND="echo -ne '\a'"

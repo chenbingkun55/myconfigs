@@ -46,3 +46,4 @@ games:x:35:
 fetchmail:x:101:
 postfix:x:207:
 postdrop:x:208:
+named:x:40:
