@@ -16,3 +16,4 @@ games-action/trine2 ~amd64
 games-action/trine-bin ~amd64
 app-arch/xarchiver ~amd64
 app-admin/eselect-php ~amd64
+net-misc/teamviewer ~amd64

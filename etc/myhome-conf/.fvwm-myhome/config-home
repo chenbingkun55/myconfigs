@@ -96,6 +96,7 @@ Style "audacious" NoTitle, NoActiveIconOverride
 Style "firefox" Icon firefox_32.png NoActiveIconOveride, \
 	MinIcon mini/firefox_32.png
 
+Style "*VirtualBox" NoTitle, NoActiveIconOverride
 
 
 

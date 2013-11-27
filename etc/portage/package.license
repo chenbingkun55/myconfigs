@@ -3,3 +3,5 @@ www-plugins/adobe-flash AdobeFlash-11.x
 net-wireless/broadcom-sta Broadcom
 sys-firmware/b43-firmware Broadcom
 media-libs/fdk-aac FraunhoferFDK
+net-misc/teamviewer TeamViewer
+
