@@ -238,6 +238,7 @@ DestroyMenu FuncMenu
 AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 + "终端  - &Xterm%xterm_24.png%"  Exec exec uxterm
 + "浏览器- &Firefox%firefox_24.png%"  Exec exec firefox-bin
++ "浏览器- &Chrome%chrome_24.png%"  Exec exec google-chrome
 + "播放器- X&BMC%xbmc_24.png%"  Exec exec xbmc
 + "播放器- &Mocp%music_24.png%"  Exec exec xterm -e mocp ~/05_Mp3/
 + "PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
@@ -258,7 +259,6 @@ AddToMenu OfficeMenu "%office_24.png%=== 办公软件菜单 ===" Title
 DestroyMenu ProgramsMenu
 AddToMenu ProgramsMenu "%application_24.png%=== 应用菜单 ===" Title
 + "浏览器- &Opera%opera_24.png%"  Exec exec opera
-+ "浏览器- &Chrome%chrome_24.png%"  Exec exec google-chrome
 + "播放器- &Audacious%music_24.png%"  Exec exec audacious
 + "画图  - &Gimp%gimp_24.png%"  Exec exec gimp
 
@@ -268,6 +268,7 @@ AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
 + "下载 - &Qbittorrent%qbittorrent.png%"   Exec exec qbittorrent
 + "文件库- &PCmanFM%pcmanfm_24.png%"  Exec exec pcmanfm
 + "看图片- &ImageMagick%image_24.png%"  Exec exec display
++ "RSS  - &Snownews%rss_24.png%"  Exec exec xterm -e snownews
 
 
 DestroyMenu SystemMenu
