@@ -1,0 +1,1 @@
+for m in vbox{drv,netadp,netflt}; do modprobe $m; done

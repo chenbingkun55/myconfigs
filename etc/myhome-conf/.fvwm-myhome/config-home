@@ -242,6 +242,10 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 + "浏览器- &Chrome%chrome_24.png%"  Exec exec google-chrome
 + "播放器- X&BMC%xbmc_24.png%"  Exec exec xbmc
 + "播放器- &Mocp%music_24.png%"  Exec exec xterm -e mocp ~/05_Mp3/
+# Home-xp 全屏模式
++ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --fullscreen
+# Home-xp 无缝模式
+#+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
 + "PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
 + ""  Nop
 + "办公软件%office_24.png%"   Popup OfficeMenu
@@ -262,11 +266,13 @@ AddToMenu ProgramsMenu "%application_24.png%=== 应用菜单 ===" Title
 + "浏览器- &Opera%opera_24.png%"  Exec exec opera
 + "播放器- &Audacious%music_24.png%"  Exec exec audacious
 + "画图  - &Gimp%gimp_24.png%"  Exec exec gimp
++ "虚拟机- &VirtualBox%virtualbox_24.png%"  Exec exec VirtualBox
 
 
 DestroyMenu UtilitiesMenu
 AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
 + "下载 - &Qbittorrent%qbittorrent.png%"   Exec exec qbittorrent
++ "下载 - a&Mule%amule_24.png%"   Exec exec amule
 + "文件库- &PCmanFM%pcmanfm_24.png%"  Exec exec pcmanfm
 + "看图片- &ImageMagick%image_24.png%"  Exec exec display
 + "RSS  - &Snownews%rss_24.png%"  Exec exec xterm -e snownews
