@@ -1,500 +1,500 @@
-sudo /etc/init.d/teamviewerd8 start
-sudo teamviewer8
-ps aux |grep teamviewer
-teamviewer
-teamviewer8 
-bg
-less .fvwm/config
-crontab -e
-crontab -l
+mkdir Admin
+touch Admin/function.php
+touch Index/function.php
+ls
+cd ../Conf/
+ls
+mkdir Index
+mkdir Admin
+touch Index/config.php
+touch Admin/config.php
+echo "\<?PHP\n 这个文件是Index配置文件 \n?\>" > Index/config.php 
+cat Index/config.php 
+echo "\<?PHP\n-e 这个文件是Index配置文件 \n?\>" > Index/config.php 
+cat Index/config.php 
+echo -e "\<?PHP\n 这个文件是Index配置文件 \n?\>" > Index/config.php 
+cat Index/config.php 
+echo -e "<?PHP\n 这个文件是Index配置文件 \n?>" > Index/config.php 
+cat Index/config.php 
+echo -e "<?PHP\n 这个文件是Admin配置文件 \n?>" > Admin/config.php 
+echo -e "<?PHP\n 这个文件是共用配置文件 \n?>" > config.php 
+cat config.php 
+cd ../Common/
+ls
+echo -e "<?PHP\n 这个文件是共用配置文件 用函数库文件 config.php 
+echo -e "<?PHP\n 这个文件是共用配置文件 用函数库文件" > config.php 
+echo -e "<?PHP\n 这个文件是共用配置文件 用函数库文件 \n?>" > config.php 
+cat common.php 
+ls
+rm config.php 
+echo -e "<?PHP\n 这个文件是共用配置文件 用函数库文件 \n?>" > common.php 
+echo -e "<?PHP\n 这个文件是共用函数库文件 \n?>" > common.php 
+cat common.php 
+echo -e "<?PHP\n 这个文件是共用函数库文Index件 \n?>" > Index/common.php 
+cat Index/common.php 
+rm Index/common.php 
+echo -e "<?PHP\n 这个文件是共用函数库文Index件 \n?>" > Index/function.php 
+echo -e "<?PHP\n 这个文件是共用函数库文Admin件 \n?>" > Admin/function.php 
+cat Admin/function.php 
+cd ..
+ls
+ls Conf/
+exit
+cd /home/www/
+kl
+ls go
+cd dev.gomyhome.cn/
+ls
+cd ..
+ls
+mv dev.gomyhome.cn/ dev.gomyhome.cn_old/
+mkdir dev.gomyhome.cn
+cd dev.gomyhome.cn
+ls
+cp ../dev.gomyhome.cn_old/ThinkPHP/ . -af
+ls
+vi index.php
+fg
+exit
+cd /home/www/dev.gomyhome.cn
+ls
+cat Gomyhome/Conf/config.php 
+cd /tmp
+ls
+vi test.txt
+ls
+cd
+vi vimrc
+cd /tmp/
+vi ab.txt
+exit
+cd /tmp/
+ls
+vi ab.txt 
+vi cc.txt
+jobs
+fg 1
+cd
+mv .vim/vimrc .vim/vimrc.bak
+mv vimrc .vim/vimrc
+cd /tmp/
+ls
+vi ab.txt 
+vi abcd.txt
+fg
+vi ab.txt 
+vi ab.txt 
+vi ab.txt aaa.txt  abc.txt 
+exit
 exit
 alsamixer 
 exit
-exit
-cat .fvwm/config |grep sudo
-sudo hibernate-ram
-teamviewer8 
-sudo /etc/init.d/teamviewerd8 restart
-teamviewer8 
-teamviewer8 &
-ps aux |grep teamvi
-su -
-su -
-less .fvwm/config
-cat /etc/portage/package.keywords
-ls /usr/portage/net-misc/
+cd /home/www/
+ls
+cd dev.gomyhome.cn
+ls
+cd t
+cd ThinkPHP/
+ls
+cd Common/
+ls
+vi common.php 
+sudo pon twvpn
+ifconfig 
+ifconfig 
 ifconfig -a
-opml2snow 20131125_FeedDemon.opml 
-cat .snownews/urls
-opml2snow 20131125_FeedDemon.opml >> .snownews/urls
-snownews 
-cd .snownews/
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo pon twvpn
+ifconfig 
+ifconfig 
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+ifconfig -a
+sudo tail /var/log/messages 
+ifconfig -a
+su -
+su -
 ls
-vi browser 
-snownews 
-snownews 
-snownews 
-snownews 
-less urls
-less ../20131125_FeedDemon.opml 
+cd 05_Mp3/
 ls
-cat colors 
-ls
-less html_entities 
-less keybindings 
-ls
-less updatecheck 
-less urls.bak 
-cd
-vi .fvwm/config
+quit
 exit
+ls
+cd 05_Mp3/
+ls
+cp aaa�Ǫkau\ tau.mp3 a.mp3
+sudo emerge -av tftp-hpa
+cd ../Downloads/
+ls
+mv netboot-yeeloong.img /tftproot/
+sudo mv netboot-yeeloong.img /tftproot/
+ls /tftproot/
+ls /tftproot/ -l
+/etc/init.d/in.tftpd start
+sudo /etc/init.d/in.tftpd start
+sudo tail /var/log/messages 
+vi /etc/conf.d/in.tftpd 
+sudo vi /etc/conf.d/in.tftpd 
+sudo tail /var/log/messages 
+sudo /etc/init.d/in.tftpd start
+sudo tail /var/log/messages 
+sudo vi /etc/conf.d/in.tftpd 
+cd
+sudo echo 1 > /proc/sys/net/ipv4/ip_no_pmtu_disc
+sudo echo "2048 32767" > /proc/sys/net/ipv4/ip_local_port_range
+sudo tail /var/log/messages 
+su -
+netstat -unal
+netstat -unal
+netstat -unal
+netstat 
+cd Downloads/
+ls
+mv CiscoTFTPServer.rar ../VirtualBoxShare/
+ls
+mv /var/www/localhost/htdocs/netboot-yeeloong.img ../VirtualBoxShare/
+cp /var/www/localhost/htdocs/netboot-yeeloong.img ../VirtualBoxShare/
+wget http://mirrors.xmu.edu.cn/gentoo/experimental/mips/desktop-loongson2f/desktop-loongson2f-hardened-20130124.tar.lzma
+cd ../VirtualBoxShare/
+ls
+cd ZMSG/
+ls
+ls
+cp  desktop-loongson2f-vanilla-20130124.tar.lzma /var/www/localhost/htdocs/a.tar.lzma
+sudo cp  desktop-loongson2f-vanilla-20130124.tar.lzma /var/www/localhost/htdocs/a.tar.lzma
+sudo /etc/init.d/apache2 start
+sudo /etc/init.d/apache2 restart
+ls /var/www/localhost/htdocs/
+vi /etc/portage/make.conf
+cd 
+cd Downloads/
+ls
+mv stage3-mipsel3_multilib-20131212.tar.bz2 portage-20131210.tar.bz2 /var/www/localhost/htdocs/
+sudo mv stage3-mipsel3_multilib-20131212.tar.bz2 portage-20131210.tar.bz2 /var/www/localhost/htdocs/
+cd /var/www/localhost/htdocs/
+ls
+cp stage3-mipsel3_multilib-20131212.tar.bz2 s.tar.bz2
+sudo cp stage3-mipsel3_multilib-20131212.tar.bz2 s.tar.bz2
+sudo /etc/init.d/apache2 restart
+ls
+sudo cp portage-20131210.tar.bz2 p.tar.bz2
+ls
+sudo bunzip2 s.tar.bz2 
+bunzip2 --help
+sudo bunzip2 -d s.tar.bz2 
+ls
+sudo bunzip2 -d s.tar.bz2 
+sudo bunzip2 -d p.tar.bz2 
+less /etc/portage/make.conf
+cat /etc/locale.gen 
+lspci
+alsamixer 
 mutt
-sudo emerge -av snownews
-snownews --help
-snownews
-snow2opml --help
-opml2snow --hlep
-opml2snow < /home/chenbk/20131125_FeedDemon.opml 
-opml2snow < /home/chenbk/20131125_FeedDemon.opml >  urls
-cat urls 
-snownews urls 
-snownews -u urls 
-snownews < urls 
-snownews -i urls 
-man snownews
-sudo tail -f /var/log/emerge-fetch.log
-sudo pon twvpn
-ifconfig 
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo pon twvpn
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-ifconfig -a
-sudo pon twvpn 
-ifconfig 
-ifconfig 
-ifconfig 
-sudo pon twvpn 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-sudo pon twvpn 
-sudo pon twvpn 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-ifconfig 
-killall conky
-exit
-teamviewer --daemon start 
-teamviewer8 --daemon start 
-teamviewer8 --daemon start 
-sudo /etc/init.d/teamviewerd8 start
-sudo /etc/init.d/teamviewerd8 restart
-ps aux |grep teamvi
-sudo kill 1402
-sudo /etc/init.d/teamviewerd8 restart
-teamviewer8 --daemon start 
-teamviewer8 
-sudo emerge -av teamviewer
-sudo emerge -apv teamviewer
-sudo emerge -pv teamviewer
-sudo emerge -av box
-sudo emerge -av virtualbox
-virtualbox
-sudo -
-sudo virtualbox
-virtualbox
-su -
-su -
-exit
-vi .fvwm/config
-cd /
-sudo git add /etc/myhome-conf/.fvwm-myhome/
-git commit -m "添加RSS工具: snownews"
-git push
-exit
-su -
-su -
-VirtualBox
-sudo VirtualBox
-sudo grep vir* /etc/group 
-less /etc/group
-sudo gpasswd -a chenbk vboxusers
-VirtualBox
-exit
-VirtualBox
-ls /opt/
-ll /usr/bin/VirtualBox
-ll /usr/lib64/virtualbox/VBox
-id chenbk
-exit
-exit
-VirtualBox
-bg
+sudo mount -t vfat /dev/sdb4 /mnt/ -o uid=1000
+df -h 
+ls /mnt/
+mount
+cd /mnt/
 ls
-mkdir VirtualBoxShare
-ls VirtualBoxShare/
-cd VirtualBoxShare/
-pwd
+cd loongson/
+ls
+mv ls
+ls
+cd ..
+ls
+file pmon-LM8089-1.4.3.bin 
+ls
+rm pmon-*
 cd
-sudo mount /dev/cdrom /mnt/
-sudo emerge -C teamviewer8
-sudo emerge -C teamviewer
-eselect news
-eselect
-eselect read
-eselect read 1
-ls
-ls VirtualBoxShare/
-touch VirtualBoxShare/test
-less xbmc_crashlog-20131124_222952.log 
-less xbmc_crashlog-20131124_220725.log 
-exit
+file /mnt/pmon-LM8089-1.4.9a.bin 
 sudo umount /mnt/
-eject 
-exit
-vi .fvwm/config
-exit
-killall conky
-exit
-vi .fvwm/config
-cd /
-sudo git add .
-git commit -m "安装了VirtualBox虚拟机"
-git push
-exit
-exit
-VirtualBox 
-sudo vi /etc/conf.d/local.start 
-ls /tmp/
-sudo vi /etc/conf.d/localmount 
-ls /etc/local.d/
-less /etc/local.d/README 
-mv /etc/conf.d/local.start /etc/local.d/
-sudo mv /etc/conf.d/local.start /etc/local.d/
-reboot
-sudo reboot
-VirtualBox 
-cd /etc/local.d/
-less README 
-ll
-cat README 
-chmod a+x local.start 
-sudo chmod a+x local.start 
-ll /etc/init.d/
-exit
-vi .fvwm/config
-VirtualBox 
-vi .fvwm/config
-VirtualBox --help
-killall conky
-VirtualBox --startvm Home-xp
-bg
-vi .fvwm/config
-exit
-exit
+ls
+sudo mount -t vfat /dev/sdb4 /mnt/ -o uid=1000
+cd /mnt/
+ls
+cd loongson/
+ls
+ls
+ls
+cp netboot-yeeloong.img ~/VirtualBoxShare/netboot-yeeloong.img 
+cp Lemote_loonux_V1.2.0.tar.gz ~/VirtualBoxShare/
 alsamixer 
-exit
-VirtualBox --help
-vi .fvwm/config
-exit
-crontab -e
-exit
-sudo moun /dev/sdb5 /mnt/
-sudo mount /dev/sdb5 /mnt/
+cd 
+mv VirtualBoxShare/Lemote_loonux_V1.2.0.tar.gz /var/www/localhost/htdocs/l.tar.gz
+sudo mv VirtualBoxShare/Lemote_loonux_V1.2.0.tar.gz /var/www/localhost/htdocs/l.tar.gz
+cd /mnt/
+ls
+df -h
+ls
+ls loongson/
+cd loongson/
+ls
+rm Flack.avi 
+ls
+rm stage3-mipsel3_multilib-20131212.tar.bz2 
+ls
+df -h
+ls
+rm Lemote_loonux_V1.2.0.tar.gz 
+df -h
+ls
+cd ..
+tar xvf /var/www/localhost/htdocs/l.tar.gz 
+ls
+cd 
+sudo umount /mnt/
+cd VirtualBoxShare/
+ls
+mkdir loongson
+tar xf loongson.tar.gz -C loongson/
+ls loongson/
+sudo mount /dev/sdb4 /mnt/
+ls /mnm
+ls /mnm
+mkdir loongsonls 
 ls /mnt/
 sudo umount /mnt/
-sudo mount /dev/sdb5 /mnt/ -o uid=1000
-cd /mnt/
 ls
-cd Seagate\ Sync/
+ls loongson
+cd loongson
 ls
-cd VOL/
-ls
-cd VOL00/
-ls
-cd 01_工作内容/
-ls
-cd 新加坡团队/
-ls
-cat TeamViewer_User.txt 
-st TeamViewer_User.txt 
-ls
-cat skype+gmail账号_用于远程会议.txt 
-ls
-display User_list.png 
+less ChangeLog.txt 
+vi ChangeLog.txt 
+cd ../loongsonls/
 ls
 cd ..
 ls
-exit
-sudo umount /mnt/
-df -h 
-exit
-sudo fdisk /dev/sdb
-sudo fdisk /dev/sdb
-sudo mkfs.vfat /dev/sdb1 
-mount /dev/sdb1  /mnt/ -o uid=1000
-sudo mount /dev/sdb1  /mnt/ -o uid=1000
+rm loongsonls/ -rf
+sudo mount /dev/sdb4 /mnt/
+ls /mnt/
 cd /mnt/
 ls
-df -h 
-touch abc
+cd loongson/
 ls
-rm abc 
+mv loongson2_stage3_gentoo_n32_20100725.tar.lzma /var/www/localhost/htdocs/g.tar.lzma
+sudo mv loongson2_stage3_gentoo_n32_20100725.tar.lzma /var/www/localhost/htdocs/g.tar.lzma
 cd
-df -h 
+sudo umount /mnt/
+cat /etc/portage/make.conf
+cat /etc/resolv.conf 
+exit
+sudo mount /dev/sdb4 /mnt/ -o uid=1000
+cd /mnt/
+cp ~/Downloads/vmlinux .
+ls
+rm vmlinux.bak 
+cd
 sudo umount /mnt/
 exit
-sudo mount /dev/sdb1 /home/chenbk/Downloads/ -o uid=1000
-exit
-sudo umount /mnt/
-sudo umount /home/chenbk/Downloads/
-exit
-netstat -na
-netstat -tlna
-sudo tail -100 /var/log/messages 
-sudo mount /dev/sdb1 /home/chenbk/VirtualBoxShare/ -o uid=1000
-sudo tail -100 /var/log/messages 
-netstat -tnal
-vi /etc/mysql/my.cnf 
-sudo vi /etc/mysql/my.cnf 
-sudo /etc/init.d/mysql restart
-netstat -tnal
-sudo iptables
-sudo iptables -L -n 
-sudo umount VirtualBoxShare/
-df -h 
-exit
-alsamixer 
-exit
-alsamixer 
-exit
-alsamixer 
-exit
-killall conky
-.conky-myhome/bin/conkyStart &
-.conky-myhome/bin/conkyStart &
-exit
-alsamixer 
-exit
+ls
+cd Downloads/
+l
+ls
+cd
+cd VirtualBoxShare/
+ls
+ls ZMSG/
+ls
+cd ZMSG/
+ls
+tar zxvf desktop-loongson2f-vanilla-20130124.tar.lzma 
+tar xvf desktop-loongson2f-vanilla-20130124.tar.lzma 
+ls
+ls boot/
+less boot/boot.cfg 
+cp boot/boot.cfg boot/vmlinuz  /var/www/localhost/htdocs/
+sudo cp boot/boot.cfg boot/vmlinuz  /var/www/localhost/htdocs/
+sudo /etc/init.d/apache2 restart
 mutt
-sudo emerge -av python-exec
-sudo emerge -av dev-python/python-exec
-sudo emerge -avD dev-python/python-exec
-emerge --help
-emerge --sync
-sudo emerge --sync
+ls
+cd
+cd Downloads/
+ls
+ll
+mv vmlinux /var/www/localhost/htdocs/
+sudo mv vmlinux /var/www/localhost/htdocs/
+cd /var/www/localhost/htdocs/
+vi boot.cfg 
+sudo vi boot.cfg 
 exit
-sudo emerge -av skype
-less /etc/portage/package.license 
-sudo vi /etc/portage/package.license 
-fg
-fg
-sudo emerge -av skype
-sudo vi /etc/portage/package.unmask 
-sudo vi /etc/portage/package.keywords
-sudo emerge -av net-im/skype-4.2.0.11
-sudo emerge -av net-im/skype
-sudo vi /etc/portage/package.keywords
-sudo vi /etc/portage/package.keywords
-sudo emerge -av net-im/skype
-sudo vi /etc/portage/package.keywords
-sudo emerge -av net-im/skype
+exit
+ls /usr/ -l
+ls /var/
+ls /var/ -l
+ls /var/log/ -l
+ls -l /dev/
+exit
+ls D
+ls Downloads/
+ls VirtualBoxShare/loongson
+mutt
+ls /var/www/
+ls
+cd /var/www/localhost/htdocs/
+ls
+tar jxvf stage3-mipsel3_multilib-20131212.tar.bz2 
+sudo tar jxvf stage3-mipsel3_multilib-20131212.tar.bz2 
+ls usr/
+sudo ls usr/
+sudo ls usr
+sudo tar jxvf stage3-mipsel3_multilib-20131212.tar.bz2 
 su -
 exit
-lspci 
-exit
-ifconfig
-ping www.baidu.com
-ping www.baidu.com
-ping www.baidu.com
-ping www.baidu.com
-ping www.baidu.com
-exit
-alsamixer 
-exit
-cd /home/www/
+ssh 192.168.100.101
+ssh root@192.168.100.101
+sudo /etc/init.d/sshd start
 ls
-cd myhome.cn/
+emerge -pv moc
+emerge -av alsa
+equery -p alsa*
+equery s alsa*
+ll system_root.bak.20131221.tar.gz  -h
 ls
-git show log
-git log
+scp 05_Mp3/24.4.mp3 root@192.168.100.101:/tmp
+exit
+cd Downloads/
+ls
+scp rtl8187L_linux_1041\[1\].0209.2012.tar.gz  root@192.168.100.101:/root
+exit
+exit
+exit
+sudo /etc/init.d/sshd restart
+mutt
+emerge -av linuxlogo
+emerge -av linux-logo
+echo "app-misc/linux-logo nls" >> /etc/portage/package.use 
+sudo echo "app-misc/linux-logo nls" >> /etc/portage/package.use 
+sudo echo "app-misc/linux-logo nls" >> /etc/portage/package.use 
+su -
+vi .bashrc 
+ll .bashrc 
+cd /
+git add /etc/myhome-conf/.bashrc 
+git commit -m "添加一个好玩的linux_logo命令"
 git push
+sl
+sudo emerge -av sl
+sl
+sl
+:
+ls
+
+exit
+exit
+exit
+fe
+exit
+top
+exit
+tmux
+exit
+emerge -av iftop htop
+emerge -av iftop htop
+vi /etc/portage/make.conf
+sudo vi /etc/portage/make.conf
+emerge -av iftop htop
+emerge htop
+sudo emerge -av iftop htop
+sudo emerge -av tmux
+tmux
+vi .fvwm/config
+vi .fvwm/config
+vi .fvwm/config
+sudo vi /etc/bind/named.conf
+sudo /etc/init.d/named restart
+netstat -tnal
+netstat -unal
+netstat -tnal
+netstat -unal
+netstat -al
+netstat -al|grep 53
+sudo vi /etc/bind/named.conf
+sudo /etc/init.d/named restart
+netstat -al|grep 53
+netstat -tnal
+netstat -unal
+sudo vi /etc/bind/named.conf
+sudo /etc/init.d/named restart
+netstat -unal
+sudo /etc/resolv.conf 
+sudo vi /etc/resolv.conf 
 ping www.baidu.com
+nslookup
+netstat -unal
+sudo ls /var/log/named/
+sudo tail /var/log/named/named.log
+sudo vi /etc/bind/named.conf
+sudo /etc/init.d/named restart
+ping www.baidu.com
+ls /etc/tmux
+vi /etc/myhome-conf/.tmux.conf
+ln -s /etc/myhome-conf/.tmux.conf .tmux.conf
 exit
-killall chrom
-killall chrome
-cd /home/www/
-ls
-cd myhome.cn/
-git init
-less .gitignore 
-ls .git/
-less .git/config 
-less .git/hooks/post-update.sample 
-less .git/hooks/update.sample 
-cd ..
-ls
-cd query.bzbee.com/
-ls
-git init
-ls
 exit
-ll /home/www/
-sudo chmod g+w /home/www/ -R
-ll /home/www/
-id chenbk
-mysql
-mysql -uroot -p
+vi .tmux.conf 
 exit
-ls
-mysql -uroot -p -d myhome > myhome.bak20131205
-mysql -uroot -p  myhome > myhome.bak20131205
-mysqldump -uroot -p  myhome > myhome.bak20131205
-ll -h myhome.bak20131205 
-mysql -uroot -p  myhomedb < myhome.bak20131205
-cd /home/www/myhome.cn/
-ls
-cd ..
-ls
-cp myhome.cn/ local.myhome.cn -af
-ls local.myhome.cn/
-vi /etc/hosts 
-sudo vi /etc/hosts 
-cd
-mysql -uroot -p  test_myhomedb < /home/www/local.myhome.cn/DB_sql/20130917_home.task_lib.sql 
-cd /etc/apache2/
-ls
-cd vhosts.d/
-ls
-cp myhome.cn_vhost.include local.myhome.cn_vhost.include 
-sudo cp myhome.cn_vhost.include local.myhome.cn_vhost.include 
-sudo vi local.myhome.cn_vhost.include 
-ls
-sudo vi default_vhost.include 
-sudo vi 00_default_vhost.conf 
-ls
-cp 00_default_vhost.conf 01_myhome.cn_vhost.conf
-sudo cp 00_default_vhost.conf 01_myhome.cn_vhost.conf
-sudo cp 00_default_vhost.conf 02_query.bzbee.com_vhost.conf
-sudo vi 02_query.bzbee.com_vhost.conf 
-ls
-sudo mv 02_query.bzbee.com_vhost.conf 02_local.query.bzbee.com_vhost.conf 
-sudo mv query.bzbee.com_vhost.include local.query.bzbee.com_vhost.include 
-sudo vi local.query.bzbee.com_vhost.include 
-ls
-sudo vi /etc/hosts 
-ls
-sudo mv /home/www/query.bzbee.com/ /home/www/local.query.bzbee.com/
-ls
-sudo vi 00_default_vhost.conf 
-sudo vi 01_myhome.cn_vhost.conf 
-sudo vi 00_default_vhost.conf 
-ls
-sudo cp 01_myhome.cn_vhost.conf 03_local.myhome.cn_vhost.conf 
-sudo vi 03_local.myhome.cn_vhost.conf 
-ls
-sudo vi local.myhome.cn_vhost.include 
-ls
-sudo /etc/init.d/apache2 restart
-ls /var/log/apache2/
-sudo ls /var/log/apache2/
-sudo rm /var/log/apache2/query.bzbee.com*
-sudo rm /var/log/apache2/query*
-sudo rm /var/log/apache2/query.bzbee.com_access.log
-sudo rm /var/log/apache2/query.bzbee.com_error.log
-sudo ls /var/log/apache2/
-cd /var/log/
-cd apache2/
-sudo ls apache2/
-sudo tail apache2/local.myhome.cn_access.log
-sudo tail apache2/local.myhome.cn_error.log
-sudo tail apache2/local.myhome.cn_error.log
-sudo tail apache2/local.myhome.cn_access.log
-cd /home/www/local.myhome.cn/
-ls
-git init
-cd ..
-ls
-cd local.query.bzbee.com/
-ls
-cd qt/
-ls
-cd Tpl/
-ls
-cdd Index/
-cd Index/
-ls
-less index.html 
-vi index.html 
-cd /home/www/local.myhome.cn/
-git add .
-git commit -m "将Css 从index.html分离出来"
-cd ..
-cd myhome.cn/
-git add .
-git commit -m "init"
-cd ../local.query.bzbee.com/
-ls
-git add .
-git commit -m "init"
-cd ../local.myhome.cn/
-ls
-git show log
-git log
-ls
-git add .
-git commit -m "* 制作创建任务时指定循环周期"
-git show
+vi .fvwm/config
 exit
-top
-exit
-vi .conky-myhome/conkymain 
+vi .tmux.conf 
+.conky-myhome/bin/conkyStart &
 killall conky
-top
-uptime 
-free
+vi .tmux.conf 
+exit
+exit
+exit
+vi .tmux.conf 
+exit
+vi .tmux.conf 
+exit
+vi .tmux.conf 
+exit
+vi .tmux.conf 
+exit
+vi .tmux.conf 
+exit
+exit
+exit
+tmux
+exit
+rm .tmux.conf 
+exit
+vi /etc/myhome-conf/.muttrc 
+vi /etc/myhome-conf/.tmux.conf 
+exit
+exit
+exit
+exit
+sudo emerge zsh
+sudo emerge zsh-completion
+zsh
+exit
+zsh
+exit
+sudo vi /etc/zsh/zshrc 
+sudo usermod -s /bin/zsh userlogin
+sudo usermod -s /bin/zsh chenbk
+exit
+zsh
+zsh
+exit
+sudo grep chenbk /etc/passwd
 exit

@@ -1179,6 +1179,7 @@ tfido		60177/tcp			# Ifmail
 tfido		60177/udp
 fido		60179/tcp			# Ifmail
 fido		60179/udp
+in.tftpd	69/udp				# in.tftpd
 
 # Local services
 

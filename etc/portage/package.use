@@ -8,3 +8,4 @@ dev-libs/cyrus-sasl  berkdb gdbm pam sqlite ssl authdaemond -java -kerberos -lda
 net-dns/bind berkdb dlz
 dev-libs/openssl -bindist
 net-dns/bind-tools ssl
+app-misc/linux-logo nls

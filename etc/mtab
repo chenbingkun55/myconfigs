@@ -2,7 +2,7 @@ rootfs / rootfs rw 0 0
 /dev/sda3 / ext3 rw,noatime,commit=0 0 0
 proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
 tmpfs /run tmpfs rw,nosuid,nodev,relatime,mode=755 0 0
-udev /dev devtmpfs rw,nosuid,relatime,size=10240k,nr_inodes=379391,mode=755 0 0
+udev /dev devtmpfs rw,nosuid,relatime,size=10240k,nr_inodes=379387,mode=755 0 0
 devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620 0 0
 shm /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime 0 0
 sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
