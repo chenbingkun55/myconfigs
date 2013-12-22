@@ -143,8 +143,8 @@ AddToFunc ExitFunction
 ######
 Key M A C Menu FuncMenu
 Key M A M Menu SystemMenu
-### Ctrl+A 截图
-Key A A C  Exec exec xterm scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
+### Ctrl+P 截图
+Key P A C  Exec exec xterm scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L

@@ -4,8 +4,8 @@
 autoload -U compinit
 compinit
 
-# correction
-setopt correctall
+# correction 自动更正
+#setopt correctall
 
 # prompt
 autoload -U promptinit
