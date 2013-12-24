@@ -9,3 +9,6 @@ net-dns/bind berkdb dlz
 dev-libs/openssl -bindist
 net-dns/bind-tools ssl
 app-misc/linux-logo nls
+media-libs/imlib2 X bzip2 gif jpeg mp3 nls png tiff zlib
+x11-wm/fvwm lock nls perl png readline svg truetype vanilla
+x11-terms/xterm openpty truetype unicode

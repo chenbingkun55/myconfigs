@@ -403,7 +403,7 @@ Key L A 4 FuncFvwmLockScreen
 #### 桌面 #####
 Test (EnvIsSet fvwm_wallpaper) 
 AddToFunc StartFunction 
-+ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
+# + I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
 
 
 #### 全屏功能   #####

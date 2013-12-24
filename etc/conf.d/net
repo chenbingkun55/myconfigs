@@ -8,6 +8,6 @@
 # dhcpd_wlan0="-t 10"
 #config_wlan0=("dhcp")
 # dns_domain_enp7s0="gicp.net"
-# dns_domain_lo="gicp.net"
+#dns_domain_lo="gomyhome.cn"
 config_enp7s0=("192.168.100.55 netmask 255.255.255.0")
 routes_enp7s0=("default via 192.168.100.1")

@@ -1,5 +1,4 @@
 restart
-restart
 windowlist
 restart
 runwinlist
@@ -65,6 +64,7 @@ restart
 RunWinList
 WinRunList
 FvwmWinList
+restart
 restart
 restart
 restart
