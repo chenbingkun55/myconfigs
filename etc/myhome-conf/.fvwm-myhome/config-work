@@ -301,9 +301,9 @@ AddToMenu ServerMenu
 + "[&C][192.168.23.250]-XS-VM03%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.250
 + "[&D][192.168.23.253]-XS-VM04%virtual_server_24.png%" Exec exec xterm -e ssh root@192.168.23.253
 + "======= 远程桌面%rdesktop_24.png%" Nop
-+ "[&Z][192.168.1.61]-SHAREPOINT%rdesktop_24.png%" Exec exec xterm -e rdesktop -g 1366x768 -u administrator 192.168.1.61
-+ "[&X][192.168.23.221]-BZB_WEB_TEST%rdesktop_24.png%" Exec exec xterm -e rdesktop -g 1366x768 -u administrator 192.168.23.221
-+ "[&Y][192.168.23.6]-MY_TEST%rdesktop_24.png%" Exec exec xterm -e rdesktop -g 1366x768 -u autoit 192.168.23.6
++ "[&Z][192.168.1.61]-SHAREPOINT%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.1.61
++ "[&X][192.168.23.221]-BZB_WEB_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.23.221
++ "[&Y][192.168.23.6]-MY_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u autoit 192.168.23.6
 
 
 
