@@ -117,7 +117,7 @@ AddToFunc InitFunction
 # + I Exec exec xscreensaver
 # + I Exec exec fvwm-root -r ~/.fvwm/wallpapers/1.png
 # + I Exec exec fbpanel
-+ I Exec exec ~/.conky/bin/conkyStart
++ I Exec exec ~/.conky-myhome/bin/conkyStart
 # + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
 # + I Exec exec pcmanfm --desktop
 # + I Exec exec tint2
@@ -143,6 +143,7 @@ AddToFunc ExitFunction
 # 快捷键绑定
 ######
 Key M A C Menu FuncMenu
+Key N A C Menu ServerMenu
 Key M A M Menu SystemMenu
 ### Ctrl+P 截图
 Key P A C  Exec exec xterm scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
@@ -199,10 +200,10 @@ Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
 ####
 # 鼠标设定
 ######
-Mouse 3 RD A Menu ConfMenu Nop
+Mouse 3 RD A Menu ServerMenu Nop
 Mouse 1 RD A Menu FuncMenu Nop
-Mouse 3 A C Menu ServerMenu Nop
-Mouse 1 A C Menu FuncMenu Nop
+Mouse 3 A M Menu ServerMenu Nop
+Mouse 1 A M Menu FuncMenu Nop
 Mouse 2 W A Close
 Mouse 2 W C Lower
 Mouse 3 W C Iconify
@@ -287,7 +288,7 @@ AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
 
 DestroyMenu ShareMenu
 AddToMenu ShareMenu "%share_24.png%=== 共享文件夹 ===" Title
-+ "192.168.1.61[Software]%share_24.png%"  Exec exec xterm -e smbclient -U chenbingkun //192.168.1.61/software
++ "[&1]192.168.1.61[Software]%share_24.png%"  Exec exec xterm -e smbclient -U chenbingkun //192.168.1.61/software
 
 DestroyMenu ServerMenu
 AddToMenu ServerMenu 
@@ -299,12 +300,16 @@ AddToMenu ServerMenu
 + "[&A][192.168.23.251]-XS-VM01%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.251
 + "[&B][192.168.23.252]-XS-VM02%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.252
 + "[&C][192.168.23.250]-XS-VM03%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.250
-+ "[&D][192.168.23.253]-XS-VM04%virtual_server_24.png%" Exec exec xterm -e ssh root@192.168.23.253
++ "[&D][192.168.23.253]-XS-VM04%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.253
 + "======= 远程桌面%rdesktop_24.png%" Nop
 + "[&Z][192.168.1.61]-SHAREPOINT%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.1.61
 + "[&X][192.168.23.221]-BZB_WEB_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.23.221
 + "[&Y][192.168.23.6]-MY_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u autoit 192.168.23.6
-
++ "======= 数据库%mysql_24.png%" Nop
++ "[&0][127.0.0.1]-LOCALHOST%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 127.0.0.1
++ "[&1][192.168.1.61]-BZB_STUDIO%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.1.61
++ "[&2][192.168.23.221]-BZB_TEST_WEB%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.23.221
++ "[&3][192.168.23.228]-BZB_QT_SRV%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.23.228
 
 
 DestroyMenu SystemMenu
@@ -427,7 +432,7 @@ Key L A 4 FuncFvwmLockScreen
 #### 桌面 #####
 Test (EnvIsSet fvwm_wallpaper) 
 AddToFunc StartFunction 
-# + I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
++ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
 
 
 #### 全屏功能   #####
