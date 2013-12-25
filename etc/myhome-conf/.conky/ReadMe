@@ -1,0 +1,47 @@
+使用说明：
+先安装必要的软件：
+
+    1,去终端输入：
+    
+$sudo aptitude install python-statgrab ttf-liberation hddtemp lm-sensors conky-all
+$sudo chmod u+s /usr/sbin/hddtemp
+$sudo sensors-detect  #中间会有交互环节，通通回答 yes，虽然最后一个问题的默认是 NO,也要回答成yes
+
+    2,安装字体：
+
+进入到.myconky目录中 
+cd .myconky
+先把 .myconky/font 目录下的字体复制到 ~/.fonts下
+cp -R font ~/.fonts，没有.fonts目录的话自己建立一个 mkdir ~/.fonts ,再复制，然后执行下面命令，好让系统识别这些特别的字体。
+$sudo fc-cache -v -f
+
+    3,关于图片显示
+
+    图片都在 .myconky/pics 中放着，你可以把你喜欢的图片直接复制到里面即可，如果你想自定义文件夹也是可以的，打开 .myconky/bin/conkyPhotoRandom 文件 ，找到  cd ~/.myconky/pics 行 把 ~/.myconky/pics 替换成你想用来显示图片的文件夹的路径即可，这个是1分钟自动更换一张图片
+    
+   4， 关于 天气
+
+    我没有用咱们论坛里的，因为坛论里的做过修改，不用用户认证，这个是很方便的，但我用的时候老是提示出错，不知道是哪儿没配置好吧，所以就用人家原版的，但是这个就需要在http://www.weather.com/services/xmloap.html开通一个服务，获得账号和密码。我把自己的帐号分享出来大家都用就好了，这样你就不用再去注册获得账号和密码，当然如果你想要一个自己的账号和密码的话，你可以去http://www.weather.com/services/xmloap.html注册一个。所以简单的说，这一步只需要把这个隐藏的.conkyForecast.config文件直接复制到你自己的home目录下就可以了。
+    
+   cp .conkyForecast.config ~/
+
+    对了，差一点忘了最重要的，不同的地方，天气的代码是不一样的，要到 http://www.weather.com上去查询，在搜索栏里输入你的地址，比如我的是重庆，我就输入chongqing,然后回车，在浏览器的地址栏里就会显示CHXX0017这样子的代码，这个就是你所在地的代码，你把记下来，到conkymain或者是conkyback中把所有的CHXX0017替换掉就可以了，这就能显示你自己所在地的天气了
+    
+   5,好了
+
+    如果不出意外，直接执行，就可以用了(有两个配置好的文件可以用，conkymain，conkyback,这个两个配置并没有什么本质的区别，唯一的不同是conkyback比conkymain多了一个背景，具体是什么样子的，你自己试试就知道了：
+    
+  conky -c conkymain
+  
+或者： conky -c conkyback
+
+   6,让conky开机自动启动
+
+到 System > Preferences > Startup Application 选择添加 ~/.myconky/bin/conkyStart 即可
+
+如果你是单核CPU，在执行后会出错，如下：
+引用:
+Conky: obj->data.i 2 info.cpu_count 1
+Conky: attempting to use more CPUs than you have!
+
+这个只需要修改conkymain中的与cpu2有关的代码即可---把含有cpu2的那行注释掉就可以了，（那行前面加#即可）。

@@ -1,0 +1,512 @@
+#######################
+# ChenBK at 20131020 02:16
+#
+# FVWM config setup
+
+
+####
+#  全局变量
+#######
+# 路径变量
+SetEnv fvwm_img $[FVWM_USERDIR]/images
+SetEnv fvwm_icon $[FVWM_USERDIR]/icons
+SetEnv fvwm_script $[FVWM_USERDIR]/script.d
+SetEnv fvwm_wallpaper $[FVWM_USERDIR]/wallpaper
+
+
+####
+# 取消 默认绑定
+######
+Key Help R A -
+Key F1 R A -
+Key Escape A MC -
+
+Mouse 3 W M -
+Mouse 1 W M -
+Mouse 1 R A -
+Mouse 1 T A -
+Mouse 2 FST A -
+
+####
+# 图片路径
+#######
+ImagePath +:$[fvwm_icon]:$[fvwm_wallpapers]
+
+
+####
+# 虚拟桌面个数
+######
+DeskTopSize 2x2
+DesktopName 0 主桌面
+DesktopName 1 任务桌面
+DesktopName 2 休闲桌面
+#EdgeScroll 100 100
+#EdgeResistance 500 500
+# 鼠标移到边沿,自动滚到下一桌面 1-开启 0-禁用
+# EdgeThickness 0     
+
+####
+# 桌面页配置
+######
+Style "FvwmPager" NoTitle,NoHandles,Sticky,\
+	WindowListSkip, CirculateSkip,StaysOnBottom,FixedPosition,\
+	FixedSize, !Iconifiable
+DestroyModuleConfig FvwmPager: *
+*FvwmPager: MiniIcons
+*FvwmPager: Window3DBorders
+*FvwmPager: MiniIcons
+*FvwmPager: Colorset * 11
+*FvwmPager: HilightColorset * 10
+*FvwmPager: ShapeLabels
+*FvwmPager: SolidSeparators
+*FvwmPager: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antialias=True"
+*FvwmPagerLabel 0 主桌面
+*FvwmPagerLabel 1 任务桌面
+*FvwmPagerLabel 2 休闲桌面
+
+
+####
+# 鼠标获得焦点
+######
+ClickTime 750
+MoveThreshold 3
+# 解决了新建窗口 Focus 问题.
+Style * GrabFocus, GrabFocusTransient
+
+# 鼠标移到窗口时 Focus
+Style * SloppyFocus, MouseFocusClickRaises
+
+
+
+####
+# 全局样式定义
+######
+Style * TitleAtLeft, NoHandles
+Style * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antialias=True"
+Style "*" Icon 48x48/unknown.xpm, !IconTitle
+
+
+####
+# 单个程序样式定义
+######
+Style "*term" Icon 48x48/xterm.png, NoActiveIconOverride, \
+	MiniIcon 48x48/xterm.png
+Style "*chrome" NoTitle, NoActiveIconOverride
+Style "audacious" NoTitle, NoActiveIconOverride
+Style "firefox" Icon firefox_32.png NoActiveIconOveride, \
+	MinIcon mini/firefox_32.png
+
+Style "*VirtualBox" NoTitle, NoActiveIconOverride
+
+
+
+
+####
+# 启动\初始化\重新启动\关闭 函数
+######
+DestroyFunc StartFunction
+AddToFunc StartFunction
++ I Module FvwmAudio
+# + I Module FvwmTaskBar
+# + I Module FvwmTabs
+#+ I Module FvwmPager 0 2
+
+
+DestroyFunc InitFunction
+AddToFunc InitFunction
+# + I Exec exec xscreensaver
+# + I Exec exec fvwm-root -r ~/.fvwm/wallpapers/1.png
+# + I Exec exec fbpanel
++ I Exec exec ~/.conky-myhome/bin/conkyStart
+# + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
+# + I Exec exec pcmanfm --desktop
+# + I Exec exec tint2
++ I Exec exec fcitx
++ I Exec exec xrdb ~/.Xresources
++ I  Exec exec VirtualBox --startvm Win7-work --fullscreen
+
+DestroyFunc RestartFunction
+AddToFunc RestartFunction
+# + I Exec exec ~/.conky-myhome/bin/conkyStart
++ I Exec exec xrdb ~/.Xresources
++ I Nop
+
+
+DestroyFunc ExitFunction
+AddToFunc ExitFunction
++ I All (fbpanel) Close
++ I All (pcmanfm) Close
++ I All (conky) Close
++ I All (fcitx) Close
+
+####
+# 快捷键绑定
+######
+Key M A C Menu FuncMenu
+Key N A C Menu ServerMenu
+Key M A M Menu SystemMenu
+### Ctrl+P 截图
+Key P A C  Exec exec xterm scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
+Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
+	-bg gold -fg midnightblue
+Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
+Key F4 A M Current (!Iconic,!Fvwm*) Close
+Key 1 A M GoToPage 0 0
+Key 2 A M GoToPage 0 1
+Key 3 A M GoToPage 1 0
+Key 4 A M GoToPage 1 1
+### Alt+Left/Right 移动该窗口到左右桌面.
+Key Left  TW M MoveToPage -1p +0p
+Key Right TW M MoveToPage +1p +0p
+Key up    TW M MoveToPage +0p -1p
+Key Down  TW M MoveToPage +0p +1p
+### 方向按键,排列窗口,占半屏 ee
+Key Up    TW C ResizeMove 99 50 0 0
+Key Left  TW C ResizeMove 50 100 0 0
+Key Right TW C ResizeMove 50 100 50 0
+Key Down  TW C ResizeMove 99 50 0 50
+### Ctrl+Alt 方向按键, 上下左右 缩小窗口.
+Key Up    W 4 Resize w+0c w-5c
+Key Down  W 4 Resize w+0c w+5c
+Key Left  W 4 Resize w-5c w+0c
+Key Right W 4 Resize w+5c w+0c 
+# 全屏
+Key Return W C Maximize
+Key Return W 4 Iconify
+Key I W M Iconify
+Key C W M Close
+# 缩放
+Key minus W C Resize w-10 w-10
+Key equal W C Resize w+10 w+10
+
+# Alt+Ctrl+n 标记n号窗回,Ctrl+n回到n号标记的窗口
+Key 0 WI MC Key 0 A C WindowId $[w.id] WarpToWindow 50 50
+Key 1 WI MC Key 1 A C WindowId $[w.id] WarpToWindow 50 50
+Key 2 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
+Key 3 WI MC Key 3 A C WindowId $[w.id] WarpToWindow 50 50
+Key 4 WI MC Key 4 A C WindowId $[w.id] WarpToWindow 50 50
+Key 5 WI MC Key 5 A C WindowId $[w.id] WarpToWindow 50 50
+Key 6 WI MC Key 6 A C WindowId $[w.id] WarpToWindow 50 50
+Key 7 WI MC Key 7 A C WindowId $[w.id] WarpToWindow 50 50
+K# 全Key Return W C ResizeMove 100 100 0 0
+# 缩放
+Key minus W C Resize w-10 w-10
+Key equal W C Resize w+10 w+10ey 8 WI MC Key 8 A C WindowId $[w.id] WarpToWindow 50 50
+Key 9 WI MC Key 9 A C WindowId $[w.id] WarpToWindow 50 50
+
+
+
+
+####
+# 鼠标设定
+######
+Mouse 3 RD A Menu ServerMenu Nop
+Mouse 1 RD A Menu FuncMenu Nop
+Mouse 3 A M Menu ServerMenu Nop
+Mouse 1 A M Menu FuncMenu Nop
+Mouse 2 W A Close
+Mouse 2 W C Lower
+Mouse 3 W C Iconify
+Mouse 1 W C Maximize
+Mouse 4 W C Resize w-10 w-10
+Mouse 5 W C Resize w+10 w+10
+# Mouse 2 W C Resize
+Mouse 3 W M Current (!Iconify,!Fvwm*) Close
+Mouse 1 W M Move
+
+# 预留 Ctrl + Mouse 右键 实现Scroll 功能.
+
+
+
+####
+# 菜单 颜色
+######
+Colorset 7 fg Black, bg #e6e7d7, sh Black, hi #202070
+Colorset 8 fg DarkRed, bg #e6e7d7, sh Black, hi #202070
+
+
+####
+# 菜单的风格
+######
+MenuStyle * MWM
+MenuStyle * PopupDelayed, PopupDelay 160, Animation, TitleWarp
+MenuStyle * Foreground gold, Background gray40
+MenuStyle * ActiveFore White
+MenuStyle * MenuFace VGradient 64 darkgray MidnightBlue
+MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:antialias=True"
+
+
+####
+# 菜单内容
+######
+DestroyMenu FuncMenu
+AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
++ "[0]截图 - &Scrot%scrot_24.png%"  Exec exec scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
++ "[&1]终端  - Xterm%xterm_24.png%"  Exec exec xterm -e tmux
++ "[&2]浏览器- Firefox%firefox_24.png%"  Exec exec firefox-bin
++ "[&3]浏览器- Chrome%chrome_24.png%"  Exec exec google-chrome
++ "[&4]浏览器- &Opera%opera_24.png%"  Exec exec opera
++ "[&5]文件库- PCmanFM%pcmanfm_24.png%"  Exec exec pcmanfm
+# Home-xp 全屏模式
++ "[&6]虚拟机- &Home-Win7%windows7_24.png%"  Exec exec VirtualBox --startvm Win7-work --fullscreen
+# Home-xp 无缝模式
+#+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
++ "[&7]PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
++ ""  Nop
++ "[&A]办公软件%office_24.png%"   Popup OfficeMenu
++ "[&B]应用程序%application_24.png%"   Popup ProgramsMenu
++ "[&C]工具%utilities_24.png%"   Popup UtilitiesMenu
++ "[&D]共享文件夹 %share_24.png%" Popup ShareMenu
++ "[&E]连服务器 %server_24.png%" Popup ServerMenu
++ "[&Q]Quit%windows8_24.png% "  Nop
+
+DestroyMenu OfficeMenu
+AddToMenu OfficeMenu "%office_24.png%=== 办公软件菜单 ===" Title
++ "[&1]文本文档 - Word%libreoffice-writer_24.png%" Exec exec libreoffice --writer
++ "[&2]电子表格 - Excel%libreoffice-calc_24.png%"  Exec exec libreoffice --calc
++ "[&3]数据库   - Base%libreoffice-base_24.png%"   Exec exec libreoffice --base
++ "[&4]演示文稿 - PPT%libreoffice-draw_24.png%"   Exec exec libreoffice --draw
+
+
+DestroyMenu ProgramsMenu
+AddToMenu ProgramsMenu "%application_24.png%=== 应用菜单 ===" Title
++ "[&1]播放器- XBMC%xbmc_24.png%"  Exec exec xbmc
++ "[&2]播放器- Mocp%music_24.png%"  Exec exec xterm -e mocp ~/05_Mp3/
++ "[&3]播放器- Audacious%music_24.png%"  Exec exec audacious
++ "[&3]画图  - Gimp%gimp_24.png%"  Exec exec gimp
++ "[&4]虚拟机- VirtualBox%virtualbox_24.png%"  Exec exec VirtualBox
+
+
+DestroyMenu UtilitiesMenu
+AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
++ "[&1]下载 - Qbittorrent%btorrent_24.png%"   Exec exec qbittorrent
++ "[&2]下载 - aMule%amule_24.png%"   Exec exec amule
++ "[&3]下载 - Filezilla%filezilla_24.png%"   Exec exec filezilla
++ "[&5]看图片- ImageMagick%image_24.png%"  Exec exec display
++ "[&6]RSS  - Snownews%rss_24.png%"  Exec exec xterm -e snownews
++ "[&7]聊天- Skype%skype_24.png%"  Exec exec skype
+
+DestroyMenu ShareMenu
+AddToMenu ShareMenu "%share_24.png%=== 共享文件夹 ===" Title
++ "[&1]192.168.1.61[Software]%share_24.png%"  Exec exec xterm -e smbclient -U chenbingkun //192.168.1.61/software
+
+DestroyMenu ServerMenu
+AddToMenu ServerMenu 
++ "======= SSH Server%server_24.png%" Nop
++ "[&1][192.168.23.210]-BZB_SVN_SRV%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.210
++ "[&2][192.168.23.228]-BZB_QT_SRV%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.228
++ "[&3][192.168.23.223]-BZB_NAGIOS%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.223
++ "======= SSH XenServer%virtual_server_24.png%" Nop
++ "[&A][192.168.23.251]-XS-VM01%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.251
++ "[&B][192.168.23.252]-XS-VM02%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.252
++ "[&C][192.168.23.250]-XS-VM03%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.250
++ "[&D][192.168.23.253]-XS-VM04%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.253
++ "======= 远程桌面%rdesktop_24.png%" Nop
++ "[&Z][192.168.1.61]-SHAREPOINT%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.1.61
++ "[&X][192.168.23.221]-BZB_WEB_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.23.221
++ "[&Y][192.168.23.6]-MY_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u autoit 192.168.23.6
++ "======= 数据库%mysql_24.png%" Nop
++ "[&0][127.0.0.1]-LOCALHOST%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 127.0.0.1
++ "[&1][192.168.1.61]-BZB_STUDIO%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.1.61
++ "[&2][192.168.23.221]-BZB_TEST_WEB%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.23.221
++ "[&3][192.168.23.228]-BZB_QT_SRV%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.23.228
+
+
+DestroyMenu SystemMenu
+AddToMenu SystemMenu "%gentoo_24.png%=== 系统菜单 ===" Title
++ "注销(&L)%logout_24.png%"   Quit
++ "休眠(&H)%hibernate_24.png%"   Exec exec sudo hibernate-ram
++ "重启(&R)%reboot_24.png%"   Exec exec sudo shutdown -r now
++ "关机(&S)%shutdown_24.png%"   Exec exec sudo shutdown -h now
++ "&Quit%windows8_24.png% "  Nop
+
+
+DestroyMenu ConfMenu
+AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
++ "&Gvim .fvwm/config%utilities-terminal.png%"  Exec exec gvim ~/.fvwm/config
++ "&Gvim .conky-myhome/conkymain%utilities-terminal.png%"  Exec exec gvim ~/.conky-myhome/conkymain
++ "&Gvim .bashrc%utilities-terminal.png%"  Exec exec gvim ~/.bashrc
++ "&Gvim .xprofile%utilities-terminal.png%"  Exec exec gvim ~/.xprofile
++ "&Gvim etc/hosts%utilities-terminal.png%"  Exec exec sudo gvim /etc/hosts
++ "&Gvim apache/vhost/query%utilities-terminal.png%"  Exec exec sudo gvim /etc/apache2/vhosts.d/query.bzbee.com_vhost.include
++ "&Gvim apache/vhost/myhome%utilities-terminal.png%"  Exec exec sudo gvim /etc/apache2/vhosts.d/myhome.cn_vhost.include
+
+####
+# 按钮配置
+######
+Style "FvwmButtons" NoTitle,NoHandles,Sticky,\
+	WindowListSkip,CirculateSkip,StaysOnBoottom,FixedPosition,\
+	FixedSize, !Iconifiable
+
+
+DestroyModuleConfig LaunchInfo: *
+Style LaunchInfo Sticky
+*LaunchInfo: Rows 5 
+*LaunchInfo: Columns 5 
+*LanuchInfo: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True"
+*LaunchInfo: Colorset 30 
+*LaunchInfo: Frame 1 
+*LaunchInfo: (3x3, Icon logo_max2.png,Action (Mouse 1) Menu FuncMenu, Action (Mouse 3) Menu SystemMenu ) 
+*LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=18:antalias=True",Swallow "FvwmPager" "FvwmPager") 
+*LaunchInfo: (2x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmweather" "Exec wmweather --lcd")
+*LaunchInfo: (3x2, Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=10:antalias=True", Swallow "wmclock" "Exec wmclock -24 -led 'yellow'")
+*LaunchInfo: (2x1)
+
+Module FvwmButtons -g 150x150+0-0 LaunchInfo
+
+
+
+DestroyModuleConfig RunList: *
+Style "RunList" NoHandles,Sticky,\
+	WindowListSkip,CirculateSkip,StaysOnBoottom,FixedPosition,\
+	FixedSize, !Iconifiable
+
+*RunList: UseSkipList
+*RunList: LeftJustify
+*RunList: ShowCurrentDesk
+*RunList: UseIconNames
+*RunList: Geometry +0+200
+*RunList: Action Click1 Function DeiconifyAndRaise
+*RunList: Action Click3 Iconify
+*RunList: MinWidth 70
+*RunList: MaxWidth 300
+*RunList: Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=12:antalias=True"
+
+
+Module FvwmWinList RunList
+
+
+DestroyFunc DeiconifyAndRaise
+AddToFunc DeiconifyAndRaise
++ I Iconify off
++ I Raise
++ I Focus
+
+#### Win+D 最小化所有窗口 #####
+DestroyFunc FuncFvwmIconifyTrue
+AddToFunc FuncFvwmIconifyTrue 
++ I All (!Iconic,!Fvwm*) State 1 
++ I All (State 1) Iconify True
+
+DestroyFunc FuncFvwmIconifyFalse 
+AddToFunc FuncFvwmIconifyFalse 
++ I All (State 1) Iconify False
+
+DestroyFunc FuncFvwmIconifyToggle 
+AddToFunc FuncFvwmIconifyToggle 
++ I FuncFvwmIconifyFalse 
++ I All (State 1) State 1 False 
++ I TestRc (NoMatch) FuncFvwmIconifyTrue
+
+Key D A 4 FuncFvwmIconifyToggle
+
+#### Win+回车 最小化本窗口 #####
+DestroyFunc FuncIconifyTrue
+AddToFunc FuncIconifyTrue 
++ I Current (!Iconic,!Fvwm*) State 1
++ I Current (State 1) Iconify True
+
+DestroyFunc FuncIconifyFalse 
+AddToFunc FuncIconifyFalse 
++ I All (State 1) Iconify False
+
+DestroyFunc FuncIconifyToggle 
+AddToFunc FuncIconifyToggle 
++ I FuncIconifyFalse 
++ I All (State 1) State 1 False 
++ I TestRc (NoMatch) FuncIconifyTrue
+
+Key Return A 4 FuncIconifyToggle
+
+#### Win+L 锁屏 #####
+DestroyFunc FuncFvwmLockScreen
+AddToFunc FuncFvwmLockScreen 
++ I All (xscreensaver) Nop 
++ I TestRc (NoMatch) Exec xscreensaver -no-splash & 
++ I Exec xscreensaver-command -lock
+
+Key L A 4 FuncFvwmLockScreen
+
+
+
+#### 桌面 #####
+Test (EnvIsSet fvwm_wallpaper) 
+AddToFunc StartFunction 
++ I PipeRead 'fvwm-root --retain-pixmap $[fvwm_wallpaper]/1.png' 
+
+
+#### 全屏功能   #####
+DestroyFunc FuncFullScreen  
+AddtoFunc FuncFullScreen  
++ I Current (State 0) Fullscreen-Stop   
++ I TestRc Current (Maximizable) Fullscreen-Start  
+  
+DestroyFunc Fullscreen-Start  
+AddtoFunc Fullscreen-Start  
++ I WindowStyle NoTitle,HandleWidth 0,FixedSize,FixedPosition  
++ I Current (!Maximized) Maximize  
++ I ResizeMaximize 100 100  
++ I State 0 true  
+  
+DestroyFunc Fullscreen-Stop  
+AddtoFunc Fullscreen-Stop  
++ I DestroyWindowStyle
++ I State 0 false  
++ I Maximize  
+
+Key F A 4 FuncFullScreen
+
+
+
+
+#### 窗口移动,图标还原.  #####
+Mouse 1 T A FvwmMoveOrRaise 
+DestroyFunc FvwmMoveOrRaise 
+AddToFunc FvwmMoveOrRaise "M" Move 
++ I "C" Raise
+
+
+### 鼠标双击图栏时还原窗口
+Mouse 0 I A FvwmMoveOrIconify
+DestroyFunc FvwmMoveOrIconify 
+AddToFunc FvwmMoveOrIconify "M" Move 
++ "D" Iconify
+
+
+### 鼠标双击标题栏,最大化
+Mouse 0 T A FvwmMaxWindow
+DestroyFunc FvwmMaxWindow
+AddToFunc FvwmMaxWindow "M" Move
++ "D" Maximize
+
+
+####
+# 右边Win键启动 Xterm
+######
+Key Super_R A A Exec exec uxterm -e tmux
+
+####
+# 鼠标移到左边升起窗口列表,左到底部升起按钮.
+######
+DestroyFunc TempRaise
+AddToFunc TempRaise
++ I All ($0)  Focus
++ I All ($0) Raise
+
+
+DestroyFunc TempRaiseMenu
+AddToFunc TempRaiseMenu
++ I Menu FuncMenu
+
+
+EdgeResistance -1
+Style * EdgeMoveDelay 250
+Style * EdgeMoveResistance 20
+
+EdgeCommand Bottom Next TempRaise LaunchInfo
+EdgeCommand Left Next TempRaise RunList
+# EdgeCommand Right Next TempRaiseMenu
+
+####
+# 按Ctrl+Alt+软件首字母,将这类软件移到当前窗口,再按一次或选中某个时还原回去.
+######

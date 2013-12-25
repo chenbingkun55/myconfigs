@@ -1,7 +1,0 @@
-DestroyFunc FuncFvwmOpenURL
-AddToFunc   FuncFvwmOpenURL
-+ I Exec exec firefox '$0'
-
-DestroyFunc FuncFvwmWWW
-AddToFunc   FuncFvwmWWW
-+ I Exec exec firefox
