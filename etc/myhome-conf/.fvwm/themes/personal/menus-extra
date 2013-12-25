@@ -1,8 +1,0 @@
-DestroyMenu MenuFvwmPersonal
-AddToMenu   MenuFvwmPersonal "Personal" Title
-AddToMenu MenuFvwmPersonal "WWW-FireFox%/usr/share/icons/hicolor/16x16/apps/aurora.png%" Exec exec /usr/bin/firefox
-AddToMenu MenuFvwmPersonal "WWW-Opera%//usr/share/icons/hicolor/16x16/apps/opera-browser.png%" Exec exec /usr/bin/opera
-AddToMenu MenuFvwmPersonal "Edit-ST%//opt/sublime_text_3/Icon/16x16/sublime-text.png%" Exec exec /opt/sublime_text_3/st
-AddToMenu MenuFvwmPersonal "FM-Pcmanfm%/usr/share/icons/gnome/16x16/apps/system-file-manager.png%" Exec exec /usr/bin/pcmanfm
-AddToMenu MenuFvwmPersonal "Media-XBMC%/usr/share/xbmc/media/icon32x32.png%" Exec exec /usr/bin/xbmc
-+ "IDE-pstorm%/usr/share/icons/hicolor/16x16/apps/libreoffice-writer.png%" Exec exec /usr/local/bin/pstorm
