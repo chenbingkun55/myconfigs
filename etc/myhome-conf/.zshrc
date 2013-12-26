@@ -3,7 +3,7 @@ export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 export PS1="%B%F{white}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
 
-setopt hist_ignore_all_dups
+#setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
 [ -f /etc/DIR_COLORS ] && eval $(dircolors -b /etc/DIR_COLORS)
@@ -32,3 +32,19 @@ alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
+
+# 键绑定
+case $TERM in
+    xterm*)
+    bindkey "^[[F" end-of-line
+    bindkey "^[[H" beginning-of-line 
+    ;;
+esac
+    bindkey '\e[1~' beginning-of-line       # Home
+    bindkey '\e[4~' end-of-line             # End
+    bindkey '\e[3~' delete-char             # Del
+    bindkey '\e[2~' overwrite-mode          # Insert 
+    bindkey -v
+
+# 添加 ssh-add key
+keychain ~/.ssh/id_dsa ~/.ssh/Bzbee_SSH_Key
