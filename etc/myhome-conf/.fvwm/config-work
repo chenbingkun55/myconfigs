@@ -117,13 +117,13 @@ AddToFunc InitFunction
 # + I Exec exec xscreensaver
 # + I Exec exec fvwm-root -r ~/.fvwm/wallpapers/1.png
 # + I Exec exec fbpanel
-+ I Exec exec ~/.conky-myhome/bin/conkyStart
++ I Exec exec ~/.conky/bin/conkyStart
 # + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
 # + I Exec exec pcmanfm --desktop
 # + I Exec exec tint2
 + I Exec exec fcitx
 + I Exec exec xrdb ~/.Xresources
-+ I  Exec exec VirtualBox --startvm Win7-work --fullscreen
++ I  Exec exec VirtualBox --startvm Win7-work
 
 DestroyFunc RestartFunction
 AddToFunc RestartFunction
@@ -241,17 +241,17 @@ MenuStyle * Font "StringEncoding=UTF-8:xft:Droid Sans Fallback:pixelsize=14:anti
 ######
 DestroyMenu FuncMenu
 AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
-+ "[0]截图 - &Scrot%scrot_24.png%"  Exec exec scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
++ "[&0]截图 - Scrot%scrot_24.png%"  Exec exec scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
 + "[&1]终端  - Xterm%xterm_24.png%"  Exec exec xterm -e tmux
 + "[&2]浏览器- Firefox%firefox_24.png%"  Exec exec firefox-bin
 + "[&3]浏览器- Chrome%chrome_24.png%"  Exec exec google-chrome
-+ "[&4]浏览器- &Opera%opera_24.png%"  Exec exec opera
++ "[&4]浏览器- Opera%opera_24.png%"  Exec exec opera
 + "[&5]文件库- PCmanFM%pcmanfm_24.png%"  Exec exec pcmanfm
 # Home-xp 全屏模式
-+ "[&6]虚拟机- &Home-Win7%windows7_24.png%"  Exec exec VirtualBox --startvm Win7-work --fullscreen
++ "[&6]虚拟机- Home-Win7%windows7_24.png%"  Exec exec VirtualBox --startvm Win7-work --fullscreen
 # Home-xp 无缝模式
 #+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
-+ "[&7]PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
++ "[&7]PHP IDE - PhpStorm%php_24.png%"  Exec exec phpstorm
 + ""  Nop
 + "[&A]办公软件%office_24.png%"   Popup OfficeMenu
 + "[&B]应用程序%application_24.png%"   Popup ProgramsMenu
@@ -306,10 +306,10 @@ AddToMenu ServerMenu
 + "[&X][192.168.23.221]-BZB_WEB_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.23.221
 + "[&Y][192.168.23.6]-MY_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u autoit 192.168.23.6
 + "======= 数据库%mysql_24.png%" Nop
-+ "[&0][127.0.0.1]-LOCALHOST%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 127.0.0.1
-+ "[&1][192.168.1.61]-BZB_STUDIO%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.1.61
-+ "[&2][192.168.23.221]-BZB_TEST_WEB%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.23.221
-+ "[&3][192.168.23.228]-BZB_QT_SRV%mysql_24.png%" Exec exec xterm -e mysql -uroot -p 192.168.23.228
++ "[&0][127.0.0.1]-LOCALHOST%mysql_24.png%" Exec exec xterm -e mysql -uroot -p -h 127.0.0.1
++ "[&1][192.168.1.61]-BZB_STUDIO%mysql_24.png%" Exec exec xterm -e mysql -uroot -p -h 192.168.1.61
++ "[&2][192.168.23.221]-BZB_TEST_WEB%mysql_24.png%" Exec exec xterm -e mysql -uroot -p -h 192.168.23.221
++ "[&3][192.168.23.228]-BZB_QT_SRV%mysql_24.png%" Exec exec xterm -e mysql -uroot -p -h 192.168.23.228
 
 
 DestroyMenu SystemMenu
@@ -324,7 +324,7 @@ AddToMenu SystemMenu "%gentoo_24.png%=== 系统菜单 ===" Title
 DestroyMenu ConfMenu
 AddToMenu ConfMenu "%fcitx.png%=== 配置菜单===" Title
 + "&Gvim .fvwm/config%utilities-terminal.png%"  Exec exec gvim ~/.fvwm/config
-+ "&Gvim .conky-myhome/conkymain%utilities-terminal.png%"  Exec exec gvim ~/.conky-myhome/conkymain
++ "&Gvim .conky/conkymain%utilities-terminal.png%"  Exec exec gvim ~/.conky/conkymain
 + "&Gvim .bashrc%utilities-terminal.png%"  Exec exec gvim ~/.bashrc
 + "&Gvim .xprofile%utilities-terminal.png%"  Exec exec gvim ~/.xprofile
 + "&Gvim etc/hosts%utilities-terminal.png%"  Exec exec sudo gvim /etc/hosts
