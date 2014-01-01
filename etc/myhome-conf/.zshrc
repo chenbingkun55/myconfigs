@@ -38,6 +38,14 @@ case $TERM in
     xterm*)
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
+    break
+    ;;
+    linux*)
+    bindkey "^[[F" end-of-line
+    bindkey "^[[H" beginning-of-line 
+    alias fbterm='LANG=zh_CN.UTF-8 fbterm'
+    fbterm && tmux
+    break
     ;;
 esac
     bindkey '\e[1~' beginning-of-line       # Home
@@ -47,4 +55,5 @@ esac
     bindkey -v
 
 # 添加 ssh-add key
-keychain ~/.ssh/id_dsa ~/.ssh/Bzbee_SSH_Key
+[ -f ~/.ssh/Bzbee_SSH_Key ] && keychain ~/.ssh/Bzbee_SSH_Key
+[ -f ~/.ssh/id_dsa ] && keychain ~/.ssh/id_dsa
