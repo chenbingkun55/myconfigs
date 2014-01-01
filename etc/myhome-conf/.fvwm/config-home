@@ -268,8 +268,9 @@ DestroyMenu ProgramsMenu
 AddToMenu ProgramsMenu "%application_24.png%=== 应用菜单 ===" Title
 + "[&1]浏览器- Opera%opera_24.png%"  Exec exec opera
 + "[&2]播放器- Audacious%music_24.png%"  Exec exec audacious
-+ "[&3]画图  - Gimp%gimp_24.png%"  Exec exec gimp
-+ "[&4]虚拟机- VirtualBox%virtualbox_24.png%"  Exec exec VirtualBox
++ "[&3]播放器- Smplayer2%mplayer2_24.png%"  Exec exec smplayer2
++ "[&4]画图  - Gimp%gimp_24.png%"  Exec exec gimp
++ "[&5]虚拟机- VirtualBox%virtualbox_24.png%"  Exec exec VirtualBox
 
 
 DestroyMenu UtilitiesMenu

@@ -20,3 +20,4 @@ net-misc/teamviewer ~amd64
 net-im/skype ~amd64
 app-i18n/fbterm ~amd64
 app-i18n/ibus-fbterm ~amd64
+app-i18n/fcitx-fbterm ~amd64

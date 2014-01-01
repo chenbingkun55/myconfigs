@@ -1,5 +1,3 @@
-exit
-quit
 restart
 restart
 restart
@@ -60,6 +58,8 @@ restart
 RunWinList
 WinRunList
 FvwmWinList
+restart
+restart
 restart
 restart
 restart

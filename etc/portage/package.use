@@ -12,3 +12,4 @@ app-misc/linux-logo nls
 media-libs/imlib2 X bzip2 gif jpeg mp3 nls png tiff zlib
 x11-wm/fvwm lock nls perl png readline svg truetype vanilla
 x11-terms/xterm openpty truetype unicode
+www-client/w3m  X gpm nls ssl unicode fbcon gtk imlib
