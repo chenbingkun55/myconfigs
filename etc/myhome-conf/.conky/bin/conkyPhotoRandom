@@ -6,7 +6,7 @@
 photo=/tmp/conkyPhoto.png
 
 #cd $source
-cd ~/.conky-myhome/pics
+cd ~/.conky/pics
 number=$(ls -R | wc -l)
 random=$RANDOM
 random=${random}%${number}

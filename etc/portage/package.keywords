@@ -18,3 +18,5 @@ app-arch/xarchiver ~amd64
 app-admin/eselect-php ~amd64
 net-misc/teamviewer ~amd64
 net-im/skype ~amd64
+app-i18n/fbterm ~amd64
+app-i18n/ibus-fbterm ~amd64

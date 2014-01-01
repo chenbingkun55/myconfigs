@@ -115,9 +115,9 @@ AddToFunc StartFunction
 DestroyFunc InitFunction
 AddToFunc InitFunction
 # + I Exec exec xscreensaver
-# + I Exec exec fvwm-root -r ~/.fvwm/wallpapers/1.png
++ I Exec exec fvwm-root --dummy -r ~/.fvwm/wallpapers/1.png
 # + I Exec exec fbpanel
-+ I Exec exec ~/.conky-myhome/bin/conkyStart
++ I Exec exec ~/.conky/bin/conkyStart
 # + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
 # + I Exec exec pcmanfm --desktop
 # + I Exec exec tint2

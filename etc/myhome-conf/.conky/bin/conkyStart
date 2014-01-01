@@ -1,2 +1,2 @@
 #!/bin/bash
-sleep 10 && conky -c ~/.conky-myhome/conkymain;
+sleep 10 && conky -c ~/.conky/conkymain;
