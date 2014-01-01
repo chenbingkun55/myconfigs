@@ -11,7 +11,7 @@
 SetEnv fvwm_img $[FVWM_USERDIR]/images
 SetEnv fvwm_icon $[FVWM_USERDIR]/icons
 SetEnv fvwm_script $[FVWM_USERDIR]/script.d
-SetEnv fvwm_wallpaper $[FVWM_USERDIR]/wallpaper
+SetEnv fvwm_wallpapers $[FVWM_USERDIR]/wallpapers
 
 
 ####
@@ -115,7 +115,7 @@ AddToFunc StartFunction
 DestroyFunc InitFunction
 AddToFunc InitFunction
 # + I Exec exec xscreensaver
-+ I Exec exec fvwm-root --dummy -r ~/.fvwm/wallpapers/1.png
++ I Exec exec fvwm-root -r ~/.fvwm/wallpapers/1.png
 # + I Exec exec fbpanel
 + I Exec exec ~/.conky/bin/conkyStart
 # + I Exec exec xloadimage -onroot -fullscreen $[fvwm_wallpapers]/1.png
