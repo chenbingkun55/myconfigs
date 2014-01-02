@@ -27,7 +27,7 @@ zstyle ':completion:*:warnings' format $'\e[01;31m -- No Matches Found --\e[0m'
 # 别名
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='trash'
+alias rm='trash-put'
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
@@ -38,14 +38,12 @@ case $TERM in
     xterm*)
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
-    break
     ;;
     linux*)
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     alias fbterm='LANG=zh_CN.UTF-8 fbterm'
     fbterm && tmux
-    break
     ;;
 esac
     bindkey '\e[1~' beginning-of-line       # Home
