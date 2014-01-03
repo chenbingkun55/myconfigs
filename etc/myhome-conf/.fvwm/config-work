@@ -252,6 +252,8 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 # Home-xp 无缝模式
 #+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
 + "[&7]PHP IDE - PhpStorm%php_24.png%"  Exec exec phpstorm
++ "[&8]文本编辑 - Sublime-text%sublime_text_24.png%"  Exec exec subl
++ "[&9]文本编辑 - leafpad%leafpad_24.png%"  Exec exec leafpad
 + ""  Nop
 + "[&A]办公软件%office_24.png%"   Popup OfficeMenu
 + "[&B]应用程序%application_24.png%"   Popup ProgramsMenu
