@@ -264,10 +264,10 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 
 DestroyMenu OfficeMenu
 AddToMenu OfficeMenu "%office_24.png%=== 办公软件菜单 ===" Title
-+ "[&1]文本文档 - Word%libreoffice-writer_24.png%" Exec exec libreoffice --writer
-+ "[&2]电子表格 - Excel%libreoffice-calc_24.png%"  Exec exec libreoffice --calc
-+ "[&3]数据库   - Base%libreoffice-base_24.png%"   Exec exec libreoffice --base
-+ "[&4]演示文稿 - PPT%libreoffice-draw_24.png%"   Exec exec libreoffice --draw
++ "[&1]文本文档 - Word%office_24.png%" Exec exec libreoffice --writer
++ "[&2]电子表格 - Excel%office_24.png%"  Exec exec libreoffice --calc
++ "[&3]数据库   - Base%office_24.png%"   Exec exec libreoffice --base
++ "[&4]演示文稿 - PPT%office_24.png%"   Exec exec libreoffice --draw
 
 
 DestroyMenu ProgramsMenu
@@ -275,8 +275,9 @@ AddToMenu ProgramsMenu "%application_24.png%=== 应用菜单 ===" Title
 + "[&1]播放器- XBMC%xbmc_24.png%"  Exec exec xbmc
 + "[&2]播放器- Mocp%music_24.png%"  Exec exec xterm -e mocp ~/05_Mp3/
 + "[&3]播放器- Audacious%music_24.png%"  Exec exec audacious
-+ "[&3]画图  - Gimp%gimp_24.png%"  Exec exec gimp
-+ "[&4]虚拟机- VirtualBox%virtualbox_24.png%"  Exec exec VirtualBox
++ "[&4]播放器- Smplayer2%mplayer2_24.png%"  Exec exec smplayer2
++ "[&5]画图  - Gimp%gimp_24.png%"  Exec exec gimp
++ "[&6]虚拟机- VirtualBox%virtualbox_24.png%"  Exec exec VirtualBox
 
 
 DestroyMenu UtilitiesMenu
