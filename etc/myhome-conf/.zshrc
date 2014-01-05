@@ -36,14 +36,16 @@ alias ee='emacsclient -t'
 # 键绑定
 case $TERM in
     xterm*)
+    export TERM='screen-256color'
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     ;;
     linux*)
+    export TERM='fbterm'
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     alias fbterm='LANG=zh_CN.UTF-8 fbterm'
-    fbterm && tmux
+    fbterm -- tmux
     ;;
 esac
     bindkey '\e[1~' beginning-of-line       # Home

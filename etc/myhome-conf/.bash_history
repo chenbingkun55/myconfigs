@@ -1,5 +1,3 @@
-mkdir Admin
-touch Admin/function.php
 touch Index/function.php
 ls
 cd ../Conf/
@@ -497,4 +495,6 @@ zsh
 zsh
 exit
 sudo grep chenbk /etc/passwd
+exit
+tmux 
 exit
