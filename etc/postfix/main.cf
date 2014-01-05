@@ -74,7 +74,7 @@ mail_owner = postfix
 #
 #myhostname = host.domain.tld
 #myhostname = virtual.domain.tld
-myhostname = Gentoo-PC
+myhostname = Gentoo-PC.gomyhome.cn
 
 # The mydomain parameter specifies the local internet domain name.
 # The default is to use $myhostname minus the first component.
@@ -82,7 +82,7 @@ myhostname = Gentoo-PC
 # parameters.
 #
 #mydomain = domain.tld
-mydomain = gicp.net
+mydomain = gomyhome.cn
 
 # SENDING MAIL
 # 
@@ -98,7 +98,7 @@ mydomain = gicp.net
 # to recipient addresses that have no @domain part.
 #
 #myorigin = $myhostname
-#myorigin = $mydomain
+myorigin = gomyhome.cn
 
 # RECEIVING MAIL
 
@@ -163,7 +163,7 @@ mydomain = gicp.net
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 #mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain,
 #	mail.$mydomain, www.$mydomain, ftp.$mydomain
-mydestination = localhost,$localhost.$mydomain, myhostname,$mydomain 
+mydestination = localhost,localhost.$mydomain
 
 # REJECTING MAIL FOR UNKNOWN LOCAL USERS
 #
@@ -294,7 +294,8 @@ mynetworks = 192.168.100.0/24, 127.0.0.0/8
 # list this system as their primary or backup MX host. See the
 # permit_mx_backup restriction description in postconf(5).
 #
-relay_domains = $mydestination
+#relay_domains = $mydestination
+relay_domains = 163.com
 
 # INTERNET OR INTRANET
 
@@ -417,14 +418,14 @@ alias_maps = hash:/etc/aliases
 # "Maildir/" for qmail-style delivery (the / is required).
 #
 #home_mailbox = Mailbox
-#home_mailbox = Maildir/
+home_mailbox = Maildir/
  
 # The mail_spool_directory parameter specifies the directory where
 # UNIX-style mailboxes are kept. The default setting depends on the
 # system type.
 #
 #mail_spool_directory = /var/mail
-#mail_spool_directory = /var/spool/mail
+mail_spool_directory = /var/spool/mail
 
 # The mailbox_command parameter specifies the optional external
 # command to use instead of mailbox delivery. The command is run as
@@ -660,12 +661,12 @@ sample_directory = /etc/postfix
 #
 readme_directory = no
 inet_protocols = ipv4
-home_mailbox = maildir/
 # smtp_sender_dependent_authentication = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 # sender_dependent_relayhost_maps = hash:/etc/postfix/sender_relay
 smtp_sasl_auth_enable = yes
-smtp_sasl_security_options = noplaintext,noanonymous
+broken_sasl_auth_clients = yes
+smtp_sasl_security_options = noanonymous
 smtp_sasl_tls_security_options = $smtp_sasl_security_options
 # smtp_sasl_mechanism_filter = plain,login
 relayhost = smtp.163.com

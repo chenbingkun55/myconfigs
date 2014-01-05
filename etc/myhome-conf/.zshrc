@@ -53,5 +53,5 @@ esac
     bindkey -v
 
 # 添加 ssh-add key
-[ -f ~/.ssh/Bzbee_SSH_Key ] && keychain ~/.ssh/Bzbee_SSH_Key
-[ -f ~/.ssh/id_dsa ] && keychain ~/.ssh/id_dsa
+[ -f ~/.ssh/Bzbee_SSH_Key ] && keychain ~/.ssh/Bzbee_SSH_Key >/dev/null 2>&1
+[ -f ~/.ssh/id_dsa ] && keychain ~/.ssh/id_dsa >/dev/null 2>&1

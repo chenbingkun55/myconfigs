@@ -43,8 +43,8 @@ set indent_str=">"
 set editor="vim"
 set thorough_search=yes
 set envelope_from=yes
-# set from="ChenBK@163 <chenbingkun55@163.com>"
-# set realname="ChenBK@163"
+set from="ChenBK@163 <chenbingkun55@163.com>"
+set realname="ChenBK@163"
 set sendmail="/usr/sbin/sendmail"
 my_hdr From: chenbingkun55@163.com
 
@@ -77,6 +77,7 @@ set fast_reply
 set resolve=yes
 
 set alias_file=~/maildir/muttalias
+source ~/maildir/muttalias
 set charset="utf-8"
 set wait_key=yes
 set noconfirmappend
