@@ -13,3 +13,5 @@ media-libs/imlib2 X bzip2 gif jpeg mp3 nls png tiff zlib
 x11-wm/fvwm lock nls perl png readline svg truetype vanilla
 x11-terms/xterm openpty truetype unicode
 www-client/w3m  X gpm nls ssl unicode fbcon gtk imlib
+app-editors/gvim acl gpm nls perl aqua cscope -debug -gnome gtk motif neXt netbeans python ruby
+ app-editors/vim X acl cscope debug gpm lua luajit minimal nls perl python racket ruby tcl vim-pager
