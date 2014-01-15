@@ -251,6 +251,7 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 + "[&6]虚拟机- Home-Win7%windows7_24.png%"  Exec exec VirtualBox --startvm Win7-work --fullscreen
 # Home-xp 无缝模式
 #+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
++ "[&7]文本编辑 - Gvim%vim_24.png%"  Exec exec gvim
 + "[&7]PHP IDE - PhpStorm%php_24.png%"  Exec exec phpstorm
 + "[&8]文本编辑 - Sublime-text%sublime_text_24.png%"  Exec exec subl
 + "[&9]文本编辑 - leafpad%leafpad_24.png%"  Exec exec leafpad
@@ -299,6 +300,8 @@ AddToMenu ServerMenu
 + "[&1][192.168.23.210]-BZB_SVN_SRV%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.210
 + "[&2][192.168.23.228]-BZB_QT_SRV%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.228
 + "[&3][192.168.23.223]-BZB_NAGIOS%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.223
++ "[&4][192.168.23.204]-BZB-REDMINE-TEST%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.204
++ "[&5][192.168.23.202]-BZB-MEIZU-TEST%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.202
 + "======= SSH XenServer%virtual_server_24.png%" Nop
 + "[&A][192.168.23.251]-XS-VM01%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.251
 + "[&B][192.168.23.252]-XS-VM02%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.252
@@ -306,6 +309,7 @@ AddToMenu ServerMenu
 + "[&D][192.168.23.253]-XS-VM04%putty_24.png%" Exec exec xterm -e ssh root@192.168.23.253
 + "======= 远程桌面%rdesktop_24.png%" Nop
 + "[&Z][192.168.1.61]-SHAREPOINT%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.1.61
++ "[&Z][192.168.1.82]-统一维护机%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u bingkunchen 192.168.1.82
 + "[&X][192.168.23.221]-BZB_WEB_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u administrator 192.168.23.221
 + "[&Y][192.168.23.6]-MY_TEST%rdesktop_24.png%" Exec exec rdesktop -g 1366x768 -u autoit 192.168.23.6
 + "======= 数据库%mysql_24.png%" Nop
