@@ -45,7 +45,6 @@ restart
 restart
 restart
 restart
-restart
 exit
 restart
 restart
@@ -57,6 +56,7 @@ restart
 RunWinList
 WinRunList
 FvwmWinList
+restart
 restart
 restart
 restart

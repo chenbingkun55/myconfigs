@@ -249,7 +249,6 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 + "[&6]虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --fullscreen
 # Home-xp 无缝模式
 #+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
-+ "[&7]文本编辑 - Gvim%vim_24.png%"  Exec exec gvim
 + "[&7]PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
 + "[&8]文本编辑 - Sublime-text%sublime_text_24.png%"  Exec exec subl
 + "[&9]文本编辑 - leafpad%leafpad_24.png%"  Exec exec leafpad

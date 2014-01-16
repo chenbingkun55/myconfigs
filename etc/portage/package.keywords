@@ -20,4 +20,5 @@ net-misc/teamviewer ~amd64
 net-im/skype ~amd64
 app-i18n/fbterm ~amd64
 app-i18n/fcitx-fbterm ~amd64
+sys-libs/rvm ~amd64
 x11-plugins/pidgin-lwqq ~amd64
