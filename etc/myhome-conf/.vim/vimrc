@@ -51,7 +51,7 @@ set wrap
 "禁止自动换行
 "set nowrap
 "GUI界面里的字体，默认有抗锯齿
-set guifont=Inconsolata:h12
+set guifont="Droid Sans Fallback":h12
 "自动载入配置文件不需要重启
 "autocmd! bufwritepost _vimrc source %
 "将-连接符也设置为单词
@@ -66,11 +66,11 @@ set showmatch
 set hlsearch
 
 "加入html标签配对
-"runtime macros/matchit.vim 
+runtime macros/matchit.vim 
 
 "以下设置用来是vim正确显示过长的行
-"set textwidth=80
-"set formatoptions=qrnl
+set textwidth=80
+set formatoptions=qrnl
 "彩色显示第85行
 set colorcolumn=85
 "设置256色显示
@@ -86,7 +86,7 @@ set numberwidth=4
 "winpos 620 45 
 
 "匹配括号的规则，增加针对html的<>
-"set matchpairs=(:),{:},[:],<:>
+set matchpairs=(:),{:},[:],<:>
 "让退格，空格，上下箭头遇到行首行尾时自动移到下一行（包括insert模式）
 set whichwrap=b,s,<,>,[,]
 
@@ -144,19 +144,11 @@ nmap <leader>fx :set ft=xml<CR>
 nmap <leader>fm :set ft=mako<CR>
 
 "设置隐藏gvim的菜单和工具栏 F2切换
-set guioptions-=m
-set guioptions-=T
+set guioptions+=m
+set guioptions+=T
 "去除左右两边的滚动条
 set go-=r
 set go-=L
-
-map <silent> <F2> :if &guioptions =~# 'T' <Bar>
-        \set guioptions-=T <Bar>
-        \set guioptions-=m <bar>
-    \else <Bar>
-        \set guioptions+=T <Bar>
-        \set guioptions+=m <Bar>
-    \endif<CR>
 
 "===================================================
 "插件的设置
@@ -206,4 +198,4 @@ Bundle 'The-NERD-Commenter'
 let NERDShutUp=1
 Bundle 'vim-powerline'
 "支持单行和多行的选择，//格式
-""map <c-h> ,c<space>
+map <c-h> ,c<space>
