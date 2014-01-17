@@ -27,7 +27,7 @@ set expandtab
 "一些其他的设定
 "字符设置
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5
-"set encoding=utf-8
+set encoding=utf-8
 set scrolloff=3
 "新建文件编码
 set fenc=utf-8
@@ -45,15 +45,18 @@ set relativenumber
 "显示行号
 "set number
 "无限undo
-"set undofile
+set undofile
 "自动换行
 set wrap
 "禁止自动换行
 "set nowrap
 "GUI界面里的字体，默认有抗锯齿
-set guifont="Droid Sans Fallback":h12
+set guifont=DejaVu\ Sans\ Mono\ 14
+set guifontwide=Droid\ Sans\ Fallback\ 12
+set linespace=2
+
 "自动载入配置文件不需要重启
-"autocmd! bufwritepost _vimrc source %
+autocmd! bufwritepost .vimrc source %
 "将-连接符也设置为单词
 set isk+=-
 
@@ -77,7 +80,7 @@ set colorcolumn=85
 set t_Co=256
 
 "行号栏的宽度
-set numberwidth=4
+set numberwidth=3
 "初始窗口的宽度
 "set columns=135
 "初始窗口的高度
@@ -91,10 +94,10 @@ set matchpairs=(:),{:},[:],<:>
 set whichwrap=b,s,<,>,[,]
 
 "插入模式下移动
-inoremap <c-j> <down>
-inoremap <c-k> <up>
-inoremap <c-l> <right>
-inoremap <c-h> <left>
+inoremap <c-H> <left>
+inoremap <c-J> <down>
+inoremap <c-K> <up>
+inoremap <c-L> <right>
 
 "===================================================
 "leader键的功能设置
@@ -110,8 +113,8 @@ vnoremap <F1> <ESC>
 nnoremap / /\v
 vnoremap / /\v
 "使用tab键来代替%进行匹配跳转
-nnoremap <tab> %
-vnoremap <tab> %
+"nnoremap <tab> %
+"vnoremap <tab> %
 "折叠html标签 ,fold tag
 nnoremap <leader>ft vatzf
 "使用,v来选择刚刚复制的段落，这样可以用来缩进
@@ -144,8 +147,15 @@ nmap <leader>fx :set ft=xml<CR>
 nmap <leader>fm :set ft=mako<CR>
 
 "设置隐藏gvim的菜单和工具栏 F2切换
-set guioptions+=m
-set guioptions+=T
+set guioptions-=m
+set guioptions-=T
+map <silent> <F2> :if &guioptions =~# 'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
 "去除左右两边的滚动条
 set go-=r
 set go-=L
@@ -167,13 +177,12 @@ Bundle 'gmarik/vundle'
 " vim-scripts repos
 Bundle 'ctrlp.vim'
 Bundle 'AutoClose'
-Bundle 'mattn/emmet-vim'
 Bundle 'matchit.zip'
 Bundle 'ShowTrailingWhitespace'
 
 "jsbeautify的设置
-Bundle '_jsbeautify'
-nnoremap <leader>_ff :call g:Jsbeautify()<CR>  
+"Bundle '_jsbeautify'
+"nnoremap <leader>_ff :call g:Jsbeautify()<CR>  
 
 "EasyMotion设置
 Bundle 'EasyMotion'
@@ -197,5 +206,90 @@ let NERDTreeWinPos=1
 Bundle 'The-NERD-Commenter'
 let NERDShutUp=1
 Bundle 'vim-powerline'
+Bundle 'shawncplus/php.vim'
+
+"Tagbar 用来快速浏览代码里的标签
+Bundle 'vim-scripts/Tagbar'
+nmap <F8> :TagbarToggle<CR>
+
+"svn 版本库工具
+Bundle 'vim-scripts/vcscommand.vim'
+
+"git 版本库工具
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+
+"Html 代码片段
+"Bundle 'mattn/emmet-vim'
+Bundle 'msanders/snipmate.vim'
+
 "支持单行和多行的选择，//格式
 map <c-h> ,c<space>
+
+"加载Ctags 功能
+function! s:CheckAndAddTagFile(path)
+    if stridx(a:path, '/') == (strlen(a:path) - 1)
+        let l:tags = a:path . 'tags'
+    else
+        let l:tags = a:path . '/tags'
+    endif
+
+    if stridx(&tags, l:tags) != -1
+        echo l:tags "already added"
+        return
+    endif
+
+    if !filereadable(l:tags)
+        echo l:tags "not readable"
+        return
+    endif
+
+    let &tags =  len(&tags) == 0 ? l:tags : &tags . ',' . l:tags
+    echo l:tags "added"
+
+    unlet! l:tags
+endfunction
+
+function! s:StrEndWith(str, pattern)
+    if strridx(a:str, a:pattern) == strlen(a:str) - strlen(a:pattern)
+        return 1
+    else
+        return 0
+    endif
+endfunction
+
+function! s:SplitPath(path)
+    let l:start = 0
+    let l:list = []
+
+    while 1 == 1
+        let l:idx = stridx(a:path, '/', l:start)
+        let l:start = l:idx + 1
+
+        if l:idx == -1
+            break
+        endif
+
+        let l:part = a:path[0:(l:idx > 0 ? l:idx - 1 : l:idx)]
+        call add(l:list, l:part)
+    endwhile
+
+    if !s:StrEndWith(a:path, '/')
+        call add(l:list, a:path)
+    endif
+
+    return l:list
+endfunction
+
+function! AddTagsInCwdPath()
+    let l:cwd = tr(expand('%:p:h'), '\', '/')
+
+    let l:pathes = s:SplitPath(l:cwd)
+
+    for p in l:pathes
+        call s:CheckAndAddTagFile(p)
+    endfor
+
+endfunction
+
+nmap <F7> :call AddTagsInCwdPath()<cr><cr>
