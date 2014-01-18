@@ -195,6 +195,7 @@ let g:fencview_autodetect=1
 "NerdTree的设置 并且相对行号显示
 Bundle 'The-NERD-tree'
 nmap <leader>nt :NERDTree<cr>:set rnu<cr>
+nmap <F9> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
@@ -221,6 +222,8 @@ Bundle 'tpope/vim-git'
 
 "Html 代码片段
 "Bundle 'mattn/emmet-vim'
+"let g:user_emmet_expandabbr_key = '<Tab>'
+
 Bundle 'msanders/snipmate.vim'
 
 "支持单行和多行的选择，//格式
