@@ -41,13 +41,13 @@ case $TERM in
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     ;;
-    linux*)
-    export TERM='fbterm'
-    bindkey "^[[F" end-of-line
-    bindkey "^[[H" beginning-of-line 
-    alias fbterm='LANG=zh_CN.UTF-8 fbterm'
-    fbterm -- tmux
-    ;;
+#    linux*)
+#   export TERM="fbterm"
+#   bindkey "^[[F" end-of-line
+#   bindkey "^[[H" beginning-of-line 
+#   alias fbterm='LANG=zh_CN.UTF-8 cfbterm'
+#   fbterm -- tmux
+#   ;;
 esac
     bindkey '\e[1~' beginning-of-line       # Home
     bindkey '\e[4~' end-of-line             # End
@@ -58,3 +58,5 @@ esac
 # 添加 ssh-add key
 [ -f ~/.ssh/Bzbee_SSH_Key ] && keychain ~/.ssh/Bzbee_SSH_Key >/dev/null 2>&1
 [ -f ~/.ssh/id_dsa ] && keychain ~/.ssh/id_dsa >/dev/null 2>&1
+
+[[ $(tty) == \/dev\/tty[0-9]* ]] && /usr/bin/fbterm-bi ~/.fbterm_bg.png
