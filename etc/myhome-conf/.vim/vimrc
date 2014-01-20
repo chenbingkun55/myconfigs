@@ -206,7 +206,7 @@ let NERDTreeWinPos=1
 "对NERD_commenter的设置
 Bundle 'The-NERD-Commenter'
 let NERDShutUp=1
-Bundle 'vim-powerline'
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'shawncplus/php.vim'
 
 "Tagbar 用来快速浏览代码里的标签
