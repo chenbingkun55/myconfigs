@@ -246,7 +246,7 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 + "[&2]浏览器- Firefox%firefox_24.png%"  Exec exec firefox-bin
 + "[&3]浏览器- Chrome%chrome_24.png%"  Exec exec google-chrome
 + "[&4]浏览器- Opera%opera_24.png%"  Exec exec opera
-+ "[&5]文件库- PCmanFM%pcmanfm_24.png%"  Exec exec pcmanfm
++ "[&5]文件库- MC%mc_24.png%"  Exec exec xterm -e mc
 # Home-xp 全屏模式
 + "[&6]虚拟机- Home-Win7%windows7_24.png%"  Exec exec VirtualBox --startvm Win7-work --fullscreen
 # Home-xp 无缝模式

@@ -15,3 +15,7 @@ x11-terms/xterm openpty truetype unicode
 www-client/w3m  X gpm nls ssl unicode fbcon gtk imlib
 app-editors/gvim X acl gpm nls perl aqua cscope gtk motif python ruby
 app-editors/vim X cscope debug gpm lua nls perl python racket ruby
+sys-apps/usbutils python zlib
+sys-libs/slang pcre readline zlib cjk png
+app-misc/mc X edit gpm nls slang xdg mclib samba sftp
+
