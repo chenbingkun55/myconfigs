@@ -23,3 +23,4 @@ app-i18n/fcitx-fbterm ~amd64
 sys-libs/rvm ~amd64
 x11-plugins/pidgin-lwqq ~amd64
 media-gfx/fbv ~amd64
+net-misc/flashget ~amd64
