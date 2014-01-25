@@ -177,6 +177,11 @@ Key C W M Close
 Key minus W C Resize w-10 w-10
 Key equal W C Resize w+10 w+10
 
+# Ctrl + Alt + A 键 截图
+AddToFunc Grasp-Screen
++ I Exec exec scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
+Key A A MC  Grasp-Screen
+
 # Alt+Ctrl+n 标记n号窗回,Ctrl+n回到n号标记的窗口
 Key 0 WI MC Key 0 A C WindowId $[w.id] WarpToWindow 50 50
 Key 1 WI MC Key 1 A C WindowId $[w.id] WarpToWindow 50 50

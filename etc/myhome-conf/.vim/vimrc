@@ -234,7 +234,6 @@ let NERDTreeWinPos=1
 "对NERD_commenter的设置
 Bundle 'The-NERD-Commenter'
 let NERDShutUp=1
-<<<<<<< HEAD
 ",ca，在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
 ",cc，注释当前行
 ",c，切换注释/非注释状态
@@ -244,10 +243,7 @@ let NERDShutUp=1
 
 
 
-Bundle 'vim-powerline'
-=======
 Bundle 'https://github.com/Lokaltog/vim-powerline.git'
->>>>>>> bdad61373a450966f08133b4679fbeea5b90be46
 Bundle 'shawncplus/php.vim'
 
 "Tagbar 用来快速浏览代码里的标签
