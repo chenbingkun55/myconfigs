@@ -2,7 +2,6 @@ export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 export PS1="%B%F{white}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
-export EDITOR="/usr/bin/vim"
 
 #setopt hist_ignore_all_dups
 setopt hist_ignore_space
@@ -41,13 +40,16 @@ case $TERM in
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     ;;
-#    linux*)
-#   export TERM="fbterm"
-#   bindkey "^[[F" end-of-line
-#   bindkey "^[[H" beginning-of-line 
-#   alias fbterm='LANG=zh_CN.UTF-8 cfbterm'
-#   fbterm -- tmux
-#   ;;
+    screen*)
+    export TERM='xterm'
+    ;;
+    linux*)
+    export TERM='fbterm'
+    bindkey "^[[F" end-of-line
+    bindkey "^[[H" beginning-of-line 
+    alias fbterm='LANG=zh_CN.UTF-8 fbterm'
+    fbterm -- tmux
+    ;;
 esac
     bindkey '\e[1~' beginning-of-line       # Home
     bindkey '\e[4~' end-of-line             # End
@@ -58,5 +60,3 @@ esac
 # 添加 ssh-add key
 [ -f ~/.ssh/Bzbee_SSH_Key ] && keychain ~/.ssh/Bzbee_SSH_Key >/dev/null 2>&1
 [ -f ~/.ssh/id_dsa ] && keychain ~/.ssh/id_dsa >/dev/null 2>&1
-
-[[ $(tty) == \/dev\/tty[0-9]* ]] && /usr/bin/fbterm-bi ~/.fbterm_bg.png
