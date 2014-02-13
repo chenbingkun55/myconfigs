@@ -50,3 +50,4 @@ named:x:40:
 vboxusers:x:998:chenbk
 at:x:25:chenbk
 ntp:x:123:
+hsqldb:x:997:

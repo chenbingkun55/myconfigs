@@ -5,3 +5,4 @@ sys-firmware/b43-firmware Broadcom
 media-libs/fdk-aac FraunhoferFDK
 net-misc/teamviewer TeamViewer
 net-im/skype skype-4.0.0.7-copyright
+sci-geosciences/googleearth googleearth

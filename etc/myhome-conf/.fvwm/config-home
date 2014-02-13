@@ -142,9 +142,10 @@ AddToFunc ExitFunction
 # 快捷键绑定
 ######
 Key M A C Menu FuncMenu
+Key Menu A A Menu FuncMenu
 Key M A M Menu SystemMenu
 ### Ctrl+P 截图
-Key P A C  Exec exec xterm scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
+Key P A M  Exec exec xterm scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
 Key F3 A A Module FvwmConsole -terminal uxterm -geometry 50x6+0+500 \
 	-bg gold -fg midnightblue
 Key Tab A M WindowList Root c c NoDeskSort, SelectOnRelease Meta_L
@@ -177,10 +178,10 @@ Key C W M Close
 Key minus W C Resize w-10 w-10
 Key equal W C Resize w+10 w+10
 
-# Ctrl + Alt + A 键 截图
-AddToFunc Grasp-Screen
-+ I Exec exec scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
-Key A A MC  Grasp-Screen
+# cTRL + Alt + A 键 截图
+# AddToFunc Grasp-Screen
+# + I Exec exec scrot -s ~/04_Image/01_截图/`date +%Y%m%d-%H%M%S`.png
+# Key A A MC  Grasp-Screen
 
 # Alt+Ctrl+n 标记n号窗回,Ctrl+n回到n号标记的窗口
 Key 0 WI MC Key 0 A C WindowId $[w.id] WarpToWindow 50 50
@@ -255,9 +256,8 @@ AddToMenu FuncMenu "%gentoo_24.png%=== 主菜单===" Title
 # Home-xp 无缝模式
 #+ "虚拟机- &Home-XP%windows_xp_24.png%"  Exec exec VirtualBox --startvm Home-xp --seamless
 + "[&7]文本编辑 - Gvim%vim_24.png%"  Exec exec gvim
-+ "[&7]PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
-+ "[&8]文本编辑 - Sublime-text%sublime_text_24.png%"  Exec exec subl
-+ "[&9]文本编辑 - leafpad%leafpad_24.png%"  Exec exec leafpad
++ "[&8]PHP IDE - Php&Storm%php_24.png%"  Exec exec pstorm
++ "[&9]文件库- MC%mc_24.png%"  Exec exec xterm -e mc
 + ""  Nop
 + "[&A]办公软件%office_24.png%"   Popup OfficeMenu
 + "[&B]应用程序%application_24.png%"   Popup ProgramsMenu
@@ -290,6 +290,8 @@ AddToMenu UtilitiesMenu "%utilities_24.png%=== 工具菜单 ===" Title
 + "[&5]看图片- ImageMagick%image_24.png%"  Exec exec display
 + "[&6]RSS  - Snownews%rss_24.png%"  Exec exec xterm -e snownews
 + "[&7]聊天- Skype%skype_24.png%"  Exec exec skype
++ "[&8]文本编辑 - Sublime-text%sublime_text_24.png%"  Exec exec subl
++ "[&9]文本编辑 - leafpad%leafpad_24.png%"  Exec exec leafpad
 
 
 DestroyMenu SystemMenu
