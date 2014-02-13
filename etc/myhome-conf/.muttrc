@@ -98,8 +98,8 @@ hdr_order X-Mailer User-Agent date from to subject
 # unignore Date To From: Subject X-Mailer Organization User-Agent
 # hdr_order Date From To Subject X-Mailer User-Agent Organization
 
-# 新邮件提醒功能
-set status_format="/home/chenbk/01_Shell/mutt_filter.sh '-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---'|"
+# 新邮件提醒功能(用mutt_newmail_notify.sh 脚本替代 20140214 )
+#set status_format="/home/chenbk/01_Shell/mutt_filter.sh '-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---'|"
 
 # 邮件签名档
 # -----
@@ -107,7 +107,7 @@ set status_format="/home/chenbk/01_Shell/mutt_filter.sh '-%r-Mutt: %f [Msgs:%?M?
 # - B -| 一切皆有可能 |-
 # - K -================-
 # -----
-set signature="~/.signature"
+set signature="~/01_Shell/mutt_signature.sh|"
 
 # 颜色配置
 color signature brightred default  
