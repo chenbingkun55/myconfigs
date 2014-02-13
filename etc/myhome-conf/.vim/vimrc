@@ -6,10 +6,10 @@ syntax enable
 "不要兼容vi
 set nocompatible
 
-"使用color solarized
 set background=dark
-colorscheme solarized
-"colorscheme ron
+"使用color solarized
+"colorscheme solarized
+colorscheme ron
 "terminal下面的背景问题
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
@@ -28,6 +28,10 @@ set expandtab
 "一些其他的设定
 "自动切换当前目录为当前文件所在的目录
 set autochdir
+"设置鼠标支持
+set mouse=a
+"把备份统一放在tmp目录里.
+set backupdir=~/tmp/backup
 
 "字符设置
 set fileencodings=utf-8,cp936,gb18030,big5,ucs-bom
@@ -38,12 +42,19 @@ language message zh_CN.UTF-8
 set fenc=utf-8
 set autoindent
 set hidden
-"设置光标高亮显示
-set cursorline
-set cursorcolumn
-"TTY 下不使用
-"set nocursorline
-"set nocursorcolumn
+
+if &term == "linux"
+    set nocursorline
+    set nocursorcolumn
+else
+    set cursorline
+    set cursorcolumn
+    hi CursorLine cterm=NONE ctermbg=white ctermfg=black guibg=white guifg=black
+    hi CursorColumn cterm=NONE ctermbg=green ctermfg=black guibg=white guifg=black
+endif
+
+nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
 set ttyfast
 set ruler
 set backspace=indent,eol,start
@@ -103,10 +114,10 @@ set matchpairs=(:),{:},[:],<:>
 set whichwrap=b,s,<,>,[,]
 
 "插入模式下移动
-inoremap <c-H> <left>
-inoremap <c-J> <down>
-inoremap <c-K> <up>
-inoremap <c-L> <right>
+inoremap <C-H> <left>
+inoremap <C-J> <down>
+inoremap <C-K> <up>
+inoremap <C-L> <right>
 
 "===================================================
 "leader键的功能设置
@@ -187,7 +198,7 @@ endif
 "PHP缩进
 let PHP_autoformatcomment=1
 "PHP 语法进行检测 Ctrl+p启动
-map <C-p> :!php -l %<CR>
+map <C-S-p> :!php -l %<CR>
 
 "===================================================
 "插件的设置
@@ -257,7 +268,7 @@ Bundle 'vim-scripts/vcscommand.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 
-"Html 代码片段
+"Html 代码片段(不懂得用)
 "Bundle 'mattn/emmet-vim'
 "let g:user_emmet_expandabbr_key = '<Tab>'
 
@@ -301,7 +312,8 @@ map <leader>l :call ToggleLocationList()<CR>
 
 "代码自动补全功能
 Bundle 'Shougo/neocomplcache.vim'
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
+let g:SuperTabRetainCompletionType="context"
 
 "-------------------------------------------------------------
 "" plugin - NeoComplCache.vim    自动补全插件
@@ -396,6 +408,7 @@ let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+inoremap <expr><Enter> pumvisible() ? "\<C-Y>" : "\<Enter>"
 "End NeoComplCache 配置
 
 "浏览己打开的文件
@@ -412,7 +425,7 @@ let g:bufExplorerSplitRight=0        " Split left.
 let g:bufExplorerSplitBelow=0        " Split new window above current
 
 "支持单行和多行的选择，//格式
-map <c-h> ,c<space>
+"map <c-h> ,c<space>
 
 "加载Ctags 功能
 function! s:CheckAndAddTagFile(path)
