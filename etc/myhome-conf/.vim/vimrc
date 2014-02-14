@@ -31,7 +31,9 @@ set autochdir
 "设置鼠标支持
 set mouse=a
 "把备份统一放在tmp目录里.
-set backupdir=~/tmp/backup
+set backupdir=~/tmp/backup,/tmp
+"把.swp 文件统一存放到tmp
+set directory=~/tmp,/tmp
 
 "字符设置
 set fileencodings=utf-8,cp936,gb18030,big5,ucs-bom
@@ -496,7 +498,7 @@ endfunction
 nmap <F6> :call AddTagsInCwdPath()<cr><cr>
 
 "当编辑没有权限的文件时,直接在vim里执行sudo(默认己存在Sudow)
-command -nargs=? Sudow :w !sudo tee %
+command! -nargs=? Sudow :w !sudo tee %
 
 
 "添加文件作者信息
