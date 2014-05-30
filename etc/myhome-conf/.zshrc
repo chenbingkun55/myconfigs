@@ -1,7 +1,8 @@
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
-export PS1="%B%F{white}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
+export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
+export PATH="/usr/sbin/:~/03_Shell:/usr/lib/ccache/bin:/usr/lib/distcc/bin:${PATH}"
 
 #setopt hist_ignore_all_dups
 setopt hist_ignore_space

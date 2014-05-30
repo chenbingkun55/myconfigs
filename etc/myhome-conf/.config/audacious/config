@@ -1,0 +1,17 @@
+[audgui]
+filesel_path=/home/chenbk/05_Mp3
+
+[gtkui-layout]
+item_count=0
+
+[alsa]
+mixer-element=Master
+
+[skins]
+equalizer_x=1046
+equalizer_y=695
+player_x=1046
+player_y=579
+playlist_x=1321
+playlist_y=579
+skin=/usr/share/audacious/Skins/Classic
