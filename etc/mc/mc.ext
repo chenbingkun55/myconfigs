@@ -279,7 +279,7 @@ type/^ASCII\ mail\ text
 ### Sources ###
 
 # C/C++
-regex/i/\.(c|cc|cpp)$
+regex/i/\.(c|cc|cpp|txt)$
 	Include=editor
 
 # C/C++ header
@@ -295,7 +295,7 @@ regex/i/\.(s|asm)$
 	Include=editor
 
 include/editor
-	Open=%var{EDITOR:vi} %f
+	Open=%var{EDITOR:gvim} %f
 
 # .so libraries
 regex/\.(so|so\.[0-9\.]*)$
@@ -378,8 +378,8 @@ type/^GIF
 	Include=image
 
 type/^JPEG
-	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view jpeg
 	Include=image
+	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view jpeg
 
 type/^PC\ bitmap
 	Include=image
@@ -426,8 +426,10 @@ shell/i/.svg
 	Open=/usr/libexec/mc/ext.d/image.sh open svg
 
 include/image
-	Open=/usr/libexec/mc/ext.d/image.sh open ALL_FORMATS
-	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view ALL_FORMATS
+	Open=/usr/bin/gqview %f
+	View=/usr/bin/gqview %f
+#	Open=/usr/libexec/mc/ext.d/image.sh open ALL_FORMATS
+#	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view ALL_FORMATS
 
 
 ### Sound files ###
@@ -568,6 +570,13 @@ shell/i/.rtf
 
 # Microsoft Excel Worksheet
 regex/i/\.xl[sw]$
+	Open=/usr/libexec/mc/ext.d/doc.sh open msxls
+	View=%view{ascii} /usr/libexec/mc/ext.d/doc.sh view msxls
+type/^Microsoft\ Excel
+	Open=/usr/libexec/mc/ext.d/doc.sh open msxls
+	View=%view{ascii} /usr/libexec/mc/ext.d/doc.sh view msxls
+
+regex/i/\.xlsx$
 	Open=/usr/libexec/mc/ext.d/doc.sh open msxls
 	View=%view{ascii} /usr/libexec/mc/ext.d/doc.sh view msxls
 type/^Microsoft\ Excel
