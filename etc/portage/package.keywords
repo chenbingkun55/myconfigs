@@ -22,5 +22,21 @@ app-i18n/fbterm ~amd64
 app-i18n/fcitx-fbterm ~amd64
 sys-libs/rvm ~amd64
 x11-plugins/pidgin-lwqq ~amd64
+dev-ruby/activesupport ~amd64
+dev-ruby/i18n ~amd64
+dev-util/android-tools ~amd64
 sci-geosciences/googleearth ~amd64
-app-i18n/zh-autoconvert ~amd64
+# 安装 深度截图
+media-gfx/deepin-screenshot ~amd64
+x11-libs/deepin-ui ~amd64
+dev-python/deepin-utils ~amd64
+######
+media-sound/skype-call-recorder ~amd64
+dev-ruby/minitest ~amd64
+dev-ruby/tzinfo ~amd64
+media-plugins/gst-plugins-vaapi ~amd64
+x11-libs/libva ~amd64
+x11-libs/libva-intel-driver ~amd64
+dev-libs/syncdir ~amd64
+app-office/wps-office ~amd64
+www-client/firefox-bin ~amd64

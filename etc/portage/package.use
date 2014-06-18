@@ -9,13 +9,30 @@ net-dns/bind berkdb dlz
 dev-libs/openssl -bindist
 net-dns/bind-tools ssl
 app-misc/linux-logo nls
-media-libs/imlib2 X bzip2 gif jpeg mp3 nls png tiff zlib
-x11-wm/fvwm lock nls perl png readline svg truetype vanilla
+media-libs/imlib2 X bzip2 gif mp3 nls tiff zlib
+x11-wm/fvwm lock nls perl readline svg truetype vanilla
 x11-terms/xterm openpty truetype unicode
 www-client/w3m  X gpm nls ssl unicode fbcon gtk imlib
 app-editors/gvim X acl gpm nls perl aqua cscope gtk motif python ruby
 app-editors/vim X cscope debug gpm lua nls perl python racket ruby
 sys-apps/usbutils python zlib
-sys-libs/slang pcre readline zlib cjk png
-app-misc/mc X edit gpm nls slang xdg mclib samba sftp
-
+sys-libs/slang pcre readline zlib cjk 
+app-misc/mc X gpm nls slang xdg mclib samba sftp
+app-admin/eselect-php apache2
+sys-libs/libselinux static-libs
+dev-libs/libpcre static-libs
+virtual/udev gudev
+dev-libs/openssl bindist 
+x11-libs/libva opengl
+app-text/ghostscript-gpl cups
+x11-libs/cairo  xcb
+sys-libs/zlib minizip
+media-libs/libsdl audio,opengl,video,X
+sys-auth/consolekit policykit
+x11-libs/libdrm video_cards_nouveau
+sys-apps/busybox -static -pam
+media-sound/moc aac alsa cache curl ffmpeg flac jack libsamplerate magic modplug musepack unicode wavpack
+media-libs/harfbuzz icu
+media-libs/libpng apng
+media-plugins/audacious-plugins alsa nls aac adplug bs2b cdda cue ffmpeg flac fluidsynth -gnome -ipv6 jack -lame libnotify -libsamplerate -lirc midi mms mp3 pulseaudio -scrobbler -sdl -sid -sndfile -vorbis wavpack"
+media-plugins/alsa-plugins pulseaudio
