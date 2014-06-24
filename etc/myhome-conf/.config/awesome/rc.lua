@@ -110,20 +110,20 @@ appsmenu = {
    { "聊天-Skype", "skype" },
    { "录音-Audacity", "audacity" },
    { "浏览器-firefox", "firefox-bin" },
-   { "浏览器-chrome", "google-chrome" },
+   { "浏览器-chrome", "google-chrome-stable" },
    { "浏览器-Opera", "opera" },
-   { "wps", "wps" },
    { "libreoffice-文本文档", "libreoffice --writer" },
    { "libreoffice-电子表格", "libreoffice --calc" },
    { "libreoffice-数据库", "libreoffice --base" },
    { "libreoffice-演示文稿", "libreoffice --draw" },
+   { "librcad-CAD设计", "librecad" },
    { "文本编辑-gvim", "gvim" },
    { "文本编辑-PHP IDE", "phpstorm" },
    { "文本编辑-Sublime", "subl" },
    { "文本编辑-leafpad", "leafpad" },
    { "资源管理-mc", "xterm -e mc" },
    { "资源管理-Pcmanfm", "pcmanfm" },
-   { "htop", terminal .. " -e htop" },
+   { "任务查看器-htop", terminal .. " -e htop" },
 }
 
 rdesktopmenu = {
@@ -163,16 +163,16 @@ sshmenu = {
 
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu },
-                                    { "apps", appsmenu },
-				    { "rdesktopmenu", rdesktopmenu },
-				    { "sshmenu", sshmenu },
+mymainmenu = awful.menu({ items = {
+                    { "截图-Scrot", "scrot -s /home/chenbk/04_Image/01_jietu/%Y-%m-%d_%H%m.png" },
+                    { "awesome", myawesomemenu },
+                    { "apps", appsmenu },
+				    { "远程桌面", rdesktopmenu },
+				    { "SSH连接", sshmenu },
                     { "terminal", terminal },
-                    { "terminal_tmux", terminal_tmux },
 				    { "Firefox", "firefox-bin" },
 				    { "FileZilla", "filezilla" },
 				    { "Gvim", "gvim" },
-                    { "截图-Scrot", "scrot -s /home/chenbk/04_Image/01_jietu/`date +%Y%m%d-%H%M%S`.png" },
                                   }
                         })
 
@@ -357,6 +357,15 @@ clientkeys = awful.util.table.join(
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
             c.maximized_vertical   = not c.maximized_vertical
+        end),
+-- 自定义键
+    awful.key({ modkey,          }, "p",
+        function (c)
+            awful.util.spawn("scrot.sh")
+        end),
+    awful.key({ modkey,          }, "e",
+        function (c)
+            awful.util.spawn("mc")
         end)
 )
 
@@ -437,6 +446,8 @@ awful.rules.rules = {
      properties = {floating = true, tag = tags[1][7]}},
    {rule = {class = "rdesktop"},
      properties = {tag = tags[1][4]}},
+   {rule = {name = "rdesktop.sh"},
+     properties = {tag = tags[1][4]}},
    {rule = {class = "libreoffice"},
      properties = {tag = tags[1][5]}},
    {rule = {name = "xterm"},
@@ -482,13 +493,39 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- {{{ 自启动项
-awful.util.spawn_with_shell("gvim")
-awful.util.spawn_with_shell("synergys --debug ERROR --log /var/log/synergy.log")
-awful.util.spawn_with_shell("fcitx")
-awful.util.spawn_with_shell("firefox-bin")
-awful.util.spawn_with_shell("xterm -e douban.fm")
-awful.util.spawn_with_shell("xterm -e \"cd ~/03_Shell\"")
-awful.util.spawn_with_shell("xterm")
-awful.util.spawn_with_shell("xterm -e mc")
-awful.util.spawn_with_shell("sudo killall mplayer")
+-- Autorun programs
+autorun = true
+autorunApps =
+{
+    "fcitx",
+    "firefox-bin",
+    "xterm -e douban.fm",
+    "xterm -e /home/chenbk/03_Shell/rdesktop.sh",
+    "rdesktop -r sound:local -0 -g 1440x880 192.168.23.6 -u bingkunchen -d sharepoint -r sound:local -p chenbk55",
+    "xterm",
+    "xterm",
+    "xterm -e mc",
+    "~/.conky/bin/conkyStart",
+    "sudo killall mplayer",
+}
+
+if autorun then
+    for app = 1, #autorunApps do
+        awful.util.spawn_with_shell(autorunApps[app])
+    end
+end
+-- }}}
+
+-- {{{ 自启动项
+-- awful.util.spawn_with_shell("gvim")
+-- awful.util.spawn_with_shell("synergys --debug ERROR --log /var/log/synergy.log")
+-- awful.util.spawn_with_shell("fcitx")
+-- awful.util.spawn_with_shell("firefox")
+-- awful.util.spawn_with_shell("xterm -e douban.fm")
+-- awful.util.spawn_with_shell("xterm -e /home/chenbk/03_Shell/rdesktop.sh")
+-- awful.util.spawn_with_shell("xterm")
+-- awful.util.spawn_with_shell("xterm")
+-- awful.util.spawn_with_shell("xterm -e mc")
+-- awful.util.spawn_with_shell("~/.conky/bin/conkyStart")
+-- awful.util.spawn_with_shell("sudo killall mplayer")
 -- }}}
