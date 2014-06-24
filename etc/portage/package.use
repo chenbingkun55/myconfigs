@@ -36,3 +36,5 @@ media-libs/harfbuzz icu
 media-libs/libpng apng
 media-plugins/audacious-plugins alsa nls aac adplug bs2b cdda cue ffmpeg flac fluidsynth -gnome -ipv6 jack -lame libnotify -libsamplerate -lirc midi mms mp3 pulseaudio -scrobbler -sdl -sid -sndfile -vorbis wavpack"
 media-plugins/alsa-plugins pulseaudio
+net-misc/remmina  crypt nls avahi freerdp ssh telepathy vte
+media-gfx/librecad tools

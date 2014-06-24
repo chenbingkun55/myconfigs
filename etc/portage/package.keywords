@@ -40,3 +40,5 @@ x11-libs/libva-intel-driver ~amd64
 dev-libs/syncdir ~amd64
 app-office/wps-office ~amd64
 www-client/firefox-bin ~amd64
+net-misc/remmina ~amd64
+media-gfx/librecad ~amd64
