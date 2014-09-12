@@ -1,4 +1,4 @@
-dev-lang/php apache2 bzip2 cli crypt exif filter gdbm hash iconv json xml zlib cgi cjk curl gd mysql mysqli zip
+dev-lang/php apache2 bzip2 cli crypt exif filter gdbm hash iconv json xml zlib cgi cjk curl gd mysql mysqli zip gd gdbm json mysql mysqli posix readline session simplexml sqlite ssl tokenizer truetype unicode zip zlib -bcmath -calendar -cdb -debug -embed -enchant -ftp -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos ldap ldap-sasl -libedit libmysqlclient -mhash -mssql -oci8-instant-client -odbc -pcntl -pdo -postgres -qdbm -recode -sharedmem -snmp -soap -sockets -spell -systemd -sysvipc threads -tidy -wddx -xmlreader -xmlrpc -xmlwriter -xpm -xslt
 net-fs/cifs-utils ads acl caps caps-ng
 net-fs/samba winbind
 app-admin/conky X ncurses portmon truetype curl hddtemp imlib iostats lua lua-cairo lua-imlib moc rss vim-syntax weathe-metar
@@ -17,7 +17,7 @@ app-editors/gvim X acl gpm nls perl aqua cscope gtk motif python ruby
 app-editors/vim X cscope debug gpm lua nls perl python racket ruby
 sys-apps/usbutils python zlib
 sys-libs/slang pcre readline zlib cjk 
-app-misc/mc X gpm nls slang xdg mclib samba sftp
+app-misc/mc X gpm nls slang xdg mclib samba sftp spell test
 app-admin/eselect-php apache2
 sys-libs/libselinux static-libs
 dev-libs/libpcre static-libs
@@ -38,3 +38,12 @@ media-plugins/audacious-plugins alsa nls aac adplug bs2b cdda cue ffmpeg flac fl
 media-plugins/alsa-plugins pulseaudio
 net-misc/remmina  crypt nls avahi freerdp ssh telepathy vte
 media-gfx/librecad tools
+dev-dotnet/mono-addins gtk
+app-crypt/gcr gtk
+net-fs/cifs-utils ads creds upcall
+net-fs/samba ads creds upcall cups ldap
+www-servers/apache ssl debug doc ldap static suexec threads
+dev-libs/apr-util ldap
+media-sound/sox  alsa openmp png -amr -ao -debug -encode ffmpeg flac -id3tag -ladspa -mad ogg -oss -pulseaudio -sndfile -static-libs -twolame wavpack
+sys-apps/man-db  USE="berkdb -gdbm -nls zlib
+app-text/stardict espeak -gnome -gucharmap -pronounce qqwry spell tools
