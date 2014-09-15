@@ -2,7 +2,7 @@ export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
-export PATH="/usr/sbin/:~/03_Shell:/usr/lib/ccache/bin:/usr/lib/distcc/bin:${PATH}"
+export PATH="/usr/sbin/:~/03_Shell:/usr/games/bin:/usr/lib/ccache/bin:/usr/lib/distcc/bin:${PATH}"
 
 #setopt hist_ignore_all_dups
 setopt hist_ignore_space
@@ -41,6 +41,11 @@ case $TERM in
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     ;;
+   dumb*)
+   export PROMPT_COMMAND=''
+   alias ls=ls
+   export PS1="[Vim] \$ "
+   ;;
     screen*)
     export TERM='xterm'
     ;;
