@@ -33,6 +33,7 @@ alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
+alias mc='~/.config/mc/mccolor'
 
 # 键绑定
 case $TERM in
