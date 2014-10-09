@@ -15,8 +15,8 @@ xterm*scrollBar: true
 xterm*rightScrollBar: true
 xterm*loginshell: true 
 xterm*cursorBlink: true 
-xterm*background: #FAF9DE
-xterm*foreground: blue
+xterm*background: #1E2320
+xterm*foreground: #F0DFAF
 xterm.borderLess: true 
 xterm.cursorBlink: true 
 xterm*colorUL: yellow 

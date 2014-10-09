@@ -54,7 +54,8 @@ case $TERM in
     bindkey "^[[F" end-of-line
     bindkey "^[[H" beginning-of-line 
     alias fbterm='LANG=zh_CN.UTF-8 fbterm'
-    fbterm -- tmux
+    #fbterm -- tmux
+    fbterm
     ;;
 esac
     bindkey '\e[1~' beginning-of-line       # Home
