@@ -3,3 +3,21 @@
 	name = chenbingkun55
 [push]
 	default = matching
+[commit]
+	template = /home/chenbk/.gitmessage.txt
+[help]
+	autocorrect = 1
+[color]
+	ui = true
+[color "diff"]
+	meta = blue black bold
+[color "log"]
+	meta = blue black bold
+[merge]
+	tool = extMerge
+[mergetool "extMerge"]
+	cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+	trustExitCode = false
+[diff]
+	external = extDiff

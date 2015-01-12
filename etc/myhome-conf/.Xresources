@@ -15,8 +15,8 @@ xterm*scrollBar: true
 xterm*rightScrollBar: true
 xterm*loginshell: true 
 xterm*cursorBlink: true 
-xterm*background: #FAF9DE
-xterm*foreground: blue
+xterm*background: #1E2320
+xterm*foreground: #F0DFAF
 xterm.borderLess: true 
 xterm.cursorBlink: true 
 xterm*colorUL: yellow 
@@ -29,7 +29,7 @@ xterm*altSendsEscape: true
 !mouse selecting to copy, ctrl-v to paste 
 !Ctrl p to print screen content to file 
 xterm*VT100.Translations: #override \n\
- Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
  <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
  Ctrl <KeyPress> P: print() \n\
  
@@ -39,8 +39,8 @@ xterm.utf8: true
 xterm*utf8Title: true
 xterm*fontMenu*fontdefault*Label: Default 
 xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=15
-xter*boldFont: Bitstream Vera Sans Mono:style=Bold:pixelsize=14
-xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=14
+xter*boldFont: Bitstream Vera Sans Mono:style=Bold:pixelsize=15
+xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=15
 xterm*xftAntialias: true 
 xterm*cjkWidth:false
 uxterm*inputMethod: fcitx

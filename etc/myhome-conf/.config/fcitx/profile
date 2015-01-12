@@ -6,7 +6,7 @@
 # 使用全角标点
 # 可选值：
 # True False
-WidePunc=False
+#WidePunc=True
 # 输入后联想词组
 # 可选值：
 # True False

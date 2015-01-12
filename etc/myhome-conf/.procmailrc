@@ -25,7 +25,7 @@ subscription-FINANCE/
 
 
 :0:
-* ^From:.*(12306\@rails.com.cn|service\@vip.ccb.com|alipay@mail.alipay.com)
+* ^From:.*(12306\@rails.com.cn|service\@smtp.mail.taobao.com|service\@vip.ccb.com|alipay@mail.alipay.com)
 mail-major/
 
 :0:

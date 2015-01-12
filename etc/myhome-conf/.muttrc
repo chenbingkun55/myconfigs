@@ -49,18 +49,17 @@ set sendmail="/usr/sbin/sendmail"
 my_hdr From: chenbingkun55@163.com
 
 ## 编码以及中文设置
-set locale="zh_CN"                        # 使用中文
+set locale="zh_CN.UTF-8"                        # 使用中文
 set ascii_chars=yes                       # 用纯 ascii 表示树状列表
-set charset="utf-8"                       # 编码以及发件编码
-set send_charset="gb2312:utf-8:GB18030:us-ascii:iso-8859-1"
+#set charset="utf-8"                       # 编码以及发件编码
+# set charset="UTF-8"                       # 编码以及发件编码
+set send_charset="us-ascii:iso-8859-1:gb2312:utf-8:GB18030"
 set assumed_charset="utf-8:gb2312:gb18030:gbk"
 set rfc2047_parameters=yes                # 解决中文附件名是乱码的问题
-charset-hook .* utf-8		          # 把 iso-8859-1 编码映射到 gb2312
+# charset-hook .* utf-8		          # 把 iso-8859-1 编码映射到 gb2312
 # charset-hook ^iso-8859-1$ gb2312        # 把 iso-8859-1 编码映射到 gb2312
-# charset-hook !utf-8 gb2312              # 把不是 utf-8 的编码都映射到 gb2312
-#charset-hook ^us-ascii$ gb2312           # 把 us-ascii 编码映射到 gb2312
-# unset strict_mime
-# set assumed_charset="gb2312"
+charset-hook !UTF-8 gb2312              # 把不是 utf-8 的编码都映射到 gb2312
+charset-hook ^us-ascii$ gb2312           # 把 us-ascii 编码映射到 gb2312
 
 # 打分
 score "~N" +4
@@ -78,14 +77,11 @@ set resolve=yes
 
 set alias_file=~/maildir/muttalias
 source ~/maildir/muttalias
-set charset="utf-8"
 set wait_key=yes
 set noconfirmappend
 set edit_headers=no
 set pager_index_lines=6
 
-charset-hook .* gb2312
-charset-hook !utf-8 gb2312
 
 macro index G "!/usr/bin/getmail -v -n -r ~/.getmail/getmailrc"
 macro pager G "!/usr/bin/getmail -v -n -r ~/.getmail/getmailrc"
