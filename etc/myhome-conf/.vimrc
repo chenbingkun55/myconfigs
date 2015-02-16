@@ -1,0 +1,614 @@
+"必须的设置：
+filetype on
+filetype plugin indent on
+"打开高亮
+syntax enable
+"不要兼容vi
+set nocompatible
+set t_Co=256
+"set t_AB=^[[48;5;%dm
+"set t_AF=^[[38;5;%dm]]]]
+
+set background=dark
+"使用color solarized
+"colorscheme solarized
+colorscheme delek
+"terminal下面的背景问题
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+
+set modelines=0
+
+
+"tab键的设定
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+"切到下一个标签
+map <C-TAB> :tabNext<CR>
+
+"打开quickfix例表"
+"map <F4> :copen<CR>
+"一些其他的设定
+"自动切换当前目录为当前文件所在的目录
+"set autochdir
+
+"设置鼠标支持
+set mouse=a
+"把备份统一放在tmp目录里.
+set backupdir=~/tmp/backup,/tmp
+"把.swp 文件统一存放到tmp
+set directory=~/tmp,/tmp
+"使用鼠标准: xterm = X Windows , mswin = 微软的标准
+behave xterm
+"字符设置
+set encoding=utf-8
+set fileencodings=utf-8,cp936,gb18030,big5,ucs-bom
+set scrolloff=3
+language message zh_CN.UTF-8
+"新建文件编码
+set fenc=utf-8
+set autoindent
+set hidden
+
+if &term == "linux"
+    set nocursorline
+    set nocursorcolumn
+else
+    set cursorline
+    set cursorcolumn
+    hi CursorLine cterm=NONE ctermbg=white ctermfg=black guibg=white guifg=black
+    hi CursorColumn cterm=NONE ctermbg=green ctermfg=black guibg=white guifg=black
+endif
+
+nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+"相对行号 要想相对行号起作用要放在显示行号后面
+set relativenumber
+"显示行号
+"set number
+"无限undo
+set undofile
+"自动换行
+set wrap
+"禁止自动换行
+"set nowrap
+"GUI界面里的字体，默认有抗锯齿
+set guifont=DejaVu\ Sans\ Mono\ 14
+set guifontwide=Droid\ Sans\ Fallback\ 12
+set linespace=2
+
+"自动载入配置文件不需要重启
+autocmd! bufwritepost .vimrc source %
+"将-连接符也设置为单词
+set isk+=-
+
+"设置大小写敏感和聪明感知(小写全搜，大写完全匹配)
+set ignorecase
+set smartcase
+"set gdefault
+set incsearch
+set showmatch
+set matchtime=2
+set hlsearch
+
+"加入html标签配对
+runtime macros/matchit.vim 
+
+"以下设置用来是vim正确显示过长的行
+set textwidth=80
+set formatoptions=qrnl
+"彩色显示第85行
+set colorcolumn=85
+"设置256色显示
+set t_Co=256
+
+"行号栏的宽度
+set numberwidth=3
+"初始窗口的宽度
+"set columns=135
+"初始窗口的高度
+"set lines=50
+"初始窗口的位置
+"winpos 620 45 
+
+"匹配括号的规则，增加针对html的<>
+set matchpairs=(:),{:},[:],<:>
+"让退格，空格，上下箭头遇到行首行尾时自动移到下一行（包括insert模式）
+set whichwrap=b,s,<,>,[,]
+
+"插入模式下移动
+inoremap <C-H> <left>
+inoremap <C-J> <down>
+inoremap <C-K> <up>
+inoremap <C-L> <right>
+
+" Default: 
+"===================================================
+"leader键的功能设置
+"修改leader键为逗号
+let mapleader=","
+"esc的映射
+imap jj <esc>
+"屏蔽掉讨厌的F1键
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+"修改vim的正则表达
+nnoremap / /\v
+vnoremap / /\v
+"使用tab键来代替%进行匹配跳转
+"nnoremap <tab> %
+"vnoremap <tab> %
+"折叠html标签 ,fold tag
+nnoremap <leader>ft vatzf
+"使用,v来选择刚刚复制的段落，这样可以用来缩进
+nnoremap <leader>v v`]
+"使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
+nnoremap <leader>w <c-w>v<c-w>l
+nnoremap <leader>wc <c-w>c
+nnoremap <leader>ww <c-w>w
+"使用<leader>t来控制Tab的切换
+nnoremap <leader>t gt
+nnoremap <leader>r gT
+"使用<leader>空格来取消搜索高亮
+nnoremap <leader><space> :noh<cr>
+"html中的js加注释 取消注释
+nmap <leader>h I//jj
+nmap <leader>ch ^xx
+"切换到当前目录
+nmap <leader>q :execute "cd" expand("%:h")<CR>
+"搜索替换
+nmap <leader>s :,s///c
+
+"取消粘贴缩进
+nmap <leader>p :set paste<CR>
+nmap <leader>pp :set nopaste<CR>
+
+"文件类型切换
+nmap <leader>fj :set ft=javascript<CR>
+nmap <leader>fc :set ft=css<CR>
+nmap <leader>fx :set ft=xml<CR>
+nmap <leader>fh :set ft=html<CR>
+nmap <leader>fm :set ft=mako<CR>
+nmap <leader>fp :set ft=php<CR>
+
+"选中状态下复制 Ctrl+c
+vmap <C-c> "+y
+
+",qq不保存退出所有 ,wq保存并退出所有 ,w保存所有
+nmap <leader>qq :qa!<cr>
+nmap <leader>qq :qa!<cr>
+nmap <leader>qq :qa!<cr>
+
+"设置隐藏gvim的菜单和工具栏 F2切换
+set guioptions-=m
+set guioptions-=T
+map <silent> <F2> :if &guioptions =~# 'T' <Bar>
+        \set guioptions-=T <Bar>
+        \set guioptions-=m <bar>
+    \else <Bar>
+        \set guioptions+=T <Bar>
+        \set guioptions+=m <Bar>
+    \endif<CR>
+"去除左右两边的滚动条
+set go-=r
+set go-=L
+
+"gvim启动后最大化
+if has("win32")
+    au GUIEnter * simalt ~X
+endif
+
+"PHP缩进
+let PHP_autoformatcomment=1
+"PHP 语法进行检测 Ctrl+p启动
+map <C-S-p> :!php -l %<CR>
+
+"===================================================
+"插件的设置
+"Indent Guides设置
+let g:indent_guides_guide_size=1
+
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" vim-scripts repos
+Bundle 'ctrlp.vim'
+Bundle 'AutoClose'
+Bundle 'matchit.zip'
+Bundle 'ShowTrailingWhitespace'
+
+"jsbeautify的设置
+"Bundle '_jsbeautify'
+"nnoremap <leader>_ff :call g:Jsbeautify()<CR>  
+
+"EasyMotion设置
+Bundle 'EasyMotion'
+let g:EasyMotion_leader_key = '<Leader><Leader>' 
+
+"Fencview的初始设置(注:安装这个插件后,编码反倒被弄错 *_~)
+"Bundle 'FencView.vim'
+"let g:fencview_autodetect=1
+
+"NerdTree的设置 并且相对行号显示
+Bundle 'The-NERD-tree'
+"map <F10> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
+"自动打开 Nerdtree
+let NERDTreeShowBookmarks=1
+let NERDTreeShowFiles=1
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.$','\~$']
+let NERDTreeWinPos=0
+
+"对NERD_commenter 添加代码注释的设置
+Bundle 'The-NERD-Commenter'
+let NERDShutUp=1
+",ca，在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
+",cc，注释当前行
+",c，切换注释/非注释状态
+",cs，以”性感”的方式注释
+",cA，在当前行尾添加注释符，并进入Insert模式
+",cu，取消注释
+
+
+
+Bundle 'https://github.com/vim-scripts/python.vim.git'
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'shawncplus/php.vim'
+
+"Tagbar 用来快速浏览代码里的标签
+Bundle 'vim-scripts/Tagbar'
+nmap <F7> :TagbarToggle<CR>
+
+"svn 版本库工具
+Bundle 'vim-scripts/vcscommand.vim'
+
+"git 版本库工具
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+
+"Html 代码片段(不懂得用)
+"Bundle 'mattn/emmet-vim'
+"let g:user_emmet_expandabbr_key = '<Tab>'
+
+Bundle 'msanders/snipmate.vim'
+
+"cscope 加速代码阅读
+Bundle 'vim-scripts/cscope.vim'
+Bundle 'vim-scripts/taglist.vim'
+nmap <F8> :Tlist<CR>
+let Tlist_Use_Right_Window = 1
+"Vim启动后自动打开Tlist
+let Tlist_Auto_Open = 0
+
+"s: 查找C语言符号，即查找函数名、宏、枚举值等出现的地方
+"g: 查找函数、宏、枚举等定义的位置，类似ctags所提供的功能
+"d: 查找本函数调用的函数
+"c: 查找调用本函数的函数
+"t: 查找指定的字符串
+"e: 查找egrep模式，相当于egrep功能，但查找速度快多了
+"f: 查找并打开文件，类似vim的find功能
+"i: 查找包含本文件的文
+
+"官方默认
+" in case your cscope execute is not in system path.
+" let g:cscope_cmd = 'D:/tools/vim/cscope.exe'
+" s: Find this C symbol
+map <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
+" g: Find this definition
+map <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
+" d: Find functions called by this function
+map <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
+" c: Find functions calling this function
+map <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
+" t: Find this text string
+map <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
+" e: Find this egrep pattern
+map <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
+" f: Find this file
+map <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
+" i: Find files #including this file
+map <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
+map <leader>l :call ToggleLocationList()<CR>
+"End  Cscope 
+
+"代码自动补全功能
+Bundle 'Shougo/neocomplcache.vim'
+"Bundle 'ervandew/supertab'
+let g:SuperTabRetainCompletionType="context"
+
+"-------------------------------------------------------------
+"" plugin - NeoComplCache.vim    自动补全插件
+" 自动补全结合supertab插件使用tab补全或者ctrl+n
+" 以下是官方定义 内容,有时间再自定义
+"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+" Enable heavy features.
+" Use camel case completion.
+"let g:neocomplcache_enable_camel_case_completion = 1
+" Use underbar completion.
+"let g:neocomplcache_enable_underbar_completion = 1
+
+" Define dictionary.
+let g:neocomplcache_dictionary_filetype_lists = {
+    \ 'default' : '',
+    \ 'vimshell' : $HOME.'/.vimshell_hist',
+    \ 'scheme' : $HOME.'/.gosh_completions'
+        \ }
+
+" Define keyword.
+if !exists('g:neocomplcache_keyword_patterns')
+    let g:neocomplcache_keyword_patterns = {}
+endif
+let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplcache#undo_completion()
+"inoremap <expr><C-l>     neocomplcache#complete_common_string()
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return neocomplcache#smart_close_popup() . "\<CR>"
+  " For no inserting <CR> key.
+  "return pumvisible() ? neocomplcache#close_popup() : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+"inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>  neocomplcache#close_popup()
+inoremap <expr><C-e>  neocomplcache#cancel_popup()
+" Close popup by <Space>.
+"inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
+
+" For cursor moving in insert mode(Not recommended)
+"inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
+"inoremap <expr><Right> neocomplcache#close_popup() . "\<Right>"
+"inoremap <expr><Up>    neocomplcache#close_popup() . "\<Up>"
+"inoremap <expr><Down>  neocomplcache#close_popup() . "\<Down>"
+" Or set this.
+"let g:neocomplcache_enable_cursor_hold_i = 1
+" Or set this.
+"let g:neocomplcache_enable_insert_char_pre = 1
+
+" AutoComplPop like behavior.
+"let g:neocomplcache_enable_auto_select = 1
+
+" Shell like behavior(not recommended).
+"set completeopt+=longest
+"let g:neocomplcache_enable_auto_select = 1
+"let g:neocomplcache_disable_auto_complete = 1
+inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" Enable heavy omni completion.
+if !exists('g:neocomplcache_omni_patterns')
+  let g:neocomplcache_omni_patterns = {}
+endif
+let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplcache_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+
+" For perlomni.vim setting.
+" https://github.com/c9s/perlomni.vim
+let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+inoremap <expr><Enter> pumvisible() ? "\<C-Y>" : "\<Enter>"
+"End NeoComplCache 配置
+
+"浏览己打开的文件
+Bundle 'lminaudier/bufexplorer.vim'
+"<F9>打开文件列表(上下方式)"
+map <F9> <Leader>bs
+" ,be 全屏方式查看全部打开的文件列表
+" ,bv 左右方式查看   ,bs 上下方式查看
+" 切换Buffers的操作快捷方式： shirt+l.shift+h
+let g:bufExplorerDefaultHelp=0       " Do not show default help.
+let g:bufExplorerShowRelativePath=0  " 不显示相对路径（全路径）
+let g:bufExplorerSortBy='mru'        " Sort by most recently used.
+let g:bufExplorerSplitRight=0        " Split left.
+let g:bufExplorerSplitBelow=0        " Split new window above current
+
+Bundle 'vim-scripts/lookupfile'
+"LookupFile 配置
+"nnoremap <silent> <F4> :LookupFile<CR>
+let g:LookupFile_MinPatLength = 2               "最少输入2个字符才开始查找
+let g:LookupFile_PreserveLastPattern = 1        "不保存上次查找的字符串
+let g:LookupFile_PreservePatternHistory = 1     "保存查找历史
+let g:LookupFile_AlwaysAcceptFirst = 1          "回车打开第一个匹配项目
+let g:LookupFile_AllowNewFiles = 0              "不允许创建不存在的文件
+if filereadable("./filenametags")                "设置tag文件的名字
+    let g:LookupFile_TagExpr = '"./filenametags"'
+endif
+"映射LookupFile为,lk
+"nmap <silent> <leader>lk :LUTags<cr>
+""映射LUBufs为,ll
+nmap <silent> <leader>ll :LUBufs<cr>
+"映射LUWalk为,lw
+"nmap <silent> <leader>lw :LUWalk<cr>"
+
+" lookup file with ignore case
+function! LookupFile_IgnoreCaseFunc(pattern)
+    let _tags = &tags
+    try
+        let &tags = eval(g:LookupFile_TagExpr)
+        let newpattern = '\c' . a:pattern
+        let tags = taglist(newpattern)
+    catch
+        echohl ErrorMsg | echo "Exception: " . v:exception | echohl NONE
+        return ""
+    finally
+        let &tags = _tags
+    endtry
+
+    " Show the matches for what is typed so far.
+    let files = map(tags, 'v:val["filename"]')
+    return files
+endfunction
+let g:LookupFile_LookupFunc = 'LookupFile_IgnoreCaseFunc'
+
+
+Bundle 'vim-scripts/genutils'
+Bundle 'vim-scripts/desert256.vim'
+
+"支持单行和多行的选择，//格式
+"map <c-h> ,c<space>
+
+"加载Ctags 功能
+function! s:CheckAndAddTagFile(path)
+    if stridx(a:path, '/') == (strlen(a:path) - 1)
+        let l:tags = a:path . 'tags'
+    else
+        let l:tags = a:path . '/tags'
+    endif
+
+    if stridx(&tags, l:tags) != -1
+        echo l:tags "already added"
+        return
+    endif
+
+    if !filereadable(l:tags)
+        echo l:tags "not readable"
+        return
+    endif
+
+    let &tags =  len(&tags) == 0 ? l:tags : &tags . ',' . l:tags
+    echo l:tags "added"
+
+    unlet! l:tags
+endfunction
+
+function! s:StrEndWith(str, pattern)
+    if strridx(a:str, a:pattern) == strlen(a:str) - strlen(a:pattern)
+        return 1
+    else
+        return 0
+    endif
+endfunction
+
+function! s:SplitPath(path)
+    let l:start = 0
+    let l:list = []
+
+    while 1 == 1
+        let l:idx = stridx(a:path, '/', l:start)
+        let l:start = l:idx + 1
+
+        if l:idx == -1
+            break
+        endif
+
+        let l:part = a:path[0:(l:idx > 0 ? l:idx - 1 : l:idx)]
+        call add(l:list, l:part)
+    endwhile
+
+    if !s:StrEndWith(a:path, '/')
+        call add(l:list, a:path)
+    endif
+
+    return l:list
+endfunction
+
+function! AddTagsInCwdPath()
+    let l:cwd = tr(expand('%:p:h'), '\', '/')
+
+    let l:pathes = s:SplitPath(l:cwd)
+
+    for p in l:pathes
+        call s:CheckAndAddTagFile(p)
+    endfor
+
+endfunction
+
+nmap <F6> :call AddTagsInCwdPath()<cr><cr>
+
+"当编辑没有权限的文件时,直接在vim里执行sudo(默认己存在Sudow)
+command! -nargs=? Sudow :w !sudo tee %
+
+
+"添加文件作者信息
+nmap <C-F8> :call TitleDet():<cr>'s
+
+nmap <leader>wt :call TitleDet():<cr>:w!<CR>
+
+function! AddTitle()
+    call append(0,"/**")
+    call append(1,"* Author: @-ChenBk <chenbingkun55@163.com> ". strftime("%Y-%m-%d %H:%M"))
+    call append(2,"* Version Info ------------------------------------------------")
+    execute '!git whatchanged --oneline %:t > /tmp/title.tmp'
+    call append(3,"* -------------------------------------------------------------")
+    call append(4,"* This Code for Vim and Git Create.")
+    call append(5,"*")
+    call append(6,"**/")
+    call append(7,"")
+    3read /tmp/title.tmp
+echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
+endf
+
+"更新最近修改时间和文件名 
+function! UpdateTitle()
+    execute '4,7del'
+    execute '!git whatchanged --oneline %:t > /tmp/title.tmp'
+    3read ++edit /tmp/title.tmp
+    echohl WarningMsg | echo "Successful in updating the copy right." | echohl None  
+endfunction
+
+"判断前10行代码里面，是否有Last modified这个单词，  
+"如果没有的话，代表没有添加过作者信息，需要新添加；  
+"如果有的话，那么只需要更新即可  
+function! TitleDet()
+    let n=1
+    "默认为添加  
+    while n < 10
+        let line = getline(n)
+        if line =~ "* Version Info"
+            call UpdateTitle()
+            return
+        endif
+        let n = n + 1
+    endwhile
+    call AddTitle()
+endfunction
+
+" $ ctgas -R 在项目根目录
+"添加bzb.igg.com
+"set tags=/home/www/dev.bzb.igg.com/tags
+
+"只有在是PHP文件时，才启用PHP补全
+au FileType php call AddPHPFuncList()
+function! AddPHPFuncList()
+set dictionary-=~/.vim/funclist.txt dictionary+=~/.vim/funclist.txt
+set complete-=k complete+=k
+endfunction

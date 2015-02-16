@@ -444,7 +444,9 @@ awful.rules.rules = {
      properties = {floating = true}},
    {rule = {class = "VirtualBox"},
      properties = {floating = true, tag = tags[1][7]}},
-   {rule = {class = "rdesktop"},
+   {rule = {class = "rdesktop_freerdp.sh"},
+     properties = {tag = tags[1][4]}},
+   {rule = {class = "rdesktop_freerdp"},
      properties = {tag = tags[1][4]}},
    {rule = {name = "rdesktop.sh"},
      properties = {tag = tags[1][4]}},
@@ -500,8 +502,9 @@ autorunApps =
     "fcitx",
     "firefox-bin",
     "xterm -e douban.fm",
-    "xterm -e /home/chenbk/03_Shell/rdesktop.sh",
-    "rdesktop -r sound:local -0 -g 1440x880 192.168.23.6 -u bingkunchen -d sharepoint -r sound:local -p chenbk55",
+    "xterm -e /home/chenbk/01_Shell/rdesktop_freerdp.sh",
+    "xterm -e /home/chenbk/01_Shell/ssh.sh",
+    "xterm -e /home/chenbk/01_Shell/rdesktop_freerdp.sh 192.168.23.6",
     "xterm",
     "xterm",
     "xterm -e mc",
@@ -529,3 +532,4 @@ end
 -- awful.util.spawn_with_shell("~/.conky/bin/conkyStart")
 -- awful.util.spawn_with_shell("sudo killall mplayer")
 -- }}}
+

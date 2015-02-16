@@ -27,4 +27,4 @@ home/
 !/home/chenbk
 !chenbk/
 firefox/
-*\~
+*.un~
