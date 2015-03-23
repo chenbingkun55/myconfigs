@@ -64,3 +64,4 @@ esac
 #[ -f ~/.ssh/id_dsa ] && keychain ~/.ssh/id_dsa >/dev/null 2>&1
 
 export GROFF_ENCODING=`locale charmap`
+[ -f ~/.bashrc_docker ] && . ~/.bashrc_docker
