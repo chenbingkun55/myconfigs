@@ -1,4 +1,5 @@
 export HISTSIZE=2000
+export EDITOR="/usr/bin/gvim"
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
@@ -33,6 +34,7 @@ alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
+alias ranger='ranger --confdir=~/.config/ranger'
 
 # 键绑定
 case $TERM in
