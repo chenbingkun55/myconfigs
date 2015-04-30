@@ -518,14 +518,14 @@ autorunApps =
     "xterm -T \"radioget\" -e radioget",
     "xterm -T \"rdesktop\" -e /home/chenbk/01_Shell/rdesktop.sh",
     "xterm -T \"ssh\" -e /home/chenbk/01_Shell/ssh.sh",
-    "xterm -T \"rdesktop_freerdp\" -e /home/chenbk/01_Shell/rdesktop_freerdp.sh 192.168.23.6",
+ --   "xterm -T \"rdesktop_freerdp\" -e /home/chenbk/01_Shell/rdesktop_freerdp.sh 192.168.23.6",
     "xterm -T \"cli\"",
     "xterm -T \"cli\"",
-    "xterm -T \"mc\" -e mc -S \"sand256\"",
+--    "xterm -T \"mc\" -e mc -S \"sand256\"",
     "xterm -T \"ranger\" -e ranger",
     "VirtualBox",
     "pcmanfm",
-    "~/.conky/bin/conkyStart",
+--    "~/.conky/bin/conkyStart",
     "sudo killall mplayer",
 }
 
