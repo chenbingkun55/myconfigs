@@ -6,6 +6,7 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
+vicious = require("vicious")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -72,7 +73,7 @@ layouts =
 -- Define a tag table which hold all screen tags.
  tags = {
    names  = { "1-main", "2-xterm", "3-ssh", "4-rdesktop", "5-office", "6-music", "7-virtual", 8, 9 },
-   layout = { layouts[1], layouts[3], layouts[3], layouts[11], layouts[11],
+   layout = { layouts[1], layouts[3], layouts[13], layouts[11], layouts[11],
               layouts[11], layouts[1], layouts[1], layouts[1]
  }}
  for s = 1, screen.count() do
@@ -125,8 +126,9 @@ appsmenu = {
    { "文本编辑-Sublime", "subl" },
    { "文本编辑-leafpad", "leafpad" },
    { "资源管理-mc", "xterm -T \"mc\" -e mc -S \"sand256\"" },
-   { "资源管理-ranger", "xterm -T \"ranger\" -e ranger" },
+   { "资源管理-ranger", "xterm -T \"ranger\" -e ranger --confdir=~/.config/ranger" },
    { "资源管理-Pcmanfm", "pcmanfm" },
+   { "Mysql管理工具", "mysql-workbench" },
    { "任务查看器-htop", terminal .. " -e htop" },
 }
 
@@ -187,7 +189,45 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+--mytextclock = awful.widget.textclock({ align = "right" })
+-- Date box
+datewidget = widget({type="textbox"})
+vicious.register(datewidget, vicious.widgets.date,"%m月%d日 %H:%M",60)
+
+-- net monitor
+netwidget = widget({type="textbox"})
+netwidget.width = "80"
+netwidget.align = "center"
+vicious.register(netwidget, vicious.widgets.net,'<span color="red">↓${enp3s0 down_kb}</span> <span color="#000000">↑${enp3s0 up_kb}</span>',3)
+
+-- Memory usage
+memwidget = awful.widget.progressbar()
+-- Progressbar properties
+memwidget:set_width(15)
+memwidget:set_height(24)
+memwidget:set_vertical(true)
+memwidget:set_background_color("#494B4F")
+memwidget:set_border_color(nil)
+memwidget:set_color("#AECF96")
+memwidget:set_gradient_colors({ "#AECF96", "#88A175", "#FF5656" })
+-- Register widget
+vicious.register(memwidget, vicious.widgets.mem, "$1", 20)
+
+
+-- CPU
+-- Initialize widget
+cpuwidget = awful.widget.graph()
+-- Graph properties
+cpuwidget:set_width(50)
+cpuwidget:set_height(24)
+cpuwidget:set_background_color("#494B4F")
+cpuwidget:set_color("#FF5656")
+cpuwidget:set_gradient_colors({ "#FF5656", "#88A175", "#AECF96" })
+-- Register widget
+vicious.register(cpuwidget, vicious.widgets.cpu, "$1")
+
+
+
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
@@ -267,7 +307,10 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
-        mytextclock,
+        datewidget,
+        netwidget,
+        cpuwidget.widget,
+        memwidget.widget,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -522,7 +565,7 @@ autorunApps =
     "xterm -T \"cli\"",
     "xterm -T \"cli\"",
 --    "xterm -T \"mc\" -e mc -S \"sand256\"",
-    "xterm -T \"ranger\" -e ranger",
+    "xterm -T \"ranger\" -e ranger --confdir=~/.config/ranger",
     "VirtualBox",
     "pcmanfm",
 --    "~/.conky/bin/conkyStart",
