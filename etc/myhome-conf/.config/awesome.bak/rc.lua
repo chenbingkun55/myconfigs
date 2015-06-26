@@ -73,7 +73,7 @@ layouts =
 -- Define a tag table which hold all screen tags.
  tags = {
    names  = { "1-main", "2-xterm", "3-ssh", "4-rdesktop", "5-office", "6-music", "7-virtual", 8, 9 },
-   layout = { layouts[1], layouts[3], layouts[13], layouts[11], layouts[11],
+   layout = { layouts[1], layouts[13], layouts[13], layouts[11], layouts[11],
               layouts[11], layouts[1], layouts[1], layouts[1]
  }}
  for s = 1, screen.count() do
@@ -198,7 +198,7 @@ vicious.register(datewidget, vicious.widgets.date,"%m月%d日 %H:%M",60)
 netwidget = widget({type="textbox"})
 netwidget.width = "80"
 netwidget.align = "center"
-vicious.register(netwidget, vicious.widgets.net,'<span color="red">↓${enp3s0 down_kb}</span> <span color="#000000">↑${enp3s0 up_kb}</span>',3)
+vicious.register(netwidget, vicious.widgets.net,'<span color="red">↓${enp7s0 down_kb}</span> <span color="#000000">↑${enp7s0 up_kb}</span>',3)
 
 -- Memory usage
 memwidget = awful.widget.progressbar()
