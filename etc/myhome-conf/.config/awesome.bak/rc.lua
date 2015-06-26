@@ -7,6 +7,7 @@ require("beautiful")
 -- Notification library
 require("naughty")
 vicious = require("vicious")
+require("calendar2")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -193,6 +194,10 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 -- Date box
 datewidget = widget({type="textbox"})
 vicious.register(datewidget, vicious.widgets.date,"%m月%d日 %H:%M",60)
+calendar2.addCalendarToWidget(datewidget)
+-- orglendar = require("orglendar")
+-- orglendar.files = { "/home/chenbk/Documents/Notes/work.org" }
+-- orglendar.register(datewidget)
 
 -- net monitor
 netwidget = widget({type="textbox"})
@@ -553,7 +558,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 -- {{{ 自启动项
 -- Autorun programs
-autorun = true
+autorun = false
 autorunApps =
 {
     "fcitx",
