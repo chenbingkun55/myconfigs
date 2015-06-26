@@ -203,7 +203,7 @@ calendar2.addCalendarToWidget(datewidget)
 netwidget = widget({type="textbox"})
 netwidget.width = "80"
 netwidget.align = "center"
-vicious.register(netwidget, vicious.widgets.net,'<span color="red">↓${enp3s0 down_kb}</span> <span color="#000000">↑${enp3s0 up_kb}</span>',3)
+vicious.register(netwidget, vicious.widgets.net,'<span color="#000000">↓${enp3s0 down_kb}</span> <span color="#000000">↑${enp3s0 up_kb}</span>',3)
 
 -- Memory usage
 memwidget = awful.widget.progressbar()
@@ -558,7 +558,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 -- {{{ 自启动项
 -- Autorun programs
-autorun = false
+autorun = true
 autorunApps =
 {
     "fcitx",
