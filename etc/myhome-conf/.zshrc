@@ -29,6 +29,7 @@ zstyle ':completion:*:warnings' format $'\e[01;31m -- No Matches Found --\e[0m'
 # 别名
 alias cp='cp -i'
 alias mv='mv -i'
+alias vim='nvim'
 alias rm='trash-put'
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
