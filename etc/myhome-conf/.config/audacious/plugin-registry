@@ -1,23 +1,37 @@
-format 6
+format 8
 transport /usr/lib64/audacious/Transport/unix-io.so
-stamp 1387908316
-name File I/O
+stamp 1435444795
+name File I/O Plugin
+domain audacious-plugins
 priority 0
 about 1
 config 0
 enabled 1
 scheme file
+transport /usr/lib64/audacious/Transport/gio.so
+stamp 1435444795
+name GIO Plugin
+domain audacious-plugins
+priority 0
+about 1
+config 0
+enabled 1
+scheme smb
+scheme sftp
+scheme ftp
 transport /usr/lib64/audacious/Transport/mms.so
-stamp 1387908316
-name MMS Support
+stamp 1435444795
+name MMS Plugin
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 1
 scheme mms
 transport /usr/lib64/audacious/Transport/neon.so
-stamp 1387908316
-name Neon HTTP/HTTPS Support
+stamp 1435444795
+name Neon HTTP/HTTPS Plugin
+domain audacious-plugins
 priority 0
 about 0
 config 0
@@ -25,24 +39,27 @@ enabled 1
 scheme https
 scheme http
 playlist /usr/lib64/audacious/Container/asx.so
-stamp 1387908316
-name ASXv1/ASXv2 Playlist Format
+stamp 1435444795
+name ASXv1/ASXv2 Playlists
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 1
 ext asx
 playlist /usr/lib64/audacious/Container/audpl.so
-stamp 1387908316
-name Audacious playlist format
+stamp 1435444795
+name Audacious Playlists (audpl)
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 1
 ext audpl
 playlist /usr/lib64/audacious/Container/m3u.so
-stamp 1387908316
-name M3U Playlist Format
+stamp 1435444795
+name M3U Playlists
+domain audacious-plugins
 priority 0
 about 0
 config 0
@@ -50,24 +67,27 @@ enabled 1
 ext m3u8
 ext m3u
 playlist /usr/lib64/audacious/Container/pls.so
-stamp 1387908316
-name PLS Playlist Format
+stamp 1435444795
+name PLS Playlists
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 1
 ext pls
 playlist /usr/lib64/audacious/Container/xspf.so
-stamp 1387908316
-name XML Shareable Playlist Format
+stamp 1435444795
+name XML Shareable Playlists (XSPF)
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 1
 ext xspf
 input /usr/lib64/audacious/Input/xsf.so
-stamp 1387908316
-name 2SF Audio
+stamp 1435444794
+name 2SF Decoder
+domain audacious-plugins
 priority 0
 about 0
 config 0
@@ -78,9 +98,71 @@ images 0
 subtunes 0
 writes 0
 infowin 0
+input /usr/lib64/audacious/Input/aac.so
+stamp 1435444794
+name AAC Decoder
+domain audacious-plugins
+priority 0
+about 0
+config 0
+enabled 1
+ext aac
+ext mp4
+ext m4a
+images 1
+subtunes 0
+writes 0
+infowin 0
+input /usr/lib64/audacious/Input/adplug.so
+stamp 1435444794
+name AdPlug (AdLib Player)
+domain audacious-plugins
+priority 0
+about 0
+config 0
+enabled 1
+ext xsm
+ext xad
+ext wlf
+ext sng
+ext sci
+ext sat
+ext sa2
+ext s3m
+ext rol
+ext rix
+ext raw
+ext rad
+ext msc
+ext mkj
+ext mad
+ext m
+ext lds
+ext laa
+ext ksm
+ext jbm
+ext ins
+ext hsp
+ext hsc
+ext dtm
+ext dro
+ext dmo
+ext dfm
+ext d00
+ext cmf
+ext cff
+ext bam
+ext amd
+ext adl
+ext a2m
+images 0
+subtunes 0
+writes 0
+infowin 0
 input /usr/lib64/audacious/Input/amidi-plug.so
-stamp 1387908316
+stamp 1435444794
 name AMIDI-Plug (MIDI Player)
+domain audacious-plugins
 priority 0
 about 1
 config 1
@@ -93,34 +175,13 @@ images 0
 subtunes 0
 writes 0
 infowin 1
-input /usr/lib64/audacious/Input/console.so
-stamp 1387908316
-name Game Console Music Decoder
-priority 0
-about 1
-config 1
-enabled 1
-ext vgz
-ext vgm
-ext spc
-ext sap
-ext nsfe
-ext nsf
-ext kss
-ext hes
-ext gym
-ext gbs
-ext ay
-images 0
-subtunes 1
-writes 0
-infowin 0
 input /usr/lib64/audacious/Input/modplug.so
-stamp 1387908316
-name ModPlug
+stamp 1435444794
+name ModPlug (Module Player)
+domain audacious-plugins
 priority 0
 about 0
-config 0
+config 1
 enabled 1
 ext ft2
 ext psm
@@ -146,23 +207,10 @@ images 0
 subtunes 1
 writes 0
 infowin 0
-input /usr/lib64/audacious/Input/aac.so
-stamp 1387908316
-name MP4 AAC decoder
-priority 0
-about 1
-config 0
-enabled 1
-ext aac
-ext mp4
-ext m4a
-images 1
-subtunes 0
-writes 0
-infowin 0
 input /usr/lib64/audacious/Input/madplug.so
-stamp 1387908316
-name MPG123
+stamp 1435444794
+name MPG123 Plugin
+domain audacious-plugins
 priority 0
 about 0
 config 0
@@ -176,8 +224,9 @@ subtunes 0
 writes 1
 infowin 0
 input /usr/lib64/audacious/Input/psf2.so
-stamp 1387908316
-name OpenPSF PSF1/PSF2
+stamp 1435444794
+name OpenPSF PSF1/PSF2 Decoder
+domain audacious-plugins
 priority 0
 about 0
 config 0
@@ -193,8 +242,9 @@ subtunes 0
 writes 0
 infowin 0
 input /usr/lib64/audacious/Input/metronom.so
-stamp 1387908316
+stamp 1435444794
 name Tact Generator
+domain audacious-plugins
 priority 0
 about 1
 config 0
@@ -205,8 +255,9 @@ subtunes 0
 writes 0
 infowin 0
 input /usr/lib64/audacious/Input/tonegen.so
-stamp 1387908316
+stamp 1435444794
 name Tone Generator
+domain audacious-plugins
 priority 0
 about 1
 config 0
@@ -217,8 +268,9 @@ subtunes 0
 writes 0
 infowin 0
 input /usr/lib64/audacious/Input/vtx.so
-stamp 1387908316
-name VTX Audio
+stamp 1435444794
+name VTX Decoder
+domain audacious-plugins
 priority 0
 about 1
 config 0
@@ -228,21 +280,33 @@ images 0
 subtunes 0
 writes 0
 infowin 1
-input /usr/lib64/audacious/Input/wavpack.so
-stamp 1387908316
-name WavPack decoder
+input /usr/lib64/audacious/Input/console.so
+stamp 1435444794
+name Game Console Music Decoder
+domain audacious-plugins
 priority 0
 about 1
-config 0
+config 1
 enabled 1
-ext wv
+ext vgz
+ext vgm
+ext spc
+ext sap
+ext nsfe
+ext nsf
+ext kss
+ext hes
+ext gym
+ext gbs
+ext ay
 images 0
-subtunes 0
-writes 1
+subtunes 1
+writes 0
 infowin 0
 input /usr/lib64/audacious/Input/flacng.so
-stamp 1387908316
-name FLAC
+stamp 1435444794
+name FLAC Decoder
+domain audacious-plugins
 priority 1
 about 1
 config 0
@@ -254,13 +318,15 @@ subtunes 0
 writes 1
 infowin 0
 input /usr/lib64/audacious/Input/ffaudio.so
-stamp 1387908316
-name FFmpeg Support
+stamp 1435444794
+name FFmpeg Plugin
+domain audacious-plugins
 priority 10
 about 1
 config 0
 enabled 1
 ext spx
+ext oga
 ext ogg
 ext wav
 ext m4a
@@ -279,184 +345,226 @@ subtunes 0
 writes 1
 infowin 0
 effect /usr/lib64/audacious/Effect/crystalizer.so
-stamp 1387908316
+stamp 1435444794
 name Crystalizer
+domain audacious-plugins
 priority 0
 about 0
 config 1
 enabled 0
 effect /usr/lib64/audacious/Effect/compressor.so
-stamp 1387908316
+stamp 1435444794
 name Dynamic Range Compressor
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
 effect /usr/lib64/audacious/Effect/echo.so
-stamp 1387908316
+stamp 1435444795
 name Echo
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
 effect /usr/lib64/audacious/Effect/stereo.so
-stamp 1387908316
+stamp 1435444794
 name Extra Stereo
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
 effect /usr/lib64/audacious/Effect/ladspa.so
-stamp 1387908316
+stamp 1435444794
 name LADSPA Host
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
-effect /usr/lib64/audacious/Effect/sndstretch.so
-stamp 1387908316
-name SndStretch
+effect /usr/lib64/audacious/Effect/speed-pitch.so
+stamp 1435444795
+name Speed and Pitch
+domain audacious-plugins
 priority 0
-about 1
+about 0
 config 1
 enabled 0
 effect /usr/lib64/audacious/Effect/voice_removal.so
-stamp 1387908316
+stamp 1435444794
 name Voice Removal
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 0
 effect /usr/lib64/audacious/Effect/mixer.so
-stamp 1387908316
+stamp 1435444794
 name Channel Mixer
+domain audacious-plugins
 priority 2
 about 1
 config 1
 enabled 0
 effect /usr/lib64/audacious/Effect/crossfade.so
-stamp 1387908316
+stamp 1435444794
 name Crossfade
+domain audacious-plugins
 priority 5
 about 1
 config 1
 enabled 0
 output /usr/lib64/audacious/Output/alsa.so
-stamp 1387908316
-name ALSA
+stamp 1435444794
+name ALSA Output
+domain audacious-plugins
 priority 5
 about 1
 config 1
 enabled 1
 output /usr/lib64/audacious/Output/filewriter.so
-stamp 1387908316
-name FileWriter
+stamp 1435444794
+name FileWriter Plugin
+domain audacious-plugins
 priority 10
 about 1
 config 1
 enabled 0
-output /usr/lib64/audacious/Output/null.so
-stamp 1387908316
-name No Output
+output /usr/lib64/audacious/Output/jackout.so
+stamp 1435444794
+name JACK Output
+domain audacious-plugins
 priority 10
 about 1
-config 1
+config 0
 enabled 0
 vis /usr/lib64/audacious/Visualization/blur_scope.so
-stamp 1387908316
+stamp 1435444795
 name Blur Scope
+domain audacious-plugins
 priority 0
 about 0
 config 1
 enabled 0
+vis /usr/lib64/audacious/Visualization/gl-spectrum.so
+stamp 1435444795
+name OpenGL Spectrum Analyzer
+domain audacious-plugins
+priority 0
+about 1
+config 0
+enabled 0
 vis /usr/lib64/audacious/Visualization/cairo-spectrum.so
-stamp 1387908316
-name Cairo Spectrum
+stamp 1435444795
+name Spectrum Analyzer
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 0
-general /usr/lib64/audacious/General/alarm.so
-stamp 1387908316
-name Alarm
-priority 0
-about 1
-config 1
-enabled 0
 general /usr/lib64/audacious/General/albumart.so
-stamp 1387908316
+stamp 1435444795
 name Album Art
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 0
 general /usr/lib64/audacious/General/aosd.so
-stamp 1387908316
-name Audacious OSD
+stamp 1435444795
+name AOSD (On-Screen Display)
+domain audacious-plugins
+priority 0
+about 1
+config 1
+enabled 0
+general /usr/lib64/audacious/General/notify.so
+stamp 1435444795
+name Desktop Notifications
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
 general /usr/lib64/audacious/General/hotkey.so
-stamp 1387908316
-name Global Hotkey
+stamp 1435444795
+name Global Hotkeys
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
 general /usr/lib64/audacious/General/lyricwiki.so
-stamp 1387908316
-name LyricWiki
+stamp 1435444795
+name LyricWiki Plugin
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 0
 general /usr/lib64/audacious/General/mpris2.so
-stamp 1387908316
+stamp 1435444795
 name MPRIS 2 Server
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 1
-general /usr/lib64/audacious/General/mtp_up.so
-stamp 1387908316
-name MTP Upload
+general /usr/lib64/audacious/General/scrobbler.so
+stamp 1435444795
+name Scrobbler 2.0
+domain audacious-plugins
 priority 0
-about 0
-config 0
+about 1
+config 1
 enabled 0
 general /usr/lib64/audacious/General/search-tool.so
-stamp 1387908316
+stamp 1435444795
 name Search Tool
+domain audacious-plugins
 priority 0
 about 0
 config 0
 enabled 0
+general /usr/lib64/audacious/General/statusicon.so
+stamp 1435444795
+name Status Icon
+domain audacious-plugins
+priority 0
+about 1
+config 1
+enabled 0
 general /usr/lib64/audacious/General/song_change.so
-stamp 1387908316
+stamp 1435444795
 name Song Change
+domain audacious-plugins
 priority 0
 about 0
 config 1
 enabled 0
-general /usr/lib64/audacious/General/statusicon.so
-stamp 1387908316
-name Status Icon
+general /usr/lib64/audacious/General/alarm.so
+stamp 1435444795
+name Alarm
+domain audacious-plugins
 priority 0
 about 1
 config 1
 enabled 0
 iface /usr/lib64/audacious/General/gtkui.so
-stamp 1387908316
+stamp 1435444795
 name GTK Interface
+domain audacious-plugins
 priority 0
 about 0
 config 0
-enabled 0
-iface /usr/lib64/audacious/General/skins.so
-stamp 1387908316
-name Winamp Classic Interface
-priority 0
-about 1
-config 1
 enabled 1
+iface /usr/lib64/audacious/General/skins.so
+stamp 1435444795
+name Winamp Classic Interface
+domain audacious-plugins
+priority 0
+about 0
+config 1
+enabled 0

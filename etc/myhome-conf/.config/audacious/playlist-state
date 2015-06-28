@@ -1,6 +1,10 @@
-resume-state 1
-resume-time 10762
-active 0
-playing 0
+active 1
+playing -1
 playlist 0
-position 0
+position 87
+resume-state 1
+resume-time 65360
+playlist 1
+position -1
+resume-state 1
+resume-time 299230

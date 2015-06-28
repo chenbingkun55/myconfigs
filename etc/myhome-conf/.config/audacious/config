@@ -15,3 +15,11 @@ player_y=579
 playlist_x=1321
 playlist_y=579
 skin=/usr/share/audacious/Skins/Classic
+
+[gtkui]
+column_widths=-1,-1,-1,-1,-1
+column_expand=1,1,1,0,0
+player_x=1
+player_y=19
+player_width=1364
+player_height=728
