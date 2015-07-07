@@ -1,17 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# 别名
-alias cp='cp -i'
-alias mv='mv -i'
-alias vim='nvim'
-alias rm='trash-put'
-alias ls='ls -F --color=auto'
-alias ll='ls -l'
-alias grep='grep --color=auto'
-alias ee='emacsclient -t'
-alias ranger='ranger --confdir=~/.config/ranger'
-setopt hist_ignore_space
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -60,19 +49,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx lighthouse)
+plugins=(git)
 
 # User configuration
 
-#export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${PATH}"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
- export LANG=zh_CN.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -85,7 +72,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/id_dsa"
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -95,29 +82,3 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-
-export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
-# 键绑定
-case $TERM in
-    xterm*)
-    bindkey "^[[F" end-of-line
-    bindkey "^[[H" beginning-of-line 
-    ;;
-    screen*)
-    export TERM='xterm'
-    ;;
-    linux*)
-    export TERM='fbterm'
-    bindkey "^[[F" end-of-line
-    bindkey "^[[H" beginning-of-line 
-    alias fbterm='LANG=zh_CN.UTF-8 fbterm'
-    #fbterm -- tmux
-    fbterm
-    ;;
-esac
-    bindkey '\e[1~' beginning-of-line       # Home
-    bindkey '\e[4~' end-of-line             # End
-    bindkey '\e[3~' delete-char             # Del
-    bindkey '\e[2~' overwrite-mode          # Insert 
-    bindkey -v
