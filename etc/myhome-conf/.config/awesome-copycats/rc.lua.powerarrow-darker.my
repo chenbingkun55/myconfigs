@@ -95,7 +95,7 @@ layouts =
 
 -- {{{ Tags
 tags = {
-   names = { "网页", "终端", "远程终端", "远程桌面", "办公", "多媒体", "其它" },
+   names = { "网页", "终端", "远程终端", "远程桌面", "办公", "多媒体", "虚拟机" },
    layout = { layouts[1], layouts[13], layouts[13], layouts[3], layouts[11], layouts[11], layouts[1] }
 }
 
