@@ -1,16 +1,3 @@
-rename Zhuo XiangBin
-rename Zou XiangBin
-rename AlexLi
-rename Yang Yang
-rename BZB_Servers_20150506.xlsx
-rename BD_DT_MCD_CASINO_BZBeeStudio_WikiBackup_20150306
-rename BD_DT_MCD_CASINO_BZBeeStudio_PD2_MATCH3_WikiBackup_20150506
-rename 7574.jpg
-search bingkun
-search temp
-rename BZB_Servers_20150511.xlsx
-search boh
-vim key.txt
 search office
 search Office
 search toolk
@@ -41,10 +28,23 @@ search 我
 open_with gvim
 rename Match3_CDN_FTP账号.txt
 rename Server 密码_20150612.txt
-cd  
 search PS4
 open_with 0
-delete
-cd 
 open_with 
+rename logdb_20150720.sql
+rename my9fina.sql
+rename openshift_my9finance_V6_20150720.sql
+rename wiki_openshift_20150720.sql
+cd  
+search 
+rename 20150722_.png
+rename 20150722.png
+search dmp
+search j
+mkdir 
+cd 
 
+search Imag
+cd
+delete
+search CIM

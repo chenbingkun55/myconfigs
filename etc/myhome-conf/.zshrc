@@ -100,25 +100,25 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 
 export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
 # 键绑定
-case $TERM in
-    xterm*)
-    bindkey "^[[F" end-of-line
-    bindkey "^[[H" beginning-of-line 
-    ;;
-    screen*)
-    export TERM='xterm'
-    ;;
-    linux*)
-    export TERM='fbterm'
-    bindkey "^[[F" end-of-line
-    bindkey "^[[H" beginning-of-line 
-    alias fbterm='LANG=zh_CN.UTF-8 fbterm'
-    #fbterm -- tmux
-    fbterm
-    ;;
-esac
-    bindkey '\e[1~' beginning-of-line       # Home
-    bindkey '\e[4~' end-of-line             # End
-    bindkey '\e[3~' delete-char             # Del
-    bindkey '\e[2~' overwrite-mode          # Insert 
-    bindkey -v
+#case $TERM in
+#   xterm*)
+#   bindkey "^[[F" end-of-line
+#   bindkey "^[[H" beginning-of-line 
+#   ;;
+#   screen*)
+#   export TERM='xterm'
+#   ;;
+#   linux*)
+#   export TERM='fbterm'
+#   bindkey "^[[F" end-of-line
+#   bindkey "^[[H" beginning-of-line 
+#   alias fbterm='LANG=zh_CN.UTF-8 fbterm'
+#   #fbterm -- tmux
+#   fbterm
+#   ;;
+#esa
+#   bindkey '\e[1~' beginning-of-line       # Home
+#   bindkey '\e[4~' end-of-line             # End
+#   bindkey '\e[3~' delete-char             # Del
+#   bindkey '\e[2~' overwrite-mode          # Insert 
+#
