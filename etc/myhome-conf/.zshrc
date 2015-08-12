@@ -61,7 +61,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler lighthouse svn cp autojump vi-mode vim-interaction sudo python pyenv adb history httpie jira)
+plugins=(osx autojump git bundler lighthouse vim-interaction pyenv)
 
 # User configuration
 
@@ -122,3 +122,5 @@ export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
 #   bindkey '\e[3~' delete-char             # Del
 #   bindkey '\e[2~' overwrite-mode          # Insert 
 #
+[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+
