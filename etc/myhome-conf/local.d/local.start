@@ -1,0 +1,11 @@
+# 加载 VirtualBox Modules
+for m in vbox{drv,netadp,netflt}; do modprobe vboxnetflt; done
+
+# Apple keyborad F1-F12 function key
+echo 2 > /sys/module/hid_apple/parameters/fnmode
+
+### 开机自启动程序
+#sshfs root@192.168.23.226:/www /home/chenbk/10_mnt/sshfs_www_226 -o uid=1000
+sudo mount -t cifs //192.168.1.184/Public /home/chenbk/10_mnt/184_Public -o credentials=/home/chenbk/03_工作内容/我的文档/Config/cifs/mount.cifs.auth,uid=1000
+sudo mount -t cifs //192.168.1.184/Studio /home/chenbk/10_mnt/184_Studio -o credentials=/home/chenbk/03_工作内容/我的文档/Config/cifs/mount.cifs.auth,uid=1000
+sudo mount -t cifs //192.168.1.184/Office /home/chenbk/10_mnt/184_Office -o credentials=/home/chenbk/03_工作内容/我的文档/Config/cifs/mount.cifs.auth,uid=1000

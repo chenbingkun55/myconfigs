@@ -1,24 +1,3 @@
-search office
-search Office
-search toolk
-search Tool
-rename Foxmail_7.2_AddBzbAccount.png
-search pass
-mkdir SQL Server
-search 端口
-mkdir 07_移机工具
-open_with 'd
-rename 192.168.25.221_[19F_DEV5-SPS-SRV]
-rename 福州管理站新电脑票申请表.xls
-rename 03_工作内容
-cd .VirtualBox/
-search bing
-mkdir 03_更新
-search DNS
-search Pass
-search 密码
-open_with 4
-rename logdb_20150513.sql
 open_with lkk
 rename openshift_my9finance_V6_20150513.sql
 rename wiki_openshift_20150513.sql
@@ -30,7 +9,6 @@ rename Match3_CDN_FTP账号.txt
 rename Server 密码_20150612.txt
 search PS4
 open_with 0
-open_with 
 rename logdb_20150720.sql
 rename my9fina.sql
 rename openshift_my9finance_V6_20150720.sql
@@ -41,10 +19,32 @@ rename 20150722_.png
 rename 20150722.png
 search dmp
 search j
-mkdir 
-cd 
-
 search Imag
 cd
-delete
 search CIM
+search J
+search 密
+search tmp
+open_with libreoffice
+mkdir UpdateToExchangeSp2
+rename ExchangeSp2
+rename Exchange Sp2
+search office
+mkdir 
+rename Office_2016_16.0.4229.1002_x86-x64_v2.8_en.iso
+open_with unrar x ""$@
+open_with unrar x -- "$@"
+open_with unrar x MTKV26B1.zip
+open_with unzip MTKV26B1.zip
+search poto
+search photo
+searc
+delete
+search
+search temp
+search 03
+
+cd 
+search dns
+open_with 
+find dns
