@@ -5,55 +5,55 @@ filetype plugin indent on
 syntax enable
 "不要兼容vi
 set nocompatible
-set backspace=indent,eol,start
 
 set background=dark
 "使用color solarized
-"colorscheme solarized
-colorscheme ron
+colorscheme solarized
+colorscheme delek
+
 "terminal下面的背景问题
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 
-set modelines=0
-
 
 "tab键的设定
+set list
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set showcmd
 
 "切到下一个标签
 map <C-TAB> :tabNext<CR>
+map <C-S-TAB> :tabprevious<CR>
+"map <C-T> :tabnew<CR>
 
 "打开quickfix例表"
-"map <F4> :copen<CR>
+map <F12> :copen<CR>
 "一些其他的设定
 "自动切换当前目录为当前文件所在的目录
-"set autochdir
-
+set autochdir
 "设置鼠标支持
 set mouse=a
 "把备份统一放在tmp目录里.
-set backupdir=~/tmp/backup,/tmp
+set backupdir=~/tmp/backup
 "把.swp 文件统一存放到tmp
-set directory=~/tmp,/tmp
+set directory=~/tmp
 "使用鼠标准: xterm = X Windows , mswin = 微软的标准
-behave xterm
+behave mswin
 "字符设置
 set encoding=utf-8
 set fileencodings=utf-8,cp936,gb18030,big5,ucs-bom
 set scrolloff=3
 language message zh_CN.UTF-8
 "新建文件编码
-set fenc=utf-8
+set fileencoding=utf-8
 set autoindent
 set hidden
 
+"设置显示行和列定位光标
 if &term == "linux"
     set nocursorline
     set nocursorcolumn
@@ -64,15 +64,14 @@ else
     hi CursorColumn cterm=NONE ctermbg=green ctermfg=black guibg=white guifg=black
 endif
 
-nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
-
 set ttyfast
 set ruler
+set backspace=indent,eol,start
 set laststatus=2
 "相对行号 要想相对行号起作用要放在显示行号后面
 set relativenumber
 "显示行号
-"set number
+set number
 "无限undo
 set undofile
 "自动换行
@@ -80,12 +79,12 @@ set wrap
 "禁止自动换行
 "set nowrap
 "GUI界面里的字体，默认有抗锯齿
-set guifont=DejaVu\ Sans\ Mono\ 14
-set guifontwide=Droid\ Sans\ Fallback\ 12
+set guifont=Hack\ 16
+set guifontwide=Droid\ Sans\ Fallback\ 14
 set linespace=2
 
 "自动载入配置文件不需要重启
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
 "将-连接符也设置为单词
 set isk+=-
 
@@ -132,10 +131,9 @@ inoremap <C-L> <right>
 " Default: 
 "===================================================
 "leader键的功能设置
-"修改leader键为逗号
+"修改leader键为逗号,默认为\
 let mapleader=","
-"esc的映射
-imap jj <esc>
+"imap jj <esc>
 "屏蔽掉讨厌的F1键
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
@@ -149,7 +147,7 @@ vnoremap / /\v
 "折叠html标签 ,fold tag
 nnoremap <leader>ft vatzf
 "使用,v来选择刚刚复制的段落，这样可以用来缩进
-nnoremap <leader>v v`]
+"nnoremap <leader>v v`]
 "使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
 nnoremap <leader>w <c-w>v<c-w>l
 nnoremap <leader>wc <c-w>c
@@ -160,12 +158,12 @@ nnoremap <leader>r gT
 "使用<leader>空格来取消搜索高亮
 nnoremap <leader><space> :noh<cr>
 "html中的js加注释 取消注释
-nmap <leader>h I//jj
+nmap <leader>h I//<ESC>
 nmap <leader>ch ^xx
 "切换到当前目录
-nmap <leader>q :execute "cd" expand("%:h")<CR>
+"nmap <leader>q :execute "cd" expand("%:h")<CR>
 "搜索替换
-nmap <leader>s :,s///c
+"nmap <leader>s :,s///c
 
 "取消粘贴缩进
 nmap <leader>p :set paste<CR>
@@ -183,9 +181,9 @@ nmap <leader>fp :set ft=php<CR>
 vmap <C-c> "+y
 
 ",qq不保存退出所有 ,wq保存并退出所有 ,w保存所有
-nmap <leader>qq :qa!<cr>
-nmap <leader>qq :qa!<cr>
-nmap <leader>qq :qa!<cr>
+nmap <leader>qq :qa!<CR>
+nmap <leader>wq :wq!<CR>
+nmap <leader>w :w!<CR>
 
 "设置隐藏gvim的菜单和工具栏 F2切换
 set guioptions-=m
@@ -220,7 +218,6 @@ let g:indent_guides_guide_size=1
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
@@ -250,23 +247,42 @@ map <F3> :NERDTreeToggle<CR>
 "自动打开 Nerdtree
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 let NERDTreeIgnore=['\.$','\~$']
 let NERDTreeWinPos=0
 
-"对NERD_commenter的设置
+"对NERD_commenter 添加代码注释的设置
 Bundle 'The-NERD-Commenter'
 let NERDShutUp=1
-",ca，在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
-",cc，注释当前行
-",c，切换注释/非注释状态
-",cs，以”性感”的方式注释
-",cA，在当前行尾添加注释符，并进入Insert模式
-",cu，取消注释
+let g:NERDCustomDelimiters = {
+    \ 'html': {  'left': '<!-- ', 'right': '-->', 'leftAlt': '/*','rightAlt': '*/' },
+    \ 'xhtml': {  'left': '<!-- ', 'right': '-->', 'leftAlt': '/*','rightAlt': '*/'}, 
+\}
+let NERD_html_alt_style=1
+"<Leader>ca，在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
+"<leader>cc，注释当前行
+"<leader>c，切换注释/非注释状态
+"<leader>cs，以”性感”的方式注释
+"<leader>cA，在当前行尾添加注释符，并进入Insert模式
+"<leader>cu，取消注释
 
 
-
-Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'https://github.com/vim-scripts/python.vim.git'
+"Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'bling/vim-airline'
+"---------------alrLine Config--------------  
+if !exists('g:airline_symbols')  
+    let g:airline_symbols = {}  
+endif  
+let g:airline_symbols.space = "\ua0"  
+let g:airline_exclude_filename = []  
+let g:Powerline_symbols='fancy'  
+let g:airline_powerline_fonts=0  
+let Powerline_symbols='fancy'  
+let g:bufferline_echo=0  
+set laststatus=2  
+set t_Co=256  
+"set fillchars+=stl:\ ,stlnc:\  
 Bundle 'shawncplus/php.vim'
 
 "Tagbar 用来快速浏览代码里的标签
@@ -479,6 +495,7 @@ let g:LookupFile_LookupFunc = 'LookupFile_IgnoreCaseFunc'
 
 
 Bundle 'vim-scripts/genutils'
+Bundle 'vim-scripts/desert256.vim'
 
 "支持单行和多行的选择，//格式
 "map <c-h> ,c<space>
@@ -604,8 +621,22 @@ endfunction
 "set tags=/home/www/dev.bzb.igg.com/tags
 
 "只有在是PHP文件时，才启用PHP补全
-au FileType php call AddPHPFuncList()
-function! AddPHPFuncList()
-set dictionary-=~/.vim/funclist.txt dictionary+=~/.vim/funclist.txt
-set complete-=k complete+=k
-endfunction
+"au FileType php call AddPHPFuncList()
+"function! AddPHPFuncList()
+"set dictionary-=~/.vim/funclist.txt dictionary+=~/.vim/funclist.txt
+"set complete-=k complete+=k
+"endfunction
+if has("cscope") && filereadable("/usr/bin/cscope")
+   set csprg=/usr/bin/cscope
+   set csto=0
+   set cst
+   set nocsverb
+   " add any database in current directory
+   if filereadable("cscope.out")
+      cs add cscope.out
+   " else add database pointed to by environment
+   elseif $CSCOPE_DB != ""
+      cs add $CSCOPE_DB
+   endif
+   set csverb
+endif

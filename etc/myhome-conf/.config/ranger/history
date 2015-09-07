@@ -1,27 +1,3 @@
-open_with lkk
-rename openshift_my9finance_V6_20150513.sql
-rename wiki_openshift_20150513.sql
-find t
-mkdir USB_20150608
-search 我
-open_with gvim
-rename Match3_CDN_FTP账号.txt
-rename Server 密码_20150612.txt
-search PS4
-open_with 0
-rename logdb_20150720.sql
-rename my9fina.sql
-rename openshift_my9finance_V6_20150720.sql
-rename wiki_openshift_20150720.sql
-cd  
-search 
-rename 20150722_.png
-rename 20150722.png
-search dmp
-search j
-search Imag
-cd
-search CIM
 search J
 search 密
 search tmp
@@ -30,7 +6,6 @@ mkdir UpdateToExchangeSp2
 rename ExchangeSp2
 rename Exchange Sp2
 search office
-mkdir 
 rename Office_2016_16.0.4229.1002_x86-x64_v2.8_en.iso
 open_with unrar x ""$@
 open_with unrar x -- "$@"
@@ -39,12 +14,37 @@ open_with unzip MTKV26B1.zip
 search poto
 search photo
 searc
-delete
-search
 search temp
 search 03
-
-cd 
 search dns
-open_with 
 find dns
+search len
+mkdir Windows2016
+cd .aMule
+search slot
+search svn
+search mail
+mkdir Webcam Driver
+rename C920.exe
+search skype
+mkdir 
+vi SS
+rename 19FSNS2_MiWiFi_192.168.23.135
+rename 19FSNS2_MiWiFi_192.168.23.66
+rename 19FSNS2_小米mini_192.168.23.66
+rename 19FSNS2_小米mini_192.168.23.135
+search /1
+sudo chmod a+r mi
+mkdir 备份
+rename BZB_MeetingRoom_miwifi_bak.2015-09-01--12-40-35.tar.gz
+rename BZB_QA_TEST_miwifi_.bak.2015-09-01--13_24_38.tar.gz
+rename Firefox-full-latest_4.exe
+rename Firefox-full-latest_40.0.3.exe
+cd 
+
+delete
+open_with 
+search 20150906
+search
+rename gen_aclfile.py.bak20150907
+rename 07_Python
