@@ -922,6 +922,7 @@ autorun = true
 autorunApps =
 {
     "fcitx",
+    "/usr/bin/redshift",
     "firefox-bin",
     "xterm -T \"RSS-newsbeuter\" -e newsbeuter",
     "xterm -T \"radioget\" -e radioget",

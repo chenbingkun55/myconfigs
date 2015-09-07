@@ -17,7 +17,7 @@ setopt hist_ignore_space
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,7 +98,8 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
+#export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
+#export RPS1="%B%F{black}[%*]"
 # 键绑定
 #case $TERM in
 #   xterm*)
@@ -123,4 +124,4 @@ export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
 #   bindkey '\e[2~' overwrite-mode          # Insert 
 #
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
-[[ -s ~/.powerline/powerline/bindings/zsh/powerline.zsh ]] && . ~/.powerline/powerline/bindings/zsh/powerline.zsh
+#[[ -s ~/.powerline/powerline/bindings/zsh/powerline.zsh ]] && . ~/.powerline/powerline/bindings/zsh/powerline.zsh
