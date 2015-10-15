@@ -1,30 +1,3 @@
-search J
-search 密
-search tmp
-open_with libreoffice
-mkdir UpdateToExchangeSp2
-rename ExchangeSp2
-rename Exchange Sp2
-search office
-rename Office_2016_16.0.4229.1002_x86-x64_v2.8_en.iso
-open_with unrar x ""$@
-open_with unrar x -- "$@"
-open_with unrar x MTKV26B1.zip
-open_with unzip MTKV26B1.zip
-search poto
-search photo
-searc
-search temp
-search 03
-search dns
-find dns
-search len
-mkdir Windows2016
-cd .aMule
-search slot
-search svn
-search mail
-mkdir Webcam Driver
 rename C920.exe
 search skype
 mkdir 
@@ -40,11 +13,38 @@ rename BZB_MeetingRoom_miwifi_bak.2015-09-01--12-40-35.tar.gz
 rename BZB_QA_TEST_miwifi_.bak.2015-09-01--13_24_38.tar.gz
 rename Firefox-full-latest_4.exe
 rename Firefox-full-latest_40.0.3.exe
-cd 
-
-delete
-open_with 
 search 20150906
 search
 rename gen_aclfile.py.bak20150907
 rename 07_Python
+shell 
+rename DH_mcd_FTP账号.txt
+open_with 0
+rename logdb_20150924.sql
+rename openshift_my9finance.sql
+open_with 
+rename openshift_my9finance_V6_20150924.sql
+rename wiki_openshift_20150924.sql
+search vpn
+mkdir 08_project_status
+search 账号
+search 
+search RTX
+search hunt
+search net
+find t
+rename 20110930_SNS2部门账号信息维护
+search 密码
+search jira
+cd ..
+mkdir 192.168.1.185_[BZB-JIRA-SRV]
+rename 192.168.1.181_[BZB-JIRA-SRV]
+gvim 丢失的JIRA账号_20151012.txt
+vi 丢失的JIRA账号_20151012.txt
+
+touch ╰─➤ grep "lowerChildName=\"yanli\"" 2130/entities.xml |awk '{print $6}'                                       [16:36:08]
+touch 丢失的JIRA账号_20151012.txt
+open_with gvim
+cd 
+search home
+delete
