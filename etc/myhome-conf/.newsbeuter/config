@@ -43,6 +43,7 @@ browser firefox-bin
 ## description: This configuration option sets the cache file. This is especially useful if the filesystem of your home directory doesn't support proper locking (e.g. NFS).
 ## parameter syntax: <path>
 # cache-file "~/.newsbeuter/cache.db"
+cache-file "/dev/shm/cache.db"
 
 ## configuration option: cleanup-on-quit
 ## description: If yes, then the cache gets locked and superfluous feeds and items are removed, such as feeds that can't be found in the urls configuration file anymore.

@@ -123,6 +123,14 @@ http://feeds.feedburner.com/chinadigitaltimes/zeEc "中国数字时代"
 http://feeds.feedburner.com/chinadigitaltimes/lfzc "中国数字时代"
 http://feeds.feedburner.com/chinadigitaltimes/zcNw "中国数字时代"
 http://feeds.feedburner.com/chinadigitaltimes/ThSg "中国数字时代"
+http://www.52rd.com/Code/RssFeed.asp?Channel=Text_Tech
+http://www.52rd.com/Code/RssFeed.asp?Channel=Text_News
+http://cn.engadget.com/rss.xml
+http://feeds.feedburner.com/DiscoveryNews-Top-Stories
+https://zh.wikipedia.org/w/api.php?hidebots=1&days=7&limit=50&hidewikidata=1&action=feedrecentchanges&feedformat=rss
+http://www.geekpark.net/rss
+http://www.williamlong.info/rss.xml
+http://www.alibuybuy.com/feed
 http://www.bwchinese.com/rss.aspx?tid=hotnew
 http://www.bwchinese.com/rss.aspx?cid=5
 http://www.bwchinese.com/rss.aspx?cid=6
@@ -142,3 +150,9 @@ http://www.koduo.com/bbs/rss.php?fid=20&auth=0
 http://www.xinhuanet.com/tech/news_tech.xml
 http://www.xinhuanet.com/finance/news_finance.xml
 http://www.xinhuanet.com/photo/news_photo.xml
+http://www.douban.com/feed/review/book
+http://www.u148.net/rss/
+http://feed.smzdm.com
+http://feed.xiaohuayoumo.com/
+http://feed.xiaohuayoumo.com/
+
