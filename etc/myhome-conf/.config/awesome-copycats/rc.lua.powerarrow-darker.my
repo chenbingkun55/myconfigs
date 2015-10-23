@@ -162,6 +162,7 @@ appsmenu = {
    { "资源管理-Pcmanfm", "pcmanfm" },
    { "Mysql管理工具", "mysql-workbench" },
    { "任务查看器-htop", terminal .. " -e htop" },
+   { "终端 - terminator", "terminator" },
 }
 
 rdesktopmenu = {

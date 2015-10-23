@@ -66,7 +66,7 @@ plugins=(osx autojump git bundler lighthouse vim-interaction pyenv)
 # User configuration
 
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${PATH}"
+export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
