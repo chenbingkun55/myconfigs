@@ -62,7 +62,7 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-darker/t
 -- common
 modkey     = "Mod4"
 altkey     = "Mod1"
-terminal   = "uxterm" or "xterm"
+terminal   = "terminator" or "uxterm" or "xterm"
 editor     = os.getenv("EDITOR") or "nano" or "vi"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -126,12 +126,12 @@ myawesomemenu = {
 
 appsmenu = {
    { "播放器-XBMC", "xbmc" },
-   { "播放器-Mocp", "xterm -T \"mocp\" -e mocp /home/chenbk/douban.fm/" },
-   { "播放器-RadioGet", "xterm -T \"radioget\" -e radioget" },
+   { "播放器-Mocp", terminal .. " -T \"mocp\" -e mocp /home/chenbk/douban.fm/" },
+   { "播放器-RadioGet", terminal .. " -T \"radioget\" -e radioget" },
    { "播放器-Audacious", "audacious" },
    { "播放器-Smplayer", "smplayer" },
-   { "douban.fm", "xterm -T \"douban\" -e douban.fm" },
-   { "xterm -T \"RSS-newsbeuter\" -e newsbeuter" },
+   { "douban.fm", terminal .. " -T \"douban\" -e douban.fm" },
+   { terminal .. " -T \"RSS-newsbeuter\" -e newsbeuter" },
    { "画图-Gimp", "gimp" },
    { "虚拟机-VirtualBox", "VirtualBox" },
    { "下载-Qbittorrent", "qbittorrent" },
@@ -151,14 +151,14 @@ appsmenu = {
    { "libreoffice-演示文稿", "libreoffice --draw" },
    { "librcad-CAD设计", "librecad" },
    { "Dia设计", "dia" },
-   { "Xmind设计", "xterm -e \"cd /opt/xmind/XMind && ./XMind\"" },
+   { "Xmind设计", terminal .. " -e \"cd /opt/xmind/XMind && ./XMind\"" },
    { "星际译王-Stardict", "stardict" },
    { "文本编辑-gvim", "gvim" },
    { "文本编辑-PHP IDE", "phpstorm" },
    { "文本编辑-Sublime", "subl" },
    { "文本编辑-leafpad", "leafpad" },
-   { "资源管理-mc", "xterm -T \"mc\" -e mc -S \"sand256\"" },
-   { "资源管理-ranger", "xterm -T \"ranger\" -e ranger --confdir=~/.config/ranger" },
+   { "资源管理-mc", terminal .. " -T \"mc\" -e mc -S \"sand256\"" },
+   { "资源管理-ranger", "uxterm -T \"ranger\" -e ranger --confdir=~/.config/ranger" },
    { "资源管理-Pcmanfm", "pcmanfm" },
    { "Mysql管理工具", "mysql-workbench" },
    { "任务查看器-htop", terminal .. " -e htop" },
@@ -190,15 +190,15 @@ rdesktopmenu = {
 }
 
 sshmenu = {
-   { "192.168.23.210_BZB_SVN_SRV" , "xterm -e ssh root@192.168.23.210" },
-   { "192.168.23.228_BZB_QT_SRV" , "xterm -e ssh root@192.168.23.228" },
-   { "192.168.23.223_BZB_NAGIOS" , "xterm -e ssh root@192.168.23.223" },
-   { "192.168.23.222_BZB_DB_SRV" , "xterm -e ssh root@192.168.23.222" },
-   { "192.168.23.204_BZB_REDMINE_TEST" , "xterm -e ssh root@192.168.23.204" },
-   { "192.168.23.251_XS_VM01" , "xterm -e ssh root@192.168.23.251" },
-   { "192.168.23.252_XS_VM02" , "xterm -e ssh root@192.168.23.252" },
-   { "192.168.23.250_XS_VM03" , "xterm -e ssh root@192.168.23.250" },
-   { "192.168.23.253_XS_VM04" , "xterm -e ssh root@192.168.23.253" },
+   { "192.168.23.210_BZB_SVN_SRV" , terminal .. " -e ssh root@192.168.23.210" },
+   { "192.168.23.228_BZB_QT_SRV" , terminal .. " -e ssh root@192.168.23.228" },
+   { "192.168.23.223_BZB_NAGIOS" , terminal .. " -e ssh root@192.168.23.223" },
+   { "192.168.23.222_BZB_DB_SRV" , terminal .. " -e ssh root@192.168.23.222" },
+   { "192.168.23.204_BZB_REDMINE_TEST" , terminal .. " -e ssh root@192.168.23.204" },
+   { "192.168.23.251_XS_VM01" , terminal .. " -e ssh root@192.168.23.251" },
+   { "192.168.23.252_XS_VM02" , terminal .. " -e ssh root@192.168.23.252" },
+   { "192.168.23.250_XS_VM03" , terminal .. " -e ssh root@192.168.23.250" },
+   { "192.168.23.253_XS_VM04" , terminal .. " -e ssh root@192.168.23.253" },
 
 }
 
@@ -925,15 +925,15 @@ autorunApps =
     "fcitx",
     "/usr/bin/redshift",
     "firefox-bin",
-    "xterm -T \"RSS-newsbeuter\" -e newsbeuter",
-    "xterm -T \"radioget\" -e radioget",
-    "xterm -T \"rdesktop\" -e /home/chenbk/01_Shell/rdesktop.sh",
-    "xterm -T \"ssh\" -e /home/chenbk/01_Shell/ssh.sh",
- --   "xterm -T \"rdesktop_freerdp\" -e /home/chenbk/01_Shell/rdesktop_freerdp.sh 192.168.23.6",
-    "xterm -T \"cli\"",
-    "xterm -T \"cli\"",
---    "xterm -T \"mc\" -e mc -S \"sand256\"",
-    "xterm -T \"ranger\" -e ranger --confdir=~/.config/ranger",
+    terminal .. " -T \"RSS-newsbeuter\" -e newsbeuter",
+    terminal .. " -T \"radioget\" -e radioget",
+    terminal .. " -T \"rdesktop\" -e /home/chenbk/01_Shell/rdesktop.sh",
+    terminal .. " -T \"ssh\" -e /home/chenbk/01_Shell/ssh.sh",
+ --   terminal .. " -T \"rdesktop_freerdp\" -e /home/chenbk/01_Shell/rdesktop_freerdp.sh 192.168.23.6",
+    terminal .. " -T \"cli\"",
+    terminal .. " -T \"cli\"",
+--    terminal .. " -T \"mc\" -e mc -S \"sand256\"",
+    "uxterm -T \"ranger\" -e ranger --confdir=~/.config/ranger",
     "VirtualBox",
     "stardict -h",
     "pcmanfm",
