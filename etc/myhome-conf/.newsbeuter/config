@@ -20,7 +20,7 @@
 ## configuration option: auto-reload
 ## description: If enabled, all feeds will be automatically reloaded at start up and then continuously after a certain time has passed (see reload-time).
 ## parameter syntax: [yes/no]
-auto-reload no
+auto-reload yes
 
 ## configuration option: bookmark-cmd
 ## description: If set, then <bookmark-command> will be used as bookmarking plugin. See the documentation on bookmarking for further information.
@@ -43,6 +43,7 @@ browser firefox-bin
 ## description: This configuration option sets the cache file. This is especially useful if the filesystem of your home directory doesn't support proper locking (e.g. NFS).
 ## parameter syntax: <path>
 # cache-file "~/.newsbeuter/cache.db"
+cache-file "/dev/shm/cache.db"
 
 ## configuration option: cleanup-on-quit
 ## description: If yes, then the cache gets locked and superfluous feeds and items are removed, such as feeds that can't be found in the urls configuration file anymore.
@@ -52,7 +53,7 @@ browser firefox-bin
 ## configuration option: confirm-exit
 ## description: If set to yes, then newsbeuter will ask for confirmation whether the user really wants to quit newsbeuter.
 ## parameter syntax: [yes/no]
-# confirm-exit no
+confirm-exit yes
 
 ## configuration option: datetime-format
 ## description: This format specifies the date/time format in the article list. For a detailed documentation on the allowed formats, consult the manpage of strftime(3).
@@ -67,7 +68,7 @@ browser firefox-bin
 ## configuration option: download-retries
 ## description: How many times newsbeuter shall try to successfully download a feed before giving up. This is an option to improve the success of downloads on slow and shaky connections such as via a TOR proxy.
 ## parameter syntax: <number retries>
-# download-retries 1
+download-retries 2
 
 ## configuration option: download-timeout
 ## description: The number of seconds newsbeuter shall wait when downloading a feed before giving up. This is an option to improve the success of downloads on slow and shaky connections such as via a TOR proxy.
@@ -77,7 +78,7 @@ browser firefox-bin
 ## configuration option: error-log
 ## description: If set, then user errors (e.g. errors regarding defunct RSS feeds) will be logged to this file.
 ## parameter syntax: <path>
-# error-log ""
+error-log "/var/log/newsbeuter.log"
 
 ## configuration option: feed-sort-order
 ## description: If set to "firsttag", the feeds in the feed list will be sorted by their first tag in the urls file.
@@ -182,12 +183,12 @@ notify-always no
 ## configuration option: notify-xterm
 ## description: If yes, then the xterm window title will be set to a notification message about new articles.
 ## parameter syntax: [yes/no]
-# notify-xterm no
+notify-xterm yes
 
 ## configuration option: notify-beep
 ## description: If yes, then the speaker beep on new articles.
 ## parameter syntax: [yes/no]
-# notify-beep no
+notify-beep yes
 
 ## configuration option: opml-url
 ## description: If the OPML online subscription mode is enabled, then the list of feeds will be taken from the OPML file found on this location. Optionally, you can specify more than one URL. All the listed OPML URLs will then be taken into account when loading the feed list.
@@ -232,7 +233,7 @@ notify-always no
 ## configuration option: reload-time
 ## description: The number of minutes between automatic reloads.
 ## parameter syntax: <number>
-# reload-time 60
+reload-time 30
 
 ## configuration option: reload-threads
 ## description: The number of parallel reload threads that shall be started when all feeds are reloaded.
@@ -257,7 +258,7 @@ notify-always no
 ## configuration option: show-read-feeds
 ## description: If yes, then all feeds, including those without unread articles, are listed. If no, then only feeds with one or more unread articles are list.
 ## parameter syntax: [yes/no]
-# show-read-feeds yes
+show-read-feeds no
 
 ## configuration option: show-read-articles
 ## description: If yes, then all articles of a feed are listed in the article list. If no, then only unread articles are listed.
@@ -272,7 +273,7 @@ notify-always no
 ## configuration option: text-width
 ## description: If set to a number greater than 0, then all HTML will be rendered to this maximum line length. If set to 0, the terminal width will be used.
 ## parameter syntax: <number>
-# text-width 0
+text-width 20
 
 ## configuration option: urls-source
 ## description: This configuration command sets the source where URLs shall be retrieved from. By default, this is ~/.newsbeuter/urls. Alternatively, you can set it to "opml", which enables newsbeuter's OPML online subscription mode, or to "googlereader", which enables newsbeuter's Google Reader support. In order to make Google Reader support work correctly, you also need to set googlereader-login and googlereader-password.
@@ -302,5 +303,12 @@ color article    white black
 # binds ----------------------------------------------------------------
 unbind-key j
 unbind-key k
+unbind-key l
+unbind-key g
+unbind-key n
 bind-key "j" down
 bind-key "k" up
+bind-key "h" pagedown
+bind-key "l" pageup
+bind-key "g" home
+bind-key "n" toggle-show-read-feeds
