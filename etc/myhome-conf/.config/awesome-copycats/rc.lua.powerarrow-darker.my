@@ -96,7 +96,7 @@ layouts =
 -- {{{ Tags
 tags = {
    names = { "网页", "终端", "远程终端", "远程桌面", "办公", "多媒体", "虚拟机" },
-   layout = { layouts[1], layouts[13], layouts[13], layouts[3], layouts[11], layouts[11], layouts[1] }
+   layout = { layouts[1], layouts[13], layouts[13], layouts[13], layouts[11], layouts[11], layouts[1] }
 }
 
 for s = 1, screen.count() do
@@ -154,6 +154,7 @@ appsmenu = {
    { "Xmind设计", terminal .. " -e \"cd /opt/xmind/XMind && ./XMind\"" },
    { "星际译王-Stardict", "stardict" },
    { "文本编辑-gvim", "gvim" },
+   { "文本编辑-VSCode", "vscode" },
    { "文本编辑-PHP IDE", "phpstorm" },
    { "文本编辑-Sublime", "subl" },
    { "文本编辑-leafpad", "leafpad" },
@@ -212,6 +213,7 @@ mymainmenu = awful.menu({ items = {
 				    { "Firefox", "firefox-bin" },
 				    { "FileZilla", "filezilla" },
 				    { "Gvim", "gvim" },
+				    { "VSCode", "vscode" },
                                   }
                         })
 
