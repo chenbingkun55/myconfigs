@@ -216,6 +216,7 @@ mymainmenu = awful.menu({ items = {
 				    { "FileZilla", "filezilla" },
 				    { "Gvim", "gvim" },
 				    { "VSCode", "vscode" },
+				    { "Terminator", "terminator" },
                                   }
                         })
 
