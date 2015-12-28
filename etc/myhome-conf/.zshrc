@@ -5,7 +5,7 @@ export LUA_PATH="./?.lua;./?.lc;/usr/local/?/init.lua"
 # 别名
 alias cp='cp -i'
 alias mv='mv -i'
-alias vim='nvim'
+alias nvim='nvim -u ~/.vim/vimrc'
 alias rm='trash-put'
 alias ls='ls -F --color=auto'
 alias ll='ls -l'
