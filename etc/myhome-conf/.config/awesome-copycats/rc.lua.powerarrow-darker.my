@@ -121,8 +121,8 @@ myawesomemenu = {
    { "注销", awesome.quit },
    { "锁屏", "xscreensaver-command -lock" },
    { "休眠", "sudo hibernate-ram" },
-   { "重启", "sudo systemctl reboot" },
-   { "关机", "sudo systemctl poweroff" }
+   { "重启", "sudo reboot" },
+   { "关机", "sudo shutdown -h now" }
 }
 
 appsmenu = {
