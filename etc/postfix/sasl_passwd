@@ -1,4 +1,0 @@
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/postfix/files/smtp.pass,v 1.2 2004/07/18 03:26:56 dragonheart Exp $
-#
-# remotehost user:password
-smtp.163.com	chenbingkun55@163.com:BK%%524685+
