@@ -95,7 +95,7 @@ layouts =
 
 -- {{{ Tags
 tags = {
-   names = { "网页", "终端", "远程终端", "远程桌面", "办公", "多媒体", "虚拟机" },
+   names = { "网页", "终端", "远程终端", "远程桌面", "办公", "多媒体", "其它" },
    layout = { layouts[1], layouts[13], layouts[13], layouts[3], layouts[11], layouts[11], layouts[1] }
 }
 
@@ -129,9 +129,8 @@ appsmenu = {
    { "播放器-Mocp", "xterm -T \"mocp\" -e mocp /home/chenbk/douban.fm/" },
    { "播放器-RadioGet", "xterm -T \"radioget\" -e radioget" },
    { "播放器-Audacious", "audacious" },
-   { "播放器-Smplayer", "smplayer" },
+   { "播放器-Smplayer2", "smplayer2" },
    { "douban.fm", "xterm -T \"douban\" -e douban.fm" },
-   { "xterm -T \"RSS-newsbeuter\" -e newsbeuter" },
    { "画图-Gimp", "gimp" },
    { "虚拟机-VirtualBox", "VirtualBox" },
    { "下载-Qbittorrent", "qbittorrent" },
@@ -151,8 +150,8 @@ appsmenu = {
    { "libreoffice-演示文稿", "libreoffice --draw" },
    { "librcad-CAD设计", "librecad" },
    { "Dia设计", "dia" },
-   { "Xmind设计", "xterm -e \"cd /opt/xmind/XMind && ./XMind\"" },
-   { "星际译王-Stardict", "stardict" },
+   { "Xmind设计", "xmind" },
+   { "Foxitreader-PDF", "foxitreader" },
    { "文本编辑-gvim", "gvim" },
    { "文本编辑-PHP IDE", "phpstorm" },
    { "文本编辑-Sublime", "subl" },
@@ -555,34 +554,34 @@ globalkeys = awful.util.table.join(
     awful.key({ altkey }, "Right", function () lain.util.tag_view_nonempty(1) end),
 
     -- Default client focus
-    awful.key({ modkey }, "k",
+    awful.key({ altkey }, "k",
         function ()
             awful.client.focus.byidx( 1)
             if client.focus then client.focus:raise() end
         end),
-    awful.key({ modkey }, "j",
+    awful.key({ altkey }, "j",
         function ()
             awful.client.focus.byidx(-1)
             if client.focus then client.focus:raise() end
         end),
 
     -- By direction client focus
-    awful.key({ altkey }, "j",
+    awful.key({ modkey }, "j",
         function()
             awful.client.focus.bydirection("down")
             if client.focus then client.focus:raise() end
         end),
-    awful.key({ altkey }, "k",
+    awful.key({ modkey }, "k",
         function()
             awful.client.focus.bydirection("up")
             if client.focus then client.focus:raise() end
         end),
-    awful.key({ altkey }, "h",
+    awful.key({ modkey }, "h",
         function()
             awful.client.focus.bydirection("left")
             if client.focus then client.focus:raise() end
         end),
-    awful.key({ altkey }, "l",
+    awful.key({ modkey }, "l",
         function()
             awful.client.focus.bydirection("right")
             if client.focus then client.focus:raise() end
@@ -794,8 +793,6 @@ awful.rules.rules = {
      properties = { tag = tags[1][5] } },
    {rule = {class = "Firefox"},
      properties = {tag = tags[1][1]}},
-   {rule = {name = "RSS-newsbeuter"},
-     properties = {tag = tags[1][1]}},
    {rule = {class = "Firefox", name = "Download"},
      properties = {floating = true}},
    {rule = {class = "VirtualBox"},
@@ -922,9 +919,7 @@ autorun = true
 autorunApps =
 {
     "fcitx",
-    "/usr/bin/redshift",
     "firefox-bin",
-    "xterm -T \"RSS-newsbeuter\" -e newsbeuter",
     "xterm -T \"radioget\" -e radioget",
     "xterm -T \"rdesktop\" -e /home/chenbk/01_Shell/rdesktop.sh",
     "xterm -T \"ssh\" -e /home/chenbk/01_Shell/ssh.sh",
@@ -934,7 +929,6 @@ autorunApps =
 --    "xterm -T \"mc\" -e mc -S \"sand256\"",
     "xterm -T \"ranger\" -e ranger --confdir=~/.config/ranger",
     "VirtualBox",
-    "stardict -h",
     "pcmanfm",
 --    "~/.conky/bin/conkyStart",
     "sudo killall mplayer",

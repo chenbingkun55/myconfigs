@@ -5,6 +5,7 @@ export LUA_PATH="./?.lua;./?.lc;/usr/local/?/init.lua"
 # 别名
 alias cp='cp -i'
 alias mv='mv -i'
+alias vi='nvim'
 alias vim='nvim'
 alias rm='trash-put'
 alias ls='ls -F --color=auto'
@@ -17,7 +18,7 @@ setopt hist_ignore_space
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="gnzh"
+ZSH_THEME="fino-time"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -104,7 +105,7 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 #case $TERM in
 #   xterm*)
 #   bindkey "^[[F" end-of-line
-#   bindkey "^[[H" beginning-of-line 
+#   bindkey "^[[H" beginning-of-line
 #   ;;
 #   screen*)
 #   export TERM='xterm'
@@ -112,7 +113,7 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 #   linux*)
 #   export TERM='fbterm'
 #   bindkey "^[[F" end-of-line
-#   bindkey "^[[H" beginning-of-line 
+#   bindkey "^[[H" beginning-of-line
 #   alias fbterm='LANG=zh_CN.UTF-8 fbterm'
 #   #fbterm -- tmux
 #   fbterm
@@ -121,7 +122,7 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 #   bindkey '\e[1~' beginning-of-line       # Home
 #   bindkey '\e[4~' end-of-line             # End
 #   bindkey '\e[3~' delete-char             # Del
-#   bindkey '\e[2~' overwrite-mode          # Insert 
+#   bindkey '\e[2~' overwrite-mode          # Insert
 #
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 #[[ -s ~/.powerline/powerline/bindings/zsh/powerline.zsh ]] && . ~/.powerline/powerline/bindings/zsh/powerline.zsh

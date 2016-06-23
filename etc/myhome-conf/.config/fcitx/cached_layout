@@ -10,7 +10,7 @@ English (US):us:English (Dvorak alternative international no dead keys):dvorak-a
 English (US):us:English (left handed Dvorak):dvorak-l:en
 English (US):us:English (right handed Dvorak):dvorak-r:en
 English (US):us:English (classic Dvorak):dvorak-classic:en
-English (US):us:English (programmer Dvorak):dvp:en
+English (US):us:English (Programmer Dvorak):dvp:en
 English (US):us:Russian (US, phonetic):rus:ru
 English (US):us:English (Macintosh):mac:en
 English (US):us:English (international AltGr dead keys):altgr-intl:en
@@ -86,6 +86,7 @@ Indian:in:Malayalam:mal:ml
 Indian:in:Malayalam (Lalitha):mal_lalitha:ml
 Indian:in:Malayalam (enhanced Inscript, with rupee sign):mal_enhanced:ml
 Indian:in:Oriya:ori:or
+Indian:in:Ol Chiki:olck:sat
 Indian:in:Tamil (Unicode):tam_unicode:ta
 Indian:in:Tamil (keyboard with numerals):tam_keyboard_with_numerals:ta
 Indian:in:Tamil (TAB typewriter):tam_TAB:ta
@@ -159,6 +160,7 @@ Czech:cz:Czech (qwerty):qwerty:cs
 Czech:cz:Czech (qwerty, extended Backslash):qwerty_bksl:cs
 Czech:cz:Czech (UCW layout, accented letters only):ucw:cs
 Czech:cz:Czech (US Dvorak with CZ UCW support):dvorak-ucw:cs
+Czech:cz:Russian (Czech, phonetic):rus:ru
 Czech:cz:Czech (Sun Type 6/7):sun_type6:cs
 Danish:dk:da
 Danish:dk:Danish (eliminate dead keys):nodeadkeys:da
@@ -198,6 +200,7 @@ Finnish:fi:Finnish (classic, eliminate dead keys):nodeadkeys:fi
 Finnish:fi:Finnish (Winkeys):winkeys:fi
 Finnish:fi:Northern Saami (Finland):smi:se
 Finnish:fi:Finnish (Macintosh):mac:fi
+Finnish:fi:Finnish (DAS):das:fi
 Finnish:fi:Finnish (Sun Type 6/7):sun_type6:fi
 French:fr:fr
 French:fr:French (eliminate dead keys):nodeadkeys:fr
@@ -321,6 +324,7 @@ Spanish (Latin American):latam:es
 Spanish (Latin American):latam:Spanish (Latin American, eliminate dead keys):nodeadkeys:es
 Spanish (Latin American):latam:Spanish (Latin American, include dead tilde):deadtilde:es
 Spanish (Latin American):latam:Spanish (Latin American, Sun dead keys):sundeadkeys:es
+Spanish (Latin American):latam:Spanish (Latin American, Dvorak):dvorak:es
 Lithuanian:lt:lt
 Lithuanian:lt:Lithuanian (standard):std:lt
 Lithuanian:lt:Lithuanian (US keyboard with Lithuanian letters):us:lt
@@ -486,6 +490,7 @@ Tajik:tj:Tajik (legacy):legacy:tg
 Sinhala (phonetic):lk:si
 Sinhala (phonetic):lk:Tamil (Sri Lanka, Unicode):tam_unicode:ta
 Sinhala (phonetic):lk:Tamil (Sri Lanka, TAB Typewriter):tam_TAB:ta
+Sinhala (phonetic):lk:Sinhala (US keyboard with Sinhala letters):us:si
 Thai:th:th
 Thai:th:Thai (TIS-820.2538):tis:th
 Thai:th:Thai (Pattachote):pat:th

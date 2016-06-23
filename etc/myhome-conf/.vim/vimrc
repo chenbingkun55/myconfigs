@@ -9,7 +9,7 @@ set nocompatible
 set background=dark
 "使用color solarized
 colorscheme solarized
-colorscheme delek
+"colorscheme delek
 
 "terminal下面的背景问题
 let g:solarized_termtrans=1
@@ -19,7 +19,7 @@ let g:solarized_visibility="high"
 
 
 "tab键的设定
-set list
+"set list
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -98,7 +98,7 @@ set matchtime=2
 set hlsearch
 
 "加入html标签配对
-runtime macros/matchit.vim 
+runtime macros/matchit.vim
 
 "以下设置用来是vim正确显示过长的行
 set textwidth=80
@@ -115,7 +115,7 @@ set numberwidth=3
 "初始窗口的高度
 "set lines=50
 "初始窗口的位置
-"winpos 620 45 
+"winpos 620 45
 
 "匹配括号的规则，增加针对html的<>
 set matchpairs=(:),{:},[:],<:>
@@ -128,7 +128,7 @@ inoremap <C-J> <down>
 inoremap <C-K> <up>
 inoremap <C-L> <right>
 
-" Default: 
+" Default:
 "===================================================
 "leader键的功能设置
 "修改leader键为逗号,默认为\
@@ -230,11 +230,11 @@ Bundle 'ShowTrailingWhitespace'
 
 "jsbeautify的设置
 "Bundle '_jsbeautify'
-"nnoremap <leader>_ff :call g:Jsbeautify()<CR>  
+"nnoremap <leader>_ff :call g:Jsbeautify()<CR>
 
 "EasyMotion设置
 Bundle 'EasyMotion'
-let g:EasyMotion_leader_key = '<Leader><Leader>' 
+let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 "Fencview的初始设置(注:安装这个插件后,编码反倒被弄错 *_~)
 "Bundle 'FencView.vim'
@@ -248,7 +248,7 @@ map <F3> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 let NERDTreeShowHidden=0
-let NERDTreeIgnore=['\.$','\~$']
+let NERDTreeIgnore=['\.$','\~$','\.o$']
 let NERDTreeWinPos=0
 
 "对NERD_commenter 添加代码注释的设置
@@ -256,7 +256,7 @@ Bundle 'The-NERD-Commenter'
 let NERDShutUp=1
 let g:NERDCustomDelimiters = {
     \ 'html': {  'left': '<!-- ', 'right': '-->', 'leftAlt': '/*','rightAlt': '*/' },
-    \ 'xhtml': {  'left': '<!-- ', 'right': '-->', 'leftAlt': '/*','rightAlt': '*/'}, 
+    \ 'xhtml': {  'left': '<!-- ', 'right': '-->', 'leftAlt': '/*','rightAlt': '*/'},
 \}
 let NERD_html_alt_style=1
 "<Leader>ca，在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
@@ -270,19 +270,19 @@ let NERD_html_alt_style=1
 Bundle 'https://github.com/vim-scripts/python.vim.git'
 "Bundle 'https://github.com/Lokaltog/vim-powerline.git'
 Bundle 'bling/vim-airline'
-"---------------alrLine Config--------------  
-if !exists('g:airline_symbols')  
-    let g:airline_symbols = {}  
-endif  
-let g:airline_symbols.space = "\ua0"  
-let g:airline_exclude_filename = []  
-let g:Powerline_symbols='fancy'  
-let g:airline_powerline_fonts=0  
-let Powerline_symbols='fancy'  
-let g:bufferline_echo=0  
-set laststatus=2  
-set t_Co=256  
-"set fillchars+=stl:\ ,stlnc:\  
+"---------------alrLine Config--------------
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+let g:airline_exclude_filename = []
+let g:Powerline_symbols='fancy'
+let g:airline_powerline_fonts=0
+let Powerline_symbols='fancy'
+let g:bufferline_echo=0
+set laststatus=2
+set t_Co=256
+"set fillchars+=stl:\ ,stlnc:\
 Bundle 'shawncplus/php.vim'
 
 "Tagbar 用来快速浏览代码里的标签
@@ -339,7 +339,7 @@ map <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " i: Find files #including this file
 map <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 map <leader>l :call ToggleLocationList()<CR>
-"End  Cscope 
+"End  Cscope
 
 "代码自动补全功能
 Bundle 'Shougo/neocomplcache.vim'
@@ -591,20 +591,20 @@ function! AddTitle()
 echohl WarningMsg | echo "Successful in adding the copyright." | echohl None
 endf
 
-"更新最近修改时间和文件名 
+"更新最近修改时间和文件名
 function! UpdateTitle()
     execute '4,7del'
     execute '!git whatchanged --oneline %:t > /tmp/title.tmp'
     3read ++edit /tmp/title.tmp
-    echohl WarningMsg | echo "Successful in updating the copy right." | echohl None  
+    echohl WarningMsg | echo "Successful in updating the copy right." | echohl None
 endfunction
 
-"判断前10行代码里面，是否有Last modified这个单词，  
-"如果没有的话，代表没有添加过作者信息，需要新添加；  
-"如果有的话，那么只需要更新即可  
+"判断前10行代码里面，是否有Last modified这个单词，
+"如果没有的话，代表没有添加过作者信息，需要新添加；
+"如果有的话，那么只需要更新即可
 function! TitleDet()
     let n=1
-    "默认为添加  
+    "默认为添加
     while n < 10
         let line = getline(n)
         if line =~ "* Version Info"

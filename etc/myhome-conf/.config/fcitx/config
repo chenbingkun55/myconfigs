@@ -8,7 +8,7 @@
 # 额外的激活输入法快捷键
 # Available Value:
 # R_CTRL R_SHIFT L_SHIFT L_CTRL ALT_L_SHIFT ALT_R_SHIFT CTRL Both SHIFT Both L_ALT R_ALT ALT Both Disabled
-SwitchKey=R_SHIFT
+SwitchKey=Both SHIFT
 # 激活输入法
 #ActivateKey=
 # 取消激活输入法

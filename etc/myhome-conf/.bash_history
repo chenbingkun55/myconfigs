@@ -1,7 +1,3 @@
-touch Index/function.php
-ls
-cd ../Conf/
-ls
 mkdir Index
 mkdir Admin
 touch Index/config.php
@@ -497,4 +493,8 @@ exit
 sudo grep chenbk /etc/passwd
 exit
 tmux 
+exit
+exit
+sudo ./thrunder.sh 
+ifconfig 
 exit
