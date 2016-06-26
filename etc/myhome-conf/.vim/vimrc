@@ -56,12 +56,12 @@ set hidden
 "设置显示行和列定位光标
 if &term == "linux"
     set nocursorline
-    set nocursorcolumn
+    "set nocursorcolumn
 else
     set cursorline
-    set cursorcolumn
+    "set cursorcolumn
     hi CursorLine cterm=NONE ctermbg=white ctermfg=black guibg=white guifg=black
-    hi CursorColumn cterm=NONE ctermbg=green ctermfg=black guibg=white guifg=black
+    "hi CursorColumn cterm=NONE ctermbg=green ctermfg=black guibg=white guifg=black
 endif
 
 set ttyfast
