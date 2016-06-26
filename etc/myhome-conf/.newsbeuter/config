@@ -293,9 +293,11 @@ text-width 20
 # EOF
 # a simple newsbeuter color scheme.
 
+color listnormal_unread white black
+color listfocus_unread white red bold
+color listfocus  white red bold
 color listnormal white black
-color listfocus  yellow red bold
-color info       cyan blue
+color info       white green
 color background white black
 color article    white black
 

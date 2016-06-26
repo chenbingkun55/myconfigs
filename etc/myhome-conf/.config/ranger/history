@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 rename 19FSNS2_MiWiFi_192.168.23.66
 rename 19FSNS2_小米mini_192.168.23.66
 rename 19FSNS2_小米mini_192.168.23.135
@@ -48,3 +49,55 @@ delete
 search 2016
 cd 
 open_with 
+=======
+rename bookmarks_Clean_20151028.html
+rename openshift_my9finance_V6_20151028.sql
+cd  ..
+rename logdb_20151028.sql
+rename opendfileview-x64.zip
+mkdir 07_ChromeOS
+rename 07_ChromeOS(Google系统)
+rename ProcTracer_进程运行跟踪.zip
+search sys
+rename TortoiseSVN-1.9.2.26806-win32-svn-1.9..msi_
+rename TortoiseSVN-1.9.2.26806-win32-svn-1.9.2.msi
+search bin
+search bingk
+mkdir 0.65
+rename Zbrush7
+rename zbrush2
+rename Zbrush
+mkdir Tools
+mkdir PrintToPDF
+search pa
+search 端口
+search svn
+open_with gvim
+rename 玩具总动员遗忘的时光BD国粤英3语中字.mkv
+rename 功夫熊猫BD国粤英3语双字.mkv
+rename 功夫熊猫2BD国粤英3语双字.mkv
+rename 20151123133047.jpg
+rename 20151123123754.jpg
+mkdir Visual_Studio_Code
+open_with 1
+search myhome
+
+rename backup_mysql_myhome_db.sh
+open_with 
+rename backup_mysql_myhomedb.sh
+search 密码
+mkdir cppCheck
+search boot
+delete
+mkdir PVS-Studio
+search 
+search 28859
+search dump
+search 03
+cd  
+search book
+search offic
+search soft
+search os
+cd 
+>>>>>>> 991a48c2988373c1300f9d4e41c497f9a72f270b
