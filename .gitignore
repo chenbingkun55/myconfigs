@@ -45,3 +45,7 @@ stardict/
 menus/
 ranger/
 \.newsbeuter/
+\.config/
+\.oh-my-zsh/
+\.vim/
+\.vscode/
