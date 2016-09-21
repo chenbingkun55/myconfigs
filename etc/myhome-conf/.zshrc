@@ -12,6 +12,7 @@ alias ll='ls -l'
 alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias ranger='ranger --confdir=~/.config/ranger'
+#alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
 setopt hist_ignore_space
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -61,7 +62,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx autojump git bundler lighthouse vim-interaction pyenv)
+plugins=(osx autojump git bundler lighthouse vim-interaction pyenv brew gem rvm cscairns)
 
 # User configuration
 
@@ -70,6 +71,8 @@ export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/u
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -125,3 +128,4 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 #
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 #[[ -s ~/.powerline/powerline/bindings/zsh/powerline.zsh ]] && . ~/.powerline/powerline/bindings/zsh/powerline.zsh
+export CLASSPATH="${CLASSPATH}:$(java-config --classpath log4j,xerces-2)"
