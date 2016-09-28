@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export LUA_PATH="./?.lua;./?.lc;/usr/local/?/init.lua"
+export ANDROID_HOME=~/Android/Sdk
 
 # 别名
 alias cp='cp -i'
