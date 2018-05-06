@@ -1,26 +1,30 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="window-position" mtime="1435449630" type="pair">
-		<car type="int" value="268"/>
-		<cdr type="int" value="72"/>
+	<entry name="sort-directories-first" mtime="1479297609" type="bool" value="false"/>
+	<entry name="date-format" mtime="1479297609" type="string">
+		<stringvalue>regular</stringvalue>
+	</entry>
+	<entry name="window-position" mtime="1476735962" type="pair">
+		<car type="int" value="383"/>
+		<cdr type="int" value="196"/>
 	</entry>
 	<entry name="window-size" mtime="1435449630" type="pair">
 		<car type="int" value="830"/>
 		<cdr type="int" value="622"/>
 	</entry>
-	<entry name="sidebar-width" mtime="1435449630" type="int" value="148"/>
-	<entry name="sort-order" mtime="1435449630" type="string">
+	<entry name="sidebar-width" mtime="1479297609" type="int" value="148"/>
+	<entry name="sort-order" mtime="1479297609" type="string">
 		<stringvalue>ascending</stringvalue>
 	</entry>
-	<entry name="show-hidden" mtime="1435449630" type="bool" value="false"/>
-	<entry name="sort-column" mtime="1435449630" type="string">
+	<entry name="show-hidden" mtime="1479297609" type="bool" value="false"/>
+	<entry name="sort-column" mtime="1479297609" type="string">
 		<stringvalue>name</stringvalue>
 	</entry>
-	<entry name="show-size-column" mtime="1435449630" type="bool" value="true"/>
+	<entry name="show-size-column" mtime="1479297609" type="bool" value="true"/>
 	<entry name="last-folder-uri" mtime="1385207347" type="string">
 		<stringvalue>file:///home/chenbk</stringvalue>
 	</entry>
-	<entry name="location-mode" mtime="1435449630" type="string">
+	<entry name="location-mode" mtime="1479297609" type="string">
 		<stringvalue>path-bar</stringvalue>
 	</entry>
 </gconf>

@@ -11,6 +11,13 @@ export PATH
 export PROMPT_COMMAND="echo -ne '\a'"
 export EDITOR="/usr/bin/vim"
 export TERM=fbterm
+export ANDROID_HOME=~/Android/Sdk
+export ANDROID_SDK_ROOT=~/Android/Sdk
+export NDK_ROOT=/opt/android-ndk
+export PATH_TO_LLVM_ROOT=/usr/include/clang
+export C=clang
+export CXX=clang++
+export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
 
 #tty汉化
 if [ "$TERM" = "linux" ]; then   #如果开启的是tty1~6

@@ -37,6 +37,7 @@ auto-reload yes
 ## parameter syntax: <browser-command>
 # browser lynx
 # browser w3m
+#browser google-chrome-stable
 browser firefox-bin
 
 ## configuration option: cache-file
@@ -149,6 +150,7 @@ error-log "/var/log/newsbeuter.log"
 ## description: If set the a number greater than 0, only articles that are were published within the last <n> days are kept, and older articles are deleted. If set to 0 (default value), this option is not active.
 ## parameter syntax: <days>
 # keep-articles-days 0
+keep-articles-days 30
 
 ## configuration option: mark-as-read-on-hover
 ## description: If set to yes, then all articles that get selected in the article list are marked as read.

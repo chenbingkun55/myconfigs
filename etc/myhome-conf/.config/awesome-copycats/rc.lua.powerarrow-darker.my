@@ -158,6 +158,7 @@ appsmenu = {
    { "文本编辑-gvim", "gvim" },
    { "文本编辑-VSCode", "vscode" },
    { "文本编辑-PHP IDE", "phpstorm" },
+   { "文本编辑-CodeBlocks", "codeblocks" },
    { "文本编辑-Sublime", "subl" },
    { "文本编辑-leafpad", "leafpad" },
    { "资源管理-mc", "xterm -T \"mc\" -e mc -S \"sand256\"" },

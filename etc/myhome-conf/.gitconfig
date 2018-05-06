@@ -19,3 +19,5 @@
 	cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [mergetool]
 	trustExitCode = false
+[http]
+	postBuffer = 524288000

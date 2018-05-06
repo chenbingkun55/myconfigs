@@ -7,6 +7,7 @@ http://www.pc841.com/index.php?m=content&c=rss&rssid=61 "电脑硬件"
 http://www.pc841.com/index.php?m=content&c=rss&rssid=21 "电脑技巧"
 http://www.pc841.com/index.php?m=content&c=rss&rssid=22 "组装电脑配置"
 http://www.linuxfans.org/feed
+https://planet.gentoo.org/
 http://weather.raychou.com/?/detail/58847/rss
 http://news.online.sh.cn/news/gb/node/RSS.xml
 http://weather.raychou.com/?/detail/59131/rss
@@ -47,15 +48,6 @@ http://www.ibm.com/developerworks/cn/views/global/rss/libraryview.jsp?end=25 "IB
 http://www.ibm.com/news/cn/zh/index.rss "IBM"
 http://www.infoq.com/cn/rss/rss.action?token=51LlJ22VtcLEBdvz1a2lQ5iGVPqX5GDg "Info"
 http://linux.cn/rss.xml "Linux"
-http://chinabyte.feedsportal.com/c/33256/f/558850/index.rss "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558826/index.rss "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558837/index.rss "比特网"
-http://info.chinabyte.com/index.xml "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558847/index.rss "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558831/index.rss "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558842/index.rss "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558841/index.rss "比特网"
-http://chinabyte.feedsportal.com/c/33256/f/558840/index.rss "比特网"
 http://news.ifeng.com/rss/index.xml "凤凰网"
 http://news.ifeng.com/rss/world.xml "凤凰网"
 http://news.ifeng.com/rss/photo.xml "凤凰网"
@@ -145,3 +137,9 @@ http://feed.xiaohuayoumo.com/
 http://www.kanshangjie.com/rss-1-3667.html
 https://www.gitbook.com/api/opds/catalog.atom
 http://blog.linuxcounter.net/feed/
+http://www.techug.com/feed
+http://blog.dragonbones.com/cn/feed
+https://www.rust-lang-cn.org/rss
+https://blog.codingnow.com/atom.xml
+http://feed.cnblogs.com/blog/u/183923/rss
+https://planet.gentoo.org/

@@ -6,16 +6,17 @@
 
 # font family names/pixelsize used by fbterm, multiple font family names must be seperated by ','
 # and using a fixed width font as the first is strongly recommended
-#font-names=Droid Sans Fallback,mono
-#font-names=DejaVu Sans Mono,SimHei
-font-names=DejaVu Sans Mono,Droid Sans Fallback
-#font-names=Droid Sans Fallback
-font-size=14
+#font-names=Droid Sans Fallbacjk,mono
+font-names=DejaVu Sans Mono:antialias=True:pixelsize=13
+#font-names=DejaVu Sans Mono:antialias=True:pixelsize=14,Droid Sans Fallback:antialias=True:pixelsize=14
+#font-names=Bitstream Vera Sans Mono:style=Bold:pixelsize=15
+#font-names=Droid Sans Fallback:antialias=True:pixelsize=15
+#font-size=14
 
 # force font width (and/or height), usually for non-fixed width fonts
 # legal value format: n (fw_new = n), +n (fw_new = fw_old + n), -n (fw_new = fw_old - n)
-#font-width=
-#font-height=
+font-width=
+font-height=
 
 # default color of foreground/background text
 # available colors: 0 = black, 1 = red, 2 = green, 3 = brown, 4 = blue, 5 = magenta, 6 = cyan, 7 = white
@@ -45,4 +46,4 @@ screen-rotate=0
 input-method=fcitx-fbterm
 
 # treat ambiguous width characters as wide
-#ambiguous-wide=yes
+ambiguous-wide=yes

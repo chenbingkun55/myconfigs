@@ -2,6 +2,12 @@
 export ZSH=$HOME/.oh-my-zsh
 export LUA_PATH="./?.lua;./?.lc;/usr/local/?/init.lua"
 export ANDROID_HOME=~/Android/Sdk
+export ANDROID_SDK_ROOT=~/Android/Sdk
+export NDK_ROOT=/opt/android-ndk
+export PATH_TO_LLVM_ROOT=/usr/include/clang
+export C=clang
+export CXX=clang++
+export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
 
 # 别名
 alias cp='cp -i'
@@ -14,6 +20,7 @@ alias grep='grep --color=auto'
 alias ee='emacsclient -t'
 alias ranger='ranger --confdir=~/.config/ranger'
 #alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
+alias rvm-prompt=$HOME/.rvm/bin/rvm-prompt
 setopt hist_ignore_space
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -67,24 +74,25 @@ plugins=(osx autojump git bundler lighthouse vim-interaction pyenv brew gem rvm 
 
 # User configuration
 
+export GRADLE_HOME=/opt/gradle
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin"
+export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${GRADLE_HOME}/bin:/opt/BaiduPCS-Go-v3.2.1-linux-amd64"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
  export LANG=zh_CN.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
+# if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
+# else
+#   export EDITOR='nvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -105,23 +113,23 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 #export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
 #export RPS1="%B%F{black}[%*]"
 # 键绑定
-#case $TERM in
-#   xterm*)
-#   bindkey "^[[F" end-of-line
-#   bindkey "^[[H" beginning-of-line
-#   ;;
-#   screen*)
-#   export TERM='xterm'
-#   ;;
-#   linux*)
-#   export TERM='fbterm'
-#   bindkey "^[[F" end-of-line
-#   bindkey "^[[H" beginning-of-line
-#   alias fbterm='LANG=zh_CN.UTF-8 fbterm'
-#   #fbterm -- tmux
-#   fbterm
-#   ;;
-#esa
+case $TERM in
+   xterm*)
+   bindkey "^[[F" end-of-line
+   bindkey "^[[H" beginning-of-line
+   ;;
+   screen*)
+   export TERM='xterm'
+   ;;
+   linux*)
+   export TERM='fbterm'
+   bindkey "^[[F" end-of-line
+   bindkey "^[[H" beginning-of-line
+   alias fbterm='LANG=zh_CN.UTF-8 fbterm'
+#   fbterm -- tmux
+  fbterm
+   ;;
+esac
 #   bindkey '\e[1~' beginning-of-line       # Home
 #   bindkey '\e[4~' end-of-line             # End
 #   bindkey '\e[3~' delete-char             # Del
@@ -130,3 +138,33 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 #[[ -s ~/.powerline/powerline/bindings/zsh/powerline.zsh ]] && . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 export CLASSPATH="${CLASSPATH}:$(java-config --classpath log4j,xerces-2)"
+export DISPLAY=:0
+bindkey -v
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT="/home/chenbk/09_Repos_Git/games/cocos2d-x/tools/cocos2d-console/bin"
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT="/home/chenbk/09_Repos_Git/games"
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT="/home/chenbk/09_Repos_Git/games/cocos2d-x/templates"
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT="/home/chenbk/09_Repos_Git/games/cocos2d-x/tools/cocos2d-console/bin"
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT="/home/chenbk/09_Repos_Git/games"
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT="/home/chenbk/09_Repos_Git/games/cocos2d-x/templates"
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# Add environment variable ANT_ROOT for cocos2d-x
+export ANT_ROOT="/usr/bin"
+export PATH=$ANT_ROOT:$PATH
