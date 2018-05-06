@@ -35,6 +35,7 @@ theme.menu_border_width                         = 3
 theme.menu_width                                = 150
 theme.menu_height                               = 28
 theme.menu_submenu_icon                         = theme.confdir .. "/icons/submenu.png"
+theme.awesome_icon                              = theme.confdir .. "/icons/awesome.png"
 theme.menu_fg_normal                            = "#aaaaaa"
 theme.menu_fg_focus                             = "#ff8c00"
 theme.menu_bg_normal                            = "#050505dd"
@@ -94,6 +95,10 @@ theme.titlebar_maximized_button_focus_active    = theme.confdir .. "/icons/title
 
 local markup = lain.util.markup
 
+-- Launcher
+local mylauncher = awful.widget.button({ image = theme.awesome_icon })
+mylauncher:connect_signal("button::press", function() awful.util.mymainmenu:toggle() end)
+--
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
@@ -289,6 +294,7 @@ function theme.at_screen_connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             --s.mylayoutbox,
+            mylauncher,
             s.mytaglist,
             s.mypromptbox,
             mpdicon,
