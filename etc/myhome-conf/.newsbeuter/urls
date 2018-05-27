@@ -24,13 +24,6 @@ http://www.feng.com/rss.xml
 http://www.sciencenet.cn/xml/news-0.aspx?news=0
 http://www.sciencenet.cn/xml/paper.aspx?di=2
 http://www.fortunechina.com/rss/technology.xml
-http://pub.chinaunix.net/rss.php?rssid=36 "ChinaUnix新闻"
-http://pub.chinaunix.net/rss.php?rssid=12 "ChinaUnix新闻"
-http://pub.chinaunix.net/rss.php?rssid=13 "ChinaUnix新闻"
-http://pub.chinaunix.net/rss.php?rssid=35 "ChinaUnix新闻"
-http://pub.chinaunix.net/rss.php?rssid=31 "ChinaUnix新闻"
-http://pub.chinaunix.net/rss.php?rssid=34 "ChinaUnix新闻"
-http://pub.chinaunix.net/rss.php?rssid=37 "ChinaUnix新闻"
 http://articles.csdn.net/api/rss.php?tid=1093 "CSDN"
 http://blog.csdn.net/rss.html "CSDN"
 http://articles.csdn.net/api/rss.php?tid=1236 "CSDN"
@@ -47,7 +40,8 @@ http://www.ftchinese.com/rss/column/007000004 "FT中文网"
 http://www.ibm.com/developerworks/cn/views/global/rss/libraryview.jsp?end=25 "IBM"
 http://www.ibm.com/news/cn/zh/index.rss "IBM"
 http://www.infoq.com/cn/rss/rss.action?token=51LlJ22VtcLEBdvz1a2lQ5iGVPqX5GDg "Info"
-http://linux.cn/rss.xml "Linux"
+https://linux.cn/rss.xml "Linux.cn"
+http://www.linuxeden.com/feed
 http://news.ifeng.com/rss/index.xml "凤凰网"
 http://news.ifeng.com/rss/world.xml "凤凰网"
 http://news.ifeng.com/rss/photo.xml "凤凰网"
@@ -139,7 +133,22 @@ https://www.gitbook.com/api/opds/catalog.atom
 http://blog.linuxcounter.net/feed/
 http://www.techug.com/feed
 http://blog.dragonbones.com/cn/feed
-https://www.rust-lang-cn.org/rss
 https://blog.codingnow.com/atom.xml
 http://feed.cnblogs.com/blog/u/183923/rss
 https://planet.gentoo.org/
+http://www.zhihu.com/rss
+http://scipark.net/feed/
+http://www.read.org.cn/feed
+http://blog.sina.com.cn/rss/1286528122.xml
+http://www.udpwork.com/feed
+http://yitianshijie.net/rss
+http://www.gametoutiao.com/
+http://codetimecn.com/podcast.rss
+https://www.jiqizhixin.com/rss
+http://www.techweb.com.cn/rss/games.xml
+http://218.66.36.42:85/opac//rss/new_book_pub
+http://218.66.36.42:85/opac//rss/recommended
+http://218.66.36.42:85/opac//rss/currentLoanList?rdid=350000005889&pwd=3c9434190671933a005b27b845b0a93a
+http://218.66.36.42:85/opac//rss/overdueLoanList?rdid=350000005889&pwd=3c9434190671933a005b27b845b0a93a
+https://www.linux.com/feeds/rss
+https://www.linux.com/feeds/tutorials/rss

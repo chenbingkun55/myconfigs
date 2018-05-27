@@ -76,7 +76,7 @@ plugins=(osx autojump git bundler lighthouse vim-interaction pyenv brew gem rvm 
 
 export GRADLE_HOME=/opt/gradle
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${GRADLE_HOME}/bin:/opt/BaiduPCS-Go-v3.2.1-linux-amd64"
+export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${GRADLE_HOME}/bin:/opt/BaiduPCS-Go"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
