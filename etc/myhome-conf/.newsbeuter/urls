@@ -134,7 +134,12 @@ http://blog.linuxcounter.net/feed/
 http://www.techug.com/feed
 http://blog.dragonbones.com/cn/feed
 https://blog.codingnow.com/atom.xml
-http://feed.cnblogs.com/blog/u/183923/rss
+https://www.cnblogs.com/iBinary/rss/
+https://feed.cnblogs.com/blog/sitehome/rss
+http://feed.cnblogs.com/blog/picked/rss
+http://feed.cnblogs.com/kb/
+http://feed.cnblogs.com/q/
+http://feed.cnblogs.com/news/rss
 https://planet.gentoo.org/
 http://www.zhihu.com/rss
 http://scipark.net/feed/
@@ -146,9 +151,6 @@ http://www.gametoutiao.com/
 http://codetimecn.com/podcast.rss
 https://www.jiqizhixin.com/rss
 http://www.techweb.com.cn/rss/games.xml
-http://218.66.36.42:85/opac//rss/new_book_pub
-http://218.66.36.42:85/opac//rss/recommended
-http://218.66.36.42:85/opac//rss/currentLoanList?rdid=350000005889&pwd=3c9434190671933a005b27b845b0a93a
-http://218.66.36.42:85/opac//rss/overdueLoanList?rdid=350000005889&pwd=3c9434190671933a005b27b845b0a93a
 https://www.linux.com/feeds/rss
 https://www.linux.com/feeds/tutorials/rss
+http://purecpp.org/?feed=rss2

@@ -1,13 +1,14 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export LUA_PATH="./?.lua;./?.lc;/usr/local/?/init.lua"
-export ANDROID_HOME=~/Android/Sdk
-export ANDROID_SDK_ROOT=~/Android/Sdk
-export NDK_ROOT=/opt/android-ndk
-export PATH_TO_LLVM_ROOT=/usr/include/clang
+export ANDROID_HOME=~/02_Tools/Android
+export ANDROID_SDK_ROOT=~/02_Tools/Android/Sdk
+export NDK_ROOT=~/02_Tools/android-ndk-r18
+export PATH_TO_LLVM_ROOT=/usr/lib/llvm/6/bin
 export C=clang
 export CXX=clang++
 export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
+export LOGL_ROOT_PATH=~/09_Repos_Git/LearnOpenGL
 
 # 别名
 alias cp='cp -i'
@@ -76,7 +77,7 @@ plugins=(osx autojump git bundler lighthouse vim-interaction pyenv brew gem rvm 
 
 export GRADLE_HOME=/opt/gradle
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${GRADLE_HOME}/bin:/opt/BaiduPCS-Go"
+export PATH="${PATH}:/opt/FlashTool:~/01_Shell:/usr/sbin/:/usr/lib/ccache/bin:/usr/lib/distcc/bin:/usr/games/bin:${GRADLE_HOME}/bin:/opt/BaiduPCS-Go:/opt/nvidia-cg-toolkit/bin:${PATH_TO_LLVM_ROOT}"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -113,6 +114,7 @@ export SSH_KEY_PATH="~/.ssh/id_dsa"
 #export PS1="%B%F{black}[%*] %B%F{green}%n@%m%k %B%F{blue}%1~ \$ %b%f%k"
 #export RPS1="%B%F{black}[%*]"
 # 键绑定
+export TERM="xterm-color"
 case $TERM in
    xterm*)
    bindkey "^[[F" end-of-line
@@ -137,7 +139,9 @@ esac
 #
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 #[[ -s ~/.powerline/powerline/bindings/zsh/powerline.zsh ]] && . ~/.powerline/powerline/bindings/zsh/powerline.zsh
-export CLASSPATH="${CLASSPATH}:$(java-config --classpath log4j,xerces-2)"
+# export CLASSPATH="${CLASSPATH}:$(java-config --classpath log4j,xerces-2)"
+export JAVA_HOME=/opt/oracle-jdk-bin-1.8.0.181
+export PATH=$PATH:$JAVA_HOME/bin
 export DISPLAY=:0
 bindkey -v
 
@@ -167,4 +171,12 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 # Add environment variable ANT_ROOT for cocos2d-x
 export ANT_ROOT="/usr/bin"
-export PATH=$ANT_ROOT:$PATH
+export PATH=$ANT_ROOT:$PATH:"~/02_Tools/gradle-4.10.2/bin:~/02_Tools/Android/tools/bin:~/02_Tools/Android/tools:~/02_Tools/Android/platform-tools:/home/chenbk/.local/bin:/opt/Typora-linux-x64"
+
+PATH="/home/chenbk/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/chenbk/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/chenbk/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/chenbk/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/chenbk/perl5"; export PERL_MM_OPT;
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

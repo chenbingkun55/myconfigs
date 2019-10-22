@@ -33,3 +33,5 @@ fi
 
 alias rm="trash-put"
 alias ll="ls -l"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

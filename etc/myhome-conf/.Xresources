@@ -103,8 +103,8 @@ xterm*altSendsEscape: true
 !Ctrl p to print screen content to file
 xterm*VT100.Translations: #override \n\
 Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
- <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
- Ctrl <KeyPress> P: print() \n\
+<BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+Ctrl <KeyPress> P: print() \n\
 
 !font and locale
 xterm*locale: true

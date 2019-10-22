@@ -14,6 +14,8 @@ xrdb -merge "${HOME}/.Xresources"
 #fcitx &
 
 #exec ck-launch-session dbus-launch --sh-syntax --exit-with-session awesome -c ~/.config/awesome/rc.lua
-exec dbus-launch --sh-syntax awesome -c ~/.config/awesome/rc.lua
+# exec dbus-launch --sh-syntax awesome -c ~/.config/awesome/rc.lua
+exec i3
 
+export DISPLAY=:0
 echo “注意：拒绝Windows，避免陷入舒适区.\n” |xcowsay -t 60 

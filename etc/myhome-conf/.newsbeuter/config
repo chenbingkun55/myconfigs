@@ -37,7 +37,7 @@ auto-reload yes
 ## parameter syntax: <browser-command>
 # browser lynx
 # browser w3m
-#browser google-chrome-stable
+# browser google-chrome-stable
 browser firefox-bin
 
 ## configuration option: cache-file

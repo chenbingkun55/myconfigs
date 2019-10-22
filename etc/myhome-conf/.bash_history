@@ -498,3 +498,6 @@ exit
 sudo ./thrunder.sh 
 ifconfig 
 exit
+clan
+clang
+exit
